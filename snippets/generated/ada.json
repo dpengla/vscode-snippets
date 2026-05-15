@@ -1,0 +1,407 @@
+{
+  "wi - with": {
+    "prefix": "wi",
+    "body": [
+      "with ${1};${0}"
+    ],
+    "description": "with"
+  },
+  "pac - package": {
+    "prefix": "pac",
+    "body": [
+      "package ${1} is",
+      "\t${0}",
+      "end $1;"
+    ],
+    "description": "package"
+  },
+  "pacb - package body": {
+    "prefix": "pacb",
+    "body": [
+      "package body ${1} is",
+      "\t${0}",
+      "end $1;"
+    ],
+    "description": "package body"
+  },
+  "ent - entry ... when": {
+    "prefix": "ent",
+    "body": [
+      "entry ${1}(${2}) when ${3} is",
+      "begin",
+      "\t${0}",
+      "end $1;"
+    ],
+    "description": "entry ... when"
+  },
+  "task - task": {
+    "prefix": "task",
+    "body": [
+      "task ${1} is",
+      "\tentry ${0}",
+      "end $1;"
+    ],
+    "description": "task"
+  },
+  "taskb - task body": {
+    "prefix": "taskb",
+    "body": [
+      "task body ${1} is",
+      "\t${2}",
+      "begin",
+      "\t${0}",
+      "end $1;"
+    ],
+    "description": "task body"
+  },
+  "acc - accept": {
+    "prefix": "acc",
+    "body": [
+      "accept ${1}(${2}) do",
+      "\t${0}",
+      "end $1;"
+    ],
+    "description": "accept"
+  },
+  "prot - protected type": {
+    "prefix": "prot",
+    "body": [
+      "protected type ${1}(${2}) is",
+      "\t${0}",
+      "end $1;"
+    ],
+    "description": "protected type"
+  },
+  "prob - protected body": {
+    "prefix": "prob",
+    "body": [
+      "protected body ${1} is",
+      "\t${2}",
+      "begin",
+      "\t${0}",
+      "end $1;"
+    ],
+    "description": "protected body"
+  },
+  "gen - generic type": {
+    "prefix": "gen",
+    "body": [
+      "generic",
+      "\ttype ${1} is ${2};${0}"
+    ],
+    "description": "generic type"
+  },
+  "ty - type": {
+    "prefix": "ty",
+    "body": [
+      "type ${1} is ${2};${0}"
+    ],
+    "description": "type"
+  },
+  "tyd - type with default value": {
+    "prefix": "tyd",
+    "body": [
+      "type ${1} is ${2}",
+      "\twith Default_Value => ${3};${0}"
+    ],
+    "description": "type with default value"
+  },
+  "subty - subtype": {
+    "prefix": "subty",
+    "body": [
+      "subtype ${1} is ${2};${0}"
+    ],
+    "description": "subtype"
+  },
+  "dec - declare block": {
+    "prefix": "dec",
+    "body": [
+      "declare",
+      "\t${1}",
+      "begin",
+      "\t${0}",
+      "end;"
+    ],
+    "description": "declare block"
+  },
+  "decn - declare named block": {
+    "prefix": "decn",
+    "body": [
+      "${1}:",
+      "declare",
+      "\t${2}",
+      "begin",
+      "\t${0}",
+      "end $1;"
+    ],
+    "description": "declare named block"
+  },
+  "ifex - if expression": {
+    "prefix": "ifex",
+    "body": [
+      "if ${1} then ${2} else ${0}"
+    ],
+    "description": "if expression"
+  },
+  "casex - case expression": {
+    "prefix": "casex",
+    "body": [
+      "case ${1} is",
+      "\twhen ${2} => ${3},${0}"
+    ],
+    "description": "case expression"
+  },
+  "fora - for all": {
+    "prefix": "fora",
+    "body": [
+      "for all ${1} ${2:in} ${3} => ${0}"
+    ],
+    "description": "for all"
+  },
+  "fors - for some": {
+    "prefix": "fors",
+    "body": [
+      "for some ${1} ${2:in} ${3} => ${0}"
+    ],
+    "description": "for some"
+  },
+  "if - if": {
+    "prefix": "if",
+    "body": [
+      "if ${1} then",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "end if;"
+    ],
+    "description": "if"
+  },
+  "ife - if ... else": {
+    "prefix": "ife",
+    "body": [
+      "if ${1} then",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "else",
+      "\t${0}",
+      "end if;"
+    ],
+    "description": "if ... else"
+  },
+  "el - else": {
+    "prefix": "el",
+    "body": [
+      "else",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "else"
+  },
+  "eif - elsif": {
+    "prefix": "eif",
+    "body": [
+      "elsif ${1} then",
+      "\t${0}"
+    ],
+    "description": "elsif"
+  },
+  "wh - while": {
+    "prefix": "wh",
+    "body": [
+      "while ${1} loop",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "end loop;"
+    ],
+    "description": "while"
+  },
+  "nwh - named while": {
+    "prefix": "nwh",
+    "body": [
+      "${1}:",
+      "while ${2} loop",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "end loop $1;"
+    ],
+    "description": "named while"
+  },
+  "for - for": {
+    "prefix": "for",
+    "body": [
+      "for ${1:I} in ${2} loop",
+      "\t${0}",
+      "end loop;"
+    ],
+    "description": "for"
+  },
+  "fore - for each": {
+    "prefix": "fore",
+    "body": [
+      "for ${1} of ${2} loop",
+      "\t${0}",
+      "end loop;"
+    ],
+    "description": "for each"
+  },
+  "nfor - named for": {
+    "prefix": "nfor",
+    "body": [
+      "${1}:",
+      "for ${2:I} in ${3} loop",
+      "\t${0}",
+      "end loop $1;"
+    ],
+    "description": "named for"
+  },
+  "nfore - named for each": {
+    "prefix": "nfore",
+    "body": [
+      "${1}:",
+      "for ${2} of ${3} loop",
+      "\t${0}",
+      "end loop $1;"
+    ],
+    "description": "named for each"
+  },
+  "proc - procedure": {
+    "prefix": "proc",
+    "body": [
+      "procedure ${1}(${2}) is",
+      "\t${3}",
+      "begin",
+      "\t${0}",
+      "end $1;"
+    ],
+    "description": "procedure"
+  },
+  "procd - procedure declaration": {
+    "prefix": "procd",
+    "body": [
+      "procedure ${1};${0}"
+    ],
+    "description": "procedure declaration"
+  },
+  "fun - function": {
+    "prefix": "fun",
+    "body": [
+      "function ${1}(${2}) return ${3} is",
+      "\t${4}",
+      "begin",
+      "\t${0}",
+      "end $1;"
+    ],
+    "description": "function"
+  },
+  "fune - expression function": {
+    "prefix": "fune",
+    "body": [
+      "function ${1} return ${2} is",
+      "\t(${3});${0}"
+    ],
+    "description": "expression function"
+  },
+  "fund - function declaration": {
+    "prefix": "fund",
+    "body": [
+      "function ${1} return ${2};${0}"
+    ],
+    "description": "function declaration"
+  },
+  "ret - extended return": {
+    "prefix": "ret",
+    "body": [
+      "return ${1} do",
+      "\t${0}",
+      "end return;"
+    ],
+    "description": "extended return"
+  },
+  "rec - record": {
+    "prefix": "rec",
+    "body": [
+      "record",
+      "\t${0}",
+      "end record;"
+    ],
+    "description": "record"
+  },
+  "case - case": {
+    "prefix": "case",
+    "body": [
+      "case ${1} is",
+      "\twhen ${2} => ${3};${0}",
+      "end case;"
+    ],
+    "description": "case"
+  },
+  "whe - when": {
+    "prefix": "whe",
+    "body": [
+      "when ${1} => ${2};${0}"
+    ],
+    "description": "when"
+  },
+  "wheo - when others": {
+    "prefix": "wheo",
+    "body": [
+      "when others => ${1};${0}"
+    ],
+    "description": "when others"
+  },
+  "lo - loop": {
+    "prefix": "lo",
+    "body": [
+      "loop",
+      "\t${0}",
+      "end loop;"
+    ],
+    "description": "loop"
+  },
+  "nlo - named loop": {
+    "prefix": "nlo",
+    "body": [
+      "${1}:",
+      "loop",
+      "\t${0}",
+      "end loop $1;"
+    ],
+    "description": "named loop"
+  },
+  "ex - exit when": {
+    "prefix": "ex",
+    "body": [
+      "exit when ${1};${0}"
+    ],
+    "description": "exit when"
+  },
+  "put - Ada.Text_IO.Put": {
+    "prefix": "put",
+    "body": [
+      "Ada.Text_IO.Put(${1});${0}"
+    ],
+    "description": "Ada.Text_IO.Put"
+  },
+  "putl - Ada.Text_IO.Put_Line": {
+    "prefix": "putl",
+    "body": [
+      "Ada.Text_IO.Put_Line(${1});${0}"
+    ],
+    "description": "Ada.Text_IO.Put_Line"
+  },
+  "get - Ada.Text_IO.Get": {
+    "prefix": "get",
+    "body": [
+      "Ada.Text_IO.Get(${1});${0}"
+    ],
+    "description": "Ada.Text_IO.Get"
+  },
+  "getl - Ada.Text_IO.Get_Line": {
+    "prefix": "getl",
+    "body": [
+      "Ada.Text_IO.Get_Line(${1});${0}"
+    ],
+    "description": "Ada.Text_IO.Get_Line"
+  },
+  "newline - Ada.Text_IO.New_Line": {
+    "prefix": "newline",
+    "body": [
+      "Ada.Text_IO.New_Line(${1:1});${0}"
+    ],
+    "description": "Ada.Text_IO.New_Line"
+  }
+}

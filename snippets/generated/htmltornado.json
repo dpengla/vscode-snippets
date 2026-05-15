@@ -1,0 +1,137 @@
+{
+  "{": {
+    "prefix": "{",
+    "body": [
+      "{{ ${0} }}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:3"
+  },
+  "extends": {
+    "prefix": "extends",
+    "body": [
+      "{% extends \"${0:base.html}\" %}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:8"
+  },
+  "autoescape": {
+    "prefix": "autoescape",
+    "body": [
+      "{% autoescape ${0:xhtml_escape | None} %}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:10"
+  },
+  "apply": {
+    "prefix": "apply",
+    "body": [
+      "{% apply ${1:function} %}",
+      "  ${0}",
+      "{% end %}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:12"
+  },
+  "block": {
+    "prefix": "block",
+    "body": [
+      "{% block ${1} %}",
+      "  ${0}",
+      "{% end %}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:16"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "{% for ${1:item} in ${2} %}",
+      "  ${0}",
+      "{% end %}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:20"
+  },
+  "from": {
+    "prefix": "from",
+    "body": [
+      "{% from ${1:x} import ${0:y} %}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:24"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "{% if $1 %}",
+      "  ${0}",
+      "{% end %}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:26"
+  },
+  "eif": {
+    "prefix": "eif",
+    "body": [
+      "{% elif $0 %}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:30"
+  },
+  "el": {
+    "prefix": "el",
+    "body": [
+      "{% else %}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:32"
+  },
+  "import": {
+    "prefix": "import",
+    "body": [
+      "{% import ${0:module} %}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:34"
+  },
+  "include": {
+    "prefix": "include",
+    "body": [
+      "{% include \"${0:filename}\" %}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:36"
+  },
+  "module": {
+    "prefix": "module",
+    "body": [
+      "{% module ${0:expression} %}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:38"
+  },
+  "raw": {
+    "prefix": "raw",
+    "body": [
+      "{% raw ${0:expression} %}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:40"
+  },
+  "set": {
+    "prefix": "set",
+    "body": [
+      "{% set ${1:x} = ${0:y} %}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:42"
+  },
+  "try": {
+    "prefix": "try",
+    "body": [
+      "{% try %}",
+      "  ${1:${TM_SELECTED_TEXT}}",
+      "{% except %}",
+      "  ${2}",
+      "{% finallly %}",
+      "  ${0}",
+      "{% end %}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:44"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "{% while $1 %}",
+      "  ${0}",
+      "{% end %}"
+    ],
+    "description": "vim-snippets/htmltornado.snippets:52"
+  }
+}

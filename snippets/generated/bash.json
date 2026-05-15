@@ -1,0 +1,52 @@
+{
+  "#!": {
+    "prefix": "#!",
+    "body": [
+      "#!/usr/bin/env bash"
+    ],
+    "description": "vim-snippets/bash.snippets:4"
+  },
+  "s#!": {
+    "prefix": "s#!",
+    "body": [
+      "#!/usr/bin/env bash",
+      "set -eu"
+    ],
+    "description": "vim-snippets/bash.snippets:7"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if [[ $1 ]]; then",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "fi"
+    ],
+    "description": "vim-snippets/bash.snippets:11"
+  },
+  "elif": {
+    "prefix": "elif",
+    "body": [
+      "elif [[ $1 ]]; then",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/bash.snippets:15"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "while [[ $1 ]]; do",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "done"
+    ],
+    "description": "vim-snippets/bash.snippets:18"
+  },
+  "until": {
+    "prefix": "until",
+    "body": [
+      "until [[ $1 ]]; do",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "done"
+    ],
+    "description": "vim-snippets/bash.snippets:22"
+  }
+}

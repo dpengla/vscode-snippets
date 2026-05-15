@@ -1,0 +1,72 @@
+{
+  ".attr": {
+    "prefix": ".attr",
+    "body": [
+      ".attr(\"${1}\", ${2})"
+    ],
+    "description": "vim-snippets/javascript-d3.snippets:1"
+  },
+  ".style": {
+    "prefix": ".style",
+    "body": [
+      ".style(\"${1}\", ${2})"
+    ],
+    "description": "vim-snippets/javascript-d3.snippets:3"
+  },
+  "axis": {
+    "prefix": "axis",
+    "body": [
+      "d3.svg.axis()",
+      "  .orient(${1})",
+      "  .scale(${2})"
+    ],
+    "description": "vim-snippets/javascript-d3.snippets:5"
+  },
+  "fd": {
+    "prefix": "fd",
+    "body": [
+      "function(d) { ${1} }"
+    ],
+    "description": "vim-snippets/javascript-d3.snippets:9"
+  },
+  "fdi": {
+    "prefix": "fdi",
+    "body": [
+      "function(d, i) { ${1} }"
+    ],
+    "description": "vim-snippets/javascript-d3.snippets:11"
+  },
+  "marginconvention": {
+    "prefix": "marginconvention",
+    "body": [
+      "var ${1:margin} = { top: ${2:10}, right: ${3:10}, bottom: ${4:10}, left: ${5:10} };",
+      "var ${6:width} = ${7:970} - $1.left - $1.right;",
+      "var ${8:height} = ${9:500} - $1.top - $1.bottom;",
+      "",
+      "var ${10:svg} = d3.select(\"${11}\").append(\"svg\")",
+      "  .attr(\"width\", $6 + $1.left + $1.right)",
+      "  .attr(\"height\", $8 + $1.top + $1.bottom)",
+      "    .append(\"g\")",
+      "  .attr(\"transform\", \"translate(\" + $1.left + \",\" + $1.top + \")\")"
+    ],
+    "description": "vim-snippets/javascript-d3.snippets:13"
+  },
+  "nest": {
+    "prefix": "nest",
+    "body": [
+      "d3.nest()",
+      "  .key(${1})",
+      "  .entries(${2})"
+    ],
+    "description": "vim-snippets/javascript-d3.snippets:23"
+  },
+  "scale": {
+    "prefix": "scale",
+    "body": [
+      "d3.scale.linear()",
+      "  .domain(${1})",
+      "  .range(${2})"
+    ],
+    "description": "vim-snippets/javascript-d3.snippets:27"
+  }
+}

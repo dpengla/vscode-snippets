@@ -1,0 +1,291 @@
+{
+  "@page": {
+    "prefix": "@page",
+    "body": [
+      "<%@page contentType=\"text/html\" pageEncoding=\"UTF-8\"%>"
+    ],
+    "description": "vim-snippets/jsp.snippets:1"
+  },
+  "jstl": {
+    "prefix": "jstl",
+    "body": [
+      "<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>",
+      "<%@ taglib uri=\"http://java.sun.com/jsp/jstl/functions\" prefix=\"fn\" %>"
+    ],
+    "description": "vim-snippets/jsp.snippets:3"
+  },
+  "jstl:c": {
+    "prefix": "jstl:c",
+    "body": [
+      "<%@ taglib uri=\"http://java.sun.com/jsp/jstl/core\" prefix=\"c\" %>"
+    ],
+    "description": "vim-snippets/jsp.snippets:6"
+  },
+  "jstl:fn": {
+    "prefix": "jstl:fn",
+    "body": [
+      "<%@ taglib uri=\"http://java.sun.com/jsp/jstl/functions\" prefix=\"fn\" %>"
+    ],
+    "description": "vim-snippets/jsp.snippets:8"
+  },
+  "cpath": {
+    "prefix": "cpath",
+    "body": [
+      "\\${pageContext.request.contextPath}"
+    ],
+    "description": "vim-snippets/jsp.snippets:10"
+  },
+  "cout": {
+    "prefix": "cout",
+    "body": [
+      "<c:out value=\"${1}\" default=\"${0}\" />"
+    ],
+    "description": "vim-snippets/jsp.snippets:12"
+  },
+  "cset": {
+    "prefix": "cset",
+    "body": [
+      "<c:set var=\"${1}\" value=\"${0}\" />"
+    ],
+    "description": "vim-snippets/jsp.snippets:14"
+  },
+  "cremove": {
+    "prefix": "cremove",
+    "body": [
+      "<c:remove var=\"${1}\" scope=\"${0:page}\" />"
+    ],
+    "description": "vim-snippets/jsp.snippets:16"
+  },
+  "ccatch": {
+    "prefix": "ccatch",
+    "body": [
+      "<c:catch var=\"${0}\" />"
+    ],
+    "description": "vim-snippets/jsp.snippets:18"
+  },
+  "cif": {
+    "prefix": "cif",
+    "body": [
+      "<c:if test=\"\\${${1}}\">",
+      "\t${0}",
+      "</c:if>"
+    ],
+    "description": "vim-snippets/jsp.snippets:20"
+  },
+  "cchoose": {
+    "prefix": "cchoose",
+    "body": [
+      "<c:choose>",
+      "\t${0}",
+      "</c:choose>"
+    ],
+    "description": "vim-snippets/jsp.snippets:24"
+  },
+  "cwhen": {
+    "prefix": "cwhen",
+    "body": [
+      "<c:when test=\"\\${${1}}\">",
+      "\t${0}",
+      "</c:when>"
+    ],
+    "description": "vim-snippets/jsp.snippets:28"
+  },
+  "cother": {
+    "prefix": "cother",
+    "body": [
+      "<c:otherwise>",
+      "\t${0}",
+      "</c:otherwise>"
+    ],
+    "description": "vim-snippets/jsp.snippets:32"
+  },
+  "cfore": {
+    "prefix": "cfore",
+    "body": [
+      "<c:forEach items=\"\\${${1}}\" var=\"${2}\" varStatus=\"${3}\">",
+      "\t${0:<c:out value=\"$2\" />}",
+      "</c:forEach>"
+    ],
+    "description": "vim-snippets/jsp.snippets:36"
+  },
+  "cfort": {
+    "prefix": "cfort",
+    "body": [
+      "<c:set var=\"${1}\">${2:item1,item2,item3}</c:set>",
+      "<c:forTokens var=\"${3}\" items=\"\\${$1}\" delims=\"${4:,}\">",
+      "\t${0:<c:out value=\"$3\" />}",
+      "</c:forTokens>"
+    ],
+    "description": "vim-snippets/jsp.snippets:40"
+  },
+  "cparam": {
+    "prefix": "cparam",
+    "body": [
+      "<c:param name=\"${1}\" value=\"${0}\" />"
+    ],
+    "description": "vim-snippets/jsp.snippets:45"
+  },
+  "cparam+": {
+    "prefix": "cparam+",
+    "body": [
+      "<c:param name=\"${1}\" value=\"${2}\" />",
+      "cparam+${0}"
+    ],
+    "description": "vim-snippets/jsp.snippets:47"
+  },
+  "cimport": {
+    "prefix": "cimport",
+    "body": [
+      "<c:import url=\"${1}\" />"
+    ],
+    "description": "vim-snippets/jsp.snippets:50"
+  },
+  "cimport+": {
+    "prefix": "cimport+",
+    "body": [
+      "<c:import url=\"${1}\">",
+      "\t<c:param name=\"${2}\" value=\"${3}\" />",
+      "\tcparam+${0}",
+      "</c:import>"
+    ],
+    "description": "vim-snippets/jsp.snippets:52"
+  },
+  "curl": {
+    "prefix": "curl",
+    "body": [
+      "<c:url value=\"${1}\" var=\"${2}\" />",
+      "<a href=\"\\${$2}\">${0}</a>"
+    ],
+    "description": "vim-snippets/jsp.snippets:57"
+  },
+  "curl+": {
+    "prefix": "curl+",
+    "body": [
+      "<c:url value=\"${1}\" var=\"${2}\">",
+      "\t<c:param name=\"${4}\" value=\"${5}\" />",
+      "\tcparam+${0}",
+      "</c:url>",
+      "<a href=\"\\${$2}\">${3}</a>"
+    ],
+    "description": "vim-snippets/jsp.snippets:60"
+  },
+  "credirect": {
+    "prefix": "credirect",
+    "body": [
+      "<c:redirect url=\"${0}\" />"
+    ],
+    "description": "vim-snippets/jsp.snippets:66"
+  },
+  "contains": {
+    "prefix": "contains",
+    "body": [
+      "\\${fn:contains(${1:string}, ${0:substr})}"
+    ],
+    "description": "vim-snippets/jsp.snippets:68"
+  },
+  "contains:i": {
+    "prefix": "contains:i",
+    "body": [
+      "\\${fn:containsIgnoreCase(${1:string}, ${0:substr})}"
+    ],
+    "description": "vim-snippets/jsp.snippets:70"
+  },
+  "endswith": {
+    "prefix": "endswith",
+    "body": [
+      "\\${fn:endsWith(${1:string}, ${0:suffix})}"
+    ],
+    "description": "vim-snippets/jsp.snippets:72"
+  },
+  "escape": {
+    "prefix": "escape",
+    "body": [
+      "\\${fn:escapeXml(${0:string})}"
+    ],
+    "description": "vim-snippets/jsp.snippets:74"
+  },
+  "indexof": {
+    "prefix": "indexof",
+    "body": [
+      "\\${fn:indexOf(${1:string}, ${0:substr})}"
+    ],
+    "description": "vim-snippets/jsp.snippets:76"
+  },
+  "join": {
+    "prefix": "join",
+    "body": [
+      "\\${fn:join(${1:collection}, ${0:delims})}"
+    ],
+    "description": "vim-snippets/jsp.snippets:78"
+  },
+  "length": {
+    "prefix": "length",
+    "body": [
+      "\\${fn:length(${0:collection_or_string})}"
+    ],
+    "description": "vim-snippets/jsp.snippets:80"
+  },
+  "replace": {
+    "prefix": "replace",
+    "body": [
+      "\\${fn:replace(${1:string}, ${2:substr}, ${0:replace})}"
+    ],
+    "description": "vim-snippets/jsp.snippets:82"
+  },
+  "split": {
+    "prefix": "split",
+    "body": [
+      "\\${fn:split(${1:string}, ${0:delims})}"
+    ],
+    "description": "vim-snippets/jsp.snippets:84"
+  },
+  "startswith": {
+    "prefix": "startswith",
+    "body": [
+      "\\${fn:startsWith(${1:string}, ${0:prefix})}"
+    ],
+    "description": "vim-snippets/jsp.snippets:86"
+  },
+  "substr": {
+    "prefix": "substr",
+    "body": [
+      "\\${fn:substring(${1:string}, ${2:begin}, ${0:end})}"
+    ],
+    "description": "vim-snippets/jsp.snippets:88"
+  },
+  "substr:a": {
+    "prefix": "substr:a",
+    "body": [
+      "\\${fn:substringAfter(${1:string}, ${0:substr})}"
+    ],
+    "description": "vim-snippets/jsp.snippets:90"
+  },
+  "substr:b": {
+    "prefix": "substr:b",
+    "body": [
+      "\\${fn:substringBefore(${1:string}, ${0:substr})}"
+    ],
+    "description": "vim-snippets/jsp.snippets:92"
+  },
+  "lc": {
+    "prefix": "lc",
+    "body": [
+      "\\${fn:toLowerCase(${0:string})}"
+    ],
+    "description": "vim-snippets/jsp.snippets:94"
+  },
+  "uc": {
+    "prefix": "uc",
+    "body": [
+      "\\${fn:toUpperCase(${0:string})}"
+    ],
+    "description": "vim-snippets/jsp.snippets:96"
+  },
+  "trim": {
+    "prefix": "trim",
+    "body": [
+      "\\${fn:trim(${0:string})}"
+    ],
+    "description": "vim-snippets/jsp.snippets:98"
+  }
+}

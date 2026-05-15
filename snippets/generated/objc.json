@@ -1,0 +1,492 @@
+{
+  "Imp": {
+    "prefix": "Imp",
+    "body": [
+      "#import <${1:Cocoa/Cocoa.h}>"
+    ],
+    "description": "vim-snippets/objc.snippets:2"
+  },
+  "imp": {
+    "prefix": "imp",
+    "body": [
+      "#import \"${1:${TM_FILENAME_BASE}.h}\""
+    ],
+    "description": "vim-snippets/objc.snippets:5"
+  },
+  "sel": {
+    "prefix": "sel",
+    "body": [
+      "@selector(${1:method}:)"
+    ],
+    "description": "vim-snippets/objc.snippets:8"
+  },
+  "s": {
+    "prefix": "s",
+    "body": [
+      "@\"${1}\""
+    ],
+    "description": "vim-snippets/objc.snippets:11"
+  },
+  "o": {
+    "prefix": "o",
+    "body": [
+      "${1:NSObject} *${2:foo} = [${3:$1 alloc}]${4};"
+    ],
+    "description": "vim-snippets/objc.snippets:14"
+  },
+  "log": {
+    "prefix": "log",
+    "body": [
+      "NSLog(@\"${1:%@}\"${2});"
+    ],
+    "description": "vim-snippets/objc.snippets:17"
+  },
+  "objc": {
+    "prefix": "objc",
+    "body": [
+      "@interface ${1:${TM_FILENAME_BASE}} : ${2:NSObject}",
+      "{",
+      "}",
+      "@end",
+      "",
+      "@implementation $1",
+      "${0}",
+      "@end"
+    ],
+    "description": "vim-snippets/objc.snippets:20"
+  },
+  "int": {
+    "prefix": "int",
+    "body": [
+      "@interface ${1:${TM_FILENAME_BASE}} : ${2:NSObject}",
+      "{${3}",
+      "}",
+      "${0}",
+      "@end"
+    ],
+    "description": "vim-snippets/objc.snippets:30"
+  },
+  "@interface": {
+    "prefix": "@interface",
+    "body": [
+      "@interface ${1:${TM_FILENAME_BASE}} : ${2:NSObject}",
+      "{${3}",
+      "}",
+      "${0}",
+      "@end"
+    ],
+    "description": "vim-snippets/objc.snippets:36"
+  },
+  "impl": {
+    "prefix": "impl",
+    "body": [
+      "@implementation ${1:${TM_FILENAME_BASE}}",
+      "${0}",
+      "@end"
+    ],
+    "description": "vim-snippets/objc.snippets:43"
+  },
+  "@implementation": {
+    "prefix": "@implementation",
+    "body": [
+      "@implementation ${1:${TM_FILENAME_BASE}}",
+      "${0}",
+      "@end"
+    ],
+    "description": "vim-snippets/objc.snippets:47"
+  },
+  "pro": {
+    "prefix": "pro",
+    "body": [
+      "@protocol ${1:${TM_FILENAME_BASE}} ${2:<NSObject>}",
+      "${0}",
+      "@end"
+    ],
+    "description": "vim-snippets/objc.snippets:52"
+  },
+  "@protocol": {
+    "prefix": "@protocol",
+    "body": [
+      "@protocol ${1:${TM_FILENAME_BASE}} ${2:<NSObject>}",
+      "${0}",
+      "@end"
+    ],
+    "description": "vim-snippets/objc.snippets:56"
+  },
+  "init": {
+    "prefix": "init",
+    "body": [
+      "- (id)init",
+      "{",
+      "\tif (self = [super init]) {",
+      "\t\t${0}",
+      "\t}",
+      "\treturn self;",
+      "}"
+    ],
+    "description": "vim-snippets/objc.snippets:61"
+  },
+  "dealloc": {
+    "prefix": "dealloc",
+    "body": [
+      "- (void) dealloc",
+      "{",
+      "\t${0:deallocations}",
+      "\t[super dealloc];",
+      "}"
+    ],
+    "description": "vim-snippets/objc.snippets:70"
+  },
+  "su": {
+    "prefix": "su",
+    "body": [
+      "[super ${1:init}]"
+    ],
+    "description": "vim-snippets/objc.snippets:76"
+  },
+  "ibo": {
+    "prefix": "ibo",
+    "body": [
+      "IBOutlet ${1:NSSomeClass} *${2:$1};"
+    ],
+    "description": "vim-snippets/objc.snippets:78"
+  },
+  "cat": {
+    "prefix": "cat",
+    "body": [
+      "@interface ${1:NSObject} (${2:MyCategory})",
+      "@end",
+      "",
+      "@implementation $1 ($2)",
+      "${0}",
+      "@end"
+    ],
+    "description": "vim-snippets/objc.snippets:81"
+  },
+  "cath": {
+    "prefix": "cath",
+    "body": [
+      "@interface ${1:${TM_FILENAME_BASE}} (${2:MyCategory})",
+      "${0}",
+      "@end"
+    ],
+    "description": "vim-snippets/objc.snippets:89"
+  },
+  "m": {
+    "prefix": "m",
+    "body": [
+      "- (${1:id})${2:method}",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/objc.snippets:94"
+  },
+  "md": {
+    "prefix": "md",
+    "body": [
+      "- (${1:id})${2:method};"
+    ],
+    "description": "vim-snippets/objc.snippets:100"
+  },
+  "ibad": {
+    "prefix": "ibad",
+    "body": [
+      "- (IBAction)${1:method}:(${2:id})sender;"
+    ],
+    "description": "vim-snippets/objc.snippets:103"
+  },
+  "iba": {
+    "prefix": "iba",
+    "body": [
+      "- (IBAction)${1:method}:(${2:id})sender",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/objc.snippets:106"
+  },
+  "wake": {
+    "prefix": "wake",
+    "body": [
+      "- (void)awakeFromNib",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/objc.snippets:112"
+  },
+  "M": {
+    "prefix": "M",
+    "body": [
+      "+ (${1:id})${2:method}",
+      "{",
+      "\t${0:return nil;}",
+      "}"
+    ],
+    "description": "vim-snippets/objc.snippets:118"
+  },
+  "sm": {
+    "prefix": "sm",
+    "body": [
+      "- (${1:id})${2:method}",
+      "{",
+      "\t[super $2];${0}",
+      "\treturn self;",
+      "}"
+    ],
+    "description": "vim-snippets/objc.snippets:124"
+  },
+  "objacc": {
+    "prefix": "objacc",
+    "body": [
+      "- (${1:id})${2:thing}",
+      "{",
+      "\treturn $2;",
+      "}",
+      "",
+      "- (void)set$2:($1)${3:new$2}",
+      "{",
+      "\t[$3 retain];",
+      "\t[$2 release];",
+      "\t$2 = $3;",
+      "}"
+    ],
+    "description": "vim-snippets/objc.snippets:132"
+  },
+  "forin": {
+    "prefix": "forin",
+    "body": [
+      "for (${1:Class} *${2:some$1} in ${3:array}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/objc.snippets:145"
+  },
+  "fore": {
+    "prefix": "fore",
+    "body": [
+      "for (${1:object} in ${2:array}) {",
+      "\t${0:statements}",
+      "}"
+    ],
+    "description": "vim-snippets/objc.snippets:149"
+  },
+  "forarray": {
+    "prefix": "forarray",
+    "body": [
+      "unsigned int ${1:object}Count = [${2:array} count];",
+      "",
+      "for (unsigned int index = 0; index < $1Count; index++) {",
+      "\t${3:id} $1 = [$2 $1AtIndex:index];",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/objc.snippets:153"
+  },
+  "fora": {
+    "prefix": "fora",
+    "body": [
+      "unsigned int ${1:object}Count = [${2:array} count];",
+      "",
+      "for (unsigned int index = 0; index < $1Count; index++) {",
+      "\t${3:id} $1 = [$2 $1AtIndex:index];",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/objc.snippets:160"
+  },
+  "@try": {
+    "prefix": "@try",
+    "body": [
+      "@try {",
+      "\t${1:statements}",
+      "}",
+      "@catch (NSException * e) {",
+      "\t${2:handler}",
+      "}",
+      "@finally {",
+      "\t${0:statements}",
+      "}"
+    ],
+    "description": "vim-snippets/objc.snippets:168"
+  },
+  "@catch": {
+    "prefix": "@catch",
+    "body": [
+      "@catch (${1:exception}) {",
+      "\t${0:handler}",
+      "}"
+    ],
+    "description": "vim-snippets/objc.snippets:178"
+  },
+  "@finally": {
+    "prefix": "@finally",
+    "body": [
+      "@finally {",
+      "\t${0:statements}",
+      "}"
+    ],
+    "description": "vim-snippets/objc.snippets:182"
+  },
+  "prop": {
+    "prefix": "prop",
+    "body": [
+      "@property (${1:retain}) ${2:NSSomeClass} ${3:*$2};"
+    ],
+    "description": "vim-snippets/objc.snippets:188"
+  },
+  "syn": {
+    "prefix": "syn",
+    "body": [
+      "@synthesize ${1:property};"
+    ],
+    "description": "vim-snippets/objc.snippets:191"
+  },
+  "alloc": {
+    "prefix": "alloc",
+    "body": [
+      "[[${1:foo} alloc] init${2}];"
+    ],
+    "description": "vim-snippets/objc.snippets:194"
+  },
+  "a": {
+    "prefix": "a",
+    "body": [
+      "[[${1:foo} alloc] init${2}];"
+    ],
+    "description": "vim-snippets/objc.snippets:196"
+  },
+  "ret": {
+    "prefix": "ret",
+    "body": [
+      "[${1:foo} retain];"
+    ],
+    "description": "vim-snippets/objc.snippets:199"
+  },
+  "rel": {
+    "prefix": "rel",
+    "body": [
+      "[${0:foo} release];"
+    ],
+    "description": "vim-snippets/objc.snippets:202"
+  },
+  "arel": {
+    "prefix": "arel",
+    "body": [
+      "[${0:foo} autorelease];"
+    ],
+    "description": "vim-snippets/objc.snippets:205"
+  },
+  "pool": {
+    "prefix": "pool",
+    "body": [
+      "NSAutoreleasePool *${1:pool} = [[NSAutoreleasePool alloc] init];",
+      "${0}",
+      "[$1 drain];"
+    ],
+    "description": "vim-snippets/objc.snippets:208"
+  },
+  "except": {
+    "prefix": "except",
+    "body": [
+      "NSException *${1:badness};",
+      "$1 = [NSException exceptionWithName:@\"${2:$1Name}\"",
+      "                             reason:@\"${0}\"",
+      "                           userInfo:nil];",
+      "[$1 raise];"
+    ],
+    "description": "vim-snippets/objc.snippets:213"
+  },
+  "prag": {
+    "prefix": "prag",
+    "body": [
+      "#pragma mark ${0:-}"
+    ],
+    "description": "vim-snippets/objc.snippets:219"
+  },
+  "cl": {
+    "prefix": "cl",
+    "body": [
+      "@class ${1:Foo};"
+    ],
+    "description": "vim-snippets/objc.snippets:221"
+  },
+  "color": {
+    "prefix": "color",
+    "body": [
+      "[[NSColor ${0:blackColor}] set];"
+    ],
+    "description": "vim-snippets/objc.snippets:223"
+  },
+  "array": {
+    "prefix": "array",
+    "body": [
+      "NSMutableArray *${1:array} = [NSMutable array];"
+    ],
+    "description": "vim-snippets/objc.snippets:226"
+  },
+  "nsa": {
+    "prefix": "nsa",
+    "body": [
+      "NSArray ${0}"
+    ],
+    "description": "vim-snippets/objc.snippets:228"
+  },
+  "nsma": {
+    "prefix": "nsma",
+    "body": [
+      "NSMutableArray ${0}"
+    ],
+    "description": "vim-snippets/objc.snippets:230"
+  },
+  "aa": {
+    "prefix": "aa",
+    "body": [
+      "NSArray * array;"
+    ],
+    "description": "vim-snippets/objc.snippets:232"
+  },
+  "ma": {
+    "prefix": "ma",
+    "body": [
+      "NSMutableArray * array;"
+    ],
+    "description": "vim-snippets/objc.snippets:234"
+  },
+  "dict": {
+    "prefix": "dict",
+    "body": [
+      "NSMutableDictionary *${1:dict} = [NSMutableDictionary dictionary];"
+    ],
+    "description": "vim-snippets/objc.snippets:237"
+  },
+  "nsd": {
+    "prefix": "nsd",
+    "body": [
+      "NSDictionary ${0}"
+    ],
+    "description": "vim-snippets/objc.snippets:239"
+  },
+  "nsmd": {
+    "prefix": "nsmd",
+    "body": [
+      "NSMutableDictionary ${0}"
+    ],
+    "description": "vim-snippets/objc.snippets:241"
+  },
+  "nss": {
+    "prefix": "nss",
+    "body": [
+      "NSString ${0}"
+    ],
+    "description": "vim-snippets/objc.snippets:244"
+  },
+  "nsms": {
+    "prefix": "nsms",
+    "body": [
+      "NSMutableString ${0}"
+    ],
+    "description": "vim-snippets/objc.snippets:246"
+  }
+}

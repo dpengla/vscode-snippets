@@ -1,0 +1,60 @@
+{
+  "dir": {
+    "prefix": "dir",
+    "body": [
+      "<Directory ${1:/}>",
+      "\tDirectoryIndex ${0:index.html}",
+      "\tOrder Deny,Allow",
+      "\tDeny from All",
+      "</Directory>"
+    ],
+    "description": "vim-snippets/apache.snippets:3"
+  },
+  "filesmatch": {
+    "prefix": "filesmatch",
+    "body": [
+      "<FilesMatch \"${1:regex}\">",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "</FilesMatch>"
+    ],
+    "description": "vim-snippets/apache.snippets:10"
+  },
+  "ifmodule": {
+    "prefix": "ifmodule",
+    "body": [
+      "<IfModule ${1:mod_example.c}>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "</IfModule>"
+    ],
+    "description": "vim-snippets/apache.snippets:15"
+  },
+  "limitexcept": {
+    "prefix": "limitexcept",
+    "body": [
+      "<LimitExcept ${1:POST GET}>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "</LimitExcept>"
+    ],
+    "description": "vim-snippets/apache.snippets:20"
+  },
+  "proxy": {
+    "prefix": "proxy",
+    "body": [
+      "<Proxy ${1:*}>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "</Proxy>"
+    ],
+    "description": "vim-snippets/apache.snippets:25"
+  },
+  "virtualhost": {
+    "prefix": "virtualhost",
+    "body": [
+      "<VirtualHost ${1:*}:${2:80}>",
+      "\tServerAdmin ${3:webmaster@example.com}",
+      "\tDocumentRoot ${4:/www/example.com}",
+      "\tServerName ${0:www.example.com}",
+      "</VirtualHost>"
+    ],
+    "description": "vim-snippets/apache.snippets:30"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "t": {
+    "prefix": "t",
+    "body": [
+      "%table",
+      "\t%tr",
+      "\t\t%th",
+      "\t\t\t${1:headers}",
+      "\t%tr",
+      "\t\t%td",
+      "\t\t\t${0:headers}"
+    ],
+    "description": "vim-snippets/haml.snippets:1"
+  },
+  "ul": {
+    "prefix": "ul",
+    "body": [
+      "%ul",
+      "\t%li",
+      "\t\t${0:item}",
+      "\t%li"
+    ],
+    "description": "vim-snippets/haml.snippets:9"
+  },
+  "rp": {
+    "prefix": "rp",
+    "body": [
+      "= render :partial => \"${0:item}\""
+    ],
+    "description": "vim-snippets/haml.snippets:14"
+  },
+  "rpc": {
+    "prefix": "rpc",
+    "body": [
+      "= render :partial => \"${1:item}\", :collection => ${0:@$1s}"
+    ],
+    "description": "vim-snippets/haml.snippets:16"
+  },
+  "rpl": {
+    "prefix": "rpl",
+    "body": [
+      "= render :partial => \"${1:item}\", :locals => { :${2:$1} => ${0:@$1} }"
+    ],
+    "description": "vim-snippets/haml.snippets:18"
+  },
+  "rpo": {
+    "prefix": "rpo",
+    "body": [
+      "= render :partial => \"${1:item}\", :object => ${0:@$1}"
+    ],
+    "description": "vim-snippets/haml.snippets:20"
+  },
+  "lt": {
+    "prefix": "lt",
+    "body": [
+      "= link_to ${1:name}, ${2:dest}"
+    ],
+    "description": "vim-snippets/haml.snippets:22"
+  },
+  "mt": {
+    "prefix": "mt",
+    "body": [
+      "= mail_to ${1:email_address}, ${2:name}"
+    ],
+    "description": "vim-snippets/haml.snippets:24"
+  },
+  "mts": {
+    "prefix": "mts",
+    "body": [
+      "= mail_to ${1:email_address}, ${2:name}, :subject => ${3}, :body => ${4}"
+    ],
+    "description": "vim-snippets/haml.snippets:26"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "- if $1",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "- else",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/haml.snippets:28"
+  },
+  "ifp": {
+    "prefix": "ifp",
+    "body": [
+      "- if $1.presence?",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/haml.snippets:33"
+  },
+  "ntc": {
+    "prefix": "ntc",
+    "body": [
+      "= number_to_currency(${1})"
+    ],
+    "description": "vim-snippets/haml.snippets:36"
+  }
+}

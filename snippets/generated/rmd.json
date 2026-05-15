@@ -1,0 +1,208 @@
+{
+  "%%": {
+    "prefix": "%%",
+    "body": [
+      "% ${1:${TM_FILENAME_BASE}}",
+      "% ${2:author}",
+      "% ${3:${CURRENT_DATE} ${CURRENT_MONTH_NAME} ${CURRENT_YEAR}}",
+      "",
+      "${4}"
+    ],
+    "description": "vim-snippets/rmd.snippets:12"
+  },
+  "%%*": {
+    "prefix": "%%*",
+    "body": [
+      "% ${1:${TM_FILENAME_BASE}}",
+      "% ${2:author}",
+      "% ${3:${CURRENT_DATE} ${CURRENT_MONTH_NAME_SHORT} ${CURRENT_YEAR}}",
+      "",
+      "${4}"
+    ],
+    "description": "vim-snippets/rmd.snippets:18"
+  },
+  "req": {
+    "prefix": "req",
+    "body": [
+      "require(${1:}, quietly = TRUE)"
+    ],
+    "description": "vim-snippets/rmd.snippets:26"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if ( $1 )",
+      "{",
+      "\t${2:}",
+      "}"
+    ],
+    "description": "vim-snippets/rmd.snippets:29"
+  },
+  "el": {
+    "prefix": "el",
+    "body": [
+      "else",
+      "{",
+      "\t${1:}",
+      "}"
+    ],
+    "description": "vim-snippets/rmd.snippets:34"
+  },
+  "fun": {
+    "prefix": "fun",
+    "body": [
+      "${1:funname} <- \t\t\t# ${2:}",
+      "\tfunction",
+      "(",
+      " \t${3:}",
+      ")",
+      "{",
+      "  ${4:}",
+      "}"
+    ],
+    "description": "vim-snippets/rmd.snippets:41"
+  },
+  "re": {
+    "prefix": "re",
+    "body": [
+      "repeat{",
+      "  ${2:}",
+      "  if($1) break",
+      "}"
+    ],
+    "description": "vim-snippets/rmd.snippets:51"
+  },
+  "ma": {
+    "prefix": "ma",
+    "body": [
+      "matrix(NA, nrow = ${1:}, ncol = ${2:})"
+    ],
+    "description": "vim-snippets/rmd.snippets:58"
+  },
+  "df": {
+    "prefix": "df",
+    "body": [
+      "data.frame(${1:}, header = TRUE)"
+    ],
+    "description": "vim-snippets/rmd.snippets:62"
+  },
+  "cmdarg": {
+    "prefix": "cmdarg",
+    "body": [
+      "args <- commandArgs(TRUE)",
+      "if (length(args) == 0)",
+      "    stop(\"Please give ${1:}!\")",
+      "if (!all(file.exists(args)))",
+      "     stop(\"Couln't find input files!\")"
+    ],
+    "description": "vim-snippets/rmd.snippets:65"
+  },
+  "getopt": {
+    "prefix": "getopt",
+    "body": [
+      "require('getopt', quietly = TRUE)",
+      "opt_spec <- matrix(c(",
+      "\t\t\t\t'help',     'h', 0, \"logical\", \t\"Getting help\",",
+      "\t\t\t\t'file',     'f', 1, \"character\",\"File to process\"",
+      "                ), ncol = 5, byrow = TRUE)",
+      "opt <- getopt(spec = opt_spec)",
+      "if ( !is.null(opt\\$help) || is.null(commandArgs()) )   {",
+      "    cat(getopt(spec = opt_spec, usage = TRUE, command = \"yourCmd\"))",
+      "    q(status=0)",
+      "}",
+      "# some inital value",
+      "if ( is.null(opt\\$???) )    { opt\\$??? <- ??? }"
+    ],
+    "description": "vim-snippets/rmd.snippets:72"
+  },
+  "optparse": {
+    "prefix": "optparse",
+    "body": [
+      "require(\"optparse\", quietly = TRUE)",
+      "option_list <-",
+      "    list(make_option(c(\"-n\", \"--add_numbers\"), action=\"store_true\", default=FALSE,",
+      "                     help=\"Print line number at the beginning of each line [default]\")",
+      "         )",
+      "parser <- OptionParser(usage = \"%prog [options] file\", option_list=option_list)",
+      "arguments <- parse_args(parser, positional_arguments = TRUE)",
+      "opt <- arguments\\$options",
+      "",
+      "if(length(arguments\\$args) != 1) {",
+      "    cat(\"Incorrect number of required positional arguments\\n\\n\")",
+      "    print_help(parser)",
+      "    stop()",
+      "} else {",
+      "    file <- arguments\\$args",
+      "}",
+      "",
+      "if( file.access(file) == -1) {",
+      "    stop(sprintf(\"Specified file ( %s ) does not exist\", file))",
+      "} else {",
+      "    file_text <- readLines(file)",
+      "}"
+    ],
+    "description": "vim-snippets/rmd.snippets:86"
+  },
+  "#!": {
+    "prefix": "#!",
+    "body": [
+      "#!/usr/bin/env Rscript"
+    ],
+    "description": "vim-snippets/rmd.snippets:110"
+  },
+  "debug": {
+    "prefix": "debug",
+    "body": [
+      "# Development & Debugging, don't forget to uncomment afterwards!",
+      "#--------------------------------------------------------------------------------",
+      "#setwd(\"~/Projekte/${1:}\")",
+      "#opt <- list(${2:}",
+      "#            )",
+      "#--------------------------------------------------------------------------------"
+    ],
+    "description": "vim-snippets/rmd.snippets:113"
+  },
+  "#===": {
+    "prefix": "#===",
+    "body": [
+      "#repeat('=', strlen(getline(line(\".\") - 1)))",
+      "${1}"
+    ],
+    "description": "vim-snippets/rmd.snippets:124"
+  },
+  "#---": {
+    "prefix": "#---",
+    "body": [
+      "#repeat('-', strlen(getline(line(\".\") - 1)))",
+      "${1}"
+    ],
+    "description": "vim-snippets/rmd.snippets:127"
+  },
+  "r": {
+    "prefix": "r",
+    "body": [
+      "```{r ${1:chung_tag}, echo = FALSE ${2:options}}",
+      "${3:}",
+      "```"
+    ],
+    "description": "vim-snippets/rmd.snippets:133"
+  },
+  "ri": {
+    "prefix": "ri",
+    "body": [
+      "`{r ${1:}}`"
+    ],
+    "description": "vim-snippets/rmd.snippets:137"
+  },
+  "copt": {
+    "prefix": "copt",
+    "body": [
+      "``` {r setup, echo = FALSE}",
+      "\topts_chunk\\$set(fig.path='../figures/${1:}', cache.path='../cache/-'",
+      "\t, fig.align='center', fig.show='hold', par=TRUE)\t",
+      "\t#opts_knit\\$set(upload.fun = imgur_upload) # upload images",
+      "```"
+    ],
+    "description": "vim-snippets/rmd.snippets:140"
+  }
+}

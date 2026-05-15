@@ -1,0 +1,152 @@
+{
+  "tconst - ts const": {
+    "prefix": "tconst",
+    "body": [
+      "const ${1}: ${2:any} = ${3};",
+      "${0}"
+    ],
+    "description": "ts const"
+  },
+  "tlet - ts let": {
+    "prefix": "tlet",
+    "body": [
+      "let ${1}: ${2:any} = ${3};",
+      "${0}"
+    ],
+    "description": "ts let"
+  },
+  "tvar - ts var": {
+    "prefix": "tvar",
+    "body": [
+      "var ${1}: ${2:any} = ${3};",
+      "${0}"
+    ],
+    "description": "ts var"
+  },
+  "+ - ts create field": {
+    "prefix": "+",
+    "body": [
+      "${1}: ${0:any}"
+    ],
+    "description": "ts create field"
+  },
+  "#+ - ts create private field using #": {
+    "prefix": "#+",
+    "body": [
+      "#${1}: ${0:any}"
+    ],
+    "description": "ts create private field using #"
+  },
+  "tpfi - ts create public field": {
+    "prefix": "tpfi",
+    "body": [
+      "public ${1}: ${0:any}"
+    ],
+    "description": "ts create public field"
+  },
+  "tprfi - ts create private field": {
+    "prefix": "tprfi",
+    "body": [
+      "private ${1}: ${0:any}"
+    ],
+    "description": "ts create private field"
+  },
+  "tprofi - ts create protected field": {
+    "prefix": "tprofi",
+    "body": [
+      "protected ${1}: ${0:any}"
+    ],
+    "description": "ts create protected field"
+  },
+  "int - interface": {
+    "prefix": "int",
+    "body": [
+      "interface ${1} {",
+      "\t${2}: ${3:any};",
+      "\t${0}",
+      "}"
+    ],
+    "description": "interface"
+  },
+  "intx - interface extends": {
+    "prefix": "intx",
+    "body": [
+      "interface ${1} extends ${2} {",
+      "\t${3}: ${4:any};",
+      "\t${0}",
+      "}"
+    ],
+    "description": "interface extends"
+  },
+  "tfun - ts function": {
+    "prefix": "tfun",
+    "body": [
+      "function ${1}(${2}): ${3:any} {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "ts function"
+  },
+  "tpmet - ts public method": {
+    "prefix": "tpmet",
+    "body": [
+      "public ${1}(${2}): ${3:any} {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "ts public method"
+  },
+  "tpsmet - ts public static method": {
+    "prefix": "tpsmet",
+    "body": [
+      "public static ${1}(${2}): ${3:any} {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "ts public static method"
+  },
+  "tprmet - ts private method": {
+    "prefix": "tprmet",
+    "body": [
+      "private ${1}(${2}): ${3:any} {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "ts private method"
+  },
+  "tpromet - ts protected method": {
+    "prefix": "tpromet",
+    "body": [
+      "protected ${1}(${2}): ${3:any} {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "ts protected method"
+  },
+  "tcla - ts class": {
+    "prefix": "tcla",
+    "body": [
+      "class ${1} {",
+      "\t${2}",
+      "\tconstructor(public ${3}: ${4: any}) {",
+      "\t\t${5}",
+      "\t}",
+      "\t${0}",
+      "}"
+    ],
+    "description": "ts class"
+  },
+  "tclax - ts class extends": {
+    "prefix": "tclax",
+    "body": [
+      "class ${1} extends ${2} {",
+      "\t${3}",
+      "\tconstructor(public ${4}: ${5: any}) {",
+      "\t\t${6}",
+      "\t}",
+      "\t${0}",
+      "}"
+    ],
+    "description": "ts class extends"
+  }
+}

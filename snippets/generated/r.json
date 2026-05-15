@@ -1,0 +1,370 @@
+{
+  "#!": {
+    "prefix": "#!",
+    "body": [
+      "#!/usr/bin/env Rscript"
+    ],
+    "description": "vim-snippets/r.snippets:1"
+  },
+  "lib": {
+    "prefix": "lib",
+    "body": [
+      "library(${0:package})"
+    ],
+    "description": "vim-snippets/r.snippets:5"
+  },
+  "req": {
+    "prefix": "req",
+    "body": [
+      "require(${0:package})"
+    ],
+    "description": "vim-snippets/r.snippets:7"
+  },
+  "source": {
+    "prefix": "source",
+    "body": [
+      "source('${0:file}')"
+    ],
+    "description": "vim-snippets/r.snippets:9"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if ($1) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/r.snippets:13"
+  },
+  "el": {
+    "prefix": "el",
+    "body": [
+      "else {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/r.snippets:17"
+  },
+  "ei": {
+    "prefix": "ei",
+    "body": [
+      "else if ($1) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/r.snippets:21"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "while(${1:true}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/r.snippets:27"
+  },
+  "wht": {
+    "prefix": "wht",
+    "body": [
+      "while(true) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/r.snippets:31"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for (${1:item} in ${2:list}) {",
+      "\t${3}",
+      "}"
+    ],
+    "description": "vim-snippets/r.snippets:35"
+  },
+  "foreach": {
+    "prefix": "foreach",
+    "body": [
+      "foreach (${1:item} = ${2:list}) {",
+      "\t${3}",
+      "}"
+    ],
+    "description": "vim-snippets/r.snippets:39"
+  },
+  "fun": {
+    "prefix": "fun",
+    "body": [
+      "${1:name} <- function (${2:variables}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/r.snippets:45"
+  },
+  "ret": {
+    "prefix": "ret",
+    "body": [
+      "return(${0})"
+    ],
+    "description": "vim-snippets/r.snippets:49"
+  },
+  "df": {
+    "prefix": "df",
+    "body": [
+      "${1:name}[${2:rows}, ${0:cols}]"
+    ],
+    "description": "vim-snippets/r.snippets:53"
+  },
+  "c": {
+    "prefix": "c",
+    "body": [
+      "c(${0:items})"
+    ],
+    "description": "vim-snippets/r.snippets:55"
+  },
+  "li": {
+    "prefix": "li",
+    "body": [
+      "list(${0:items})"
+    ],
+    "description": "vim-snippets/r.snippets:57"
+  },
+  "mat": {
+    "prefix": "mat",
+    "body": [
+      "matrix(${1:data}, nrow = ${2:rows}, ncol = ${0:cols})"
+    ],
+    "description": "vim-snippets/r.snippets:59"
+  },
+  "apply": {
+    "prefix": "apply",
+    "body": [
+      "apply(${1:array}, ${2:margin}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:63"
+  },
+  "lapply": {
+    "prefix": "lapply",
+    "body": [
+      "lapply(${1:list}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:65"
+  },
+  "sapply": {
+    "prefix": "sapply",
+    "body": [
+      "lapply(${1:list}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:67"
+  },
+  "vapply": {
+    "prefix": "vapply",
+    "body": [
+      "vapply(${1:list}, ${2:function}, ${0:type})"
+    ],
+    "description": "vim-snippets/r.snippets:69"
+  },
+  "mapply": {
+    "prefix": "mapply",
+    "body": [
+      "mapply(${1:function}, ${0:...})"
+    ],
+    "description": "vim-snippets/r.snippets:71"
+  },
+  "tapply": {
+    "prefix": "tapply",
+    "body": [
+      "tapply(${1:vector}, ${2:index}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:73"
+  },
+  "rapply": {
+    "prefix": "rapply",
+    "body": [
+      "rapply(${1:list}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:75"
+  },
+  "dd": {
+    "prefix": "dd",
+    "body": [
+      "ddply(${1:frame}, ${2:variables}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:79"
+  },
+  "dl": {
+    "prefix": "dl",
+    "body": [
+      "dlply(${1:frame}, ${2:variables}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:81"
+  },
+  "da": {
+    "prefix": "da",
+    "body": [
+      "daply(${1:frame}, ${2:variables}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:83"
+  },
+  "d_": {
+    "prefix": "d_",
+    "body": [
+      "d_ply(${1:frame}, ${2:variables}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:85"
+  },
+  "ad": {
+    "prefix": "ad",
+    "body": [
+      "adply(${1:array}, ${2:margin}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:88"
+  },
+  "al": {
+    "prefix": "al",
+    "body": [
+      "alply(${1:array}, ${2:margin}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:90"
+  },
+  "aa": {
+    "prefix": "aa",
+    "body": [
+      "aaply(${1:array}, ${2:margin}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:92"
+  },
+  "a_": {
+    "prefix": "a_",
+    "body": [
+      "a_ply(${1:array}, ${2:margin}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:94"
+  },
+  "ld": {
+    "prefix": "ld",
+    "body": [
+      "ldply(${1:list}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:97"
+  },
+  "ll": {
+    "prefix": "ll",
+    "body": [
+      "llply(${1:list}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:99"
+  },
+  "la": {
+    "prefix": "la",
+    "body": [
+      "laply(${1:list}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:101"
+  },
+  "l_": {
+    "prefix": "l_",
+    "body": [
+      "l_ply(${1:list}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:103"
+  },
+  "md": {
+    "prefix": "md",
+    "body": [
+      "mdply(${1:matrix}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:106"
+  },
+  "ml": {
+    "prefix": "ml",
+    "body": [
+      "mlply(${1:matrix}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:108"
+  },
+  "ma": {
+    "prefix": "ma",
+    "body": [
+      "maply(${1:matrix}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:110"
+  },
+  "m_": {
+    "prefix": "m_",
+    "body": [
+      "m_ply(${1:matrix}, ${0:function})"
+    ],
+    "description": "vim-snippets/r.snippets:112"
+  },
+  "pl": {
+    "prefix": "pl",
+    "body": [
+      "plot(${1:x}, ${0:y})"
+    ],
+    "description": "vim-snippets/r.snippets:116"
+  },
+  "ggp": {
+    "prefix": "ggp",
+    "body": [
+      "ggplot(${1:data}, aes(${0:aesthetics}))"
+    ],
+    "description": "vim-snippets/r.snippets:118"
+  },
+  "img": {
+    "prefix": "img",
+    "body": [
+      "${1:(jpeg,bmp,png,tiff)}(filename = '${2:filename}', width = ${3}, height = ${4}, unit = '${5}')",
+      "${0:plot}",
+      "dev.off()"
+    ],
+    "description": "vim-snippets/r.snippets:120"
+  },
+  "fis": {
+    "prefix": "fis",
+    "body": [
+      "fisher.test(${1:x}, ${0:y})"
+    ],
+    "description": "vim-snippets/r.snippets:126"
+  },
+  "chi": {
+    "prefix": "chi",
+    "body": [
+      "chisq.test(${1:x}, ${0:y})"
+    ],
+    "description": "vim-snippets/r.snippets:128"
+  },
+  "tt": {
+    "prefix": "tt",
+    "body": [
+      "t.test(${1:x}, ${0:y})"
+    ],
+    "description": "vim-snippets/r.snippets:130"
+  },
+  "wil": {
+    "prefix": "wil",
+    "body": [
+      "wilcox.test(${1:x}, ${0:y})"
+    ],
+    "description": "vim-snippets/r.snippets:132"
+  },
+  "cor": {
+    "prefix": "cor",
+    "body": [
+      "cor.test(${1:x}, ${0:y})"
+    ],
+    "description": "vim-snippets/r.snippets:134"
+  },
+  "fte": {
+    "prefix": "fte",
+    "body": [
+      "var.test(${1:x}, ${0:y})"
+    ],
+    "description": "vim-snippets/r.snippets:136"
+  },
+  "kvt": {
+    "prefix": "kvt",
+    "body": [
+      "kv.test(${1:x}, ${0:y})"
+    ],
+    "description": "vim-snippets/r.snippets:138"
+  }
+}

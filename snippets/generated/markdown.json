@@ -1,0 +1,358 @@
+{
+  "[": {
+    "prefix": "[",
+    "body": [
+      "[${1:text}](${2:address})"
+    ],
+    "description": "vim-snippets/markdown.snippets:7"
+  },
+  "[*": {
+    "prefix": "[*",
+    "body": [
+      "[${1:link}](${2:${CLIPBOARD}})"
+    ],
+    "description": "vim-snippets/markdown.snippets:9"
+  },
+  "[c": {
+    "prefix": "[c",
+    "body": [
+      "[${1:link}](${2:${CLIPBOARD}})"
+    ],
+    "description": "vim-snippets/markdown.snippets:11"
+  },
+  "[\"": {
+    "prefix": "[\"",
+    "body": [
+      "[${1:text}](https://${2:address} \"${3:title}\")"
+    ],
+    "description": "vim-snippets/markdown.snippets:13"
+  },
+  "[\"*": {
+    "prefix": "[\"*",
+    "body": [
+      "[${1:link}](${2:${CLIPBOARD}} \"${3:title}\")"
+    ],
+    "description": "vim-snippets/markdown.snippets:15"
+  },
+  "[\"c": {
+    "prefix": "[\"c",
+    "body": [
+      "[${1:link}](${2:${CLIPBOARD}} \"${3:title}\")"
+    ],
+    "description": "vim-snippets/markdown.snippets:17"
+  },
+  "[:": {
+    "prefix": "[:",
+    "body": [
+      "[${1:id}]: https://${2:url}"
+    ],
+    "description": "vim-snippets/markdown.snippets:19"
+  },
+  "[:*": {
+    "prefix": "[:*",
+    "body": [
+      "[${1:id}]: ${2:${CLIPBOARD}}"
+    ],
+    "description": "vim-snippets/markdown.snippets:22"
+  },
+  "[:c": {
+    "prefix": "[:c",
+    "body": [
+      "[${1:id}]: ${2:${CLIPBOARD}}"
+    ],
+    "description": "vim-snippets/markdown.snippets:25"
+  },
+  "[:\"": {
+    "prefix": "[:\"",
+    "body": [
+      "[${1:id}]: https://${2:url} \"${3:title}\""
+    ],
+    "description": "vim-snippets/markdown.snippets:28"
+  },
+  "[:\"*": {
+    "prefix": "[:\"*",
+    "body": [
+      "[${1:id}]: ${2:${CLIPBOARD}} \"${3:title}\""
+    ],
+    "description": "vim-snippets/markdown.snippets:31"
+  },
+  "[:\"c": {
+    "prefix": "[:\"c",
+    "body": [
+      "[${1:id}]: ${2:${CLIPBOARD}} \"${3:title}\""
+    ],
+    "description": "vim-snippets/markdown.snippets:34"
+  },
+  "![": {
+    "prefix": "![",
+    "body": [
+      "![${1:alttext}](${2:/images/image.jpg})"
+    ],
+    "description": "vim-snippets/markdown.snippets:37"
+  },
+  "![*": {
+    "prefix": "![*",
+    "body": [
+      "![${1:alt}](${2:${CLIPBOARD}})"
+    ],
+    "description": "vim-snippets/markdown.snippets:39"
+  },
+  "![c": {
+    "prefix": "![c",
+    "body": [
+      "![${1:alt}](${2:${CLIPBOARD}})"
+    ],
+    "description": "vim-snippets/markdown.snippets:41"
+  },
+  "![\"": {
+    "prefix": "![\"",
+    "body": [
+      "![${1:alttext}](${2:/images/image.jpg} \"${3:title}\")"
+    ],
+    "description": "vim-snippets/markdown.snippets:43"
+  },
+  "![\"*": {
+    "prefix": "![\"*",
+    "body": [
+      "![${1:alt}](${2:${CLIPBOARD}} \"${3:title}\")"
+    ],
+    "description": "vim-snippets/markdown.snippets:45"
+  },
+  "![\"c": {
+    "prefix": "![\"c",
+    "body": [
+      "![${1:alt}](${2:${CLIPBOARD}} \"${3:title}\")"
+    ],
+    "description": "vim-snippets/markdown.snippets:47"
+  },
+  "![:": {
+    "prefix": "![:",
+    "body": [
+      "![${1:id}]: ${2:url}"
+    ],
+    "description": "vim-snippets/markdown.snippets:49"
+  },
+  "![:*": {
+    "prefix": "![:*",
+    "body": [
+      "![${1:id}]: ${2:${CLIPBOARD}}"
+    ],
+    "description": "vim-snippets/markdown.snippets:52"
+  },
+  "![:\"": {
+    "prefix": "![:\"",
+    "body": [
+      "![${1:id}]: ${2:url} \"${3:title}\""
+    ],
+    "description": "vim-snippets/markdown.snippets:55"
+  },
+  "![:\"*": {
+    "prefix": "![:\"*",
+    "body": [
+      "![${1:id}]: ${2:${CLIPBOARD}} \"${3:title}\""
+    ],
+    "description": "vim-snippets/markdown.snippets:58"
+  },
+  "![:\"c": {
+    "prefix": "![:\"c",
+    "body": [
+      "![${1:id}]: ${2:${CLIPBOARD}} \"${3:title}\""
+    ],
+    "description": "vim-snippets/markdown.snippets:61"
+  },
+  "<": {
+    "prefix": "<",
+    "body": [
+      "<http://${1:url}>"
+    ],
+    "description": "vim-snippets/markdown.snippets:64"
+  },
+  "<*": {
+    "prefix": "<*",
+    "body": [
+      "<${CLIPBOARD}>"
+    ],
+    "description": "vim-snippets/markdown.snippets:66"
+  },
+  "<c": {
+    "prefix": "<c",
+    "body": [
+      "<${CLIPBOARD}>"
+    ],
+    "description": "vim-snippets/markdown.snippets:68"
+  },
+  "** - Bold": {
+    "prefix": "**",
+    "body": [
+      "**$0**"
+    ],
+    "description": "Bold"
+  },
+  "__ - Bold": {
+    "prefix": "__",
+    "body": [
+      "__$0__"
+    ],
+    "description": "Bold"
+  },
+  "--- - Front matter": {
+    "prefix": "---",
+    "body": [
+      "---",
+      "$0",
+      "---"
+    ],
+    "description": "Front matter"
+  },
+  "====": {
+    "prefix": "====",
+    "body": [
+      "repeat('=', strlen(getline(line('.') - 3)))",
+      "",
+      "${0}"
+    ],
+    "description": "vim-snippets/markdown.snippets:78"
+  },
+  "-": {
+    "prefix": "-",
+    "body": [
+      "-   ${0}"
+    ],
+    "description": "vim-snippets/markdown.snippets:82"
+  },
+  "----": {
+    "prefix": "----",
+    "body": [
+      "repeat('-', strlen(getline(line('.') - 3)))",
+      "",
+      "${0}"
+    ],
+    "description": "vim-snippets/markdown.snippets:84"
+  },
+  "blockquote": {
+    "prefix": "blockquote",
+    "body": [
+      "{% blockquote %}",
+      "${0:quote}",
+      "{% endblockquote %}"
+    ],
+    "description": "vim-snippets/markdown.snippets:88"
+  },
+  "blockquote-author": {
+    "prefix": "blockquote-author",
+    "body": [
+      "{% blockquote ${1:author}, ${2:title} %}",
+      "${0:quote}",
+      "{% endblockquote %}"
+    ],
+    "description": "vim-snippets/markdown.snippets:93"
+  },
+  "blockquote-link": {
+    "prefix": "blockquote-link",
+    "body": [
+      "{% blockquote ${1:author} ${2:URL} ${3:link_text} %}",
+      "${0:quote}",
+      "{% endblockquote %}"
+    ],
+    "description": "vim-snippets/markdown.snippets:98"
+  },
+  "```": {
+    "prefix": "```",
+    "body": [
+      "```${1}",
+      "${0:${TM_SELECTED_TEXT}}",
+      "```"
+    ],
+    "description": "vim-snippets/markdown.snippets:103"
+  },
+  "```l": {
+    "prefix": "```l",
+    "body": [
+      "```${1:language}",
+      "${2:code}",
+      "```"
+    ],
+    "description": "vim-snippets/markdown.snippets:109"
+  },
+  "codeblock-short": {
+    "prefix": "codeblock-short",
+    "body": [
+      "{% codeblock %}",
+      "${0:code_snippet}",
+      "{% endcodeblock %}"
+    ],
+    "description": "vim-snippets/markdown.snippets:114"
+  },
+  "codeblock-full": {
+    "prefix": "codeblock-full",
+    "body": [
+      "{% codeblock ${1:title} lang:${2:language} ${3:URL} ${4:link_text} %}",
+      "${0:code_snippet}",
+      "{% endcodeblock %}"
+    ],
+    "description": "vim-snippets/markdown.snippets:119"
+  },
+  "gist-full": {
+    "prefix": "gist-full",
+    "body": [
+      "{% gist ${1:gist_id} ${0:filename} %}"
+    ],
+    "description": "vim-snippets/markdown.snippets:124"
+  },
+  "gist-short": {
+    "prefix": "gist-short",
+    "body": [
+      "{% gist ${0:gist_id} %}"
+    ],
+    "description": "vim-snippets/markdown.snippets:127"
+  },
+  "img": {
+    "prefix": "img",
+    "body": [
+      "{% img ${1:class} ${2:URL} ${3:width} ${4:height} ${5:title_text} ${0:alt_text} %}"
+    ],
+    "description": "vim-snippets/markdown.snippets:130"
+  },
+  "youtube": {
+    "prefix": "youtube",
+    "body": [
+      "{% youtube ${0:video_id} %}"
+    ],
+    "description": "vim-snippets/markdown.snippets:133"
+  },
+  "tb": {
+    "prefix": "tb",
+    "body": [
+      "|  ${0:factors}      |    ${1:a}       |  ${2:b}   \t|",
+      "| ------------- |-------------  | ------- |",
+      "|    ${3:f1}    |    Y          | N       |",
+      "|    ${4:f2}    |    Y          | N       |"
+    ],
+    "description": "vim-snippets/markdown.snippets:136"
+  },
+  "pullquote": {
+    "prefix": "pullquote",
+    "body": [
+      "{% pullquote %}",
+      "${1:text} {\" ${2:quote} \"} ${0:text}",
+      "{% endpullquote %}"
+    ],
+    "description": "vim-snippets/markdown.snippets:145"
+  },
+  ": - Definition list": {
+    "prefix": ":",
+    "body": [
+      "$1",
+      ": $0"
+    ],
+    "description": "Definition list"
+  },
+  ":: - Alternate definition list": {
+    "prefix": "::",
+    "body": [
+      "$1",
+      "  - $0"
+    ],
+    "description": "Alternate definition list"
+  }
+}

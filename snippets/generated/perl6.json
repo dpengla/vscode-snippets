@@ -1,0 +1,224 @@
+{
+  "#!": {
+    "prefix": "#!",
+    "body": [
+      "#!/usr/bin/env perl6"
+    ],
+    "description": "vim-snippets/perl6.snippets:2"
+  },
+  ".": {
+    "prefix": ".",
+    "body": [
+      " =>"
+    ],
+    "description": "vim-snippets/perl6.snippets:6"
+  },
+  "sub": {
+    "prefix": "sub",
+    "body": [
+      "sub ${1:function_name}(${2:Str \\$var}) {",
+      "\t${3}",
+      "}"
+    ],
+    "description": "vim-snippets/perl6.snippets:9"
+  },
+  "mul": {
+    "prefix": "mul",
+    "body": [
+      "multi ${1:function_name}(${2:Str \\$var}) {",
+      "\t${3}",
+      "}"
+    ],
+    "description": "vim-snippets/perl6.snippets:13"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if ${1} {",
+      "\t${2}",
+      "}"
+    ],
+    "description": "vim-snippets/perl6.snippets:18"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "if ${1} {",
+      "\t${2}",
+      "}",
+      "else {",
+      "\t${3}",
+      "}"
+    ],
+    "description": "vim-snippets/perl6.snippets:23"
+  },
+  "eif": {
+    "prefix": "eif",
+    "body": [
+      "elsif ${1} {",
+      "\t${2}",
+      "}"
+    ],
+    "description": "vim-snippets/perl6.snippets:30"
+  },
+  "xif": {
+    "prefix": "xif",
+    "body": [
+      "${1} if $2;"
+    ],
+    "description": "vim-snippets/perl6.snippets:35"
+  },
+  "unless": {
+    "prefix": "unless",
+    "body": [
+      "unless ${1} {",
+      "\t${2}",
+      "}"
+    ],
+    "description": "vim-snippets/perl6.snippets:38"
+  },
+  "xunless": {
+    "prefix": "xunless",
+    "body": [
+      "${1} unless $2;"
+    ],
+    "description": "vim-snippets/perl6.snippets:43"
+  },
+  "tc": {
+    "prefix": "tc",
+    "body": [
+      "$1 ?? ${2:value-if-true} !! ${3:value-if-false};"
+    ],
+    "description": "vim-snippets/perl6.snippets:46"
+  },
+  "switch": {
+    "prefix": "switch",
+    "body": [
+      "given ${1:\\$var} {",
+      "  when $2 {",
+      "\t  ${3:# code block ...}",
+      "  }",
+      "  ${4}",
+      "  default {",
+      "\t  ${5}",
+      "  }",
+      "}"
+    ],
+    "description": "vim-snippets/perl6.snippets:49"
+  },
+  "loop": {
+    "prefix": "loop",
+    "body": [
+      "loop (my ${1:\\$i} = 0; \\$$1 < ${2:count}; \\$$1++) {",
+      "\t${3}",
+      "}"
+    ],
+    "description": "vim-snippets/perl6.snippets:60"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for ${1:@array} -> ${2:\\$variable} {",
+      "\t${3}",
+      "}"
+    ],
+    "description": "vim-snippets/perl6.snippets:65"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "while ${1} {",
+      "\t${2}",
+      "}"
+    ],
+    "description": "vim-snippets/perl6.snippets:70"
+  },
+  "rp": {
+    "prefix": "rp",
+    "body": [
+      "repeat {",
+      "\t${1}",
+      "} ${2:while|until} ${3};"
+    ],
+    "description": "vim-snippets/perl6.snippets:75"
+  },
+  "cl": {
+    "prefix": "cl",
+    "body": [
+      "${1:my} class ${2:ClassName} ${3:is|does Parent|Role}{",
+      "\t${4}",
+      "}"
+    ],
+    "description": "vim-snippets/perl6.snippets:80"
+  },
+  "has": {
+    "prefix": "has",
+    "body": [
+      "has ${1:Type} ${2:\\$!identifier};"
+    ],
+    "description": "vim-snippets/perl6.snippets:84"
+  },
+  "mth": {
+    "prefix": "mth",
+    "body": [
+      "method ${1:method_name}(${2:\\$attr}) {",
+      "\t${3}",
+      "}"
+    ],
+    "description": "vim-snippets/perl6.snippets:86"
+  },
+  "pmth": {
+    "prefix": "pmth",
+    "body": [
+      "method ${1:!}${2:method_name}(${3:\\$attr}) {",
+      "\t${4}",
+      "}"
+    ],
+    "description": "vim-snippets/perl6.snippets:90"
+  },
+  "smth": {
+    "prefix": "smth",
+    "body": [
+      "submethod ${1:submethod_name}(${2:\\$attr}) {",
+      "\t${3}",
+      "}"
+    ],
+    "description": "vim-snippets/perl6.snippets:94"
+  },
+  "test": {
+    "prefix": "test",
+    "body": [
+      "use v6;",
+      "use Test;",
+      "${1:use lib 'lib';}",
+      "",
+      "plan ${2:\\$num-tests};"
+    ],
+    "description": "vim-snippets/perl6.snippets:99"
+  },
+  "slurp": {
+    "prefix": "slurp",
+    "body": [
+      "my ${1:\\$var} = \"${2:filename}\".IO.slurp;"
+    ],
+    "description": "vim-snippets/perl6.snippets:107"
+  },
+  "rfile": {
+    "prefix": "rfile",
+    "body": [
+      "for \"${1:filename}\".IO.lines -> \\$line {",
+      "\t${2}",
+      "}"
+    ],
+    "description": "vim-snippets/perl6.snippets:109"
+  },
+  "open": {
+    "prefix": "open",
+    "body": [
+      "my \\$fh = open \"${1:filename}\", ${2::r|:w|:a};",
+      "${3:# actions};",
+      "\\$fh.close;"
+    ],
+    "description": "vim-snippets/perl6.snippets:113"
+  }
+}

@@ -1,0 +1,1338 @@
+{
+  "<?": {
+    "prefix": "<?",
+    "body": [
+      "<?php",
+      "",
+      "${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/php.snippets:1"
+  },
+  "dst - declare(strict_types=1)": {
+    "prefix": "dst",
+    "body": [
+      "declare(strict_types=${1:1});"
+    ],
+    "description": "declare(strict_types=1)"
+  },
+  "ec": {
+    "prefix": "ec",
+    "body": [
+      "echo ${0};"
+    ],
+    "description": "vim-snippets/php.snippets:7"
+  },
+  "<?e": {
+    "prefix": "<?e",
+    "body": [
+      "<?php echo ${0} ?>"
+    ],
+    "description": "vim-snippets/php.snippets:9"
+  },
+  "<?=": {
+    "prefix": "<?=",
+    "body": [
+      "<?=${0}?>"
+    ],
+    "description": "vim-snippets/php.snippets:12"
+  },
+  "?=": {
+    "prefix": "?=",
+    "body": [
+      "<?= ${0} ?>"
+    ],
+    "description": "vim-snippets/php.snippets:14"
+  },
+  "?": {
+    "prefix": "?",
+    "body": [
+      "<?php ${0} ?>"
+    ],
+    "description": "vim-snippets/php.snippets:16"
+  },
+  "?f": {
+    "prefix": "?f",
+    "body": [
+      "<?php foreach (\\$${1:vars} as \\$${2:\\$var}): ?>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "<?php endforeach ?>"
+    ],
+    "description": "vim-snippets/php.snippets:18"
+  },
+  "?i": {
+    "prefix": "?i",
+    "body": [
+      "<?php if (\\$${1:var}): ?>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "<?php endif ?>"
+    ],
+    "description": "vim-snippets/php.snippets:22"
+  },
+  "ns": {
+    "prefix": "ns",
+    "body": [
+      "namespace ${1:Foo\\Bar\\Baz};",
+      "",
+      "${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/php.snippets:26"
+  },
+  "c": {
+    "prefix": "c",
+    "body": [
+      "class ${1:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/php.snippets:30"
+  },
+  "i": {
+    "prefix": "i",
+    "body": [
+      "interface ${1:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/php.snippets:35"
+  },
+  "t.": {
+    "prefix": "t.",
+    "body": [
+      "\\$this->"
+    ],
+    "description": "vim-snippets/php.snippets:40"
+  },
+  "f": {
+    "prefix": "f",
+    "body": [
+      "function ${1}(${3})",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/php.snippets:42"
+  },
+  "m": {
+    "prefix": "m",
+    "body": [
+      "${1:protected} function ${2:foo}()",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/php.snippets:48"
+  },
+  "sm - PHP Class Setter": {
+    "prefix": "sm",
+    "body": [
+      "/**",
+      " * Sets the value of ${1:foo}",
+      " *",
+      " * @param ${2:string} \\$$1 ${3:description}",
+      " *",
+      " * @return ${4:${TM_FILENAME_BASE}}",
+      " */",
+      "${5:public} function set${6:$1}(${7:$2 }\\$$1)",
+      "{",
+      "\t\\$this->${8:$1} = \\$$1;",
+      "",
+      "\treturn \\$this;",
+      "}"
+    ],
+    "description": "PHP Class Setter"
+  },
+  "gm - PHP Class Getter Setter": {
+    "prefix": "gm",
+    "body": [
+      "/**",
+      " * Gets the value of ${1:foo}",
+      " *",
+      " * @return ${2:string}",
+      " */",
+      "${3:public} function get${4:$1}()",
+      "{",
+      "\treturn \\$this->${5:$1};",
+      "}"
+    ],
+    "description": "PHP Class Getter Setter"
+  },
+  "$s": {
+    "prefix": "$s",
+    "body": [
+      "${1:\\$foo}->set${2:Bar}(${0});"
+    ],
+    "description": "vim-snippets/php.snippets:78"
+  },
+  "$g": {
+    "prefix": "$g",
+    "body": [
+      "${1:\\$foo}->get${0:Bar}();"
+    ],
+    "description": "vim-snippets/php.snippets:81"
+  },
+  "=?:": {
+    "prefix": "=?:",
+    "body": [
+      "\\$${1:foo} = ${2:true} ? ${3:a} : ${0};"
+    ],
+    "description": "vim-snippets/php.snippets:84"
+  },
+  "?:": {
+    "prefix": "?:",
+    "body": [
+      "${1:true} ? ${2:a} : ${0}"
+    ],
+    "description": "vim-snippets/php.snippets:86"
+  },
+  "t - $retVal = (condition) ? a : b": {
+    "prefix": "t",
+    "body": [
+      "\\$${1:retVal} = ($2) ? ${3:a} : ${4:b};"
+    ],
+    "description": "$retVal = (condition) ? a : b"
+  },
+  "C": {
+    "prefix": "C",
+    "body": [
+      "\\$_COOKIE['${1:variable}']"
+    ],
+    "description": "vim-snippets/php.snippets:91"
+  },
+  "E": {
+    "prefix": "E",
+    "body": [
+      "\\$_ENV['${1:variable}']"
+    ],
+    "description": "vim-snippets/php.snippets:93"
+  },
+  "F": {
+    "prefix": "F",
+    "body": [
+      "\\$_FILES['${1:variable}']"
+    ],
+    "description": "vim-snippets/php.snippets:95"
+  },
+  "G - _GET array": {
+    "prefix": "G",
+    "body": [
+      "\\$_GET['${1:variable}']"
+    ],
+    "description": "_GET array"
+  },
+  "P - _POST array": {
+    "prefix": "P",
+    "body": [
+      "\\$_POST['${1:variable}']"
+    ],
+    "description": "_POST array"
+  },
+  "R": {
+    "prefix": "R",
+    "body": [
+      "\\$_REQUEST['${1:variable}']"
+    ],
+    "description": "vim-snippets/php.snippets:101"
+  },
+  "S": {
+    "prefix": "S",
+    "body": [
+      "\\$_SERVER['${1:variable}']"
+    ],
+    "description": "vim-snippets/php.snippets:103"
+  },
+  "SS": {
+    "prefix": "SS",
+    "body": [
+      "\\$_SESSION['${1:variable}']"
+    ],
+    "description": "vim-snippets/php.snippets:105"
+  },
+  "get - get": {
+    "prefix": "get",
+    "body": [
+      "\\$_GET['${1}']"
+    ],
+    "description": "get"
+  },
+  "post - post": {
+    "prefix": "post",
+    "body": [
+      "\\$_POST['${1}']"
+    ],
+    "description": "post"
+  },
+  "session - session": {
+    "prefix": "session",
+    "body": [
+      "\\$_SESSION['${1}']"
+    ],
+    "description": "session"
+  },
+  "inc": {
+    "prefix": "inc",
+    "body": [
+      "include '${1:file}';"
+    ],
+    "description": "vim-snippets/php.snippets:114"
+  },
+  "inc1": {
+    "prefix": "inc1",
+    "body": [
+      "include_once '${1:file}';"
+    ],
+    "description": "vim-snippets/php.snippets:116"
+  },
+  "req": {
+    "prefix": "req",
+    "body": [
+      "require '${1:file}';"
+    ],
+    "description": "vim-snippets/php.snippets:118"
+  },
+  "req1": {
+    "prefix": "req1",
+    "body": [
+      "require_once '${1:file}';"
+    ],
+    "description": "vim-snippets/php.snippets:120"
+  },
+  "/*": {
+    "prefix": "/*",
+    "body": [
+      "/**",
+      " * ${0}",
+      " */"
+    ],
+    "description": "vim-snippets/php.snippets:123"
+  },
+  "doc_cp": {
+    "prefix": "doc_cp",
+    "body": [
+      "/**",
+      " * ${1:undocumented class}",
+      " *",
+      " * @package ${2:default}",
+      " * @subpackage ${3:default}",
+      " * @author ${4:author}",
+      " */"
+    ],
+    "description": "vim-snippets/php.snippets:128"
+  },
+  "doc_vp": {
+    "prefix": "doc_vp",
+    "body": [
+      "/**",
+      " * ${1:undocumented class variable}",
+      " *",
+      " * @var ${2:string}",
+      " */"
+    ],
+    "description": "vim-snippets/php.snippets:137"
+  },
+  "doc_v": {
+    "prefix": "doc_v",
+    "body": [
+      "/**",
+      " * ${3:undocumented class variable}",
+      " *",
+      " * @var ${4:string}",
+      " */",
+      "${1:var} \\$${2};"
+    ],
+    "description": "vim-snippets/php.snippets:144"
+  },
+  "att": {
+    "prefix": "att",
+    "body": [
+      "/** @var ${3:string} */",
+      "${1:public} \\$${2};"
+    ],
+    "description": "vim-snippets/php.snippets:153"
+  },
+  "doc_c": {
+    "prefix": "doc_c",
+    "body": [
+      "/**",
+      " * ${3:undocumented class}",
+      " *",
+      " * @package ${4:default}",
+      " * @subpackage ${5:default}",
+      " * @author ${6:author}",
+      " */",
+      "${1:}class ${2:}",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "} // END $1class $2"
+    ],
+    "description": "vim-snippets/php.snippets:158"
+  },
+  "doc_dp": {
+    "prefix": "doc_dp",
+    "body": [
+      "/**",
+      " * ${1:undocumented constant}",
+      " */"
+    ],
+    "description": "vim-snippets/php.snippets:171"
+  },
+  "doc_d": {
+    "prefix": "doc_d",
+    "body": [
+      "/**",
+      " * ${3:undocumented constant}",
+      " */",
+      "define(${1}, ${2});"
+    ],
+    "description": "vim-snippets/php.snippets:176"
+  },
+  "doc_fp": {
+    "prefix": "doc_fp",
+    "body": [
+      "/**",
+      " * ${1:undocumented function}",
+      " *",
+      " * @return ${2:void}",
+      " * @author ${3:author}",
+      " */"
+    ],
+    "description": "vim-snippets/php.snippets:182"
+  },
+  "doc_s": {
+    "prefix": "doc_s",
+    "body": [
+      "/**",
+      " * ${4:undocumented function}",
+      " *",
+      " * @return ${5:void}",
+      " * @author ${6:author}",
+      " */",
+      "${1}function ${2}(${3});"
+    ],
+    "description": "vim-snippets/php.snippets:190"
+  },
+  "doc_f": {
+    "prefix": "doc_f",
+    "body": [
+      "/**",
+      " * ${4:undocumented function}",
+      " *",
+      " * @return ${5:void}",
+      " * @author ${6:author}",
+      " */",
+      "${1}function ${2}(${3})",
+      "{${0}",
+      "}"
+    ],
+    "description": "vim-snippets/php.snippets:199"
+  },
+  "doc_h": {
+    "prefix": "doc_h",
+    "body": [
+      "/**",
+      " * ${1}",
+      " *",
+      " * @author ${2:author}",
+      " * @version ${3:\\$Id\\$}",
+      " * @copyright ${4:$2}, ${CURRENT_DATE} ${CURRENT_MONTH_NAME}, ${CURRENT_YEAR}",
+      " * @package ${0:default}",
+      " */"
+    ],
+    "description": "vim-snippets/php.snippets:210"
+  },
+  "doc_i - interface someClass {}": {
+    "prefix": "doc_i",
+    "body": [
+      "/**",
+      " * $1",
+      " * @package ${2:default}",
+      " * @author ${3:author}",
+      " **/",
+      "interface ${1:someClass}",
+      "{${4}",
+      "}"
+    ],
+    "description": "interface someClass {}"
+  },
+  "inheritdoc - @inheritdoc docblock": {
+    "prefix": "inheritdoc",
+    "body": [
+      "/**",
+      " * {@inheritdoc}",
+      " */"
+    ],
+    "description": "@inheritdoc docblock"
+  },
+  "interface": {
+    "prefix": "interface",
+    "body": [
+      "/**",
+      " * ${2:undocumented class}",
+      " *",
+      " * @package ${3:default}",
+      " * @author ${4:author}",
+      " */",
+      "interface ${1:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/php.snippets:233"
+  },
+  "trait": {
+    "prefix": "trait",
+    "body": [
+      "/**",
+      " * ${2:undocumented class}",
+      " *",
+      " * @package ${3:default}",
+      " * @author ${4:author}",
+      " */",
+      "trait ${1:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/php.snippets:245"
+  },
+  "class": {
+    "prefix": "class",
+    "body": [
+      "/**",
+      " * ${1}",
+      " */",
+      "class ${2:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${3}",
+      "\t/**",
+      "\t * ${4}",
+      "\t */",
+      "\t${5:public} function ${6:__construct}(${7:argument})",
+      "\t{",
+      "\t\t${0}",
+      "\t}",
+      "}"
+    ],
+    "description": "vim-snippets/php.snippets:257"
+  },
+  "nc": {
+    "prefix": "nc",
+    "body": [
+      "namespace ${1:substitute(substitute(expand(\"%:h\"), '\\v^\\w+\\/(\\u)', '\\1', ''), '\\/', '\\\\\\', 'g')};",
+      "",
+      "${2:abstract }class ${3:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/php.snippets:272"
+  },
+  "def - define('VARIABLE_NAME', 'definition')": {
+    "prefix": "def",
+    "body": [
+      "define('${1:VARIABLE_NAME}', ${2:'definition'});"
+    ],
+    "description": "define('VARIABLE_NAME', 'definition')"
+  },
+  "def?": {
+    "prefix": "def?",
+    "body": [
+      "${1}defined('${2}')"
+    ],
+    "description": "vim-snippets/php.snippets:283"
+  },
+  "wh - while (condition) { ... }": {
+    "prefix": "wh",
+    "body": [
+      "while ($1) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "while (condition) { ... }"
+  },
+  "do - do { ... } while (condition)": {
+    "prefix": "do",
+    "body": [
+      "do {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "} while (${1});"
+    ],
+    "description": "do { ... } while (condition)"
+  },
+  "if - if (condition) { ... }": {
+    "prefix": "if",
+    "body": [
+      "if (${1}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "if (condition) { ... }"
+  },
+  "ifn - if (!condition) { ... }": {
+    "prefix": "ifn",
+    "body": [
+      "if (!${1}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "if (!condition) { ... }"
+  },
+  "ifil - <?php if (condition): ?> ... <?php endif; ?>": {
+    "prefix": "ifil",
+    "body": [
+      "<?php if (${1}): ?>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "<?php endif; ?>"
+    ],
+    "description": "<?php if (condition): ?> ... <?php endif; ?>"
+  },
+  "ife - if (cond) { ... } else { ... }": {
+    "prefix": "ife",
+    "body": [
+      "if (${1}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "} else {",
+      "\t${2}",
+      "}"
+    ],
+    "description": "if (cond) { ... } else { ... }"
+  },
+  "ifeil - <?php if (condition): ?> ... <?php else: ?> ... <?php endif; ?>": {
+    "prefix": "ifeil",
+    "body": [
+      "<?php if (${1}): ?>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "<?php else: ?>",
+      "\t${2}",
+      "<?php endif; ?>"
+    ],
+    "description": "<?php if (condition): ?> ... <?php else: ?> ... <?php endif; ?>"
+  },
+  "el - else { ... }": {
+    "prefix": "el",
+    "body": [
+      "else {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "else { ... }"
+  },
+  "eif - elseif(condition) { ... }": {
+    "prefix": "eif",
+    "body": [
+      "elseif (${1}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "elseif(condition) { ... }"
+  },
+  "switch - switch($var) { case 'xyz': ... default: .... }": {
+    "prefix": "switch",
+    "body": [
+      "switch (\\$${1:variable}) {",
+      "\tcase '${2:value}':",
+      "\t\t${3}",
+      "\t\tbreak;",
+      "\t${0}",
+      "\tdefault:",
+      "\t\t${4}",
+      "\t\tbreak;",
+      "}"
+    ],
+    "description": "switch($var) { case 'xyz': ... default: .... }"
+  },
+  "case - case 'value': ... break": {
+    "prefix": "case",
+    "body": [
+      "case '${1:value}':",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "\tbreak;"
+    ],
+    "description": "case 'value': ... break"
+  },
+  "for - for ($i = 0; $i < $count; $i++) { ... }": {
+    "prefix": "for",
+    "body": [
+      "for (\\$${2:i} = 0; \\$$2 < ${1:count}; \\$$2${3:++}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "for ($i = 0; $i < $count; $i++) { ... }"
+  },
+  "foreach - foreach ($var as $value) { .. }": {
+    "prefix": "foreach",
+    "body": [
+      "foreach (\\$${1:variable} as \\$${2:value}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "foreach ($var as $value) { .. }"
+  },
+  "foreachil - <?php foreach ($var as $value): ?>  ... <?php endforeach; ?>": {
+    "prefix": "foreachil",
+    "body": [
+      "<?php foreach (\\$${1:variable} as \\$${2:value}): ?>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "<?php endforeach; ?>"
+    ],
+    "description": "<?php foreach ($var as $value): ?>  ... <?php endforeach; ?>"
+  },
+  "foreachk - foreach ($var as $key => $value) { .. }": {
+    "prefix": "foreachk",
+    "body": [
+      "foreach (\\$${1:variable} as \\$${2:key} => \\$${3:value}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "foreach ($var as $key => $value) { .. }"
+  },
+  "foreachkil - <?php foreach ($var as $key => $value): ?>  ... <?php endforeach; ?>": {
+    "prefix": "foreachkil",
+    "body": [
+      "<?php foreach (\\$${1:variable} as \\$${2:key} => \\$${3:value}): ?>",
+      "\t${0:<!-- html... -->}",
+      "<?php endforeach; ?>"
+    ],
+    "description": "<?php foreach ($var as $key => $value): ?>  ... <?php endforeach; ?>"
+  },
+  "array - $... = ['' => ]": {
+    "prefix": "array",
+    "body": [
+      "\\$${1:arrayName} = ['${2}' => ${3}];"
+    ],
+    "description": "$... = ['' => ]"
+  },
+  "try - try { ... } catch (Exception $e) { ... }": {
+    "prefix": "try",
+    "body": [
+      "try {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "} catch (${1:Exception} \\$e) {",
+      "}"
+    ],
+    "description": "try { ... } catch (Exception $e) { ... }"
+  },
+  "lambda": {
+    "prefix": "lambda",
+    "body": [
+      "${1:static }function (${2:args}) use (${3:&\\$x, \\$y /*put vars in scope (closure) */}) {",
+      "\t${0}",
+      "};"
+    ],
+    "description": "vim-snippets/php.snippets:367"
+  },
+  "pd": {
+    "prefix": "pd",
+    "body": [
+      "echo '<pre>'; var_dump(${0}); echo '</pre>';"
+    ],
+    "description": "vim-snippets/php.snippets:372"
+  },
+  "pdd": {
+    "prefix": "pdd",
+    "body": [
+      "echo '<pre>'; var_dump(${1}); echo '</pre>'; die(${0:});"
+    ],
+    "description": "vim-snippets/php.snippets:375"
+  },
+  "vd": {
+    "prefix": "vd",
+    "body": [
+      "var_dump(${0});"
+    ],
+    "description": "vim-snippets/php.snippets:377"
+  },
+  "vdd": {
+    "prefix": "vdd",
+    "body": [
+      "var_dump(${1}); die(${0:});"
+    ],
+    "description": "vim-snippets/php.snippets:379"
+  },
+  "pr": {
+    "prefix": "pr",
+    "body": [
+      "print_r(${0});"
+    ],
+    "description": "vim-snippets/php.snippets:381"
+  },
+  "prs": {
+    "prefix": "prs",
+    "body": [
+      "print_r(${0}, 1);"
+    ],
+    "description": "vim-snippets/php.snippets:383"
+  },
+  "vdf": {
+    "prefix": "vdf",
+    "body": [
+      "error_log(print_r(\\$${1:foo}, true), 3, '${2:/tmp/debug.log}');"
+    ],
+    "description": "vim-snippets/php.snippets:385"
+  },
+  "http_redirect": {
+    "prefix": "http_redirect",
+    "body": [
+      "header (\"HTTP/1.1 301 Moved Permanently\");",
+      "header (\"Location: \".URL);",
+      "exit();"
+    ],
+    "description": "vim-snippets/php.snippets:387"
+  },
+  "log - error_log(var_export($var, true));": {
+    "prefix": "log",
+    "body": [
+      "error_log(var_export(${1}, true));"
+    ],
+    "description": "error_log(var_export($var, true));"
+  },
+  "var - var_export($var)": {
+    "prefix": "var",
+    "body": [
+      "var_export(${1});"
+    ],
+    "description": "var_export($var)"
+  },
+  "ve - Dumb debug helper in HTML": {
+    "prefix": "ve",
+    "body": [
+      "echo '<pre>' . var_export(${1}, 1) . '</pre>';"
+    ],
+    "description": "Dumb debug helper in HTML"
+  },
+  "pc - Dumb debug helper in cli": {
+    "prefix": "pc",
+    "body": [
+      "var_export($1);$0"
+    ],
+    "description": "Dumb debug helper in cli"
+  },
+  "gs - PHP Class Getter Setter": {
+    "prefix": "gs",
+    "body": [
+      "/**",
+      " * Gets the value of ${1:foo}",
+      " *",
+      " * @return ${2:string}",
+      " */",
+      "public function get${3:$1}()",
+      "{",
+      "\treturn \\$this->${4:$1};",
+      "}",
+      "",
+      "/**",
+      " * Sets the value of $1",
+      " *",
+      " * @param $2 \\$$1 ${5:description}",
+      " *",
+      " * @return ${6:${TM_FILENAME_BASE}}",
+      " */",
+      "public function set$3(${7:$2 }\\$$1)",
+      "{",
+      "\t\\$this->$4 = \\$$1;",
+      "\treturn \\$this;",
+      "}"
+    ],
+    "description": "PHP Class Getter Setter"
+  },
+  "ags": {
+    "prefix": "ags",
+    "body": [
+      "/**",
+      " * ${1:description}",
+      " *",
+      " * @${0}",
+      " */",
+      "${2:protected} \\$${3:foo};",
+      "",
+      "public function get${4:$3}()",
+      "{",
+      "\treturn \\$this->$3;",
+      "}",
+      "",
+      "public function set$4(${5:$4 }\\$${6:$3})",
+      "{",
+      "\t\\$this->$3 = \\$$6;",
+      "\treturn \\$this;",
+      "}"
+    ],
+    "description": "vim-snippets/php.snippets:424"
+  },
+  "rett": {
+    "prefix": "rett",
+    "body": [
+      "return true;"
+    ],
+    "description": "vim-snippets/php.snippets:442"
+  },
+  "retf": {
+    "prefix": "retf",
+    "body": [
+      "return false;"
+    ],
+    "description": "vim-snippets/php.snippets:444"
+  },
+  "am": {
+    "prefix": "am",
+    "body": [
+      "\\$${1:foo} = array_map(function(\\$${2:v}) {",
+      "\t${0}",
+      "\treturn \\$$2;",
+      "}, \\$$1);"
+    ],
+    "description": "vim-snippets/php.snippets:446"
+  },
+  "aw": {
+    "prefix": "aw",
+    "body": [
+      "array_walk(\\$${1:foo}, function(&\\$${2:v}, \\$${3:k}) {",
+      "\t\\$$2 = ${0};",
+      "});"
+    ],
+    "description": "vim-snippets/php.snippets:451"
+  },
+  "static_var": {
+    "prefix": "static_var",
+    "body": [
+      "static \\$${1} = null;",
+      "if (is_null(\\$$1)){",
+      "\t\\$$1 = ${2};",
+      "}"
+    ],
+    "description": "vim-snippets/php.snippets:456"
+  },
+  "CSVWriter": {
+    "prefix": "CSVWriter",
+    "body": [
+      "<?php",
+      "",
+      "class CSVWriter {",
+      "\tpublic function __construct(\\$file_or_handle, \\$sep = \"\\t\", \\$quot = '\"'){",
+      "\t\t\\$args = func_get_args();",
+      "\t\t\\$mode = isset(\\$opts['mode']) ? \\$opts['mode'] : 'w';",
+      "",
+      "\t\t\\$this->f =",
+      "\t\t\tis_string(\\$file_or_handle)",
+      "\t\t\t? fopen(\\$file_or_handle, \\$mode)",
+      "\t\t\t: \\$file_or_handle;",
+      "",
+      "\t\t\\$this->fputcsv_args = [\\$this->f, null, \\$sep, \\$quot];",
+      "",
+      "\t\tif (!\\$this->f) throw new Exception('bad file descriptor');",
+      "\t}",
+      "",
+      "\tpublic function write(\\$row){",
+      "\t\t\\$this->fputcsv_args[1] =& \\$row;",
+      "\t\tcall_user_func_array('fputcsv', \\$this->fputcsv_args);",
+      "\t}",
+      "",
+      "\tpublic function close(){",
+      "\t\tif (!is_null(\\$this->f))",
+      "\t\t\tfclose(\\$this->f);",
+      "\t\t\\$this->f = null;",
+      "\t}",
+      "",
+      "\tpublic function __destruct(){",
+      "\t\t\\$this->close();",
+      "\t}",
+      "",
+      "}"
+    ],
+    "description": "vim-snippets/php.snippets:461"
+  },
+  "CSVIterator": {
+    "prefix": "CSVIterator",
+    "body": [
+      "",
+      "// http://snipplr.com/view.php?codeview&id=1986 // modified",
+      "class CSVIterator implements Iterator",
+      "{\t",
+      "\tprivate \\$f;",
+      "\tprivate \\$curr;",
+      "\tprivate \\$rowCounter;",
+      "",
+      "\t /* opts keys:",
+      "\t\t* row_size",
+      "\t\t* escape",
+      "\t\t* enclosure",
+      "\t\t* delimiter",
+      "\t\t*/",
+      "\tpublic function __construct( \\$file_or_handle, \\$opts = [4096, ','] )",
+      "\t{",
+      "\t\t\\$d = function(\\$n) use(&\\$opts){ return isset(\\$opts[\\$n]) ? \\$opts[\\$n] : false; };",
+      "",
+      "\t\t\\$this->combine = \\$d('combine');",
+      "\t\t\\$this->headers = \\$d('headers');",
+      "\t\t\\$this->headerCheckFunction = \\$d('header_check_function');",
+      "",
+      "\t\t\\$this->f =",
+      "\t\t\tis_string(\\$file_or_handle)",
+      "\t\t\t? fopen( \\$file_or_handle, 'r' )",
+      "\t\t\t: \\$file_or_handle;",
+      "\t\tif (!\\$this->f) throw new Exception('bad file descriptor');",
+      "\t\t\\$this->fgetcsv_args = [",
+      "\t\t\t\t\\$this->f,",
+      "\t\t\t\tisset(\\$opts['row_size']) ? \\$opts['row_size'] : 4096,",
+      "\t\t\t\tisset(\\$opts['delimiter']) ? \\$opts['delimiter'] : ',',",
+      "\t\t\t\tisset(\\$opts['enclosure']) ? \\$opts['enclosure'] : '\"',",
+      "\t\t\t\tisset(\\$opts['escape']) ? \\$opts['escape'] : '\\\\',",
+      "\t\t];",
+      "\t\t\\$this->start();",
+      "\t}",
+      "",
+      "\tprotected function readRow(){",
+      "\t\t\\$this->curr = call_user_func_array('fgetcsv', \\$this->fgetcsv_args );",
+      "\t\t\\$this->rowCounter++;",
+      "\t\tif (\\$this->rowCounter == 1){",
+      "\t\t\t\\$this->processHeader();",
+      "\t\t} elseif (\\$this->curr) {",
+      "\t\t\t\\$this->processRow();",
+      "\t\t}",
+      "\t}",
+      "",
+      "\tpublic function processHeader(){",
+      "\t\tif (\\$this->headers || \\$this->combine){",
+      "\t\t\t\\$this->header = \\$this->curr;",
+      "\t\t\tif (\\$this->headerCheckFunction){",
+      "\t\t\t\t\\$f = \\$this->headerCheckFunction;",
+      "\t\t\t\t\\$f(\\$this->header);",
+      "\t\t\t}",
+      "\t\t\t\\$this->readRow();",
+      "\t\t}",
+      "\t}",
+      "",
+      "\tpublic function processRow(){",
+      "\t\tif (\\$this->combine)",
+      "\t\t\t\\$this->curr = array_combine(\\$this->header, \\$this->curr);",
+      "\t}",
+      "",
+      "\tpublic function start(){",
+      "\t\t\\$this->rowCounter = 0;",
+      "\t\trewind( \\$this->f );",
+      "\t\t\\$this->readRow();",
+      "\t}",
+      "",
+      "\tpublic function rewind()",
+      "\t{",
+      "\t\t\\$this->start();",
+      "\t}",
+      "",
+      "\tpublic function current()",
+      "\t{",
+      "\t\t\\$curr = \\$this->curr;",
+      "\t\t\\$this->readRow();",
+      "\t\treturn \\$curr;",
+      "\t}",
+      "",
+      "\tpublic function key()",
+      "\t{",
+      "\t\treturn \\$this->rowCounter;",
+      "\t}",
+      "",
+      "\tpublic function next()",
+      "\t{",
+      "\t\treturn \\$this->curr;",
+      "\t}",
+      "",
+      "\tpublic function valid(){",
+      "\t\tif( !\\$this->next() )",
+      "\t\t{",
+      "\t\t\tfclose( \\$this->f );",
+      "\t\t\treturn FALSE;",
+      "\t\t}",
+      "\t\treturn TRUE;",
+      "\t}",
+      "",
+      "} // end class"
+    ],
+    "description": "vim-snippets/php.snippets:495"
+  },
+  "ase - $this->assertEquals($a, $b)": {
+    "prefix": "ase",
+    "body": [
+      "\\$this->assertEquals(${1:\\$expected}, ${2:\\$actual});"
+    ],
+    "description": "$this->assertEquals($a, $b)"
+  },
+  "asne - $this->assertNotEquals($a, $b)": {
+    "prefix": "asne",
+    "body": [
+      "\\$this->assertNotEquals(${1:\\$expected}, ${2:\\$actual});"
+    ],
+    "description": "$this->assertNotEquals($a, $b)"
+  },
+  "asf - $this->assertFalse($a)": {
+    "prefix": "asf",
+    "body": [
+      "\\$this->assertFalse(${1});"
+    ],
+    "description": "$this->assertFalse($a)"
+  },
+  "ast - $this->assertTrue($a)": {
+    "prefix": "ast",
+    "body": [
+      "\\$this->assertTrue(${1});"
+    ],
+    "description": "$this->assertTrue($a)"
+  },
+  "asfex - $this->assertFileExists('path/to/file')": {
+    "prefix": "asfex",
+    "body": [
+      "\\$this->assertFileExists(${1:'path/to/file'});"
+    ],
+    "description": "$this->assertFileExists('path/to/file')"
+  },
+  "asfnex - $this->assertFileNotExists('path/to/file')": {
+    "prefix": "asfnex",
+    "body": [
+      "\\$this->assertFileNotExists(${1:'path/to/file'});"
+    ],
+    "description": "$this->assertFileNotExists('path/to/file')"
+  },
+  "ascon - $this->assertContains($needle, $haystack)": {
+    "prefix": "ascon",
+    "body": [
+      "\\$this->assertContains(${1:\\$needle}, ${2:\\$haystack});"
+    ],
+    "description": "$this->assertContains($needle, $haystack)"
+  },
+  "asncon - $this->assertNotContains($needle, $haystack)": {
+    "prefix": "asncon",
+    "body": [
+      "\\$this->assertNotContains(${1:\\$needle}, ${2:\\$haystack});"
+    ],
+    "description": "$this->assertNotContains($needle, $haystack)"
+  },
+  "ascono - $this->assertContainsOnly($needle, $haystack)": {
+    "prefix": "ascono",
+    "body": [
+      "\\$this->assertContainsOnly(${1:\\$needle}, ${2:\\$haystack});"
+    ],
+    "description": "$this->assertContainsOnly($needle, $haystack)"
+  },
+  "asconoi - $this->assertContainsOnlyInstancesOf(Example::class, $haystack)": {
+    "prefix": "asconoi",
+    "body": [
+      "\\$this->assertContainsOnlyInstancesOf(${1:Example}::class, ${2:\\$haystack});"
+    ],
+    "description": "$this->assertContainsOnlyInstancesOf(Example::class, $haystack)"
+  },
+  "ashk - $this->assertArrayHasKey($key, $array)": {
+    "prefix": "ashk",
+    "body": [
+      "\\$this->assertArrayHasKey(${1:\\$key}, ${2:\\$array});"
+    ],
+    "description": "$this->assertArrayHasKey($key, $array)"
+  },
+  "asnhk - $this->assertArrayNotHasKey($key, $array)": {
+    "prefix": "asnhk",
+    "body": [
+      "this->assertArrayNotHasKey(${1:\\$key}, ${2:\\$array});"
+    ],
+    "description": "$this->assertArrayNotHasKey($key, $array)"
+  },
+  "ascha - $this->assertClassHasAttribute($name, Example::class)": {
+    "prefix": "ascha",
+    "body": [
+      "\\$this->assertClassHasAttribute(${1:\\$attributeName}, ${2:Example}::class);"
+    ],
+    "description": "$this->assertClassHasAttribute($name, Example::class)"
+  },
+  "asi - $this->assertInstanceOf(Example::class, $actual)": {
+    "prefix": "asi",
+    "body": [
+      "\\$this->assertInstanceOf(${1:Example}::class, ${2:\\$actual});"
+    ],
+    "description": "$this->assertInstanceOf(Example::class, $actual)"
+  },
+  "asit - $this->assertInternalType('string', $actual)": {
+    "prefix": "asit",
+    "body": [
+      "\\$this->assertInternalType(${1:'string'}, ${2:actual});"
+    ],
+    "description": "$this->assertInternalType('string', $actual)"
+  },
+  "asco - $this->assertCount($count, $haystack)": {
+    "prefix": "asco",
+    "body": [
+      "\\$this->assertCount(${1:\\$expectedCount}, ${2:\\$haystack});"
+    ],
+    "description": "$this->assertCount($count, $haystack)"
+  },
+  "asnco - $this->assertNotCount($count, $haystack)": {
+    "prefix": "asnco",
+    "body": [
+      "\\$this->assertNotCount(${1:\\$count}, ${2:\\$haystack});"
+    ],
+    "description": "$this->assertNotCount($count, $haystack)"
+  },
+  "assub - $this->assertArraySubset($subset, $array)": {
+    "prefix": "assub",
+    "body": [
+      "\\$this->assertArraySubset(${1:\\$subset}, ${2:\\$array});"
+    ],
+    "description": "$this->assertArraySubset($subset, $array)"
+  },
+  "asnu - $this->assertNull($a)": {
+    "prefix": "asnu",
+    "body": [
+      "\\$this->assertNull(${1});"
+    ],
+    "description": "$this->assertNull($a)"
+  },
+  "asnnu - $this->assertNotNull($a)": {
+    "prefix": "asnnu",
+    "body": [
+      "\\$this->assertNotNull(${1});"
+    ],
+    "description": "$this->assertNotNull($a)"
+  },
+  "test - public function testXYZ() { ... }": {
+    "prefix": "test",
+    "body": [
+      "public function test${1}()",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "public function testXYZ() { ... }"
+  },
+  "setup - protected function setUp() { ... }": {
+    "prefix": "setup",
+    "body": [
+      "protected function setUp()",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "protected function setUp() { ... }"
+  },
+  "teardown - protected function tearDown() { ... }": {
+    "prefix": "teardown",
+    "body": [
+      "protected function tearDown()",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "protected function tearDown() { ... }"
+  },
+  "proph - $observer = $this->prophesize(SomeClass::class);": {
+    "prefix": "proph",
+    "body": [
+      "\\$${1:observer} = \\$this->prophesize(${2:SomeClass}::class);"
+    ],
+    "description": "$observer = $this->prophesize(SomeClass::class);"
+  },
+  "mock - $mock = $this->createMock(SomeClass::class);": {
+    "prefix": "mock",
+    "body": [
+      "\\$${1:mock} = \\$this->createMock(${2:SomeClass}::class);"
+    ],
+    "description": "$mock = $this->createMock(SomeClass::class);"
+  },
+  "exp - phpunit expects": {
+    "prefix": "exp",
+    "body": [
+      "expects(\\$this->${1:once}())",
+      "\t->method('${2}')",
+      "\t->with(${3})",
+      "\t->willReturn(${4});"
+    ],
+    "description": "phpunit expects"
+  },
+  "testcmt - phpunit comment with group": {
+    "prefix": "testcmt",
+    "body": [
+      "/**",
+      "* @group ${1}",
+      "*/"
+    ],
+    "description": "phpunit comment with group"
+  },
+  "fail - $this->fail()": {
+    "prefix": "fail",
+    "body": [
+      "\\$this->fail(${1});"
+    ],
+    "description": "$this->fail()"
+  },
+  "marki - $this->markTestIncomplete()": {
+    "prefix": "marki",
+    "body": [
+      "\\$this->markTestIncomplete(${1});"
+    ],
+    "description": "$this->markTestIncomplete()"
+  },
+  "marks - $this->markTestSkipped()": {
+    "prefix": "marks",
+    "body": [
+      "\\$this->markTestSkipped(${1});"
+    ],
+    "description": "$this->markTestSkipped()"
+  },
+  "te - throw new Exception()": {
+    "prefix": "te",
+    "body": [
+      "throw new ${1:Exception}(\"${2:Error Processing Request}\");"
+    ],
+    "description": "throw new Exception()"
+  },
+  "fpc - file_put_contents": {
+    "prefix": "fpc",
+    "body": [
+      "file_put_contents(${1:file}, ${2:content}${3:, FILE_APPEND});$0"
+    ],
+    "description": "file_put_contents"
+  },
+  "sr - str_replace": {
+    "prefix": "sr",
+    "body": [
+      "str_replace(${1:search}, ${2:replace}, ${3:subject})$0"
+    ],
+    "description": "str_replace"
+  },
+  "ia - in_array": {
+    "prefix": "ia",
+    "body": [
+      "in_array(${1:needle}, ${2:haystack})$0"
+    ],
+    "description": "in_array"
+  },
+  "is - isset": {
+    "prefix": "is",
+    "body": [
+      "isset(${1:var})$0"
+    ],
+    "description": "isset"
+  },
+  "isa - isset array": {
+    "prefix": "isa",
+    "body": [
+      "isset(\\$${1:array}[${2:key}])$0"
+    ],
+    "description": "isset array"
+  },
+  "in - is_null": {
+    "prefix": "in",
+    "body": [
+      "is_null(\\$${1:var})$0"
+    ],
+    "description": "is_null"
+  },
+  "fe - file_exists": {
+    "prefix": "fe",
+    "body": [
+      "file_exists(${1:file})$0"
+    ],
+    "description": "file_exists"
+  },
+  "id - is_dir": {
+    "prefix": "id",
+    "body": [
+      "is_dir(${1:path})$0"
+    ],
+    "description": "is_dir"
+  }
+}

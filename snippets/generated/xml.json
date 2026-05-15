@@ -1,0 +1,25 @@
+{
+  "xml": {
+    "prefix": "xml",
+    "body": [
+      "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    ],
+    "description": "vim-snippets/xml.snippets:2"
+  },
+  "t": {
+    "prefix": "t",
+    "body": [
+      "<${1:}>",
+      "\t${2}",
+      "</$1>"
+    ],
+    "description": "vim-snippets/xml.snippets:5"
+  },
+  "ti": {
+    "prefix": "ti",
+    "body": [
+      "<${1:}>${2}</$1>"
+    ],
+    "description": "vim-snippets/xml.snippets:10"
+  }
+}

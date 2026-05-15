@@ -1,0 +1,1667 @@
+{
+  "doc": {
+    "prefix": "doc",
+    "body": [
+      "/**",
+      " *  ${1:Description}",
+      " *",
+      " *\t@author ${2:name}",
+      " *\t@since  ${3:${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}}",
+      " */",
+      "${0}"
+    ],
+    "description": "vim-snippets/processing.snippets:3"
+  },
+  "docc": {
+    "prefix": "docc",
+    "body": [
+      "/**",
+      " *\t${1:@private}$0",
+      " */",
+      "${0}"
+    ],
+    "description": "vim-snippets/processing.snippets:12"
+  },
+  "class": {
+    "prefix": "class",
+    "body": [
+      "${1:public }class ${2:${TM_FILENAME_BASE}} ${3:extends}",
+      "{",
+      "",
+      "\t//--------------------------------------",
+      "\t//  CONSTRUCTOR",
+      "\t//--------------------------------------",
+      "",
+      "\tpublic $2 (${4:arguments}) {",
+      "\t\t${0:// expression}",
+      "\t}",
+      "}"
+    ],
+    "description": "vim-snippets/processing.snippets:18"
+  },
+  "package": {
+    "prefix": "package",
+    "body": [
+      "/**",
+      " *  ${1:Description}",
+      " *",
+      " *\t@author ${2:\\$TM_FULLNAME}",
+      " *\t@since  ${3:${CURRENT_DATE}/${CURRENT_MONTH}/${CURRENT_YEAR_SHORT} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}}",
+      " */",
+      "",
+      "package ${0:package};"
+    ],
+    "description": "vim-snippets/processing.snippets:31"
+  },
+  "fun": {
+    "prefix": "fun",
+    "body": [
+      "${1:void/private/protected/public}${2: static} ${3:name}(${4}) {",
+      "\t${5://if not void return null;}",
+      "}",
+      "${0}"
+    ],
+    "description": "vim-snippets/processing.snippets:41"
+  },
+  "fn": {
+    "prefix": "fn",
+    "body": [
+      "${1:void }${2:name}(${3}) {",
+      "\t${4://if not void return null;}",
+      "}",
+      "${0}"
+    ],
+    "description": "vim-snippets/processing.snippets:46"
+  },
+  "const": {
+    "prefix": "const",
+    "body": [
+      "static final ${1:Object} ${2:VAR_NAM} = ${0};"
+    ],
+    "description": "vim-snippets/processing.snippets:52"
+  },
+  "var": {
+    "prefix": "var",
+    "body": [
+      "${1:private/public }${2:static }${3:String} ${4:str}${5: =}${0:value};"
+    ],
+    "description": "vim-snippets/processing.snippets:55"
+  },
+  "obj": {
+    "prefix": "obj",
+    "body": [
+      "${1:private/public }${2:Object} ${3:o}${4: = new }$2(${0});"
+    ],
+    "description": "vim-snippets/processing.snippets:58"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for (int ${2:i} = 0; $2 < ${1:Things}.length; $2${3:++}) {",
+      "\t${0:$1[$2]}",
+      "};"
+    ],
+    "description": "vim-snippets/processing.snippets:61"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "while ($1) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/processing.snippets:66"
+  },
+  "break": {
+    "prefix": "break",
+    "body": [
+      "break ${1:label};"
+    ],
+    "description": "vim-snippets/processing.snippets:71"
+  },
+  "case": {
+    "prefix": "case",
+    "body": [
+      "case ${1:expression} :",
+      "\t${0}",
+      "break;"
+    ],
+    "description": "vim-snippets/processing.snippets:74"
+  },
+  "default": {
+    "prefix": "default",
+    "body": [
+      "default :",
+      "\t${1}",
+      "break;"
+    ],
+    "description": "vim-snippets/processing.snippets:79"
+  },
+  "switch": {
+    "prefix": "switch",
+    "body": [
+      "switch(${1:expression}) {",
+      "\tcase '${3:case}':",
+      "\t\t${4}",
+      "\t\tbreak;",
+      "\t${0}",
+      "\tdefault:",
+      "\t\t${2}",
+      "}"
+    ],
+    "description": "vim-snippets/processing.snippets:84"
+  },
+  "try": {
+    "prefix": "try",
+    "body": [
+      "try {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "} catch(${1:Exception} ${2:e}) {",
+      "}"
+    ],
+    "description": "vim-snippets/processing.snippets:94"
+  },
+  "tryf": {
+    "prefix": "tryf",
+    "body": [
+      "try {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "} catch(${1:Exception} ${2:e}) {",
+      "} finally {",
+      "}"
+    ],
+    "description": "vim-snippets/processing.snippets:100"
+  },
+  "throw": {
+    "prefix": "throw",
+    "body": [
+      "throw new (\"${1:Exception()}\");"
+    ],
+    "description": "vim-snippets/processing.snippets:107"
+  },
+  "?": {
+    "prefix": "?",
+    "body": [
+      "? ${1:trueExpression} : ${2:falseExpression}",
+      "${0}"
+    ],
+    "description": "vim-snippets/processing.snippets:110"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if (${1:true}) {${0}}"
+    ],
+    "description": "vim-snippets/processing.snippets:113"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "if (${1:true}) {${2}}",
+      "else{${0}}"
+    ],
+    "description": "vim-snippets/processing.snippets:116"
+  },
+  "get": {
+    "prefix": "get",
+    "body": [
+      "public ${1:String} get${2}() {",
+      "\treturn ${0:fieldName};",
+      "}"
+    ],
+    "description": "vim-snippets/processing.snippets:120"
+  },
+  "set": {
+    "prefix": "set",
+    "body": [
+      "public void set${1}(${0:String} new${1}) {",
+      "\t${1:fieldName} = new${1};",
+      "}"
+    ],
+    "description": "vim-snippets/processing.snippets:125"
+  },
+  "println": {
+    "prefix": "println",
+    "body": [
+      "println(\"${1:${TM_FILENAME_BASE}}::${2:method}() \"${3: +} ${0});"
+    ],
+    "description": "vim-snippets/processing.snippets:130"
+  },
+  "pr": {
+    "prefix": "pr",
+    "body": [
+      "println(\"${0}\");"
+    ],
+    "description": "vim-snippets/processing.snippets:133"
+  },
+  "setup": {
+    "prefix": "setup",
+    "body": [
+      "void setup(){",
+      "\t${1}",
+      "}",
+      "",
+      "void draw(){",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/processing.snippets:136"
+  },
+  "opengl": {
+    "prefix": "opengl",
+    "body": [
+      "import processing.opengl.*;",
+      "import javax.media.opengl.*;",
+      "",
+      "PGraphicsOpenGL pgl;",
+      "GL gl;",
+      "",
+      "void setup(){",
+      "\tsize( ${1:300}, ${2:300}, OPENGL );",
+      "\tcolorMode( RGB, 1.0 );",
+      "\thint( ENABLE_OPENGL_4X_SMOOTH );",
+      "\tpgl = (PGraphicsOpenGL) g;",
+      "\tgl = pgl.gl;",
+      "\tgl.setSwapInterval(1);",
+      "\tinitGL();",
+      "\t${3}",
+      "}",
+      "",
+      "void draw(){",
+      "\tpgl.beginGL();",
+      "\t\t${4}",
+      "\tpgl.endGL();",
+      "\tgetOpenGLErrors();",
+      "}",
+      "",
+      "void initGL(){",
+      "\t${0}",
+      "}",
+      "",
+      "void getOpenGLErrors(){",
+      "\tint error = gl.glGetError();",
+      "\tswitch (error){",
+      "\t\tcase 1280 :",
+      "\t\t\tprintln(\"GL_INVALID_ENUM - An invalid enumerant was passed to an OpenGL command.\");",
+      "\t\tbreak;",
+      "\t\tcase 1282 :",
+      "\t\t\tprintln(\"GL_INVALID_OPERATION - An OpenGL command was issued that was invalid or inappropriate for the current state.\");",
+      "\t\tbreak;",
+      "\t\tcase 1281 :",
+      "\t\t\tprintln(\"GL_INVALID_VALUE - A value was passed to OpenGL that was outside the allowed range.\");",
+      "\t\tbreak;",
+      "\t\tcase 1285 :",
+      "\t\t\tprintln(\"GL_OUT_OF_MEMORY - OpenGL was unable to allocate enough memory to process a command.\");",
+      "\t\tbreak;",
+      "\t\tcase 1283 :",
+      "\t\t\tprintln(\"GL_STACK_OVERFLOW - A command caused an OpenGL stack to overflow.\");",
+      "\t\tbreak;",
+      "\t\tcase 1284 :",
+      "\t\t\tprintln(\"GL_STACK_UNDERFLOW - A command caused an OpenGL stack to underflow.\");",
+      "\t\tbreak;",
+      "\t\tcase 32817 :",
+      "\t\t\tprintln(\"GL_TABLE_TOO_LARGE\");",
+      "\t\tbreak;",
+      "\t}",
+      "}"
+    ],
+    "description": "vim-snippets/processing.snippets:145"
+  },
+  "gl - begin gl": {
+    "prefix": "gl",
+    "body": [
+      "pgl.beginGL();",
+      "\t${0}",
+      "pgl.endGL();"
+    ],
+    "description": "begin gl"
+  },
+  "gl - gl swap interval": {
+    "prefix": "gl",
+    "body": [
+      "// specify the minimum swap interval for buffer swaps.",
+      "gl.setSwapInterval(${0:interval});"
+    ],
+    "description": "gl swap interval"
+  },
+  "gl - gl call list": {
+    "prefix": "gl",
+    "body": [
+      "// execute a display list",
+      "gl.glCallList(${0:list});"
+    ],
+    "description": "gl call list"
+  },
+  "gl - gl gen buffers": {
+    "prefix": "gl",
+    "body": [
+      "// import java.nio.IntBuffer;",
+      "// import java.nio.FloatBuffer;",
+      "// import com.sun.opengl.util.BufferUtil;",
+      "",
+      "// You might need to create four buffers to store vertext data, normal data, texture coordinate data, and indices in vertex arrays",
+      "IntBuffer bufferObjects = IntBuffer.allocate(${1:4});",
+      "gl.glGenBuffers($1, bufferObjects);",
+      "",
+      "int vertexCount = ${2:3};",
+      "int numCoordinates = ${0:3};",
+      "// vertexCount * numCoordinates",
+      "FloatBuffer vertices = BufferUtil.newFloatBuffer(vertexCount * numCoordinates);",
+      "float[] v = {0.0f, 0.0f, 0.0f,",
+      "\t\t\t\t\t\t 1.0f, 0.0f, 0.0f,",
+      "\t\t\t\t\t\t 0.0f, 1.0f, 1.0f};",
+      "vertices.put(v);",
+      "",
+      "// Bind the first buffer object ID for use with vertext array data",
+      "gl.glBindBuffer(GL.GL_ARRAY_BUFFER, bufferObjects.get(0));",
+      "gl.glBufferData(GL.GL_ARRAY_BUFFER, vertexCount * numCoordinates * BufferUtil.SIZEOF_FLOAT, vertices, GL.GL_STATIC_DRAW);"
+    ],
+    "description": "gl gen buffers"
+  },
+  "gl - gl bind buffer": {
+    "prefix": "gl",
+    "body": [
+      "${0:// A buffer ID of zero unbinds a buffer object}",
+      "gl.glBindBuffer(GL.GL_ARRAY_BUFFER, ${1:0});"
+    ],
+    "description": "gl bind buffer"
+  },
+  "gl - gl delete buffers": {
+    "prefix": "gl",
+    "body": [
+      "${0:// Parameters are the same for glGenBuffers}",
+      "gl.glDeleteBuffers(${1:4}, ${2:bufferObjects});"
+    ],
+    "description": "gl delete buffers"
+  },
+  "gl - gl depth mask": {
+    "prefix": "gl",
+    "body": [
+      "// enable or disable writing into the depth buffer",
+      "gl.glDepthMask(${0:flag});"
+    ],
+    "description": "gl depth mask"
+  },
+  "gl - gl load identity": {
+    "prefix": "gl",
+    "body": [
+      "// replaces the top of the active matrix stack with the identity matrix",
+      "gl.glLoadIdentity();"
+    ],
+    "description": "gl load identity"
+  },
+  "gl - gl tex coord 2f": {
+    "prefix": "gl",
+    "body": [
+      "// set the current texture coordinates - 2 floats",
+      "gl.glTexCoord2f(${1:0.0f}, ${0:0.0f});"
+    ],
+    "description": "gl tex coord 2f"
+  },
+  "gl - gl vertex 2f": {
+    "prefix": "gl",
+    "body": [
+      "gl.glVertex2f(${1:0.0f}, ${0:0.0f});"
+    ],
+    "description": "gl vertex 2f"
+  },
+  "gl - gl vertex 3f": {
+    "prefix": "gl",
+    "body": [
+      "gl.glVertex3f(${1:0.0f}, ${2:0.0f}, ${0:0.0f});"
+    ],
+    "description": "gl vertex 3f"
+  },
+  "gl - gl translate f": {
+    "prefix": "gl",
+    "body": [
+      "// multiply the current matrix by a translation matrix",
+      "gl.glTranslatef(${1:x}, ${2:y}, ${0:z});"
+    ],
+    "description": "gl translate f"
+  },
+  "gl - gl rotate f": {
+    "prefix": "gl",
+    "body": [
+      "// rotate, x-axis, y-axis, z-axiz",
+      "gl.glRotatef(${1:angle}, ${2:x}, ${3:y}, ${0:z});"
+    ],
+    "description": "gl rotate f"
+  },
+  "gl - gl scale f": {
+    "prefix": "gl",
+    "body": [
+      "// multiply the current matrix by a general scaling matrix",
+      "gl.glScalef(${1:x}, ${2:y}, ${0:z});"
+    ],
+    "description": "gl scale f"
+  },
+  "gl - gl color 4f": {
+    "prefix": "gl",
+    "body": [
+      "gl.glColor4f(${1:red}, ${2:green}, ${3:blue}, ${0:alpha});"
+    ],
+    "description": "gl color 4f"
+  },
+  "gl - gl clear color": {
+    "prefix": "gl",
+    "body": [
+      "gl.glClearColor(${1:red}, ${2:green}, ${3:blue}, ${0:alpha});"
+    ],
+    "description": "gl clear color"
+  },
+  "gl - gl color 3f": {
+    "prefix": "gl",
+    "body": [
+      "gl.glColor3f(${1:red}, ${2:green}, ${0:blue});"
+    ],
+    "description": "gl color 3f"
+  },
+  "gl - gl push matrix": {
+    "prefix": "gl",
+    "body": [
+      "// spush and pop the current matrix stack",
+      "gl.glPushMatrix();",
+      "${0}",
+      "gl.glPopMatrix();"
+    ],
+    "description": "gl push matrix"
+  },
+  "gl - gl gen lists": {
+    "prefix": "gl",
+    "body": [
+      "gl.glGenLists(${0:1})"
+    ],
+    "description": "gl gen lists"
+  },
+  "gl - gl flush": {
+    "prefix": "gl",
+    "body": [
+      "// Empties buffers. Call this when all previous issues commands completed",
+      "gl.glFlush();",
+      "${0}"
+    ],
+    "description": "gl flush"
+  },
+  "gl - gl get error": {
+    "prefix": "gl",
+    "body": [
+      "println(gl.glGetError());"
+    ],
+    "description": "gl get error"
+  },
+  "gl - gl clear": {
+    "prefix": "gl",
+    "body": [
+      "gl.glClear(${1:GL.GL_COLOR_BUFFER_BIT}${2: | }${0:GL.GL_DEPTH_BUFFER_BIT});"
+    ],
+    "description": "gl clear"
+  },
+  "frameRate": {
+    "prefix": "frameRate",
+    "body": [
+      "frameRate(${1:30});",
+      "${0}"
+    ],
+    "description": "vim-snippets/processing.snippets:284"
+  },
+  "saveFrame": {
+    "prefix": "saveFrame",
+    "body": [
+      "saveFrame(\"${1:filename-####}${0:.ext}\");"
+    ],
+    "description": "vim-snippets/processing.snippets:287"
+  },
+  "size - normal": {
+    "prefix": "size",
+    "body": [
+      "size(${1:200}, ${2:200}${0:, P3D});"
+    ],
+    "description": "normal"
+  },
+  "size - opengl": {
+    "prefix": "size",
+    "body": [
+      "size(${1:200}, ${2:200}${0:, OPENGL});"
+    ],
+    "description": "opengl"
+  },
+  "color": {
+    "prefix": "color",
+    "body": [
+      "color ${1:c}${2: = color(}${3:value1, }${4:value2, }${0:value3)};"
+    ],
+    "description": "vim-snippets/processing.snippets:298"
+  },
+  "char": {
+    "prefix": "char",
+    "body": [
+      "char ${1:m}${2: = \"}${0:char\"};"
+    ],
+    "description": "vim-snippets/processing.snippets:301"
+  },
+  "float": {
+    "prefix": "float",
+    "body": [
+      "float ${1:f}${2: = }${0:0.0f};"
+    ],
+    "description": "vim-snippets/processing.snippets:304"
+  },
+  "int": {
+    "prefix": "int",
+    "body": [
+      "int ${1:f}${2: = }${0:0};"
+    ],
+    "description": "vim-snippets/processing.snippets:307"
+  },
+  "boolean": {
+    "prefix": "boolean",
+    "body": [
+      "boolean ${1:b}${2: = }${0:true};"
+    ],
+    "description": "vim-snippets/processing.snippets:310"
+  },
+  "byte": {
+    "prefix": "byte",
+    "body": [
+      "byte ${1:b}${2: = }${0:127};"
+    ],
+    "description": "vim-snippets/processing.snippets:313"
+  },
+  "string": {
+    "prefix": "string",
+    "body": [
+      "String ${1:str}${2: = \"}${0:CCCP\"};"
+    ],
+    "description": "vim-snippets/processing.snippets:316"
+  },
+  "array": {
+    "prefix": "array",
+    "body": [
+      "${1:int}[] ${2:numbers}${3: = new $1}[${0:length}];"
+    ],
+    "description": "vim-snippets/processing.snippets:319"
+  },
+  "object": {
+    "prefix": "object",
+    "body": [
+      "${1:Object} ${2:o}${3: = new $1}(${0});"
+    ],
+    "description": "vim-snippets/processing.snippets:322"
+  },
+  "curve": {
+    "prefix": "curve",
+    "body": [
+      "curve(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3}, ${7:x4}, ${0:y4});"
+    ],
+    "description": "vim-snippets/processing.snippets:326"
+  },
+  "curve - 3D": {
+    "prefix": "curve",
+    "body": [
+      "curve(${1:x1}, ${2:y1}, ${3:z1}, ${4:x2}, ${5:y2}, ${6:z2}, ${7:x3}, ${8:y3}, ${9:z3}, ${10:x4}, ${11:y4}, ${0:z4});"
+    ],
+    "description": "3D"
+  },
+  "curveDetail": {
+    "prefix": "curveDetail",
+    "body": [
+      "curveDetail(${0:detail});"
+    ],
+    "description": "vim-snippets/processing.snippets:330"
+  },
+  "curvePoint": {
+    "prefix": "curvePoint",
+    "body": [
+      "curvePoint(${1:a}, ${2:b}, ${3:c}, ${4:d}, ${0:t});"
+    ],
+    "description": "vim-snippets/processing.snippets:332"
+  },
+  "curveTightness": {
+    "prefix": "curveTightness",
+    "body": [
+      "curveTightness(${0:squishy});"
+    ],
+    "description": "vim-snippets/processing.snippets:334"
+  },
+  "bezier": {
+    "prefix": "bezier",
+    "body": [
+      "bezier(${1:x1}, ${2:y1}, ${3:cx1}, ${4:cy1}, ${5:cx2}, ${6:cy2}, ${7:x2}, ${0:y2});"
+    ],
+    "description": "vim-snippets/processing.snippets:338"
+  },
+  "bezier - 3D": {
+    "prefix": "bezier",
+    "body": [
+      "bezier(${1:x1}, ${2:y1}, ${3:z1}, ${4:cx1}, ${5:cy1}, ${6:cz1}, ${7:cx2}, ${8:cy2}, ${9:cz2}, ${10:x2}, ${11:y2}, ${0:z2});"
+    ],
+    "description": "3D"
+  },
+  "bezierDetail": {
+    "prefix": "bezierDetail",
+    "body": [
+      "bezierDetail(${0:detail});"
+    ],
+    "description": "vim-snippets/processing.snippets:342"
+  },
+  "bezierTangent": {
+    "prefix": "bezierTangent",
+    "body": [
+      "bezierTangent(${1:a}, ${2:b}, ${3:c}, ${4:d}, ${0:t});"
+    ],
+    "description": "vim-snippets/processing.snippets:344"
+  },
+  "bezierPoint": {
+    "prefix": "bezierPoint",
+    "body": [
+      "bezierPoint(${1:a}, ${2:b}, ${3:c}, ${4:d}, ${0:t});"
+    ],
+    "description": "vim-snippets/processing.snippets:346"
+  },
+  "vertex": {
+    "prefix": "vertex",
+    "body": [
+      "vertex(${1:x}, ${2:y}${3:, }${4:u}${5:, }${0:v});"
+    ],
+    "description": "vim-snippets/processing.snippets:350"
+  },
+  "vertex - 3D": {
+    "prefix": "vertex",
+    "body": [
+      "vertex(${1:x}, ${2:y}, ${3:z}${4:, }${5:u}${6:, }${0:v});"
+    ],
+    "description": "3D"
+  },
+  "bezierVertex": {
+    "prefix": "bezierVertex",
+    "body": [
+      "bezierVertex(${1:cx1}, ${2:cy1}, ${3:cx2}, ${4:cy2}, ${5:x}, ${0:y});"
+    ],
+    "description": "vim-snippets/processing.snippets:354"
+  },
+  "bezierVertex - 3D": {
+    "prefix": "bezierVertex",
+    "body": [
+      "bezierVertex(${1:cx1}, ${2:cy1}, ${3:cz1}, ${4:cx2}, ${5:cy2}, ${6:cz2}, ${7:x}, ${8:y}, ${0:z});"
+    ],
+    "description": "3D"
+  },
+  "curveVertex": {
+    "prefix": "curveVertex",
+    "body": [
+      "curveVertex(${1:x}, ${0:y});"
+    ],
+    "description": "vim-snippets/processing.snippets:358"
+  },
+  "curveVertex - 3D": {
+    "prefix": "curveVertex",
+    "body": [
+      "curveVertex(${1:x}, ${2:y}, ${0:z});"
+    ],
+    "description": "3D"
+  },
+  "stroke": {
+    "prefix": "stroke",
+    "body": [
+      "stroke(${1:value1}, ${2:value2}, ${3:value3}${4:, }${0:alpha});"
+    ],
+    "description": "vim-snippets/processing.snippets:364"
+  },
+  "strokeWeight": {
+    "prefix": "strokeWeight",
+    "body": [
+      "strokeWeight(${0:1});"
+    ],
+    "description": "vim-snippets/processing.snippets:366"
+  },
+  "mouseDragged": {
+    "prefix": "mouseDragged",
+    "body": [
+      "void mouseDragged(){",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/processing.snippets:370"
+  },
+  "mouseMoved": {
+    "prefix": "mouseMoved",
+    "body": [
+      "void mouseMoved(){",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/processing.snippets:374"
+  },
+  "mouseReleased": {
+    "prefix": "mouseReleased",
+    "body": [
+      "void mouseReleased(){",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/processing.snippets:378"
+  },
+  "mousePressed": {
+    "prefix": "mousePressed",
+    "body": [
+      "void mousePressed(){",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/processing.snippets:382"
+  },
+  "keyReleased": {
+    "prefix": "keyReleased",
+    "body": [
+      "void keyReleased(){",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/processing.snippets:388"
+  },
+  "keyTyped": {
+    "prefix": "keyTyped",
+    "body": [
+      "void keyTyped(){",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/processing.snippets:392"
+  },
+  "keyPressed": {
+    "prefix": "keyPressed",
+    "body": [
+      "void keyPressed(){",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/processing.snippets:396"
+  },
+  "loadStrings": {
+    "prefix": "loadStrings",
+    "body": [
+      "loadStrings(\"${0:filename}\");"
+    ],
+    "description": "vim-snippets/processing.snippets:402"
+  },
+  "saveStrings": {
+    "prefix": "saveStrings",
+    "body": [
+      "saveStrings(${1:filename}, ${0:strings});"
+    ],
+    "description": "vim-snippets/processing.snippets:404"
+  },
+  "loadBytes": {
+    "prefix": "loadBytes",
+    "body": [
+      "loadBytes(\"${0:filename}\");"
+    ],
+    "description": "vim-snippets/processing.snippets:406"
+  },
+  "beginRecord": {
+    "prefix": "beginRecord",
+    "body": [
+      "beginRecord(${1:renderer}, ${0:filename});"
+    ],
+    "description": "vim-snippets/processing.snippets:408"
+  },
+  "saveBytes": {
+    "prefix": "saveBytes",
+    "body": [
+      "saveBytes(${1:filename}, ${0:bytes});"
+    ],
+    "description": "vim-snippets/processing.snippets:410"
+  },
+  "createWriter": {
+    "prefix": "createWriter",
+    "body": [
+      "createWriter(${0:filename});"
+    ],
+    "description": "vim-snippets/processing.snippets:412"
+  },
+  "createReader": {
+    "prefix": "createReader",
+    "body": [
+      "createReader(${0:filename});"
+    ],
+    "description": "vim-snippets/processing.snippets:414"
+  },
+  "pushMatrix": {
+    "prefix": "pushMatrix",
+    "body": [
+      "pushMatrix();",
+      "${0:};",
+      "popMatrix();"
+    ],
+    "description": "vim-snippets/processing.snippets:418"
+  },
+  "text - data": {
+    "prefix": "text",
+    "body": [
+      "text(${1:data}, ${2:x}, ${3:y}${4:, }${0:z});"
+    ],
+    "description": "data"
+  },
+  "text - stringdata": {
+    "prefix": "text",
+    "body": [
+      "text(${1:stringdata}, ${2:x}, ${3:y}, ${4:width}, ${5:height}${6:, }${0:z});"
+    ],
+    "description": "stringdata"
+  },
+  "textSize": {
+    "prefix": "textSize",
+    "body": [
+      "textSize(${0:size});"
+    ],
+    "description": "vim-snippets/processing.snippets:429"
+  },
+  "textLeading": {
+    "prefix": "textLeading",
+    "body": [
+      "textLeading(${0:size});"
+    ],
+    "description": "vim-snippets/processing.snippets:431"
+  },
+  "textWidth": {
+    "prefix": "textWidth",
+    "body": [
+      "textWidth(${0:data});"
+    ],
+    "description": "vim-snippets/processing.snippets:433"
+  },
+  "font": {
+    "prefix": "font",
+    "body": [
+      "PFont ${1:font};",
+      "$1 = loadFont(\"${0:FFScala-32.vlw}\");"
+    ],
+    "description": "vim-snippets/processing.snippets:435"
+  },
+  "loadFont": {
+    "prefix": "loadFont",
+    "body": [
+      "${1:font} = loadFont(\"${0:FFScala-32.vlw}\");"
+    ],
+    "description": "vim-snippets/processing.snippets:439"
+  },
+  "textFont": {
+    "prefix": "textFont",
+    "body": [
+      "textFont(${1:font}${2:, }${0:size});"
+    ],
+    "description": "vim-snippets/processing.snippets:441"
+  },
+  "tan": {
+    "prefix": "tan",
+    "body": [
+      "tan(${0:rad});"
+    ],
+    "description": "vim-snippets/processing.snippets:445"
+  },
+  "atan": {
+    "prefix": "atan",
+    "body": [
+      "atan(${0:rad});"
+    ],
+    "description": "vim-snippets/processing.snippets:447"
+  },
+  "atan2": {
+    "prefix": "atan2",
+    "body": [
+      "atan2(${0:rad});"
+    ],
+    "description": "vim-snippets/processing.snippets:449"
+  },
+  "sin": {
+    "prefix": "sin",
+    "body": [
+      "sin(${0:rad});"
+    ],
+    "description": "vim-snippets/processing.snippets:451"
+  },
+  "asin": {
+    "prefix": "asin",
+    "body": [
+      "asin(${0:rad});"
+    ],
+    "description": "vim-snippets/processing.snippets:453"
+  },
+  "cos": {
+    "prefix": "cos",
+    "body": [
+      "cos(${0:rad});"
+    ],
+    "description": "vim-snippets/processing.snippets:455"
+  },
+  "acos": {
+    "prefix": "acos",
+    "body": [
+      "acos(${0:rad});"
+    ],
+    "description": "vim-snippets/processing.snippets:457"
+  },
+  "degrees": {
+    "prefix": "degrees",
+    "body": [
+      "degrees(${0:rad});"
+    ],
+    "description": "vim-snippets/processing.snippets:459"
+  },
+  "radians": {
+    "prefix": "radians",
+    "body": [
+      "radians(${0:deg});"
+    ],
+    "description": "vim-snippets/processing.snippets:461"
+  },
+  "randomSseed": {
+    "prefix": "randomSseed",
+    "body": [
+      "randomSeed(${0:value});"
+    ],
+    "description": "vim-snippets/processing.snippets:463"
+  },
+  "random": {
+    "prefix": "random",
+    "body": [
+      "random(${1:value1}${2:, }${0:value2});"
+    ],
+    "description": "vim-snippets/processing.snippets:465"
+  },
+  "pow": {
+    "prefix": "pow",
+    "body": [
+      "pow(${1:num}, ${0:exponent});"
+    ],
+    "description": "vim-snippets/processing.snippets:467"
+  },
+  "floor": {
+    "prefix": "floor",
+    "body": [
+      "floor(${0:value});"
+    ],
+    "description": "vim-snippets/processing.snippets:469"
+  },
+  "sqrt": {
+    "prefix": "sqrt",
+    "body": [
+      "sqrt(${0:value});"
+    ],
+    "description": "vim-snippets/processing.snippets:471"
+  },
+  "abs": {
+    "prefix": "abs",
+    "body": [
+      "abs(${0:value});"
+    ],
+    "description": "vim-snippets/processing.snippets:473"
+  },
+  "sq": {
+    "prefix": "sq",
+    "body": [
+      "sq(${0:value});"
+    ],
+    "description": "vim-snippets/processing.snippets:475"
+  },
+  "ceil": {
+    "prefix": "ceil",
+    "body": [
+      "ceil(${0:value});"
+    ],
+    "description": "vim-snippets/processing.snippets:477"
+  },
+  "exp": {
+    "prefix": "exp",
+    "body": [
+      "exp(${0:value});"
+    ],
+    "description": "vim-snippets/processing.snippets:479"
+  },
+  "round": {
+    "prefix": "round",
+    "body": [
+      "round(${0:value}};"
+    ],
+    "description": "vim-snippets/processing.snippets:481"
+  },
+  "min": {
+    "prefix": "min",
+    "body": [
+      "min(${1:value1}, ${2:value2}${3:, }${0:value3});"
+    ],
+    "description": "vim-snippets/processing.snippets:483"
+  },
+  "max": {
+    "prefix": "max",
+    "body": [
+      "max(${1:value1}, ${2:value2}${3:, }${0:value3});"
+    ],
+    "description": "vim-snippets/processing.snippets:485"
+  },
+  "max - array": {
+    "prefix": "max",
+    "body": [
+      "max(${0:array});"
+    ],
+    "description": "array"
+  },
+  "min - array": {
+    "prefix": "min",
+    "body": [
+      "min(${0:array});"
+    ],
+    "description": "array"
+  },
+  "log": {
+    "prefix": "log",
+    "body": [
+      "log(${0:value});"
+    ],
+    "description": "vim-snippets/processing.snippets:491"
+  },
+  "map": {
+    "prefix": "map",
+    "body": [
+      "map(${1:value}, ${2:low1}, ${4:high1}, ${5:low2}, ${0:high2});"
+    ],
+    "description": "vim-snippets/processing.snippets:493"
+  },
+  "norm": {
+    "prefix": "norm",
+    "body": [
+      "norm(${1:value}, ${2:low}, ${0:high});"
+    ],
+    "description": "vim-snippets/processing.snippets:495"
+  },
+  "constrain": {
+    "prefix": "constrain",
+    "body": [
+      "constrain(${1:value}, ${2:min}, ${0:max});"
+    ],
+    "description": "vim-snippets/processing.snippets:497"
+  },
+  "mag": {
+    "prefix": "mag",
+    "body": [
+      "mag(${1:a}, ${2:b}${3:, }${0:c});"
+    ],
+    "description": "vim-snippets/processing.snippets:499"
+  },
+  "dist": {
+    "prefix": "dist",
+    "body": [
+      "dist(${1:x1}, ${2:y1}, ${4:x2}, ${0:y2});"
+    ],
+    "description": "vim-snippets/processing.snippets:501"
+  },
+  "dist - 3D": {
+    "prefix": "dist",
+    "body": [
+      "dist(${1:x1}, ${2:y1}, ${3:z1}, ${4:x2}, ${5:y2}, ${0:z2});"
+    ],
+    "description": "3D"
+  },
+  "noise": {
+    "prefix": "noise",
+    "body": [
+      "noise(${1:x}${2:, }${3:y}${4:, }${0:z});"
+    ],
+    "description": "vim-snippets/processing.snippets:507"
+  },
+  "noiseDetail": {
+    "prefix": "noiseDetail",
+    "body": [
+      "noiseDetail(${1:octaves}${2:, }${0:falloff});"
+    ],
+    "description": "vim-snippets/processing.snippets:509"
+  },
+  "noiseSeed": {
+    "prefix": "noiseSeed",
+    "body": [
+      "noiseSeed(${0:x});"
+    ],
+    "description": "vim-snippets/processing.snippets:511"
+  },
+  "shininess": {
+    "prefix": "shininess",
+    "body": [
+      "shininess(${0:shine});"
+    ],
+    "description": "vim-snippets/processing.snippets:515"
+  },
+  "specular": {
+    "prefix": "specular",
+    "body": [
+      "specular(${1:value1}, ${2:value2}, ${3:value3}${4:, }${0:alpha});"
+    ],
+    "description": "vim-snippets/processing.snippets:517"
+  },
+  "ambient": {
+    "prefix": "ambient",
+    "body": [
+      "ambient(${1:value1}, ${2:value2}, ${0:value3});"
+    ],
+    "description": "vim-snippets/processing.snippets:519"
+  },
+  "emissive": {
+    "prefix": "emissive",
+    "body": [
+      "emissive(${1:value1}, ${2:value2}, ${0:value3});"
+    ],
+    "description": "vim-snippets/processing.snippets:521"
+  },
+  "diretionalLight": {
+    "prefix": "diretionalLight",
+    "body": [
+      "directionalLight(${1:v1}, ${2:v2}, ${3:v3}, ${4:nx}, ${5:ny}, ${0:nz});"
+    ],
+    "description": "vim-snippets/processing.snippets:525"
+  },
+  "pointLight": {
+    "prefix": "pointLight",
+    "body": [
+      "pointLight(${1:v1}, ${2:v2}, ${3:v3}, ${4:nx}, ${5:ny}, ${0:nz});"
+    ],
+    "description": "vim-snippets/processing.snippets:527"
+  },
+  "lightFalloff": {
+    "prefix": "lightFalloff",
+    "body": [
+      "lightFalloff(${1:constant}, ${2:linear}, ${0:quadratic});"
+    ],
+    "description": "vim-snippets/processing.snippets:529"
+  },
+  "normal": {
+    "prefix": "normal",
+    "body": [
+      "normal(${1:nx}, ${2:ny}, ${0:nz});"
+    ],
+    "description": "vim-snippets/processing.snippets:531"
+  },
+  "lightSpecular": {
+    "prefix": "lightSpecular",
+    "body": [
+      "lightSpecular(${1:v1}, ${2:v2}, ${0:v3});"
+    ],
+    "description": "vim-snippets/processing.snippets:533"
+  },
+  "ambientLight": {
+    "prefix": "ambientLight",
+    "body": [
+      "ambientLight(${1:v1}, ${2:v2}, ${3:v3}${7:, ${4:x}, ${5:y}, ${0:z}});"
+    ],
+    "description": "vim-snippets/processing.snippets:535"
+  },
+  "spotLight": {
+    "prefix": "spotLight",
+    "body": [
+      "spotLight(${1:v1}, ${2:v2}, ${3:v3}, ${4:x}, ${5:y}, ${6:z}, ${7:nx}, ${8:ny}, ${9:nz}, ${10:angle}, ${0:concentration});"
+    ],
+    "description": "vim-snippets/processing.snippets:537"
+  },
+  "camera": {
+    "prefix": "camera",
+    "body": [
+      "camera(${1:eyeX}, ${2:eyeY}, ${3:eyeZ}, ${4:centerX}, ${5:centerY}, ${6:centerZ}, ${7:upX}, ${8:upY}, ${0:upZ});"
+    ],
+    "description": "vim-snippets/processing.snippets:541"
+  },
+  "ortho": {
+    "prefix": "ortho",
+    "body": [
+      "ortho(${1:left}, ${2:right}, ${3:bottom}, ${4:top}, ${5:near}, ${0:far});"
+    ],
+    "description": "vim-snippets/processing.snippets:543"
+  },
+  "perspective": {
+    "prefix": "perspective",
+    "body": [
+      "perspective(${1:fov}, ${2:aspect}, ${3:zNear}, ${0:zFar});"
+    ],
+    "description": "vim-snippets/processing.snippets:545"
+  },
+  "frustrum": {
+    "prefix": "frustrum",
+    "body": [
+      "frustrum(${1:left}, ${2:right}, ${3:bottom}, ${4:top}, ${5:near}, ${0:far});"
+    ],
+    "description": "vim-snippets/processing.snippets:547"
+  },
+  "rotate": {
+    "prefix": "rotate",
+    "body": [
+      "rotate${1:X}(${0:angle});"
+    ],
+    "description": "vim-snippets/processing.snippets:551"
+  },
+  "translate": {
+    "prefix": "translate",
+    "body": [
+      "translate(${1:x}, ${2:y}${3:, }${0:z});"
+    ],
+    "description": "vim-snippets/processing.snippets:553"
+  },
+  "scale - size": {
+    "prefix": "scale",
+    "body": [
+      "scale(${0:size});"
+    ],
+    "description": "size"
+  },
+  "scale": {
+    "prefix": "scale",
+    "body": [
+      "scale(${1:x}, ${2:y}${3:, }${0:z});"
+    ],
+    "description": "vim-snippets/processing.snippets:557"
+  },
+  "coord": {
+    "prefix": "coord",
+    "body": [
+      "${1:model/screen}${2:X}(${3:x}, ${4:y}, ${0:z});"
+    ],
+    "description": "vim-snippets/processing.snippets:561"
+  },
+  "brightness": {
+    "prefix": "brightness",
+    "body": [
+      "brightness(${0:color});"
+    ],
+    "description": "vim-snippets/processing.snippets:565"
+  },
+  "lerpColor": {
+    "prefix": "lerpColor",
+    "body": [
+      "lerpColor(${1:c1}, ${2:c2}, ${0:amt});"
+    ],
+    "description": "vim-snippets/processing.snippets:567"
+  },
+  "saturation": {
+    "prefix": "saturation",
+    "body": [
+      "saturation(${0:color});"
+    ],
+    "description": "vim-snippets/processing.snippets:569"
+  },
+  "hue": {
+    "prefix": "hue",
+    "body": [
+      "hue(${0:color});"
+    ],
+    "description": "vim-snippets/processing.snippets:571"
+  },
+  "alpha": {
+    "prefix": "alpha",
+    "body": [
+      "alpha(${0:color});"
+    ],
+    "description": "vim-snippets/processing.snippets:573"
+  },
+  "tint": {
+    "prefix": "tint",
+    "body": [
+      "tint(${1:value1}, ${2:value2}, ${3:value3}${4:, }${0:alpha});"
+    ],
+    "description": "vim-snippets/processing.snippets:575"
+  },
+  "set - pixel": {
+    "prefix": "set",
+    "body": [
+      "set(${1:x}, ${2:y}, ${0:color/image});"
+    ],
+    "description": "pixel"
+  },
+  "pixels": {
+    "prefix": "pixels",
+    "body": [
+      "pixels[${0:index}]"
+    ],
+    "description": "vim-snippets/processing.snippets:581"
+  },
+  "get - pixel": {
+    "prefix": "get",
+    "body": [
+      "get(${1:x}, ${2:y}${3:, }${4:width}${5:, }${0:height});"
+    ],
+    "description": "pixel"
+  },
+  "triangle": {
+    "prefix": "triangle",
+    "body": [
+      "triangle(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${0:y3});"
+    ],
+    "description": "vim-snippets/processing.snippets:587"
+  },
+  "line": {
+    "prefix": "line",
+    "body": [
+      "line(${1:x1}, ${2:y1}, ${3:x2}, ${0:y2});"
+    ],
+    "description": "vim-snippets/processing.snippets:589"
+  },
+  "line - 3D": {
+    "prefix": "line",
+    "body": [
+      "line(${1:x1}, ${2:y1}, ${3:z1}, ${4:x2}, ${5:y2}, ${0:z2});"
+    ],
+    "description": "3D"
+  },
+  "arc": {
+    "prefix": "arc",
+    "body": [
+      "arc(${1:x}, ${2:y}, ${3:width}, ${4:height}, ${5:start}, ${0:stop});"
+    ],
+    "description": "vim-snippets/processing.snippets:593"
+  },
+  "point": {
+    "prefix": "point",
+    "body": [
+      "point(${1:x}, ${2:y}${3:, }${0:z});"
+    ],
+    "description": "vim-snippets/processing.snippets:595"
+  },
+  "quad": {
+    "prefix": "quad",
+    "body": [
+      "quad(${1:x1}, ${2:y1}, ${3:x2}, ${4:y2}, ${5:x3}, ${6:y3}, ${7:x4}, ${0:y4});"
+    ],
+    "description": "vim-snippets/processing.snippets:597"
+  },
+  "ellipse": {
+    "prefix": "ellipse",
+    "body": [
+      "ellipse(${1:x}, ${2:y}, ${3:width}, ${0:height});"
+    ],
+    "description": "vim-snippets/processing.snippets:599"
+  },
+  "rect": {
+    "prefix": "rect",
+    "body": [
+      "rect(${1:x}, ${2:y}, ${3:width}, ${0:height});"
+    ],
+    "description": "vim-snippets/processing.snippets:601"
+  },
+  "box": {
+    "prefix": "box",
+    "body": [
+      "box(${1:width}, ${2:height}, ${0:depth});"
+    ],
+    "description": "vim-snippets/processing.snippets:603"
+  },
+  "sphere": {
+    "prefix": "sphere",
+    "body": [
+      "sphere(${0:radius});"
+    ],
+    "description": "vim-snippets/processing.snippets:605"
+  },
+  "sphereDetails": {
+    "prefix": "sphereDetails",
+    "body": [
+      "sphereDetail(${0:n});"
+    ],
+    "description": "vim-snippets/processing.snippets:607"
+  },
+  "split": {
+    "prefix": "split",
+    "body": [
+      "split(\"${1:str}\"${2: , }${0:delimiter});"
+    ],
+    "description": "vim-snippets/processing.snippets:611"
+  },
+  "splitTokens": {
+    "prefix": "splitTokens",
+    "body": [
+      "splitTokens(${1:str}${2:, }${0:tokens});"
+    ],
+    "description": "vim-snippets/processing.snippets:613"
+  },
+  "join": {
+    "prefix": "join",
+    "body": [
+      "join(${1:strgArray}${2: , }${0:seperator});"
+    ],
+    "description": "vim-snippets/processing.snippets:615"
+  },
+  "shorten": {
+    "prefix": "shorten",
+    "body": [
+      "shorten(${0:array});"
+    ],
+    "description": "vim-snippets/processing.snippets:617"
+  },
+  "concat": {
+    "prefix": "concat",
+    "body": [
+      "concat(${1:array1}, ${0:array2});"
+    ],
+    "description": "vim-snippets/processing.snippets:619"
+  },
+  "subset": {
+    "prefix": "subset",
+    "body": [
+      "subset(${1:array}, ${0:offset});"
+    ],
+    "description": "vim-snippets/processing.snippets:621"
+  },
+  "append": {
+    "prefix": "append",
+    "body": [
+      "append(${1:array}, ${0:element});"
+    ],
+    "description": "vim-snippets/processing.snippets:623"
+  },
+  "reverse": {
+    "prefix": "reverse",
+    "body": [
+      "reverse(${0:array});"
+    ],
+    "description": "vim-snippets/processing.snippets:625"
+  },
+  "splice": {
+    "prefix": "splice",
+    "body": [
+      "splice(${1:array}, ${2:value/array2}, ${0:index});"
+    ],
+    "description": "vim-snippets/processing.snippets:627"
+  },
+  "sort": {
+    "prefix": "sort",
+    "body": [
+      "sort(${1:dataArray}${2:, }${0:count});"
+    ],
+    "description": "vim-snippets/processing.snippets:629"
+  },
+  "expand": {
+    "prefix": "expand",
+    "body": [
+      "expand(${1:array}${2:, }${0:newSize});"
+    ],
+    "description": "vim-snippets/processing.snippets:631"
+  },
+  "arrayCopy": {
+    "prefix": "arrayCopy",
+    "body": [
+      "arrayCopy(${1:src}, ${2:dest}, ${3:, }${0:length});"
+    ],
+    "description": "vim-snippets/processing.snippets:633"
+  },
+  "str": {
+    "prefix": "str",
+    "body": [
+      "str(\"${0:str}\");"
+    ],
+    "description": "vim-snippets/processing.snippets:637"
+  },
+  "match": {
+    "prefix": "match",
+    "body": [
+      "match(${1:str}, ${0:regexp});"
+    ],
+    "description": "vim-snippets/processing.snippets:639"
+  },
+  "trim": {
+    "prefix": "trim",
+    "body": [
+      "trim(${0:str});"
+    ],
+    "description": "vim-snippets/processing.snippets:641"
+  },
+  "nf": {
+    "prefix": "nf",
+    "body": [
+      "nf(${2:value}, ${3:left}${4:, }${0:right});"
+    ],
+    "description": "vim-snippets/processing.snippets:643"
+  },
+  "nfs": {
+    "prefix": "nfs",
+    "body": [
+      "nfs(${2:value}, ${3:left}${4:, }${0:right});"
+    ],
+    "description": "vim-snippets/processing.snippets:645"
+  },
+  "nfp": {
+    "prefix": "nfp",
+    "body": [
+      "nfp(${2:value}, ${3:left}${4:, }${0:right});"
+    ],
+    "description": "vim-snippets/processing.snippets:647"
+  },
+  "nfc": {
+    "prefix": "nfc",
+    "body": [
+      "nfc(${1:value}${2:, }${0:right});"
+    ],
+    "description": "vim-snippets/processing.snippets:649"
+  },
+  "unbinary": {
+    "prefix": "unbinary",
+    "body": [
+      "unbinary(\"${0:str}\"});"
+    ],
+    "description": "vim-snippets/processing.snippets:653"
+  },
+  "hexadecimal": {
+    "prefix": "hexadecimal",
+    "body": [
+      "hex(${0:c});"
+    ],
+    "description": "vim-snippets/processing.snippets:655"
+  },
+  "unhex": {
+    "prefix": "unhex",
+    "body": [
+      "unhex(${0:c});"
+    ],
+    "description": "vim-snippets/processing.snippets:657"
+  },
+  "binary": {
+    "prefix": "binary",
+    "body": [
+      "binary(${1:value}${2:, }${0:digits});"
+    ],
+    "description": "vim-snippets/processing.snippets:659"
+  },
+  "loadImage": {
+    "prefix": "loadImage",
+    "body": [
+      "loadImage(${0:filename});"
+    ],
+    "description": "vim-snippets/processing.snippets:663"
+  },
+  "image": {
+    "prefix": "image",
+    "body": [
+      "image(${1:img}, ${2:x}, ${3:y}${4:, }${5:width}${6:, }${0:height});"
+    ],
+    "description": "vim-snippets/processing.snippets:665"
+  },
+  "copy": {
+    "prefix": "copy",
+    "body": [
+      "copy(${1:srcImg}${2:, }${3:x}, ${4:y}, ${5:width}, ${6:height}, ${7:dx}, ${8:dy}, ${9:dwidth}, ${0:dheight});"
+    ],
+    "description": "vim-snippets/processing.snippets:667"
+  },
+  "bg": {
+    "prefix": "bg",
+    "body": [
+      "background(${1:value1}, ${2:value2}, ${3:value3}${4:, }${0:alpha});"
+    ],
+    "description": "vim-snippets/processing.snippets:673"
+  },
+  "pg": {
+    "prefix": "pg",
+    "body": [
+      "PGraphics pg;",
+      "pg = createGraphics(${1:width}, ${2:height}${3:, }${0:applet});"
+    ],
+    "description": "vim-snippets/processing.snippets:675"
+  },
+  "pimage": {
+    "prefix": "pimage",
+    "body": [
+      "PImage(${1:width}, ${0:height});"
+    ],
+    "description": "vim-snippets/processing.snippets:678"
+  },
+  "fill": {
+    "prefix": "fill",
+    "body": [
+      "fill(${1:value1}, ${2:value2}, ${3:value3}${4:, }${0:alpha});"
+    ],
+    "description": "vim-snippets/processing.snippets:683"
+  },
+  "red": {
+    "prefix": "red",
+    "body": [
+      "red(${0:color});"
+    ],
+    "description": "vim-snippets/processing.snippets:686"
+  },
+  "green": {
+    "prefix": "green",
+    "body": [
+      "green(${0:color});"
+    ],
+    "description": "vim-snippets/processing.snippets:689"
+  },
+  "blue": {
+    "prefix": "blue",
+    "body": [
+      "blue(${0:color});"
+    ],
+    "description": "vim-snippets/processing.snippets:692"
+  },
+  "status": {
+    "prefix": "status",
+    "body": [
+      "status(${0:text});"
+    ],
+    "description": "vim-snippets/processing.snippets:695"
+  },
+  "param": {
+    "prefix": "param",
+    "body": [
+      "param(${0:s});"
+    ],
+    "description": "vim-snippets/processing.snippets:698"
+  },
+  "link": {
+    "prefix": "link",
+    "body": [
+      "link(${1:url}${2:, }${0:target});"
+    ],
+    "description": "vim-snippets/processing.snippets:701"
+  },
+  "@": {
+    "prefix": "@",
+    "body": [
+      "@${1:param/return/private/public}  ${1:parameter}  ${0:description}"
+    ],
+    "description": "vim-snippets/processing.snippets:704"
+  }
+}

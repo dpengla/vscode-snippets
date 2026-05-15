@@ -1,0 +1,177 @@
+{
+  "#! - #!/usr/bin/awk -f": {
+    "prefix": "#!",
+    "body": [
+      "#!/usr/bin/awk -f"
+    ],
+    "description": "#!/usr/bin/awk -f"
+  },
+  "inc - @include": {
+    "prefix": "inc",
+    "body": [
+      "@include \"${1}\"${0}"
+    ],
+    "description": "@include"
+  },
+  "loa - @load": {
+    "prefix": "loa",
+    "body": [
+      "@load \"${1}\"${0}"
+    ],
+    "description": "@load"
+  },
+  "beg - BEGIN { ... }": {
+    "prefix": "beg",
+    "body": [
+      "BEGIN {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "BEGIN { ... }"
+  },
+  "begf - BEGINFILE { ... }": {
+    "prefix": "begf",
+    "body": [
+      "BEGINFILE {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "BEGINFILE { ... }"
+  },
+  "end - END { ... }": {
+    "prefix": "end",
+    "body": [
+      "END {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "END { ... }"
+  },
+  "endf - ENDFILE { ... }": {
+    "prefix": "endf",
+    "body": [
+      "ENDFILE {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "ENDFILE { ... }"
+  },
+  "pri - print": {
+    "prefix": "pri",
+    "body": [
+      "print ${1:\"${2}\"}${0}"
+    ],
+    "description": "print"
+  },
+  "printf - printf": {
+    "prefix": "printf",
+    "body": [
+      "printf(\"${1:%s}\\n\", ${2})${0}"
+    ],
+    "description": "printf"
+  },
+  "ign - IGNORECASE": {
+    "prefix": "ign",
+    "body": [
+      "IGNORECASE = ${1:1}"
+    ],
+    "description": "IGNORECASE"
+  },
+  "if - if {...}": {
+    "prefix": "if",
+    "body": [
+      "if (${1}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "if {...}"
+  },
+  "ife - if ... else ...": {
+    "prefix": "ife",
+    "body": [
+      "if (${1}) {",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "} else {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "if ... else ..."
+  },
+  "eif - else if ...": {
+    "prefix": "eif",
+    "body": [
+      "else if (${1}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "else if ..."
+  },
+  "el - else {...}": {
+    "prefix": "el",
+    "body": [
+      "else {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "else {...}"
+  },
+  "wh - while": {
+    "prefix": "wh",
+    "body": [
+      "while (${1}) {",
+      "\t${2}",
+      "}"
+    ],
+    "description": "while"
+  },
+  "do - do ... while": {
+    "prefix": "do",
+    "body": [
+      "do {",
+      "\t${0}",
+      "} while (${1})"
+    ],
+    "description": "do ... while"
+  },
+  "for - for": {
+    "prefix": "for",
+    "body": [
+      "for (${2:i} = 0; i < ${1:n}; ${3:++i}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "for"
+  },
+  "fore - for each": {
+    "prefix": "fore",
+    "body": [
+      "for (${1:i} in ${2:array}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "for each"
+  },
+  "sw - switch": {
+    "prefix": "sw",
+    "body": [
+      "switch (${1}) {",
+      "case ${2}:",
+      "\t${3}",
+      "\tbreak",
+      "default:",
+      "\t${0}",
+      "\tbreak",
+      "}"
+    ],
+    "description": "switch"
+  },
+  "case - case": {
+    "prefix": "case",
+    "body": [
+      "case ${1}:",
+      "\t${0}",
+      "\tbreak"
+    ],
+    "description": "case"
+  }
+}

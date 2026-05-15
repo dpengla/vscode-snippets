@@ -1,0 +1,210 @@
+{
+  "#!": {
+    "prefix": "#!",
+    "body": [
+      "#!/usr/bin/env julia"
+    ],
+    "description": "vim-snippets/julia.snippets:1"
+  },
+  "fun - function definition": {
+    "prefix": "fun",
+    "body": [
+      "function ${1}(${2})",
+      "\t${0}",
+      "end"
+    ],
+    "description": "function definition"
+  },
+  "ret - return": {
+    "prefix": "ret",
+    "body": [
+      "return(${0})"
+    ],
+    "description": "return"
+  },
+  "pr - print": {
+    "prefix": "pr",
+    "body": [
+      "print(\"${1}\")",
+      "${0}"
+    ],
+    "description": "print"
+  },
+  "prl - print line": {
+    "prefix": "prl",
+    "body": [
+      "println(\"${1}\")",
+      "${0}"
+    ],
+    "description": "print line"
+  },
+  "use - load a package": {
+    "prefix": "use",
+    "body": [
+      "using ${0}"
+    ],
+    "description": "load a package"
+  },
+  "incl - include source code": {
+    "prefix": "incl",
+    "body": [
+      "include(\"${1}\")",
+      "${0}"
+    ],
+    "description": "include source code"
+  },
+  "forc - for loop iterating over iterable container": {
+    "prefix": "forc",
+    "body": [
+      "for ${1} in ${2}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "for loop iterating over iterable container"
+  },
+  "for - standard for loop": {
+    "prefix": "for",
+    "body": [
+      "for ${1} = ${2}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "standard for loop"
+  },
+  "fornest - nested for loop": {
+    "prefix": "fornest",
+    "body": [
+      "for ${1} = ${2}, ${3} = ${4}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "nested for loop"
+  },
+  "wh - while loop": {
+    "prefix": "wh",
+    "body": [
+      "while ${1} ${2:<=} ${3}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "while loop"
+  },
+  "if - if statement": {
+    "prefix": "if",
+    "body": [
+      "if ${1}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "if statement"
+  },
+  "el - else part of statement": {
+    "prefix": "el",
+    "body": [
+      "else",
+      "\t${0}"
+    ],
+    "description": "else part of statement"
+  },
+  "eif - else if part of if statement": {
+    "prefix": "eif",
+    "body": [
+      "else if ${1}",
+      "\t${0}"
+    ],
+    "description": "else if part of if statement"
+  },
+  "ife - full if-else statement": {
+    "prefix": "ife",
+    "body": [
+      "if ${1}",
+      "\t${2}",
+      "else",
+      "\t${0}",
+      "end"
+    ],
+    "description": "full if-else statement"
+  },
+  "tern - ternary operator": {
+    "prefix": "tern",
+    "body": [
+      "${1} ? ${2} : ${3:nothing}"
+    ],
+    "description": "ternary operator"
+  },
+  "try - try catch": {
+    "prefix": "try",
+    "body": [
+      "try",
+      "\t${1:${TM_SELECTED_TEXT}}",
+      "catch ${2}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "try catch"
+  },
+  "fin - finally statement": {
+    "prefix": "fin",
+    "body": [
+      "finally",
+      "\t${0}"
+    ],
+    "description": "finally statement"
+  },
+  "thr - throw": {
+    "prefix": "thr",
+    "body": [
+      "throw(${1})",
+      "${0}"
+    ],
+    "description": "throw"
+  },
+  "@i": {
+    "prefix": "@i",
+    "body": [
+      "@info \"${1}\" ${0}"
+    ],
+    "description": "vim-snippets/julia.snippets:92"
+  },
+  "@w": {
+    "prefix": "@w",
+    "body": [
+      "@warn \"${1}\" ${0}"
+    ],
+    "description": "vim-snippets/julia.snippets:95"
+  },
+  "@e": {
+    "prefix": "@e",
+    "body": [
+      "@error \"${1}\" ${0}"
+    ],
+    "description": "vim-snippets/julia.snippets:98"
+  },
+  "@d": {
+    "prefix": "@d",
+    "body": [
+      "@debug \"${1}\" ${0}"
+    ],
+    "description": "vim-snippets/julia.snippets:101"
+  },
+  "@t - @testset with @test": {
+    "prefix": "@t",
+    "body": [
+      "@testset \"${1}\" begin",
+      "\t${2}",
+      "\t@test ${0}",
+      "end"
+    ],
+    "description": "@testset with @test"
+  },
+  "@tt - @testset with @test_throws": {
+    "prefix": "@tt",
+    "body": [
+      "@testset \"${1}\" begin",
+      "\t${2}",
+      "\t@test_throws ${0}",
+      "end"
+    ],
+    "description": "@testset with @test_throws"
+  }
+}

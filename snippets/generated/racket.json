@@ -1,0 +1,333 @@
+{
+  "#r": {
+    "prefix": "#r",
+    "body": [
+      "#lang racket"
+    ],
+    "description": "vim-snippets/racket.snippets:2"
+  },
+  "#tr": {
+    "prefix": "#tr",
+    "body": [
+      "#lang typed/racket"
+    ],
+    "description": "vim-snippets/racket.snippets:4"
+  },
+  "#rg": {
+    "prefix": "#rg",
+    "body": [
+      "#lang racket/gui"
+    ],
+    "description": "vim-snippets/racket.snippets:6"
+  },
+  "#sb": {
+    "prefix": "#sb",
+    "body": [
+      "#lang scribble/base"
+    ],
+    "description": "vim-snippets/racket.snippets:8"
+  },
+  "#d": {
+    "prefix": "#d",
+    "body": [
+      "#lang datalog"
+    ],
+    "description": "vim-snippets/racket.snippets:10"
+  },
+  "#wi": {
+    "prefix": "#wi",
+    "body": [
+      "#lang web-server/insta"
+    ],
+    "description": "vim-snippets/racket.snippets:12"
+  },
+  "def": {
+    "prefix": "def",
+    "body": [
+      "(define ${1} ${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:16"
+  },
+  "defun": {
+    "prefix": "defun",
+    "body": [
+      "(define (${1})",
+      "\t${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:18"
+  },
+  "defv - define-values": {
+    "prefix": "defv",
+    "body": [
+      "(define-values (${1}) (${0}))"
+    ],
+    "description": "define-values"
+  },
+  "defm - define/match": {
+    "prefix": "defm",
+    "body": [
+      "(define/match (${1})",
+      "  [(${2}) ${3}]",
+      "\t${0})"
+    ],
+    "description": "define/match"
+  },
+  "defs - define-syntax": {
+    "prefix": "defs",
+    "body": [
+      "(define-syntax (${1})",
+      "\t${0})"
+    ],
+    "description": "define-syntax"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "(if ${1} ${2} ${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:32"
+  },
+  "ifn": {
+    "prefix": "ifn",
+    "body": [
+      "(if (not ${1}) ${2} ${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:34"
+  },
+  "ifl": {
+    "prefix": "ifl",
+    "body": [
+      "(if ${1}",
+      "\t(let (${2})",
+      "\t\t${3})",
+      "\t${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:36"
+  },
+  "ifnl": {
+    "prefix": "ifnl",
+    "body": [
+      "(if (not ${1})",
+      "\t(let (${2})",
+      "\t\t${3})",
+      "\t${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:41"
+  },
+  "ifb": {
+    "prefix": "ifb",
+    "body": [
+      "(if ${1}",
+      "\t(begin",
+      "\t\t${2})",
+      "\t${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:46"
+  },
+  "ifnb": {
+    "prefix": "ifnb",
+    "body": [
+      "(if (not ${1})",
+      "\t(begin",
+      "\t\t${2})",
+      "\t${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:51"
+  },
+  "when": {
+    "prefix": "when",
+    "body": [
+      "(when ${1}",
+      "\t${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:56"
+  },
+  "unless": {
+    "prefix": "unless",
+    "body": [
+      "(unless ${1} ${2} ${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:59"
+  },
+  "cond": {
+    "prefix": "cond",
+    "body": [
+      "(cond",
+      "\t[(${1}) ${0}])"
+    ],
+    "description": "vim-snippets/racket.snippets:61"
+  },
+  "conde": {
+    "prefix": "conde",
+    "body": [
+      "(cond",
+      "\t[(${1}) ${2}]",
+      "\t[else ${0}])"
+    ],
+    "description": "vim-snippets/racket.snippets:64"
+  },
+  "case": {
+    "prefix": "case",
+    "body": [
+      "(case ${1}",
+      "\t[(${2}) ${0}])"
+    ],
+    "description": "vim-snippets/racket.snippets:68"
+  },
+  "match": {
+    "prefix": "match",
+    "body": [
+      "(match ${1}",
+      "\t[(${2}) ${0}])"
+    ],
+    "description": "vim-snippets/racket.snippets:71"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "(for ([${1}])",
+      "\t${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:76"
+  },
+  "forl - for/list": {
+    "prefix": "forl",
+    "body": [
+      "(for/list ([${1}])",
+      "\t${0})"
+    ],
+    "description": "for/list"
+  },
+  "forf - for/fold": {
+    "prefix": "forf",
+    "body": [
+      "(for/fold",
+      "\t([${1}])",
+      "\t([${2}])",
+      "\t${0})"
+    ],
+    "description": "for/fold"
+  },
+  "forfr - for/foldr": {
+    "prefix": "forfr",
+    "body": [
+      "(for/foldr",
+      "\t([${1}])",
+      "\t([${2}])",
+      "\t${0})"
+    ],
+    "description": "for/foldr"
+  },
+  "fora - for/and": {
+    "prefix": "fora",
+    "body": [
+      "(for/and ([${1}])",
+      "\t${0})"
+    ],
+    "description": "for/and"
+  },
+  "foro - for/or": {
+    "prefix": "foro",
+    "body": [
+      "(for/or ([${1}])",
+      "\t${0})"
+    ],
+    "description": "for/or"
+  },
+  "fors - for/sum": {
+    "prefix": "fors",
+    "body": [
+      "(for/sum ([${1}])",
+      "\t${0})"
+    ],
+    "description": "for/sum"
+  },
+  "forp - for/product": {
+    "prefix": "forp",
+    "body": [
+      "(for/product ([${1}])",
+      "\t${0})"
+    ],
+    "description": "for/product"
+  },
+  "forfi - for/first": {
+    "prefix": "forfi",
+    "body": [
+      "(for/first ([${1}])",
+      "\t${0})"
+    ],
+    "description": "for/first"
+  },
+  "forla - for/last": {
+    "prefix": "forla",
+    "body": [
+      "(for/last ([${1}])",
+      "\t${0})"
+    ],
+    "description": "for/last"
+  },
+  "lambda": {
+    "prefix": "lambda",
+    "body": [
+      "(lambda (${1}) ${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:111"
+  },
+  "apply": {
+    "prefix": "apply",
+    "body": [
+      "(apply ${1} ${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:113"
+  },
+  "map": {
+    "prefix": "map",
+    "body": [
+      "(map ${1} ${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:115"
+  },
+  "filter": {
+    "prefix": "filter",
+    "body": [
+      "(filter ${1} ${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:117"
+  },
+  "req": {
+    "prefix": "req",
+    "body": [
+      "(require ${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:120"
+  },
+  "prov": {
+    "prefix": "prov",
+    "body": [
+      "(provide ${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:122"
+  },
+  "let": {
+    "prefix": "let",
+    "body": [
+      "(let ([${1}]) ${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:125"
+  },
+  "letcc": {
+    "prefix": "letcc",
+    "body": [
+      "(let/cc here (set! ${1} here) ${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:127"
+  },
+  "begin": {
+    "prefix": "begin",
+    "body": [
+      "(begin",
+      "\t${0})"
+    ],
+    "description": "vim-snippets/racket.snippets:129"
+  }
+}

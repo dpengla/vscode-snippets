@@ -1,0 +1,31 @@
+{
+  "cont": {
+    "prefix": "cont",
+    "body": [
+      "defmodule ${1:AppName}Web.${2:ControllerName}Controller do",
+      "\tuse $1Web, :controller",
+      "",
+      "\t${3}",
+      "end"
+    ],
+    "description": "vim-snippets/phoenix.snippets:1"
+  },
+  "view": {
+    "prefix": "view",
+    "body": [
+      "defmodule ${1:AppName}Web.${2:ViewName}View do",
+      "\tuse $1Web, :view",
+      "end"
+    ],
+    "description": "vim-snippets/phoenix.snippets:8"
+  },
+  "chan": {
+    "prefix": "chan",
+    "body": [
+      "defmodule ${1:AppName}Web.${2:ChannelName}Channel do",
+      "\tuse $1Web, :channel",
+      "end"
+    ],
+    "description": "vim-snippets/phoenix.snippets:13"
+  }
+}

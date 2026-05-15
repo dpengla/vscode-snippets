@@ -1,0 +1,11 @@
+{
+  "ent": {
+    "prefix": "ent",
+    "body": [
+      "${CURRENT_YEAR}/${CURRENT_MONTH}/${CURRENT_DATE} ${1:transaction}",
+      "    ${2:account}    ${3:value}",
+      "    ${0:account}"
+    ],
+    "description": "vim-snippets/ledger.snippets:2"
+  }
+}

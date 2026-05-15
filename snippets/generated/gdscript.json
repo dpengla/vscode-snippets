@@ -1,0 +1,193 @@
+{
+  "class": {
+    "prefix": "class",
+    "body": [
+      "class $1 extends ${2:Reference}",
+      "\\t$3"
+    ],
+    "description": "vim-snippets/gdscript.snippets:1"
+  },
+  "pr": {
+    "prefix": "pr",
+    "body": [
+      "print($1)"
+    ],
+    "description": "vim-snippets/gdscript.snippets:6"
+  },
+  "ready": {
+    "prefix": "ready",
+    "body": [
+      "func _ready():",
+      "\\t${1:pass}"
+    ],
+    "description": "vim-snippets/gdscript.snippets:10"
+  },
+  "init": {
+    "prefix": "init",
+    "body": [
+      "func _init():",
+      "\\t${1:pass}"
+    ],
+    "description": "vim-snippets/gdscript.snippets:15"
+  },
+  "process": {
+    "prefix": "process",
+    "body": [
+      "func _process(delta):",
+      "\\t${1:pass}"
+    ],
+    "description": "vim-snippets/gdscript.snippets:20"
+  },
+  "input": {
+    "prefix": "input",
+    "body": [
+      "func _input(event):",
+      "\\t${1:pass}"
+    ],
+    "description": "vim-snippets/gdscript.snippets:25"
+  },
+  "inpute": {
+    "prefix": "inpute",
+    "body": [
+      "func _input_event(event):",
+      "\\t${1:pass}"
+    ],
+    "description": "vim-snippets/gdscript.snippets:30"
+  },
+  "draw": {
+    "prefix": "draw",
+    "body": [
+      "func _draw():",
+      "\\t${1:pass}"
+    ],
+    "description": "vim-snippets/gdscript.snippets:35"
+  },
+  "guii": {
+    "prefix": "guii",
+    "body": [
+      "func _gui_input(event):",
+      "\\t${1:pass}"
+    ],
+    "description": "vim-snippets/gdscript.snippets:40"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for $1 in $2:",
+      "\\t${3:pass}"
+    ],
+    "description": "vim-snippets/gdscript.snippets:45"
+  },
+  "for (50)": {
+    "prefix": "for",
+    "body": [
+      "for $1 in range(${2:start}{$3:,end}):",
+      "\\t${4:pass}"
+    ],
+    "description": "vim-snippets/gdscript.snippets:50"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if ${1:condition}:",
+      "\\t${3:pass}",
+      "elif ${2:condition}:",
+      "\\t${4:pass}",
+      "else:",
+      "\\t${5:pass}"
+    ],
+    "description": "vim-snippets/gdscript.snippets:55"
+  },
+  "if (64)": {
+    "prefix": "if",
+    "body": [
+      "if ${1:condition}:",
+      "\\t${2:pass}",
+      "else:",
+      "\\t${3:pass}"
+    ],
+    "description": "vim-snippets/gdscript.snippets:64"
+  },
+  "if (71)": {
+    "prefix": "if",
+    "body": [
+      "if ${1:condition}:",
+      "\\t${2:pass}"
+    ],
+    "description": "vim-snippets/gdscript.snippets:71"
+  },
+  "while": {
+    "prefix": "while",
+    "body": [
+      "while ${1:condition}:",
+      "\\t${2:pass}"
+    ],
+    "description": "vim-snippets/gdscript.snippets:76"
+  },
+  "func": {
+    "prefix": "func",
+    "body": [
+      "func ${1:method}(${2:args}):",
+      "\\t${3:pass}"
+    ],
+    "description": "vim-snippets/gdscript.snippets:81"
+  },
+  "signal": {
+    "prefix": "signal",
+    "body": [
+      "signal ${1:signalname}(${2:args})"
+    ],
+    "description": "vim-snippets/gdscript.snippets:86"
+  },
+  "export": {
+    "prefix": "export",
+    "body": [
+      "export(${1:type}${2:,other_configs}) var ${3:name}${4: = default}${5: setget }"
+    ],
+    "description": "vim-snippets/gdscript.snippets:90"
+  },
+  "var": {
+    "prefix": "var",
+    "body": [
+      "var ${1:name}${2: = default}${3: setget }"
+    ],
+    "description": "vim-snippets/gdscript.snippets:94"
+  },
+  "onready": {
+    "prefix": "onready",
+    "body": [
+      "onready var ${1:name} = get_node($2)"
+    ],
+    "description": "vim-snippets/gdscript.snippets:98"
+  },
+  "is": {
+    "prefix": "is",
+    "body": [
+      "${1:instance} is ${2:class}"
+    ],
+    "description": "vim-snippets/gdscript.snippets:102"
+  },
+  "in": {
+    "prefix": "in",
+    "body": [
+      "${1:element} in \\${$2:array}"
+    ],
+    "description": "vim-snippets/gdscript.snippets:106"
+  },
+  "gdscript": {
+    "prefix": "gdscript",
+    "body": [
+      "extends ${1:BaseClass}",
+      "",
+      "# class member variables go here, for example:",
+      "# var a = 2",
+      "# var b = \\textvar\\",
+      "",
+      "func _ready():",
+      "\\t# Called every time the node is added to the scene.",
+      "\\t# Initialization here",
+      "\\tpass"
+    ],
+    "description": "vim-snippets/gdscript.snippets:110"
+  }
+}

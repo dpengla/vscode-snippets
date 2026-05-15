@@ -1,0 +1,249 @@
+{
+  "main": {
+    "prefix": "main",
+    "body": [
+      "package {",
+      "\timport flash.display.*;",
+      "\timport flash.Events.*;",
+      "",
+      "\tpublic class Main extends Sprite {",
+      "\t\tpublic function Main (\t) {",
+      "\t\t\ttrace(\"start\");",
+      "\t\t\tstage.scaleMode = StageScaleMode.NO_SCALE;",
+      "\t\t\tstage.addEventListener(Event.RESIZE, resizeListener);",
+      "\t\t}",
+      "",
+      "\t\tprivate function resizeListener (e:Event):void {",
+      "\t\t\ttrace(\"The application window changed size!\");",
+      "\t\t\ttrace(\"New width:  \" + stage.stageWidth);",
+      "\t\t\ttrace(\"New height: \" + stage.stageHeight);",
+      "\t\t}",
+      "",
+      "\t}",
+      "",
+      "}"
+    ],
+    "description": "vim-snippets/actionscript.snippets:1"
+  },
+  "class": {
+    "prefix": "class",
+    "body": [
+      "${1:public|internal} class ${2:name} ${0:extends } {",
+      "\tpublic function $2 (\t) {",
+      "\t\t(\"start\");",
+      "\t}",
+      "}"
+    ],
+    "description": "vim-snippets/actionscript.snippets:22"
+  },
+  "all": {
+    "prefix": "all",
+    "body": [
+      "package name {",
+      "",
+      "\t${1:public|internal|final} class ${2:name} ${0:extends } {",
+      "\t\tprivate|public| static const FOO = \"abc\";",
+      "\t\tprivate|public| static var BAR = \"abc\";",
+      "",
+      "\t\t// class initializer - no JIT !! one time setup",
+      "\t\tif Cababilities.os == \"Linux|MacOS\" {",
+      "\t\t\tFOO = \"other\";",
+      "\t\t}",
+      "",
+      "\t\t// constructor:",
+      "\t\tpublic function $2 (\t){",
+      "\t\t\tsuper2();",
+      "\t\t\ttrace(\"start\");",
+      "\t\t}",
+      "\t\tpublic function name (a, b...){",
+      "\t\t\tsuper.name(..);",
+      "\t\t\tlable:break",
+      "\t\t}",
+      "\t}",
+      "}",
+      "",
+      "function A(){",
+      "\t// A can only be accessed within this file",
+      "}"
+    ],
+    "description": "vim-snippets/actionscript.snippets:28"
+  },
+  "switch": {
+    "prefix": "switch",
+    "body": [
+      "switch(${1}){",
+      "\tcase ${2}:",
+      "\t\t${0}",
+      "\tbreak;",
+      "\tdefault:",
+      "}"
+    ],
+    "description": "vim-snippets/actionscript.snippets:55"
+  },
+  "case": {
+    "prefix": "case",
+    "body": [
+      "\tcase ${1}:",
+      "\t\t${0}",
+      "\tbreak;"
+    ],
+    "description": "vim-snippets/actionscript.snippets:62"
+  },
+  "package": {
+    "prefix": "package",
+    "body": [
+      "package ${1:package}{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/actionscript.snippets:66"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "while ${1:cond}{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/actionscript.snippets:70"
+  },
+  "do": {
+    "prefix": "do",
+    "body": [
+      "do {",
+      "\t${0}",
+      "} while (${1:cond})"
+    ],
+    "description": "vim-snippets/actionscript.snippets:74"
+  },
+  "for - enumerate names": {
+    "prefix": "for",
+    "body": [
+      "for (${1:var} in ${2:object}){",
+      "\t${0}",
+      "}"
+    ],
+    "description": "enumerate names"
+  },
+  "for - enumerate values": {
+    "prefix": "for",
+    "body": [
+      "for each (${1:var} in ${2:object}){",
+      "\t${0}",
+      "}"
+    ],
+    "description": "enumerate values"
+  },
+  "get_set": {
+    "prefix": "get_set",
+    "body": [
+      "function get ${1:name} {",
+      "\treturn ${2}",
+      "}",
+      "function set $1 (newValue) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/actionscript.snippets:86"
+  },
+  "interface": {
+    "prefix": "interface",
+    "body": [
+      "interface name {",
+      "\tfunction method(${1}):${0:returntype};",
+      "}"
+    ],
+    "description": "vim-snippets/actionscript.snippets:93"
+  },
+  "try": {
+    "prefix": "try",
+    "body": [
+      "try {",
+      "\t${1:${TM_SELECTED_TEXT}}",
+      "} catch (error:ErrorType) {",
+      "\t${2}",
+      "} finally {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/actionscript.snippets:97"
+  },
+  "for - for (..) {..}": {
+    "prefix": "for",
+    "body": [
+      "for (${2:i} = 0; $2 < ${1:count}; $2${3:++}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "for (..) {..}"
+  },
+  "forr": {
+    "prefix": "forr",
+    "body": [
+      "for (${1:i} = ${2:0}; ${3:$1 < 10}; $1${4:++}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/actionscript.snippets:111"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if ($1) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/actionscript.snippets:116"
+  },
+  "el": {
+    "prefix": "el",
+    "body": [
+      "else {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/actionscript.snippets:120"
+  },
+  "t - Ternary: `condition ? true : false`": {
+    "prefix": "t",
+    "body": [
+      "$1 ? $2 : $0"
+    ],
+    "description": "Ternary: `condition ? true : false`"
+  },
+  "fun": {
+    "prefix": "fun",
+    "body": [
+      "function ${1:function_name}(${2})${3}",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/actionscript.snippets:127"
+  },
+  "FlxSprite": {
+    "prefix": "FlxSprite",
+    "body": [
+      "package",
+      "{",
+      "\timport org.flixel.*",
+      "",
+      "\tpublic class ${1:ClassName} extends ${2:FlxSprite}",
+      "\t{",
+      "\t\tpublic function $1(${3: X:Number, Y:Number}):void",
+      "\t\t{",
+      "\t\t\tsuper(X,Y);",
+      "\t\t\t${4}",
+      "\t\t}",
+      "",
+      "\t\toverride public function update():void",
+      "\t\t{",
+      "\t\t\tsuper.update();",
+      "\t\t\t${0}",
+      "\t\t}",
+      "\t}",
+      "}"
+    ],
+    "description": "vim-snippets/actionscript.snippets:133"
+  }
+}

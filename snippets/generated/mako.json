@@ -1,0 +1,136 @@
+{
+  "def": {
+    "prefix": "def",
+    "body": [
+      "<%def name=\"${1:name}\">",
+      "\t${0:}",
+      "</%def>"
+    ],
+    "description": "vim-snippets/mako.snippets:1"
+  },
+  "call": {
+    "prefix": "call",
+    "body": [
+      "<%call expr=\"${1:name}\">",
+      "\t${0:}",
+      "</%call>"
+    ],
+    "description": "vim-snippets/mako.snippets:5"
+  },
+  "doc": {
+    "prefix": "doc",
+    "body": [
+      "<%doc>",
+      "\t${0:}",
+      "</%doc>"
+    ],
+    "description": "vim-snippets/mako.snippets:9"
+  },
+  "text": {
+    "prefix": "text",
+    "body": [
+      "<%text>",
+      "\t${0:}",
+      "</%text>"
+    ],
+    "description": "vim-snippets/mako.snippets:13"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "% for ${1:i} in ${2:iter}:",
+      "\t${0:}",
+      "% endfor"
+    ],
+    "description": "vim-snippets/mako.snippets:17"
+  },
+  "if - if": {
+    "prefix": "if",
+    "body": [
+      "% if $1:",
+      "\t${0:}",
+      "% endif"
+    ],
+    "description": "if"
+  },
+  "ife - if/else": {
+    "prefix": "ife",
+    "body": [
+      "% if $1:",
+      "\t${2:}",
+      "% else:",
+      "\t${0:}",
+      "% endif"
+    ],
+    "description": "if/else"
+  },
+  "try": {
+    "prefix": "try",
+    "body": [
+      "% try:",
+      "\t${1:${TM_SELECTED_TEXT}}",
+      "% except${2:}:",
+      "\t${0:pass}",
+      "% endtry"
+    ],
+    "description": "vim-snippets/mako.snippets:31"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "% while ${1:}:",
+      "\t${0:}",
+      "% endwhile"
+    ],
+    "description": "vim-snippets/mako.snippets:37"
+  },
+  "$": {
+    "prefix": "$",
+    "body": [
+      "\\${ ${0:} }"
+    ],
+    "description": "vim-snippets/mako.snippets:41"
+  },
+  "<%": {
+    "prefix": "<%",
+    "body": [
+      "<% ${0:} %>"
+    ],
+    "description": "vim-snippets/mako.snippets:43"
+  },
+  "<!%": {
+    "prefix": "<!%",
+    "body": [
+      "<!% ${0:} %>"
+    ],
+    "description": "vim-snippets/mako.snippets:45"
+  },
+  "inherit": {
+    "prefix": "inherit",
+    "body": [
+      "<%inherit file=\"${0:filename}\" />"
+    ],
+    "description": "vim-snippets/mako.snippets:47"
+  },
+  "include": {
+    "prefix": "include",
+    "body": [
+      "<%include file=\"${0:filename}\" />"
+    ],
+    "description": "vim-snippets/mako.snippets:49"
+  },
+  "namespace": {
+    "prefix": "namespace",
+    "body": [
+      "<%namespace file=\"${0:name}\" />"
+    ],
+    "description": "vim-snippets/mako.snippets:51"
+  },
+  "page": {
+    "prefix": "page",
+    "body": [
+      "<%page args=\"${0:}\" />"
+    ],
+    "description": "vim-snippets/mako.snippets:53"
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "kern - Kernel definition": {
+    "prefix": "kern",
+    "body": [
+      "__global__ void ${1:kernel}(${2:void}) {",
+      "\t${0:// TODO: Implement}",
+      "}"
+    ],
+    "description": "Kernel definition"
+  },
+  "dev - Device function definition": {
+    "prefix": "dev",
+    "body": [
+      "__device__ ${1:int} ${2:foo}(${3:void}) {",
+      "\t${0:// TODO: Implement}",
+      "\treturn 0;",
+      "}"
+    ],
+    "description": "Device function definition"
+  },
+  "call - Kernel call": {
+    "prefix": "call",
+    "body": [
+      "${1:kernel}<<<${2:args}>>>(${3});${0}"
+    ],
+    "description": "Kernel call"
+  },
+  "sync - Synchonize threads": {
+    "prefix": "sync",
+    "body": [
+      "__syncthreads();"
+    ],
+    "description": "Synchonize threads"
+  },
+  "tid - Thread Index": {
+    "prefix": "tid",
+    "body": [
+      "threadIdx.${0}"
+    ],
+    "description": "Thread Index"
+  },
+  "bid - Block Index": {
+    "prefix": "bid",
+    "body": [
+      "blockIdx.${0}"
+    ],
+    "description": "Block Index"
+  },
+  "bdim - Block Dimension": {
+    "prefix": "bdim",
+    "body": [
+      "blockDim.${0}"
+    ],
+    "description": "Block Dimension"
+  },
+  "ii - Get current index (1D)": {
+    "prefix": "ii",
+    "body": [
+      "int ${1:index} = threadIdx.${2:x} + blockIdx.$2 * blockDim.$2;"
+    ],
+    "description": "Get current index (1D)"
+  },
+  "ix - Get current X index (1D)": {
+    "prefix": "ix",
+    "body": [
+      "int ${1:x} = threadIdx.x + blockIdx.x * blockDim.x;"
+    ],
+    "description": "Get current X index (1D)"
+  },
+  "iy - Get current Y index (1D)": {
+    "prefix": "iy",
+    "body": [
+      "int ${1:y} = threadIdx.y + blockIdx.y * blockDim.y;"
+    ],
+    "description": "Get current Y index (1D)"
+  },
+  "iz - Get current Z index (1D)": {
+    "prefix": "iz",
+    "body": [
+      "int ${1:z} = threadIdx.z + blockIdx.z * blockDim.z;"
+    ],
+    "description": "Get current Z index (1D)"
+  },
+  "ixy - Get current X,Y index (2D)": {
+    "prefix": "ixy",
+    "body": [
+      "int ${1:x} = threadIdx.x + blockIdx.x * blockDim.x;",
+      "int ${2:y} = threadIdx.y + blockIdx.y * blockDim.y;"
+    ],
+    "description": "Get current X,Y index (2D)"
+  },
+  "ixz - Get current X,Z index (2D)": {
+    "prefix": "ixz",
+    "body": [
+      "int ${1:x} = threadIdx.x + blockIdx.x * blockDim.x;",
+      "int ${3:z} = threadIdx.z + blockIdx.z * blockDim.z;"
+    ],
+    "description": "Get current X,Z index (2D)"
+  },
+  "iyz - Get current Y,Z index (2D)": {
+    "prefix": "iyz",
+    "body": [
+      "int ${2:y} = threadIdx.y + blockIdx.y * blockDim.y;",
+      "int ${3:z} = threadIdx.z + blockIdx.z * blockDim.z;"
+    ],
+    "description": "Get current Y,Z index (2D)"
+  },
+  "ixyz - Get current X,Y,Z index (3D)": {
+    "prefix": "ixyz",
+    "body": [
+      "int ${1:x} = threadIdx.x + blockIdx.x * blockDim.x;",
+      "int ${2:y} = threadIdx.y + blockIdx.y * blockDim.y;",
+      "int ${3:z} = threadIdx.z + blockIdx.z * blockDim.z;"
+    ],
+    "description": "Get current X,Y,Z index (3D)"
+  },
+  "share - Shared memory declaration": {
+    "prefix": "share",
+    "body": [
+      "__shared__ ${1:int} ${2:memo}[${3:SIZE}];${0}"
+    ],
+    "description": "Shared memory declaration"
+  }
+}

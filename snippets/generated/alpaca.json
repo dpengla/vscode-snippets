@@ -1,0 +1,115 @@
+{
+  "mod": {
+    "prefix": "mod",
+    "body": [
+      "module ${0:${TM_FILENAME_BASE}}"
+    ],
+    "description": "vim-snippets/alpaca.snippets:1"
+  },
+  "imp": {
+    "prefix": "imp",
+    "body": [
+      "import ${0:http}"
+    ],
+    "description": "vim-snippets/alpaca.snippets:3"
+  },
+  "impt": {
+    "prefix": "impt",
+    "body": [
+      "import type ${0:option.option}"
+    ],
+    "description": "vim-snippets/alpaca.snippets:5"
+  },
+  "exp": {
+    "prefix": "exp",
+    "body": [
+      "export ${0}"
+    ],
+    "description": "vim-snippets/alpaca.snippets:7"
+  },
+  "expt": {
+    "prefix": "expt",
+    "body": [
+      "export ${0}"
+    ],
+    "description": "vim-snippets/alpaca.snippets:9"
+  },
+  "fn": {
+    "prefix": "fn",
+    "body": [
+      "val ${1:fn} ${2}: fn ${3:'a} -> ${4:'a}",
+      "let $1 ${5} =",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/alpaca.snippets:11"
+  },
+  "mat": {
+    "prefix": "mat",
+    "body": [
+      "match ${1} with",
+      "| ${2} -> ${0}"
+    ],
+    "description": "vim-snippets/alpaca.snippets:15"
+  },
+  "-": {
+    "prefix": "-",
+    "body": [
+      "| ${1} -> ${0}"
+    ],
+    "description": "vim-snippets/alpaca.snippets:18"
+  },
+  "let": {
+    "prefix": "let",
+    "body": [
+      "let ${1} = ${2:${TM_SELECTED_TEXT}} in",
+      "${0}"
+    ],
+    "description": "vim-snippets/alpaca.snippets:20"
+  },
+  "letf": {
+    "prefix": "letf",
+    "body": [
+      "let ${1} =",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/alpaca.snippets:23"
+  },
+  "ty": {
+    "prefix": "ty",
+    "body": [
+      "type ${1:msg}",
+      "\t= ${0}"
+    ],
+    "description": "vim-snippets/alpaca.snippets:26"
+  },
+  "test": {
+    "prefix": "test",
+    "body": [
+      "test \"${1}\" =",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/alpaca.snippets:29"
+  },
+  "doc": {
+    "prefix": "doc",
+    "body": [
+      "{-| ${0}",
+      "-}"
+    ],
+    "description": "vim-snippets/alpaca.snippets:32"
+  },
+  "p": {
+    "prefix": "p",
+    "body": [
+      "|> ${0}"
+    ],
+    "description": "vim-snippets/alpaca.snippets:35"
+  },
+  "ae": {
+    "prefix": "ae",
+    "body": [
+      "assert.equal ${0}"
+    ],
+    "description": "vim-snippets/alpaca.snippets:37"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "header": {
+    "prefix": "header",
+    "body": [
+      "---",
+      "title: ${1:title}",
+      "layout: post",
+      "date: ${2:date} ${0:hour:minute:second} -05:00",
+      "---"
+    ],
+    "description": "vim-snippets/textile.snippets:2"
+  },
+  "img": {
+    "prefix": "img",
+    "body": [
+      "!${1:url}(${2:title}):${0:link}!"
+    ],
+    "description": "vim-snippets/textile.snippets:10"
+  },
+  "|": {
+    "prefix": "|",
+    "body": [
+      "|${1}|"
+    ],
+    "description": "vim-snippets/textile.snippets:14"
+  },
+  "link": {
+    "prefix": "link",
+    "body": [
+      "\"${1:link text}\":${0:url}"
+    ],
+    "description": "vim-snippets/textile.snippets:18"
+  },
+  "(": {
+    "prefix": "(",
+    "body": [
+      "(${1:Expand acronym})"
+    ],
+    "description": "vim-snippets/textile.snippets:22"
+  },
+  "fn": {
+    "prefix": "fn",
+    "body": [
+      "[${1:ref number}] ${0}",
+      "",
+      "fn$1. ${2:footnote}"
+    ],
+    "description": "vim-snippets/textile.snippets:26"
+  }
+}

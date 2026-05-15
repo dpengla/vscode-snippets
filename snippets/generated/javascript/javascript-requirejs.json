@@ -1,0 +1,29 @@
+{
+  "def": {
+    "prefix": "def",
+    "body": [
+      "define([\"${1:#dependencies1}\"], function (${2:#dependencies2}) {",
+      "\treturn ${0:TARGET};",
+      "});"
+    ],
+    "description": "vim-snippets/javascript/javascript-requirejs.snippets:1"
+  },
+  "defn": {
+    "prefix": "defn",
+    "body": [
+      "define(\"${1:#name}\", [\"${2:#dependencies1}\"], function (${3:#dependencies2}) {",
+      "\treturn ${0:TARGET};",
+      "});"
+    ],
+    "description": "vim-snippets/javascript/javascript-requirejs.snippets:6"
+  },
+  "reqjs": {
+    "prefix": "reqjs",
+    "body": [
+      "require([\"${1:#dependencies1}\"], function (${2:#dependencies2}) {",
+      "\treturn ${0:TARGET};",
+      "});"
+    ],
+    "description": "vim-snippets/javascript/javascript-requirejs.snippets:11"
+  }
+}

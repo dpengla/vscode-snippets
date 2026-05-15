@@ -1,0 +1,932 @@
+{
+  "#!": {
+    "prefix": "#!",
+    "body": [
+      "#!/usr/bin/env python3"
+    ],
+    "description": "vim-snippets/python.snippets:1"
+  },
+  "#!2": {
+    "prefix": "#!2",
+    "body": [
+      "#!/usr/bin/env python2",
+      "# -*- coding: utf-8 -*-"
+    ],
+    "description": "vim-snippets/python.snippets:3"
+  },
+  "#!3": {
+    "prefix": "#!3",
+    "body": [
+      "#!/usr/bin/env python3"
+    ],
+    "description": "vim-snippets/python.snippets:6"
+  },
+  "imp": {
+    "prefix": "imp",
+    "body": [
+      "import ${0:module}"
+    ],
+    "description": "vim-snippets/python.snippets:8"
+  },
+  "uni": {
+    "prefix": "uni",
+    "body": [
+      "def __unicode__(self):",
+      "\t${0:representation}"
+    ],
+    "description": "vim-snippets/python.snippets:10"
+  },
+  "from": {
+    "prefix": "from",
+    "body": [
+      "from ${1:package} import ${0:module}"
+    ],
+    "description": "vim-snippets/python.snippets:13"
+  },
+  "docs": {
+    "prefix": "docs",
+    "body": [
+      "\"\"\"",
+      "File: ${1:${TM_FILENAME_BASE}}",
+      "Author: author",
+      "Email: email",
+      "Github: github",
+      "Description: ${0}",
+      "\"\"\""
+    ],
+    "description": "vim-snippets/python.snippets:17"
+  },
+  "sk - skip unittests": {
+    "prefix": "sk",
+    "body": [
+      "@unittest.skip(${1:skip_reason})"
+    ],
+    "description": "skip unittests"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "while $1:",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/python.snippets:30"
+  },
+  "dowh": {
+    "prefix": "dowh",
+    "body": [
+      "while True:",
+      "\t${1}",
+      "\tif $0:",
+      "\t\tbreak"
+    ],
+    "description": "vim-snippets/python.snippets:35"
+  },
+  "with": {
+    "prefix": "with",
+    "body": [
+      "with ${1:expr} as ${2:var}:",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/python.snippets:41"
+  },
+  "awith": {
+    "prefix": "awith",
+    "body": [
+      "async with ${1:expr} as ${2:var}:",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/python.snippets:45"
+  },
+  "cl": {
+    "prefix": "cl",
+    "body": [
+      "class ${1:ClassName}(${2:object}):",
+      "\t\"\"\"${3:docstring for $1}\"\"\"",
+      "\tdef __init__(self, ${4:arg}):",
+      "\t\t${5:super($1, self).__init__()}",
+      "\t\tself.$4 = $4",
+      "\t\t${0}"
+    ],
+    "description": "vim-snippets/python.snippets:50"
+  },
+  "cla": {
+    "prefix": "cla",
+    "body": [
+      "class ${1:class_name}:",
+      "\t\"\"\"${0:description}\"\"\""
+    ],
+    "description": "vim-snippets/python.snippets:57"
+  },
+  "clai": {
+    "prefix": "clai",
+    "body": [
+      "class ${1:class_name}:",
+      "\t\"\"\"${2:description}\"\"\"",
+      "\tdef __init__(self, ${3:args}):",
+      "\t\t${0}"
+    ],
+    "description": "vim-snippets/python.snippets:61"
+  },
+  "dcl - dataclass": {
+    "prefix": "dcl",
+    "body": [
+      "@dataclass",
+      "class ${1:ClassName}:",
+      "\t\"\"\"${2:description}\"\"\"",
+      "\t${3:var_1}: ${4:int}",
+      "\t${5:var_2}: ${6:float} = ${7:0}",
+      "",
+      "\tdef ${8:total}(self): -> $6:",
+      "\t\treturn ${0:self.$3 * self.$5}"
+    ],
+    "description": "dataclass"
+  },
+  "def": {
+    "prefix": "def",
+    "body": [
+      "def ${1:fname}(${2:self}):",
+      "\t\"\"\"${3:docstring for $1}\"\"\"",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/python.snippets:79"
+  },
+  "deff": {
+    "prefix": "deff",
+    "body": [
+      "def ${1:fname}(${2:self}):",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/python.snippets:83"
+  },
+  "adef": {
+    "prefix": "adef",
+    "body": [
+      "async def ${1:fname}(${2:self}):",
+      "\t\"\"\"${3:docstring for $1}\"\"\"",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/python.snippets:86"
+  },
+  "adeff": {
+    "prefix": "adeff",
+    "body": [
+      "async def ${1:fname}(${2:self}):",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/python.snippets:90"
+  },
+  "defi": {
+    "prefix": "defi",
+    "body": [
+      "def __init__(self, ${1:args}):",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/python.snippets:95"
+  },
+  "defm": {
+    "prefix": "defm",
+    "body": [
+      "def ${1:mname}(self, ${2:arg}):",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/python.snippets:98"
+  },
+  "adefm": {
+    "prefix": "adefm",
+    "body": [
+      "async def ${1:mname}(self, ${2:arg}):",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/python.snippets:101"
+  },
+  "property": {
+    "prefix": "property",
+    "body": [
+      "@property",
+      "def ${1:foo}(self) -> ${2:type}:",
+      "\t\"\"\"${3:doc}\"\"\"",
+      "\treturn self._$1",
+      "",
+      "@$1.setter",
+      "def $1(self, value: $2):",
+      "\tself._$1 = value"
+    ],
+    "description": "vim-snippets/python.snippets:106"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if $1:",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/python.snippets:117"
+  },
+  "el": {
+    "prefix": "el",
+    "body": [
+      "else:",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/python.snippets:120"
+  },
+  "ei": {
+    "prefix": "ei",
+    "body": [
+      "elif $1:",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/python.snippets:123"
+  },
+  "match - Structural pattern matching": {
+    "prefix": "match",
+    "body": [
+      "match ${1:expression}:",
+      "\tcase ${2:pattern_1}:",
+      "\t\t${3:pass}",
+      "\tcase ${4:pattern_2}:",
+      "\t\t${5:pass}"
+    ],
+    "description": "Structural pattern matching"
+  },
+  "matchw - Pattern matching with wildcard": {
+    "prefix": "matchw",
+    "body": [
+      "match ${1:expression}:",
+      "\tcase ${2:pattern_1}:",
+      "\t\t${3:pass}",
+      "\tcase _:",
+      "\t\t${0:pass}"
+    ],
+    "description": "Pattern matching with wildcard"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for ${1:item} in ${2:items}:",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/python.snippets:144"
+  },
+  "cutf8": {
+    "prefix": "cutf8",
+    "body": [
+      "# -*- coding: utf-8 -*-"
+    ],
+    "description": "vim-snippets/python.snippets:149"
+  },
+  "clatin1": {
+    "prefix": "clatin1",
+    "body": [
+      "# -*- coding: latin-1 -*-"
+    ],
+    "description": "vim-snippets/python.snippets:151"
+  },
+  "cascii": {
+    "prefix": "cascii",
+    "body": [
+      "# -*- coding: ascii -*-"
+    ],
+    "description": "vim-snippets/python.snippets:153"
+  },
+  "ld": {
+    "prefix": "ld",
+    "body": [
+      "${1:var} = lambda ${2:vars} : ${0:action}"
+    ],
+    "description": "vim-snippets/python.snippets:157"
+  },
+  "ret": {
+    "prefix": "ret",
+    "body": [
+      "return ${0}"
+    ],
+    "description": "vim-snippets/python.snippets:160"
+  },
+  ".": {
+    "prefix": ".",
+    "body": [
+      "self."
+    ],
+    "description": "vim-snippets/python.snippets:162"
+  },
+  "sa - self.attribute = attribute": {
+    "prefix": "sa",
+    "body": [
+      "self.${1:attribute} = $1"
+    ],
+    "description": "self.attribute = attribute"
+  },
+  "try - Try/Except": {
+    "prefix": "try",
+    "body": [
+      "try:",
+      "\t${1:${TM_SELECTED_TEXT}}",
+      "except ${2:Exception} as ${3:e}:",
+      "\t${0:raise $3}"
+    ],
+    "description": "Try/Except"
+  },
+  "trye - Try/Except/Else": {
+    "prefix": "trye",
+    "body": [
+      "try:",
+      "\t${1:${TM_SELECTED_TEXT}}",
+      "except ${2:Exception} as ${3:e}:",
+      "\t${4:raise $3}",
+      "else:",
+      "\t${0}"
+    ],
+    "description": "Try/Except/Else"
+  },
+  "tryf - Try/Except/Finally": {
+    "prefix": "tryf",
+    "body": [
+      "try:",
+      "\t${1:${TM_SELECTED_TEXT}}",
+      "except ${2:Exception} as ${3:e}:",
+      "\t${4:raise $3}",
+      "finally:",
+      "\t${0}"
+    ],
+    "description": "Try/Except/Finally"
+  },
+  "tryef - Try/Except/Else/Finally": {
+    "prefix": "tryef",
+    "body": [
+      "try:",
+      "\t${1:${TM_SELECTED_TEXT}}",
+      "except ${2:Exception} as ${3:e}:",
+      "\t${4:raise $3}",
+      "else:",
+      "\t${5}",
+      "finally:",
+      "\t${0}"
+    ],
+    "description": "Try/Except/Else/Finally"
+  },
+  "ifmain": {
+    "prefix": "ifmain",
+    "body": [
+      "if __name__ == '__main__':",
+      "\t${0:main()}"
+    ],
+    "description": "vim-snippets/python.snippets:197"
+  },
+  "_": {
+    "prefix": "_",
+    "body": [
+      "__${1:init}__"
+    ],
+    "description": "vim-snippets/python.snippets:201"
+  },
+  "br": {
+    "prefix": "br",
+    "body": [
+      "breakpoint()"
+    ],
+    "description": "vim-snippets/python.snippets:205"
+  },
+  "pdb": {
+    "prefix": "pdb",
+    "body": [
+      "__import__('pdb').set_trace()"
+    ],
+    "description": "vim-snippets/python.snippets:208"
+  },
+  "bpdb": {
+    "prefix": "bpdb",
+    "body": [
+      "__import__('bpdb').set_trace()"
+    ],
+    "description": "vim-snippets/python.snippets:211"
+  },
+  "ipdb": {
+    "prefix": "ipdb",
+    "body": [
+      "__import__('ipdb').set_trace()"
+    ],
+    "description": "vim-snippets/python.snippets:214"
+  },
+  "iem": {
+    "prefix": "iem",
+    "body": [
+      "__import__('IPython').embed()"
+    ],
+    "description": "vim-snippets/python.snippets:217"
+  },
+  "rpdb": {
+    "prefix": "rpdb",
+    "body": [
+      "__import__('rpdb').set_trace()"
+    ],
+    "description": "vim-snippets/python.snippets:220"
+  },
+  "wdb": {
+    "prefix": "wdb",
+    "body": [
+      "__import__('wdb').set_trace()"
+    ],
+    "description": "vim-snippets/python.snippets:223"
+  },
+  "ptpython": {
+    "prefix": "ptpython",
+    "body": [
+      "__import__('ptpython.repl', fromlist=('repl')).embed(globals(), locals(), vi_mode=${1:False}, history_filename=${2:None})"
+    ],
+    "description": "vim-snippets/python.snippets:226"
+  },
+  "pudb": {
+    "prefix": "pudb",
+    "body": [
+      "__import__('pudb').set_trace()"
+    ],
+    "description": "vim-snippets/python.snippets:229"
+  },
+  "pudbr": {
+    "prefix": "pudbr",
+    "body": [
+      "from pudb.remote import set_trace",
+      "set_trace()"
+    ],
+    "description": "vim-snippets/python.snippets:232"
+  },
+  "nosetrace": {
+    "prefix": "nosetrace",
+    "body": [
+      "__import__('nose').tools.set_trace()"
+    ],
+    "description": "vim-snippets/python.snippets:236"
+  },
+  "pprint": {
+    "prefix": "pprint",
+    "body": [
+      "__import__('pprint').pprint(${1})"
+    ],
+    "description": "vim-snippets/python.snippets:238"
+  },
+  "\"": {
+    "prefix": "\"",
+    "body": [
+      "\"\"\"${0:doc}",
+      "\"\"\""
+    ],
+    "description": "vim-snippets/python.snippets:241"
+  },
+  "a=": {
+    "prefix": "a=",
+    "body": [
+      "self.assertEqual(${0}, ${1})"
+    ],
+    "description": "vim-snippets/python.snippets:246"
+  },
+  "test": {
+    "prefix": "test",
+    "body": [
+      "def test_${1:description}(${2:self}):",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/python.snippets:249"
+  },
+  "testcase": {
+    "prefix": "testcase",
+    "body": [
+      "class ${1:ExampleCase}(unittest.TestCase):",
+      "",
+      "\tdef test_${2:description}(self):",
+      "\t\t${0}"
+    ],
+    "description": "vim-snippets/python.snippets:253"
+  },
+  "tgwt": {
+    "prefix": "tgwt",
+    "body": [
+      "# given: ${1}",
+      "# when: ${2}",
+      "# then: ${3}"
+    ],
+    "description": "vim-snippets/python.snippets:259"
+  },
+  "fut": {
+    "prefix": "fut",
+    "body": [
+      "from __future__ import ${0}"
+    ],
+    "description": "vim-snippets/python.snippets:263"
+  },
+  "getopt": {
+    "prefix": "getopt",
+    "body": [
+      "try:",
+      "\t# Short option syntax: \"hv:\"",
+      "\t# Long option syntax: \"help\" or \"verbose=\"",
+      "\topts, args = getopt.getopt(sys.argv[1:], \"${1:short_options}\", [${2:long_options}])",
+      "",
+      "except getopt.GetoptError, err:",
+      "\t# Print debug info",
+      "\tprint str(err)",
+      "\t${3:error_action}",
+      "",
+      "for option, argument in opts:",
+      "\tif option in (\"-h\", \"--help\"):",
+      "\t\t${0}",
+      "\telif option in (\"-v\", \"--verbose\"):",
+      "\t\tverbose = argument"
+    ],
+    "description": "vim-snippets/python.snippets:267"
+  },
+  "addp": {
+    "prefix": "addp",
+    "body": [
+      "parser = \\${VISUAL:argparse.}ArgumentParser()"
+    ],
+    "description": "vim-snippets/python.snippets:285"
+  },
+  "addsp": {
+    "prefix": "addsp",
+    "body": [
+      "${0:sub_parser} = parser.add_subparsers().add_parser(\"${1:name}\")"
+    ],
+    "description": "vim-snippets/python.snippets:287"
+  },
+  "addarg": {
+    "prefix": "addarg",
+    "body": [
+      "parser.add_argument(\"${0:short_arg}\", \"${1:long_arg}\", default=${2:None}, help=\"${3:Help text}\")"
+    ],
+    "description": "vim-snippets/python.snippets:289"
+  },
+  "addnarg": {
+    "prefix": "addnarg",
+    "body": [
+      "parser.add_argument(\"${0:arg}\", nargs=\"${1:*}\", default=${2:None}, help=\"${3:Help text}\")"
+    ],
+    "description": "vim-snippets/python.snippets:291"
+  },
+  "addaarg": {
+    "prefix": "addaarg",
+    "body": [
+      "parser.add_argument(\"${0:arg}\", \"${1:long_arg}\", action=\"${2:store_true}\", default=${3:False}, help=\"${4:Help text}\")"
+    ],
+    "description": "vim-snippets/python.snippets:293"
+  },
+  "pargs": {
+    "prefix": "pargs",
+    "body": [
+      "\"\\${VISUAL:return }\"parser.parse_args()"
+    ],
+    "description": "vim-snippets/python.snippets:295"
+  },
+  "glog": {
+    "prefix": "glog",
+    "body": [
+      "import logging",
+      "LOGGER = logging.getLogger(${0:__name__})"
+    ],
+    "description": "vim-snippets/python.snippets:300"
+  },
+  "le": {
+    "prefix": "le",
+    "body": [
+      "LOGGER.error(${0:msg})"
+    ],
+    "description": "vim-snippets/python.snippets:303"
+  },
+  "lg": {
+    "prefix": "lg",
+    "body": [
+      "LOGGER.debug(${0:msg})"
+    ],
+    "description": "vim-snippets/python.snippets:306"
+  },
+  "lw": {
+    "prefix": "lw",
+    "body": [
+      "LOGGER.warning(${0:msg})"
+    ],
+    "description": "vim-snippets/python.snippets:308"
+  },
+  "lc": {
+    "prefix": "lc",
+    "body": [
+      "LOGGER.critical(${0:msg})"
+    ],
+    "description": "vim-snippets/python.snippets:310"
+  },
+  "li": {
+    "prefix": "li",
+    "body": [
+      "LOGGER.info(${0:msg})"
+    ],
+    "description": "vim-snippets/python.snippets:312"
+  },
+  "epydoc": {
+    "prefix": "epydoc",
+    "body": [
+      "\"\"\"${1:Description}",
+      "",
+      "@param ${2:param}: ${3: Description}",
+      "@type  $2: ${4: Type}",
+      "",
+      "@return: ${5: Description}",
+      "@rtype : ${6: Type}",
+      "",
+      "@raise e: ${0: Description}",
+      "\"\"\""
+    ],
+    "description": "vim-snippets/python.snippets:314"
+  },
+  "dol": {
+    "prefix": "dol",
+    "body": [
+      "def ${1:__init__}(self, *args, **kwargs):",
+      "\tsuper(${0:ClassName}, self).$1(*args, **kwargs)"
+    ],
+    "description": "vim-snippets/python.snippets:325"
+  },
+  "kwg": {
+    "prefix": "kwg",
+    "body": [
+      "self.${1:var_name} = kwargs.get('$1', ${2:None})"
+    ],
+    "description": "vim-snippets/python.snippets:328"
+  },
+  "lkwg": {
+    "prefix": "lkwg",
+    "body": [
+      "${1:var_name} = kwargs.get('$1', ${2:None})"
+    ],
+    "description": "vim-snippets/python.snippets:330"
+  },
+  "args": {
+    "prefix": "args",
+    "body": [
+      "*args${1:,}${0}"
+    ],
+    "description": "vim-snippets/python.snippets:332"
+  },
+  "kwargs": {
+    "prefix": "kwargs",
+    "body": [
+      "**kwargs${1:,}${0}"
+    ],
+    "description": "vim-snippets/python.snippets:334"
+  },
+  "akw": {
+    "prefix": "akw",
+    "body": [
+      "*args, **kwargs${1:,}${0}"
+    ],
+    "description": "vim-snippets/python.snippets:336"
+  },
+  "lcp - list comprehension": {
+    "prefix": "lcp",
+    "body": [
+      "[${1} for ${2} in ${3:${TM_SELECTED_TEXT}}]${0}"
+    ],
+    "description": "list comprehension"
+  },
+  "dcp - dict comprehension": {
+    "prefix": "dcp",
+    "body": [
+      "{${1}: ${2} for ${3} in ${4:${TM_SELECTED_TEXT}}}${0}"
+    ],
+    "description": "dict comprehension"
+  },
+  "scp - set comprehension": {
+    "prefix": "scp",
+    "body": [
+      "{${1} for ${2} in ${3:${TM_SELECTED_TEXT}}}${0}"
+    ],
+    "description": "set comprehension"
+  },
+  "contain - methods for emulating a container type": {
+    "prefix": "contain",
+    "body": [
+      "def __len__(self):",
+      "\t${1:pass}",
+      "",
+      "def __getitem__(self, key):",
+      "\t${2:pass}",
+      "",
+      "def __setitem__(self, key, value):",
+      "\t${3:pass}",
+      "",
+      "def __delitem__(self, key):",
+      "\t${4:pass}",
+      "",
+      "def __iter__(self):",
+      "\t${5:pass}",
+      "",
+      "def __reversed__(self):",
+      "\t${6:pass}",
+      "",
+      "def __contains__(self, item):",
+      "\t${7:pass}"
+    ],
+    "description": "methods for emulating a container type"
+  },
+  "context - context manager methods": {
+    "prefix": "context",
+    "body": [
+      "def __enter__(self):",
+      "\t${1:pass}",
+      "",
+      "def __exit__(self, exc_type, exc_value, traceback):",
+      "\t${2:pass}"
+    ],
+    "description": "context manager methods"
+  },
+  "attr - methods for customizing attribute access": {
+    "prefix": "attr",
+    "body": [
+      "def __getattr__(self, name):",
+      "\t${1:pass}",
+      "",
+      "def __setattr__(self, name, value):",
+      "\t${2:pass}",
+      "",
+      "def __delattr__(self, name):",
+      "\t${3:pass}"
+    ],
+    "description": "methods for customizing attribute access"
+  },
+  "desc - methods implementing descriptors": {
+    "prefix": "desc",
+    "body": [
+      "def __get__(self, instance, owner):",
+      "\t${1:pass}",
+      "",
+      "def __set__(self, instance, value):",
+      "\t${2:pass}",
+      "",
+      "def __delete__(self, instance):",
+      "\t${3:pass}"
+    ],
+    "description": "methods implementing descriptors"
+  },
+  "cmp - methods implementing rich comparison": {
+    "prefix": "cmp",
+    "body": [
+      "def __eq__(self, other):",
+      "\t${1:pass}",
+      "",
+      "def __ne__(self, other):",
+      "\t${2:pass}",
+      "",
+      "def __lt__(self, other):",
+      "\t${3:pass}",
+      "",
+      "def __le__(self, other):",
+      "\t${4:pass}",
+      "",
+      "def __gt__(self, other):",
+      "\t${5:pass}",
+      "",
+      "def __ge__(self, other):",
+      "\t${6:pass}",
+      "",
+      "def __cmp__(self, other):",
+      "\t${7:pass}"
+    ],
+    "description": "methods implementing rich comparison"
+  },
+  "repr - methods implementing string representation": {
+    "prefix": "repr",
+    "body": [
+      "def __repr__(self):",
+      "\t${1:pass}",
+      "",
+      "def __str__(self):",
+      "\t${2:pass}",
+      "",
+      "def __unicode__(self):",
+      "\t${3:pass}"
+    ],
+    "description": "methods implementing string representation"
+  },
+  "numeric - methods for emulating a numeric type": {
+    "prefix": "numeric",
+    "body": [
+      "def __add__(self, other):",
+      "\t${1:pass}",
+      "",
+      "def __sub__(self, other):",
+      "\t${2:pass}",
+      "",
+      "def __mul__(self, other):",
+      "\t${3:pass}",
+      "",
+      "def __div__(self, other):",
+      "\t${4:pass}",
+      "",
+      "def __truediv__(self, other):",
+      "\t${5:pass}",
+      "",
+      "def __floordiv__(self, other):",
+      "\t${6:pass}",
+      "",
+      "def __mod__(self, other):",
+      "\t${7:pass}",
+      "",
+      "def __divmod__(self, other):",
+      "\t${8:pass}",
+      "",
+      "def __pow__(self, other):",
+      "\t${9:pass}",
+      "",
+      "def __lshift__(self, other):",
+      "\t${10:pass}",
+      "",
+      "def __rshift__(self, other):",
+      "\t${11:pass}",
+      "",
+      "def __and__(self, other):",
+      "\t${12:pass}",
+      "",
+      "def __xor__(self, other):",
+      "\t${13:pass}",
+      "",
+      "def __or__(self, other):",
+      "\t${14:pass}",
+      "",
+      "def __neg__(self):",
+      "\t${15:pass}",
+      "",
+      "def __pos__(self):",
+      "\t${16:pass}",
+      "",
+      "def __abs__(self):",
+      "\t${17:pass}",
+      "",
+      "def __invert__(self):",
+      "\t${18:pass}",
+      "",
+      "def __complex__(self):",
+      "\t${19:pass}",
+      "",
+      "def __int__(self):",
+      "\t${20:pass}",
+      "",
+      "def __long__(self):",
+      "\t${21:pass}",
+      "",
+      "def __float__(self):",
+      "\t${22:pass}",
+      "",
+      "def __oct__(self):",
+      "\t${22:pass}",
+      "",
+      "def __hex__(self):",
+      "\t${23:pass}",
+      "",
+      "def __index__(self):",
+      "\t${24:pass}",
+      "",
+      "def __coerce__(self, other):",
+      "\t${25:pass}"
+    ],
+    "description": "methods for emulating a numeric type"
+  },
+  "pr": {
+    "prefix": "pr",
+    "body": [
+      "print($0)"
+    ],
+    "description": "vim-snippets/python.snippets:512"
+  },
+  "prs": {
+    "prefix": "prs",
+    "body": [
+      "print(\"$0\")"
+    ],
+    "description": "vim-snippets/python.snippets:514"
+  },
+  "prf": {
+    "prefix": "prf",
+    "body": [
+      "print(f\"$0\")"
+    ],
+    "description": "vim-snippets/python.snippets:516"
+  },
+  "fpr": {
+    "prefix": "fpr",
+    "body": [
+      "print($0, file=${1:sys.stderr})"
+    ],
+    "description": "vim-snippets/python.snippets:518"
+  },
+  "fprs": {
+    "prefix": "fprs",
+    "body": [
+      "print(\"$0\", file=${1:sys.stderr})"
+    ],
+    "description": "vim-snippets/python.snippets:520"
+  },
+  "fprf": {
+    "prefix": "fprf",
+    "body": [
+      "print(f\"$0\", file=${1:sys.stderr})"
+    ],
+    "description": "vim-snippets/python.snippets:522"
+  }
+}

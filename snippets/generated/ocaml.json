@@ -1,0 +1,106 @@
+{
+  "doc": {
+    "prefix": "doc",
+    "body": [
+      "(** ${0} *)"
+    ],
+    "description": "vim-snippets/ocaml.snippets:1"
+  },
+  "comment": {
+    "prefix": "comment",
+    "body": [
+      "(* ${0} *)"
+    ],
+    "description": "vim-snippets/ocaml.snippets:3"
+  },
+  "let": {
+    "prefix": "let",
+    "body": [
+      "let ${1} = ${2} in",
+      "${0}"
+    ],
+    "description": "vim-snippets/ocaml.snippets:5"
+  },
+  "fn": {
+    "prefix": "fn",
+    "body": [
+      "let ${1} =",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/ocaml.snippets:8"
+  },
+  "fun": {
+    "prefix": "fun",
+    "body": [
+      "type ${1} = ${0}"
+    ],
+    "description": "vim-snippets/ocaml.snippets:11"
+  },
+  "mod": {
+    "prefix": "mod",
+    "body": [
+      "module ${1} = struct",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/ocaml.snippets:13"
+  },
+  "modty": {
+    "prefix": "modty",
+    "body": [
+      "module type ${1} = sig",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/ocaml.snippets:17"
+  },
+  "sw": {
+    "prefix": "sw",
+    "body": [
+      "match ${1} with",
+      "| ${2} -> ${0}"
+    ],
+    "description": "vim-snippets/ocaml.snippets:21"
+  },
+  "|": {
+    "prefix": "|",
+    "body": [
+      "| ${1} -> ${0}"
+    ],
+    "description": "vim-snippets/ocaml.snippets:24"
+  },
+  "p": {
+    "prefix": "p",
+    "body": [
+      "|> ${0}"
+    ],
+    "description": "vim-snippets/ocaml.snippets:26"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if ${1} then",
+      "\t${2}",
+      "else",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/ocaml.snippets:28"
+  },
+  "fnr": {
+    "prefix": "fnr",
+    "body": [
+      "let rec ${1} =",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/ocaml.snippets:33"
+  },
+  "try": {
+    "prefix": "try",
+    "body": [
+      "try",
+      "\t${1}",
+      "with ${0}"
+    ],
+    "description": "vim-snippets/ocaml.snippets:36"
+  }
+}

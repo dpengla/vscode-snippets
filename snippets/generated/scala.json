@@ -1,0 +1,730 @@
+{
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if (${1})",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/scala.snippets:8"
+  },
+  "ifn": {
+    "prefix": "ifn",
+    "body": [
+      "if (!${1})",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/scala.snippets:12"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "if (${1})",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "else",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/scala.snippets:16"
+  },
+  "ifelif": {
+    "prefix": "ifelif",
+    "body": [
+      "if (${1})",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "else if (${3})",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/scala.snippets:22"
+  },
+  "eif": {
+    "prefix": "eif",
+    "body": [
+      "else if (${3})",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/scala.snippets:27"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "while (${1:obj}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:31"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for (${1:item} <- ${2:obj}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:36"
+  },
+  "fori": {
+    "prefix": "fori",
+    "body": [
+      "for (${1:i} <- ${2:0} to ${3:obj}.length) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:41"
+  },
+  "fory": {
+    "prefix": "fory",
+    "body": [
+      "for {",
+      "\t${1:item} <- ${2:obj}",
+      "} yield ${0}"
+    ],
+    "description": "vim-snippets/scala.snippets:46"
+  },
+  "try": {
+    "prefix": "try",
+    "body": [
+      "try {",
+      "\t${1:${TM_SELECTED_TEXT}}",
+      "} catch {",
+      "\tcase e: FileNotFoundException => ${2}",
+      "\tcase e: IOException => ${3}",
+      "} finally {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:51"
+  },
+  "mat": {
+    "prefix": "mat",
+    "body": [
+      "${1:${TM_SELECTED_TEXT}} match {",
+      "\tcase ${2} => ${0}",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:61"
+  },
+  "match": {
+    "prefix": "match",
+    "body": [
+      "${1: obj} match {",
+      "\tcase ${2:e} => ${3}",
+      "\tcase _ => ${0}",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:65"
+  },
+  "case": {
+    "prefix": "case",
+    "body": [
+      "case ${1:${TM_SELECTED_TEXT}} => ${0}"
+    ],
+    "description": "vim-snippets/scala.snippets:71"
+  },
+  "arg": {
+    "prefix": "arg",
+    "body": [
+      "${1:a}: ${2:T}${0:, arg}"
+    ],
+    "description": "vim-snippets/scala.snippets:77"
+  },
+  "args": {
+    "prefix": "args",
+    "body": [
+      "${1:args}: ${0:T}*"
+    ],
+    "description": "vim-snippets/scala.snippets:80"
+  },
+  "def": {
+    "prefix": "def",
+    "body": [
+      "def ${1:name}(${2:arg}) = ${0:}"
+    ],
+    "description": "vim-snippets/scala.snippets:83"
+  },
+  "prdef": {
+    "prefix": "prdef",
+    "body": [
+      "private def ${1:name}(${2:arg}) = ${0:}"
+    ],
+    "description": "vim-snippets/scala.snippets:86"
+  },
+  "ovdef": {
+    "prefix": "ovdef",
+    "body": [
+      "override def ${1:name}(${2:arg}) = ${0:}"
+    ],
+    "description": "vim-snippets/scala.snippets:89"
+  },
+  "fcf": {
+    "prefix": "fcf",
+    "body": [
+      "(${1:a}: ${2:T}) => $1 ${0}"
+    ],
+    "description": "vim-snippets/scala.snippets:92"
+  },
+  "=>": {
+    "prefix": "=>",
+    "body": [
+      "${1:name} => ${0}"
+    ],
+    "description": "vim-snippets/scala.snippets:94"
+  },
+  "rec": {
+    "prefix": "rec",
+    "body": [
+      "def ${1:name}(${0:arg}) =",
+      "\tif($2) $2",
+      "\telse $1($2)"
+    ],
+    "description": "vim-snippets/scala.snippets:97"
+  },
+  "crdef": {
+    "prefix": "crdef",
+    "body": [
+      "def ${1:name}(${2:arg})(${3:arg}) = ${0:}"
+    ],
+    "description": "vim-snippets/scala.snippets:102"
+  },
+  "main": {
+    "prefix": "main",
+    "body": [
+      "def main(args: Array[String]):${1:T} = ${0:}"
+    ],
+    "description": "vim-snippets/scala.snippets:106"
+  },
+  "T - Double": {
+    "prefix": "T",
+    "body": [
+      "dbl"
+    ],
+    "description": "Double"
+  },
+  "T - Int": {
+    "prefix": "T",
+    "body": [
+      "int"
+    ],
+    "description": "Int"
+  },
+  "T - Long": {
+    "prefix": "T",
+    "body": [
+      "lng"
+    ],
+    "description": "Long"
+  },
+  "T - Char": {
+    "prefix": "T",
+    "body": [
+      "chr"
+    ],
+    "description": "Char"
+  },
+  "T - String": {
+    "prefix": "T",
+    "body": [
+      "str"
+    ],
+    "description": "String"
+  },
+  "T - Array": {
+    "prefix": "T",
+    "body": [
+      "arr"
+    ],
+    "description": "Array"
+  },
+  "T - Buffer": {
+    "prefix": "T",
+    "body": [
+      "buf"
+    ],
+    "description": "Buffer"
+  },
+  "T - List": {
+    "prefix": "T",
+    "body": [
+      "list"
+    ],
+    "description": "List"
+  },
+  "T - Tuple": {
+    "prefix": "T",
+    "body": [
+      "tpl"
+    ],
+    "description": "Tuple"
+  },
+  "T - Set": {
+    "prefix": "T",
+    "body": [
+      "set"
+    ],
+    "description": "Set"
+  },
+  "T - Map": {
+    "prefix": "T",
+    "body": [
+      "map"
+    ],
+    "description": "Map"
+  },
+  "T - HashSet": {
+    "prefix": "T",
+    "body": [
+      "hset"
+    ],
+    "description": "HashSet"
+  },
+  "T - HashMap": {
+    "prefix": "T",
+    "body": [
+      "hmap"
+    ],
+    "description": "HashMap"
+  },
+  "T - Boolean": {
+    "prefix": "T",
+    "body": [
+      "bool"
+    ],
+    "description": "Boolean"
+  },
+  "bool": {
+    "prefix": "bool",
+    "body": [
+      "Boolean"
+    ],
+    "description": "vim-snippets/scala.snippets:157"
+  },
+  "anyr": {
+    "prefix": "anyr",
+    "body": [
+      "AnyRef"
+    ],
+    "description": "vim-snippets/scala.snippets:159"
+  },
+  "dbl": {
+    "prefix": "dbl",
+    "body": [
+      "Double"
+    ],
+    "description": "vim-snippets/scala.snippets:161"
+  },
+  "int": {
+    "prefix": "int",
+    "body": [
+      "Int"
+    ],
+    "description": "vim-snippets/scala.snippets:163"
+  },
+  "str": {
+    "prefix": "str",
+    "body": [
+      "String"
+    ],
+    "description": "vim-snippets/scala.snippets:165"
+  },
+  "chr": {
+    "prefix": "chr",
+    "body": [
+      "Char"
+    ],
+    "description": "vim-snippets/scala.snippets:167"
+  },
+  "lng": {
+    "prefix": "lng",
+    "body": [
+      "Long"
+    ],
+    "description": "vim-snippets/scala.snippets:169"
+  },
+  "arr": {
+    "prefix": "arr",
+    "body": [
+      "Array${1:[T]}${0:()}"
+    ],
+    "description": "vim-snippets/scala.snippets:171"
+  },
+  "buf": {
+    "prefix": "buf",
+    "body": [
+      "Buffer${1:[T]}${0:()}"
+    ],
+    "description": "vim-snippets/scala.snippets:173"
+  },
+  "list": {
+    "prefix": "list",
+    "body": [
+      "List${1:[T]}${0:()}"
+    ],
+    "description": "vim-snippets/scala.snippets:175"
+  },
+  "tpl": {
+    "prefix": "tpl",
+    "body": [
+      "Tuple${1:2}[${2:T},${0:T}]"
+    ],
+    "description": "vim-snippets/scala.snippets:177"
+  },
+  "set": {
+    "prefix": "set",
+    "body": [
+      "Set${1:[T]}${0:()}"
+    ],
+    "description": "vim-snippets/scala.snippets:179"
+  },
+  "hset": {
+    "prefix": "hset",
+    "body": [
+      "HashSet${1:[T]}${0:()}"
+    ],
+    "description": "vim-snippets/scala.snippets:181"
+  },
+  "mhset": {
+    "prefix": "mhset",
+    "body": [
+      "mutable.HashSet${1:[T]}${0:()}"
+    ],
+    "description": "vim-snippets/scala.snippets:183"
+  },
+  "keyval": {
+    "prefix": "keyval",
+    "body": [
+      "${1:key}->${2:val}${0:, keyval}"
+    ],
+    "description": "vim-snippets/scala.snippets:186"
+  },
+  "map": {
+    "prefix": "map",
+    "body": [
+      "Map[${1:T},${2:T}]${0:(keyval)}"
+    ],
+    "description": "vim-snippets/scala.snippets:188"
+  },
+  "hmap": {
+    "prefix": "hmap",
+    "body": [
+      "HashMap[${1:T},${2:T}]${0:(keyval)}"
+    ],
+    "description": "vim-snippets/scala.snippets:190"
+  },
+  "mmap": {
+    "prefix": "mmap",
+    "body": [
+      "mutable.Map[${1:T},${2:T}]${0:(keyval)}"
+    ],
+    "description": "vim-snippets/scala.snippets:192"
+  },
+  "mhmap": {
+    "prefix": "mhmap",
+    "body": [
+      "mutable.HashMap[${1:T},${2:T}]${0:(keyval)}"
+    ],
+    "description": "vim-snippets/scala.snippets:194"
+  },
+  "as": {
+    "prefix": "as",
+    "body": [
+      "${1:name}.asInstanceOf[${2:T}]"
+    ],
+    "description": "vim-snippets/scala.snippets:198"
+  },
+  "is": {
+    "prefix": "is",
+    "body": [
+      "${1:name}.isInstanceOf[${2:T}]"
+    ],
+    "description": "vim-snippets/scala.snippets:201"
+  },
+  "(a": {
+    "prefix": "(a",
+    "body": [
+      "(${1:a} => ${0})"
+    ],
+    "description": "vim-snippets/scala.snippets:207"
+  },
+  "{(": {
+    "prefix": "{(",
+    "body": [
+      "{(${1:a},${2:b}) =>",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:210"
+  },
+  "filter": {
+    "prefix": "filter",
+    "body": [
+      "${0:name}.filter (a"
+    ],
+    "description": "vim-snippets/scala.snippets:215"
+  },
+  "mapf": {
+    "prefix": "mapf",
+    "body": [
+      "${0:name}.map (a"
+    ],
+    "description": "vim-snippets/scala.snippets:218"
+  },
+  "flatmap": {
+    "prefix": "flatmap",
+    "body": [
+      "${1:name}.flatMap${0:[T]}(a"
+    ],
+    "description": "vim-snippets/scala.snippets:221"
+  },
+  "fldl": {
+    "prefix": "fldl",
+    "body": [
+      "${1:name}.foldLeft(${0:first}) {("
+    ],
+    "description": "vim-snippets/scala.snippets:224"
+  },
+  "fldr": {
+    "prefix": "fldr",
+    "body": [
+      "${1:name}.foldRight(${0:first}) {("
+    ],
+    "description": "vim-snippets/scala.snippets:227"
+  },
+  "/:": {
+    "prefix": "/:",
+    "body": [
+      "(${1:first}/:${2:name})(${0})"
+    ],
+    "description": "vim-snippets/scala.snippets:231"
+  },
+  ":\\": {
+    "prefix": ":\\",
+    "body": [
+      "(${1:first}:\\${2:name})(${0})"
+    ],
+    "description": "vim-snippets/scala.snippets:234"
+  },
+  "redl": {
+    "prefix": "redl",
+    "body": [
+      "${1:name}.reduceLeft[${0:T}] {("
+    ],
+    "description": "vim-snippets/scala.snippets:237"
+  },
+  "redr": {
+    "prefix": "redr",
+    "body": [
+      "${1:name}.reduceRight[${0:T}] {("
+    ],
+    "description": "vim-snippets/scala.snippets:240"
+  },
+  "zipwi": {
+    "prefix": "zipwi",
+    "body": [
+      "${0:name}.view.zipWithIndex"
+    ],
+    "description": "vim-snippets/scala.snippets:244"
+  },
+  "spl": {
+    "prefix": "spl",
+    "body": [
+      "${1:name}.split(\"${0:,}\")"
+    ],
+    "description": "vim-snippets/scala.snippets:247"
+  },
+  "val": {
+    "prefix": "val",
+    "body": [
+      "val ${1:name}${2:: T} = ${0:value}"
+    ],
+    "description": "vim-snippets/scala.snippets:250"
+  },
+  "var": {
+    "prefix": "var",
+    "body": [
+      "var ${1:name}${2:: T} = ${0:value}"
+    ],
+    "description": "vim-snippets/scala.snippets:252"
+  },
+  "extends": {
+    "prefix": "extends",
+    "body": [
+      "extends ${0:what}"
+    ],
+    "description": "vim-snippets/scala.snippets:258"
+  },
+  "with": {
+    "prefix": "with",
+    "body": [
+      "with ${1:what}${0: with}"
+    ],
+    "description": "vim-snippets/scala.snippets:261"
+  },
+  "athis": {
+    "prefix": "athis",
+    "body": [
+      "def this(arg) = this(arg)"
+    ],
+    "description": "vim-snippets/scala.snippets:264"
+  },
+  "abstract": {
+    "prefix": "abstract",
+    "body": [
+      "abstract class ${1:name}${2:(arg)}${3: extends }${4: with} {",
+      "\t${5:override def toString = \"$1\"}",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:267"
+  },
+  "class": {
+    "prefix": "class",
+    "body": [
+      "class ${1:name}${2:(arg)}${3: extends }${4: with} {",
+      "\t${5:override def toString = \"$1\"}",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:273"
+  },
+  "object": {
+    "prefix": "object",
+    "body": [
+      "object ${1:name}${2:(arg)}${3: extends }${4: with} ${0:}"
+    ],
+    "description": "vim-snippets/scala.snippets:279"
+  },
+  "trait": {
+    "prefix": "trait",
+    "body": [
+      "trait ${1:name}${2: extends }${3: with} {",
+      "\t${0:}",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:282"
+  },
+  "ordered": {
+    "prefix": "ordered",
+    "body": [
+      "class ${1:name}${2:(arg)} extends Ordered[$1] ${3: with} {",
+      "\t${4:override def toString = \"$1\"}",
+      "\tdef compare(that: $1) = ${5:this - that}",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:287"
+  },
+  "casecl": {
+    "prefix": "casecl",
+    "body": [
+      "case class ${1:name}${2:(arg)}${3: extends }${4: with} ${0:}"
+    ],
+    "description": "vim-snippets/scala.snippets:294"
+  },
+  "scalatest": {
+    "prefix": "scalatest",
+    "body": [
+      "${1:import org.scalatest.Suite}",
+      "${0:import org.scalatest.FunSuite}"
+    ],
+    "description": "vim-snippets/scala.snippets:300"
+  },
+  "assert": {
+    "prefix": "assert",
+    "body": [
+      "assert(${1:a} === ${0:b})"
+    ],
+    "description": "vim-snippets/scala.snippets:304"
+  },
+  "ensuring": {
+    "prefix": "ensuring",
+    "body": [
+      "ifel ensuring(${1:a}==${0:b})"
+    ],
+    "description": "vim-snippets/scala.snippets:307"
+  },
+  "expect": {
+    "prefix": "expect",
+    "body": [
+      "expect(${1:what}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:310"
+  },
+  "intercept": {
+    "prefix": "intercept",
+    "body": [
+      "intercept[${1:IllegalArgumentException}] {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:315"
+  },
+  "test": {
+    "prefix": "test",
+    "body": [
+      "test(\"${1:description}\") {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:320"
+  },
+  "suite": {
+    "prefix": "suite",
+    "body": [
+      "class ${0:name} extends Suite {",
+      "\tdef test() {",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:325"
+  },
+  "fsuite": {
+    "prefix": "fsuite",
+    "body": [
+      "class ${1:name} extends FunSuite {",
+      "\ttest(\"${0:description}\") {",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:330"
+  },
+  "webproject": {
+    "prefix": "webproject",
+    "body": [
+      "import sbt._",
+      "",
+      "class ${1:Name}(info: ProjectInfo) extends DefaultWebProject(info) {",
+      "\tval liftVersion = \"${0:2.3}\"",
+      "",
+      "\toverride def libraryDependencies = Set(",
+      "",
+      "\t) ++ super.libraryDependencies",
+      "",
+      "\tval snapshots = ScalaToolsSnapshots",
+      "}"
+    ],
+    "description": "vim-snippets/scala.snippets:337"
+  },
+  "liftjar": {
+    "prefix": "liftjar",
+    "body": [
+      "\"net.liftweb\" %% \"${0:lib}\" % liftVersion % \"compile->default\","
+    ],
+    "description": "vim-snippets/scala.snippets:350"
+  },
+  "jettyjar": {
+    "prefix": "jettyjar",
+    "body": [
+      "\"org.mortbay.jetty\" % \"jetty\" % \"${0:version}\" % \"test->default\","
+    ],
+    "description": "vim-snippets/scala.snippets:352"
+  },
+  "liftimports": {
+    "prefix": "liftimports",
+    "body": [
+      "import _root_.net.liftweb.http._",
+      "import S._",
+      "import _root_.net.liftweb.util._",
+      "import Helpers._",
+      "import _root_.scala.xml._"
+    ],
+    "description": "vim-snippets/scala.snippets:358"
+  }
+}

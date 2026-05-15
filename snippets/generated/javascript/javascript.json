@@ -1,0 +1,751 @@
+{
+  "proto": {
+    "prefix": "proto",
+    "body": [
+      "${1:class_name}.prototype.${2:method_name} = function(${3}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "};"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:3"
+  },
+  "fun - function": {
+    "prefix": "fun",
+    "body": [
+      "function ${1:function_name}(${2}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "function"
+  },
+  "asf - async function": {
+    "prefix": "asf",
+    "body": [
+      "async function ${1:function_name}(${2}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "async function"
+  },
+  "anf": {
+    "prefix": "anf",
+    "body": [
+      "function(${1}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:18"
+  },
+  "vaf": {
+    "prefix": "vaf",
+    "body": [
+      "var ${1:function_name} = function(${2}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "};"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:23"
+  },
+  "vf": {
+    "prefix": "vf",
+    "body": [
+      "var ${1:function_name} = function $1(${2}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "};"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:28"
+  },
+  "(f": {
+    "prefix": "(f",
+    "body": [
+      "(function(${1}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}(${2}));"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:33"
+  },
+  ";fe": {
+    "prefix": ";fe",
+    "body": [
+      ";(function(${1}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}(${2}))"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:38"
+  },
+  "sdf": {
+    "prefix": "sdf",
+    "body": [
+      "var ${1:function_name} = function (${2:argument}) {",
+      "\t${3}",
+      "",
+      "\t$1 = function ($2) {",
+      "\t\t${0:${TM_SELECTED_TEXT}}",
+      "\t};",
+      "};"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:43"
+  },
+  "if - if (condition) { ... }": {
+    "prefix": "if",
+    "body": [
+      "if (${1:true}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "if (condition) { ... }"
+  },
+  "ife - if (condition) { ... } else { ... }": {
+    "prefix": "ife",
+    "body": [
+      "if (${1:true}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "} else {",
+      "\t${2}",
+      "}"
+    ],
+    "description": "if (condition) { ... } else { ... }"
+  },
+  "ter - Ternary: `condition ? true : false`": {
+    "prefix": "ter",
+    "body": [
+      "$1 ? $2: $0"
+    ],
+    "description": "Ternary: `condition ? true : false`"
+  },
+  "switch": {
+    "prefix": "switch",
+    "body": [
+      "switch (${1:expression}) {",
+      "\tcase '${3:case}':",
+      "\t\t${4}",
+      "\t\tbreak;",
+      "\t${0}",
+      "\tdefault:",
+      "\t\t${2}",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:68"
+  },
+  "case - case 'xyz': ... break": {
+    "prefix": "case",
+    "body": [
+      "case '${1:case}':",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "\tbreak;"
+    ],
+    "description": "case 'xyz': ... break"
+  },
+  "try - try { ... } catch(e) { ... }": {
+    "prefix": "try",
+    "body": [
+      "try {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "} catch (${1:e}) {",
+      "\t${2:/* handle error */}",
+      "}"
+    ],
+    "description": "try { ... } catch(e) { ... }"
+  },
+  "tryf - try { ... } catch(e) { ... } finally { ... }": {
+    "prefix": "tryf",
+    "body": [
+      "try {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "} catch (${1:e}) {",
+      "\t${2:/* handle error */}",
+      "} finally {",
+      "\t${3:/* be executed regardless of the try / catch result*/}",
+      "}"
+    ],
+    "description": "try { ... } catch(e) { ... } finally { ... }"
+  },
+  "terr": {
+    "prefix": "terr",
+    "body": [
+      "throw new Error('${1:error message}')"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:96"
+  },
+  "ret": {
+    "prefix": "ret",
+    "body": [
+      "return ${0:result};"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:99"
+  },
+  "for - for (...) {...}": {
+    "prefix": "for",
+    "body": [
+      "for (let ${1:i} = 0, ${2:len} = ${3:Things.length}; $1 < $2; $1++) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "for (...) {...}"
+  },
+  "forr - reversed for (...) {...}": {
+    "prefix": "forr",
+    "body": [
+      "for (let ${2:i} = ${1:Things.length} - 1; $2 >= 0; $2--) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "reversed for (...) {...}"
+  },
+  "wh - (condition) { ... }": {
+    "prefix": "wh",
+    "body": [
+      "while (${1:true}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "(condition) { ... }"
+  },
+  "wht - (true) { ... }": {
+    "prefix": "wht",
+    "body": [
+      "while (true) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "(true) { ... }"
+  },
+  "do - do { ... } while (condition)": {
+    "prefix": "do",
+    "body": [
+      "do {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "} while ($1);"
+    ],
+    "description": "do { ... } while (condition)"
+  },
+  "fori": {
+    "prefix": "fori",
+    "body": [
+      "for (let ${1:prop} in ${2:object}) {",
+      "\t${0:$2[$1]}",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:122"
+  },
+  ":f": {
+    "prefix": ":f",
+    "body": [
+      "${1:method_name}: function (${2:attribute}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "},"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:128"
+  },
+  "has": {
+    "prefix": "has",
+    "body": [
+      "hasOwnProperty(${0})"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:133"
+  },
+  "sing": {
+    "prefix": "sing",
+    "body": [
+      "function ${1:Singleton} (${2:argument}) {",
+      "\t// the cached instance",
+      "\tvar instance;",
+      "",
+      "\t// rewrite the constructor",
+      "\t$1 = function $1($2) {",
+      "\t\treturn instance;",
+      "\t};",
+      "",
+      "\t// carry over the prototype properties",
+      "\t$1.prototype = this;",
+      "",
+      "\t// the instance",
+      "\tinstance = new $1();",
+      "",
+      "\t// reset the constructor pointer",
+      "\tinstance.constructor = $1;",
+      "",
+      "\t${0}",
+      "",
+      "\treturn instance;",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:136"
+  },
+  "obj": {
+    "prefix": "obj",
+    "body": [
+      "function object(o) {",
+      "\tfunction F() {}",
+      "\tF.prototype = o;",
+      "\treturn new F();",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:160"
+  },
+  "props": {
+    "prefix": "props",
+    "body": [
+      "var ${1:my_object} = Object.defineProperties(",
+      "\t${2:new Object()},",
+      "\t{",
+      "\t\t${3:property} : {",
+      "\t\t\tget : function $1_$3_getter() {",
+      "\t\t\t\t// getter code",
+      "\t\t\t},",
+      "\t\t\tset : function $1_$3_setter(value) {",
+      "\t\t\t\t// setter code",
+      "\t\t\t},",
+      "\t\t\tvalue        : ${4:value},",
+      "\t\t\twriteable    : ${5:boolean},",
+      "\t\t\tenumerable   : ${6:boolean},",
+      "\t\t\tconfigurable : ${0:boolean}",
+      "\t\t}",
+      "\t}",
+      ");"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:167"
+  },
+  "prop": {
+    "prefix": "prop",
+    "body": [
+      "Object.defineProperty(",
+      "\t${1:object},",
+      "\t'${2:property}',",
+      "\t{",
+      "\t\tget : function $1_$2_getter() {",
+      "\t\t\t// getter code",
+      "\t\t},",
+      "\t\tset : function $1_$2_setter(value) {",
+      "\t\t\t// setter code",
+      "\t\t},",
+      "\t\tvalue        : ${3:value},",
+      "\t\twriteable    : ${4:boolean},",
+      "\t\tenumerable   : ${5:boolean},",
+      "\t\tconfigurable : ${0:boolean}",
+      "\t}",
+      ");"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:186"
+  },
+  "/**": {
+    "prefix": "/**",
+    "body": [
+      "/**",
+      " * ${0:description}",
+      " *",
+      " */"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:205"
+  },
+  "@par": {
+    "prefix": "@par",
+    "body": [
+      "@param {${1:type}} ${2:name} ${0:description}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:210"
+  },
+  "@ret": {
+    "prefix": "@ret",
+    "body": [
+      "@return {${1:type}} ${0:description}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:212"
+  },
+  "jsonp": {
+    "prefix": "jsonp",
+    "body": [
+      "JSON.parse(${0:jstr});"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:215"
+  },
+  "jsons": {
+    "prefix": "jsons",
+    "body": [
+      "JSON.stringify(${0:object});"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:218"
+  },
+  "get": {
+    "prefix": "get",
+    "body": [
+      "getElementsBy${1:TagName}('${0}')"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:222"
+  },
+  "gett": {
+    "prefix": "gett",
+    "body": [
+      "getElementBy${1:Id}('${0}')"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:225"
+  },
+  "by.": {
+    "prefix": "by.",
+    "body": [
+      "${1:document}.getElementsByClassName('${0:class}')"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:228"
+  },
+  "by#": {
+    "prefix": "by#",
+    "body": [
+      "${1:document}.getElementById('${0:element ID}')"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:231"
+  },
+  "qs": {
+    "prefix": "qs",
+    "body": [
+      "${1:document}.querySelector('${0:CSS selector}')"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:234"
+  },
+  "qsa": {
+    "prefix": "qsa",
+    "body": [
+      "${1:document}.querySelectorAll('${0:CSS selector}')"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:237"
+  },
+  "de": {
+    "prefix": "de",
+    "body": [
+      "debugger;"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:240"
+  },
+  "cl - console.log": {
+    "prefix": "cl",
+    "body": [
+      "console.log(${0});"
+    ],
+    "description": "console.log"
+  },
+  "cd - console.debug": {
+    "prefix": "cd",
+    "body": [
+      "console.debug(${0});"
+    ],
+    "description": "console.debug"
+  },
+  "ce - console.error": {
+    "prefix": "ce",
+    "body": [
+      "console.error(${0});"
+    ],
+    "description": "console.error"
+  },
+  "cw - console.warn": {
+    "prefix": "cw",
+    "body": [
+      "console.warn(${0});"
+    ],
+    "description": "console.warn"
+  },
+  "ci - console.info": {
+    "prefix": "ci",
+    "body": [
+      "console.info(${0});"
+    ],
+    "description": "console.info"
+  },
+  "ct - console.trace": {
+    "prefix": "ct",
+    "body": [
+      "console.trace(${0:label});"
+    ],
+    "description": "console.trace"
+  },
+  "ctime - console.time ... console.timeEnd": {
+    "prefix": "ctime",
+    "body": [
+      "console.time(\"${1:label}\");",
+      "${0:${TM_SELECTED_TEXT}}",
+      "console.timeEnd(\"$1\");"
+    ],
+    "description": "console.time ... console.timeEnd"
+  },
+  "ctimestamp - console.timeStamp": {
+    "prefix": "ctimestamp",
+    "body": [
+      "console.timeStamp(\"${1:label}\");"
+    ],
+    "description": "console.timeStamp"
+  },
+  "ca - console.assert": {
+    "prefix": "ca",
+    "body": [
+      "console.assert(${1:expression}, ${0:obj});"
+    ],
+    "description": "console.assert"
+  },
+  "cclear - console.clear": {
+    "prefix": "cclear",
+    "body": [
+      "console.clear();"
+    ],
+    "description": "console.clear"
+  },
+  "cdir - console.dir": {
+    "prefix": "cdir",
+    "body": [
+      "console.dir(${0:obj});"
+    ],
+    "description": "console.dir"
+  },
+  "cdirx - console.dirxml": {
+    "prefix": "cdirx",
+    "body": [
+      "console.dirxml(${1:object});"
+    ],
+    "description": "console.dirxml"
+  },
+  "cgroup - console.group": {
+    "prefix": "cgroup",
+    "body": [
+      "console.group(\"${1:label}\");",
+      "${0:${TM_SELECTED_TEXT}}",
+      "console.groupEnd();"
+    ],
+    "description": "console.group"
+  },
+  "cgroupc - console.groupCollapsed": {
+    "prefix": "cgroupc",
+    "body": [
+      "console.groupCollapsed(\"${1:label}\");",
+      "${0:${TM_SELECTED_TEXT}}",
+      "console.groupEnd();"
+    ],
+    "description": "console.groupCollapsed"
+  },
+  "cprof - console.profile": {
+    "prefix": "cprof",
+    "body": [
+      "console.profile(\"${1:label}\");",
+      "${0:${TM_SELECTED_TEXT}}",
+      "console.profileEnd();"
+    ],
+    "description": "console.profile"
+  },
+  "ctable - console.table": {
+    "prefix": "ctable",
+    "body": [
+      "console.table(${1:\"${2:value}\"});"
+    ],
+    "description": "console.table"
+  },
+  "clstr - console.log stringified": {
+    "prefix": "clstr",
+    "body": [
+      "console.log(JSON.stringify(${0}, null, 2));"
+    ],
+    "description": "console.log stringified"
+  },
+  "us": {
+    "prefix": "us",
+    "body": [
+      "'use strict';"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:285"
+  },
+  "timeout": {
+    "prefix": "timeout",
+    "body": [
+      "setTimeout(function () {${0}}${2}, ${1:10});"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:288"
+  },
+  "const": {
+    "prefix": "const",
+    "body": [
+      "const ${1} = ${0};"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:290"
+  },
+  "constn": {
+    "prefix": "constn",
+    "body": [
+      "const ${1} = new ${0};"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:292"
+  },
+  "let": {
+    "prefix": "let",
+    "body": [
+      "let ${1} = ${0};"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:294"
+  },
+  "im - import xyz from 'xyz'": {
+    "prefix": "im",
+    "body": [
+      "import ${1} from '${2:$1}';"
+    ],
+    "description": "import xyz from 'xyz'"
+  },
+  "imas - import * as xyz from 'xyz'": {
+    "prefix": "imas",
+    "body": [
+      "import * as ${1} from '${2:$1}';"
+    ],
+    "description": "import * as xyz from 'xyz'"
+  },
+  "imm - import { member } from 'xyz'": {
+    "prefix": "imm",
+    "body": [
+      "import { ${1} } from '${2}';"
+    ],
+    "description": "import { member } from 'xyz'"
+  },
+  "cla": {
+    "prefix": "cla",
+    "body": [
+      "class ${1} {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:302"
+  },
+  "clax": {
+    "prefix": "clax",
+    "body": [
+      "class ${1} extends ${2} {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:306"
+  },
+  "clac": {
+    "prefix": "clac",
+    "body": [
+      "class ${1} {",
+      "\tconstructor(${2}) {",
+      "\t\t${0:${TM_SELECTED_TEXT}}",
+      "\t}",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:310"
+  },
+  "foro - for (const prop of object}) { ... }": {
+    "prefix": "foro",
+    "body": [
+      "for (const ${1:prop} of ${2:object}) {",
+      "\t${0:$1}",
+      "}"
+    ],
+    "description": "for (const prop of object}) { ... }"
+  },
+  "forl - for (let prop of object}) { ... }": {
+    "prefix": "forl",
+    "body": [
+      "for (let ${1:prop} of ${2:object}) {",
+      "\t${0:$1}",
+      "}"
+    ],
+    "description": "for (let prop of object}) { ... }"
+  },
+  "fun*": {
+    "prefix": "fun*",
+    "body": [
+      "function* ${1:function_name}(${2}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:324"
+  },
+  "c=>": {
+    "prefix": "c=>",
+    "body": [
+      "const ${1:function_name} = (${2}) => {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:328"
+  },
+  "ca=>": {
+    "prefix": "ca=>",
+    "body": [
+      "const ${1:function_name} = async (${2}) => {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:332"
+  },
+  "caf": {
+    "prefix": "caf",
+    "body": [
+      "const ${1:function_name} = (${2}) => {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:336"
+  },
+  "casf": {
+    "prefix": "casf",
+    "body": [
+      "const ${1:function_name} = async (${2}) => {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:340"
+  },
+  "=>": {
+    "prefix": "=>",
+    "body": [
+      "(${1}) => {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:344"
+  },
+  "af - () =>": {
+    "prefix": "af",
+    "body": [
+      "(${1}) => ${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "() =>"
+  },
+  "afb - () => {}": {
+    "prefix": "afb",
+    "body": [
+      "(${1}) => {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "() => {}"
+  },
+  "sym": {
+    "prefix": "sym",
+    "body": [
+      "const ${1} = Symbol('${0}');"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:354"
+  },
+  "ed": {
+    "prefix": "ed",
+    "body": [
+      "export default ${0}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:356"
+  },
+  "${": {
+    "prefix": "${",
+    "body": [
+      "\\${${1}}${0}"
+    ],
+    "description": "vim-snippets/javascript/javascript.snippets:358"
+  },
+  "as - async": {
+    "prefix": "as",
+    "body": [
+      "async ${0}"
+    ],
+    "description": "async"
+  },
+  "aw - await": {
+    "prefix": "aw",
+    "body": [
+      "await ${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "await"
+  }
+}

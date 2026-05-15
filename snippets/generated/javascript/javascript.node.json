@@ -1,0 +1,125 @@
+{
+  "#!": {
+    "prefix": "#!",
+    "body": [
+      "#!/usr/bin/env node"
+    ],
+    "description": "vim-snippets/javascript/javascript.node.snippets:1"
+  },
+  "ex": {
+    "prefix": "ex",
+    "body": [
+      "module.exports = ${1};"
+    ],
+    "description": "vim-snippets/javascript/javascript.node.snippets:4"
+  },
+  "re": {
+    "prefix": "re",
+    "body": [
+      "const ${1} = require('${2:module_name}');"
+    ],
+    "description": "vim-snippets/javascript/javascript.node.snippets:7"
+  },
+  "on": {
+    "prefix": "on",
+    "body": [
+      "on('${1:event_name}', function(${2:stream}) {",
+      "  ${3}",
+      "});"
+    ],
+    "description": "vim-snippets/javascript/javascript.node.snippets:10"
+  },
+  "emit": {
+    "prefix": "emit",
+    "body": [
+      "emit('${1:event_name}', ${2:args});"
+    ],
+    "description": "vim-snippets/javascript/javascript.node.snippets:14"
+  },
+  "once": {
+    "prefix": "once",
+    "body": [
+      "once('${1:event_name}', function(${2:stream}) {",
+      "  ${3}",
+      "});"
+    ],
+    "description": "vim-snippets/javascript/javascript.node.snippets:16"
+  },
+  "http": {
+    "prefix": "http",
+    "body": [
+      "http.createServer(${1:handler}).listen(${2:port_number});"
+    ],
+    "description": "vim-snippets/javascript/javascript.node.snippets:21"
+  },
+  "net": {
+    "prefix": "net",
+    "body": [
+      "net.createServer(function(${1:socket}){",
+      "\t${1}.on('data', function('data'){",
+      "\t  ${2}",
+      "\t]});",
+      "\t${1}.on('end', function(){",
+      "\t  ${3}",
+      "\t});",
+      "}).listen(${4:8124});"
+    ],
+    "description": "vim-snippets/javascript/javascript.node.snippets:24"
+  },
+  "pipe": {
+    "prefix": "pipe",
+    "body": [
+      "pipe(${1:stream})${2}"
+    ],
+    "description": "vim-snippets/javascript/javascript.node.snippets:34"
+  },
+  "eget": {
+    "prefix": "eget",
+    "body": [
+      "${1:app}.get('${2:route}', ${3:handler});"
+    ],
+    "description": "vim-snippets/javascript/javascript.node.snippets:37"
+  },
+  "epost": {
+    "prefix": "epost",
+    "body": [
+      "${1:app}.post('${2:route}', ${3:handler});"
+    ],
+    "description": "vim-snippets/javascript/javascript.node.snippets:39"
+  },
+  "eput": {
+    "prefix": "eput",
+    "body": [
+      "${1:app}.put('${2:route}', ${3:handler});"
+    ],
+    "description": "vim-snippets/javascript/javascript.node.snippets:41"
+  },
+  "edel": {
+    "prefix": "edel",
+    "body": [
+      "${1:app}.delete('${2:route}', ${3:handler});"
+    ],
+    "description": "vim-snippets/javascript/javascript.node.snippets:43"
+  },
+  "stdin": {
+    "prefix": "stdin",
+    "body": [
+      "process.stdin"
+    ],
+    "description": "vim-snippets/javascript/javascript.node.snippets:46"
+  },
+  "stdout": {
+    "prefix": "stdout",
+    "body": [
+      "process.stdout"
+    ],
+    "description": "vim-snippets/javascript/javascript.node.snippets:48"
+  },
+  "stderr": {
+    "prefix": "stderr",
+    "body": [
+      "process.stderr"
+    ],
+    "description": "vim-snippets/javascript/javascript.node.snippets:50"
+  }
+}

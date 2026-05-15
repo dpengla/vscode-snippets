@@ -1,0 +1,193 @@
+{
+  "ngc": {
+    "prefix": "ngc",
+    "body": [
+      "${1:controllerName} = (${2:scope}, ${3:injectables}) ->",
+      "\t${4}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:4"
+  },
+  "ngfor": {
+    "prefix": "ngfor",
+    "body": [
+      "angular.forEach ${1:iterateOver}, (value, key) ->",
+      "\t${2}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:8"
+  },
+  "ngm": {
+    "prefix": "ngm",
+    "body": [
+      "angular.module '${1:moduleName}', [${2:moduleDependencies}]",
+      "${3}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:13"
+  },
+  "ngma": {
+    "prefix": "ngma",
+    "body": [
+      "${1:moduleName} = angular.module '$1', [${2:moduleDeps}]",
+      "${3}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:17"
+  },
+  "ngmc": {
+    "prefix": "ngmc",
+    "body": [
+      "${1:moduleName} = angular.module('$1', [${2:moduleDeps}], (${3:configDeps}) ->",
+      "\t${4}",
+      ")"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:21"
+  },
+  "ngmfa": {
+    "prefix": "ngmfa",
+    "body": [
+      "factory '${1:factoryName}', (${2:dependencies}) ->",
+      "\t${3}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:26"
+  },
+  "ngms": {
+    "prefix": "ngms",
+    "body": [
+      "service '${1:serviceName}', (${2:injectables}) ->",
+      "\t${3}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:31"
+  },
+  "ngmfi": {
+    "prefix": "ngmfi",
+    "body": [
+      "filter '${1:filterName}', (${2:injectables}) ->",
+      "\t(input, ${3:args}) ->",
+      "\t\t${4}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:36"
+  },
+  "ngrw": {
+    "prefix": "ngrw",
+    "body": [
+      "\\$routeProvider.when '${1:url}',",
+      "\ttemplateUrl: '${2:templateUrl}'",
+      "\tcontroller: '${3:controller}'",
+      "${4}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:42"
+  },
+  "ngrwr": {
+    "prefix": "ngrwr",
+    "body": [
+      "\\$routeProvider.when '${1:url}',",
+      "\ttemplateUrl: '${2:templateUrl}'",
+      "\tcontroller: '${3:controller}'",
+      "\tresolve:",
+      "\t\t${4}",
+      "${5}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:48"
+  },
+  "ngro": {
+    "prefix": "ngro",
+    "body": [
+      "\\$routeProvider.otherwise redirectTo: '${1:url}'",
+      "${2}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:56"
+  },
+  "$f": {
+    "prefix": "$f",
+    "body": [
+      "\\$scope.${1:functionName} = (${2:args}) ->",
+      "\t${3}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:62"
+  },
+  "$v": {
+    "prefix": "$v",
+    "body": [
+      "\\$scope.${1:variable} = ${2:value}",
+      "${3}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:66"
+  },
+  "$va": {
+    "prefix": "$va",
+    "body": [
+      "\\$scope.${1:variable} = ${2:variable}",
+      "${3}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:70"
+  },
+  "$w": {
+    "prefix": "$w",
+    "body": [
+      "\\$scope.\\$watch '${1:watchExpr}', (newValue, oldValue) ->",
+      "\t${2}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:75"
+  },
+  "$on": {
+    "prefix": "$on",
+    "body": [
+      "\\$scope.\\$on '${1:eventName}', (event, ${2:args}) ->",
+      "\t${3}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:80"
+  },
+  "$b": {
+    "prefix": "$b",
+    "body": [
+      "\\$scope.\\$broadcast '${1:eventName}', ${2:eventArgs}",
+      "${3}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:85"
+  },
+  "$e": {
+    "prefix": "$e",
+    "body": [
+      "\\$scope.\\$emit '${1:eventName}', ${2:eventArgs}",
+      "${3}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:90"
+  },
+  "ngdcf": {
+    "prefix": "ngdcf",
+    "body": [
+      "compile = (tElement, tAttrs, transclude) ->",
+      "\t(scope, element, attrs) ->",
+      "\t\t${1}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:95"
+  },
+  "ngdlf": {
+    "prefix": "ngdlf",
+    "body": [
+      "(scope, element, attrs${1:ctrl}) ->",
+      "\t${2}"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:100"
+  },
+  "ngdc": {
+    "prefix": "ngdc",
+    "body": [
+      "directive '${1:directiveName}', factory = (${2:injectables}) ->",
+      "\tdirectiveDefinitionObject =",
+      "\t\t${3:directiveAttrs}",
+      "\t\tcompile: compile = (tElement, tAttrs, transclude) ->",
+      "\t\t\t(scope, element, attrs) ->",
+      "\tdirectiveDefinitionObject"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:104"
+  },
+  "ngdl": {
+    "prefix": "ngdl",
+    "body": [
+      ".directive('${1:directiveName}', (${2:directiveDeps}) ->",
+      "\t(scope, element, attrs${3:ctrl}) ->",
+      "\t\t${4}",
+      ")"
+    ],
+    "description": "vim-snippets/coffee/angular_coffee.snippets:112"
+  }
+}

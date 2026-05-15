@@ -1,0 +1,165 @@
+{
+  "fn - fn": {
+    "prefix": "fn",
+    "body": [
+      "fn ${1:function_name}(${2}) -> ${3:Nil} {",
+      "  ${0:\\${VISUAL:todo}}",
+      "}"
+    ],
+    "description": "fn"
+  },
+  "pfn - pub fn": {
+    "prefix": "pfn",
+    "body": [
+      "pub fn ${1:function_name}(${2}) -> ${3:Nil} {",
+      "  ${0:\\${VISUAL:todo}}",
+      "}"
+    ],
+    "description": "pub fn"
+  },
+  "test - test fn": {
+    "prefix": "test",
+    "body": [
+      "pub fn ${1:name}_test() {",
+      "  ${0}",
+      "}"
+    ],
+    "description": "test fn"
+  },
+  "af - anonymous fn": {
+    "prefix": "af",
+    "body": [
+      "fn(${1}) { ${0:${TM_SELECTED_TEXT}} }"
+    ],
+    "description": "anonymous fn"
+  },
+  "let - let binding": {
+    "prefix": "let",
+    "body": [
+      "let ${1} = ${0}"
+    ],
+    "description": "let binding"
+  },
+  "l - let binding": {
+    "prefix": "l",
+    "body": [
+      "let ${1} = ${0}"
+    ],
+    "description": "let binding"
+  },
+  "as - assert binding": {
+    "prefix": "as",
+    "body": [
+      "let assert ${1} = ${0}"
+    ],
+    "description": "assert binding"
+  },
+  "- - ->": {
+    "prefix": "-",
+    "body": [
+      "-> ${0}"
+    ],
+    "description": "->"
+  },
+  "case - case expression": {
+    "prefix": "case",
+    "body": [
+      "case ${1} {",
+      "  ${2} -> ${0}",
+      "}"
+    ],
+    "description": "case expression"
+  },
+  "ty - type": {
+    "prefix": "ty",
+    "body": [
+      "type ${1:Name} {",
+      "  ${0:$1}",
+      "}"
+    ],
+    "description": "type"
+  },
+  "pty - pub type": {
+    "prefix": "pty",
+    "body": [
+      "pub type ${1:Name} {",
+      "  ${0:$1}",
+      "}"
+    ],
+    "description": "pub type"
+  },
+  "tya - type alias": {
+    "prefix": "tya",
+    "body": [
+      "type ${1:Name} =",
+      "  ${0:$1}"
+    ],
+    "description": "type alias"
+  },
+  "ptya - pub type alias": {
+    "prefix": "ptya",
+    "body": [
+      "pub type ${1:Name} =",
+      "  ${0:$1}"
+    ],
+    "description": "pub type alias"
+  },
+  "im - import": {
+    "prefix": "im",
+    "body": [
+      "import ${0:gleam/result}"
+    ],
+    "description": "import"
+  },
+  "im. - import exposing": {
+    "prefix": "im.",
+    "body": [
+      "import ${1:gleam/result}.{${0}}"
+    ],
+    "description": "import exposing"
+  },
+  "p - |>": {
+    "prefix": "p",
+    "body": [
+      "|> ${0}"
+    ],
+    "description": "|>"
+  },
+  "bl - block": {
+    "prefix": "bl",
+    "body": [
+      "{",
+      "  ${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "block"
+  },
+  "tf - fn(Type) -> Type": {
+    "prefix": "tf",
+    "body": [
+      "fn(${1}) -> ${0}"
+    ],
+    "description": "fn(Type) -> Type"
+  },
+  "seq - should.equal": {
+    "prefix": "seq",
+    "body": [
+      "should.equal(${0:${TM_SELECTED_TEXT}})"
+    ],
+    "description": "should.equal"
+  },
+  "strue - should.be_true": {
+    "prefix": "strue",
+    "body": [
+      "should.be_true(${0:${TM_SELECTED_TEXT}})"
+    ],
+    "description": "should.be_true"
+  },
+  "sfalse - should.be_false": {
+    "prefix": "sfalse",
+    "body": [
+      "should.be_false(${0:${TM_SELECTED_TEXT}})"
+    ],
+    "description": "should.be_false"
+  }
+}

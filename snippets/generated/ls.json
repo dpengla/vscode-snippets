@@ -1,0 +1,217 @@
+{
+  "forinlet": {
+    "prefix": "forinlet",
+    "body": [
+      "for ${1:name} in ${2:array}",
+      "\tlet $1",
+      "\t\t${3}"
+    ],
+    "description": "vim-snippets/ls.snippets:2"
+  },
+  "fora": {
+    "prefix": "fora",
+    "body": [
+      "for ${1:name} in ${2:array}",
+      "\t${3}"
+    ],
+    "description": "vim-snippets/ls.snippets:7"
+  },
+  "foro": {
+    "prefix": "foro",
+    "body": [
+      "for ${1:key}, ${2:value} of ${3:object}",
+      "\t${4}"
+    ],
+    "description": "vim-snippets/ls.snippets:11"
+  },
+  "forr": {
+    "prefix": "forr",
+    "body": [
+      "for ${1:name} from ${2:start} to ${3:finish}",
+      "\t${4}"
+    ],
+    "description": "vim-snippets/ls.snippets:15"
+  },
+  "forrb": {
+    "prefix": "forrb",
+    "body": [
+      "for ${1:name} from ${2:start} to ${3:finish} by ${4:step}",
+      "\t${5}"
+    ],
+    "description": "vim-snippets/ls.snippets:18"
+  },
+  "forrex": {
+    "prefix": "forrex",
+    "body": [
+      "for ${1:name} from ${2:start} til ${3:finish}",
+      "\t${4}"
+    ],
+    "description": "vim-snippets/ls.snippets:22"
+  },
+  "forrexb": {
+    "prefix": "forrexb",
+    "body": [
+      "for ${1:name} from ${2:start} til ${3:finish} by ${4:step}",
+      "\t${5}"
+    ],
+    "description": "vim-snippets/ls.snippets:25"
+  },
+  "fun": {
+    "prefix": "fun",
+    "body": [
+      "(${1:args}) ->",
+      "\t${2}"
+    ],
+    "description": "vim-snippets/ls.snippets:29"
+  },
+  "bfun": {
+    "prefix": "bfun",
+    "body": [
+      "(${1:args}) ~>",
+      "\t${2}"
+    ],
+    "description": "vim-snippets/ls.snippets:33"
+  },
+  "cla - class ..": {
+    "prefix": "cla",
+    "body": [
+      "class ${1:${TM_FILENAME_BASE}}",
+      "\t${2}"
+    ],
+    "description": "class .."
+  },
+  "cla - class .. constructor: ..": {
+    "prefix": "cla",
+    "body": [
+      "class ${1:${TM_FILENAME_BASE}}",
+      "\t(${2:args}) ->",
+      "\t\t${3}",
+      "",
+      "\t${4}"
+    ],
+    "description": "class .. constructor: .."
+  },
+  "cla - class .. extends ..": {
+    "prefix": "cla",
+    "body": [
+      "class ${1:${TM_FILENAME_BASE}} extends ${2:ParentClass}",
+      "\t${3}"
+    ],
+    "description": "class .. extends .."
+  },
+  "cla - class .. extends .. constructor: ..": {
+    "prefix": "cla",
+    "body": [
+      "class ${1:${TM_FILENAME_BASE}} extends ${2:ParentClass}",
+      "\t(${3:args}) ->",
+      "\t\t${4}",
+      "",
+      "\t${5}"
+    ],
+    "description": "class .. extends .. constructor: .."
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if $1",
+      "\t${2}"
+    ],
+    "description": "vim-snippets/ls.snippets:56"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "if $1",
+      "\t${2}",
+      "else",
+      "\t${3}"
+    ],
+    "description": "vim-snippets/ls.snippets:60"
+  },
+  "elif": {
+    "prefix": "elif",
+    "body": [
+      "else if $1",
+      "\t${2}"
+    ],
+    "description": "vim-snippets/ls.snippets:66"
+  },
+  "ifte": {
+    "prefix": "ifte",
+    "body": [
+      "if $1 then $2 else $0"
+    ],
+    "description": "vim-snippets/ls.snippets:70"
+  },
+  "unl": {
+    "prefix": "unl",
+    "body": [
+      "$1 unless $0"
+    ],
+    "description": "vim-snippets/ls.snippets:73"
+  },
+  "swi": {
+    "prefix": "swi",
+    "body": [
+      "switch ${1:object}",
+      "case ${2:value}",
+      "\t${3}",
+      "default void"
+    ],
+    "description": "vim-snippets/ls.snippets:76"
+  },
+  "mat": {
+    "prefix": "mat",
+    "body": [
+      "match ${1:object}",
+      "| ${2:value} => ${3}",
+      "| otherwise => void"
+    ],
+    "description": "vim-snippets/ls.snippets:81"
+  },
+  "log": {
+    "prefix": "log",
+    "body": [
+      "console.log ${1}"
+    ],
+    "description": "vim-snippets/ls.snippets:87"
+  },
+  "str": {
+    "prefix": "str",
+    "body": [
+      "JSON.stringify ${1}, void, 2"
+    ],
+    "description": "vim-snippets/ls.snippets:90"
+  },
+  "try": {
+    "prefix": "try",
+    "body": [
+      "try",
+      "\t${1:${TM_SELECTED_TEXT}}",
+      "catch ${2:error}",
+      "\t${3}"
+    ],
+    "description": "vim-snippets/ls.snippets:94"
+  },
+  "req": {
+    "prefix": "req",
+    "body": [
+      "${2:$1} = require '${1}'${3}"
+    ],
+    "description": "vim-snippets/ls.snippets:100"
+  },
+  "req!": {
+    "prefix": "req!",
+    "body": [
+      "require! ${1}"
+    ],
+    "description": "vim-snippets/ls.snippets:103"
+  },
+  "exp": {
+    "prefix": "exp",
+    "body": [
+      "${1:root} = exports ? this"
+    ],
+    "description": "vim-snippets/ls.snippets:107"
+  }
+}

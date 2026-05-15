@@ -1,0 +1,199 @@
+{
+  "apply-templates - with-param": {
+    "prefix": "apply-templates",
+    "body": [
+      "<xsl:apply-templates select=\"${1:*}\">",
+      "\t<xsl:with-param name=\"${2:param}\">${3}</xsl:with-param>${4}",
+      "</xsl:apply-templates>"
+    ],
+    "description": "with-param"
+  },
+  "apply-templates - sort-by": {
+    "prefix": "apply-templates",
+    "body": [
+      "<xsl:apply-templates select=\"${1:*}\">",
+      "\t<xsl:sort select=\"${2:node}\" order=\"${3:ascending}\" data-type=\"${4:text}\">${5}",
+      "</xsl:apply-templates>"
+    ],
+    "description": "sort-by"
+  },
+  "apply-templates - plain": {
+    "prefix": "apply-templates",
+    "body": [
+      "<xsl:apply-templates select=\"${1:*}\" />"
+    ],
+    "description": "plain"
+  },
+  "attribute - blank": {
+    "prefix": "attribute",
+    "body": [
+      "<xsl:attribute name=\"${1:name}\">${2}</xsl:attribute>"
+    ],
+    "description": "blank"
+  },
+  "attribute - value-of": {
+    "prefix": "attribute",
+    "body": [
+      "<xsl:attribute name=\"${1:name}\">",
+      "\t<xsl:value-of select=\"${2:*}\" />",
+      "</xsl:attribute>"
+    ],
+    "description": "value-of"
+  },
+  "call-template": {
+    "prefix": "call-template",
+    "body": [
+      "<xsl:call-template name=\"${1:template}\" />"
+    ],
+    "description": "vim-snippets/xslt.snippets:22"
+  },
+  "call-template - with-param": {
+    "prefix": "call-template",
+    "body": [
+      "<xsl:call-template name=\"${1:template}\">",
+      "\t<xsl:with-param name=\"${2:param}\">${3}</xsl:with-param>${4}",
+      "</xsl:call-template>"
+    ],
+    "description": "with-param"
+  },
+  "choose": {
+    "prefix": "choose",
+    "body": [
+      "<xsl:choose>",
+      "\t<xsl:when test=\"${1:value}\">",
+      "\t\t${2}",
+      "\t</xsl:when>",
+      "</xsl:choose>"
+    ],
+    "description": "vim-snippets/xslt.snippets:30"
+  },
+  "copy-of": {
+    "prefix": "copy-of",
+    "body": [
+      "<xsl:copy-of select=\"${1:*}\" />"
+    ],
+    "description": "vim-snippets/xslt.snippets:37"
+  },
+  "for-each": {
+    "prefix": "for-each",
+    "body": [
+      "<xsl:for-each select=\"${1:*}\">${2}",
+      "</xsl:for-each>"
+    ],
+    "description": "vim-snippets/xslt.snippets:40"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "<xsl:if test=\"${1:test}\">${2}",
+      "</xsl:if>"
+    ],
+    "description": "vim-snippets/xslt.snippets:44"
+  },
+  "import": {
+    "prefix": "import",
+    "body": [
+      "<xsl:import href=\"${1:stylesheet}\" />"
+    ],
+    "description": "vim-snippets/xslt.snippets:48"
+  },
+  "include": {
+    "prefix": "include",
+    "body": [
+      "<xsl:include href=\"${1:stylesheet}\" />"
+    ],
+    "description": "vim-snippets/xslt.snippets:51"
+  },
+  "otherwise": {
+    "prefix": "otherwise",
+    "body": [
+      "<xsl:otherwise>${0}",
+      "</xsl:otherwise>"
+    ],
+    "description": "vim-snippets/xslt.snippets:54"
+  },
+  "param": {
+    "prefix": "param",
+    "body": [
+      "<xsl:param name=\"${1:name}\">${2}",
+      "</xsl:param>"
+    ],
+    "description": "vim-snippets/xslt.snippets:58"
+  },
+  "stylesheet": {
+    "prefix": "stylesheet",
+    "body": [
+      "<xsl:stylesheet version=\"1.0\"",
+      "xmlns:xsl=\"http://www.w3.org/1999/XSL/Transform\">${0}",
+      "</xsl:stylesheet>"
+    ],
+    "description": "vim-snippets/xslt.snippets:62"
+  },
+  "template": {
+    "prefix": "template",
+    "body": [
+      "<xsl:template match=\"${1:*}\">${0}",
+      "</xsl:template>"
+    ],
+    "description": "vim-snippets/xslt.snippets:67"
+  },
+  "template - named": {
+    "prefix": "template",
+    "body": [
+      "<xsl:template name=\"${1:name}\">${0}",
+      "</xsl:template>"
+    ],
+    "description": "named"
+  },
+  "text": {
+    "prefix": "text",
+    "body": [
+      "<xsl:text>${0}</xsl:text>"
+    ],
+    "description": "vim-snippets/xslt.snippets:75"
+  },
+  "value-of": {
+    "prefix": "value-of",
+    "body": [
+      "<xsl:value-of select=\"${1:*}\" />"
+    ],
+    "description": "vim-snippets/xslt.snippets:78"
+  },
+  "variable - blank": {
+    "prefix": "variable",
+    "body": [
+      "<xsl:variable name=\"${1:name}\">${0}",
+      "</xsl:variable>"
+    ],
+    "description": "blank"
+  },
+  "variable - select": {
+    "prefix": "variable",
+    "body": [
+      "<xsl:variable select=\"${1:*}\" />"
+    ],
+    "description": "select"
+  },
+  "when": {
+    "prefix": "when",
+    "body": [
+      "<xsl:when test=\"${1:test}\">${0}",
+      "</xsl:when>"
+    ],
+    "description": "vim-snippets/xslt.snippets:88"
+  },
+  "with-param": {
+    "prefix": "with-param",
+    "body": [
+      "<xsl:with-param name=\"${1:name}\">${0}</xsl:with-param>"
+    ],
+    "description": "vim-snippets/xslt.snippets:92"
+  },
+  "with-param - select": {
+    "prefix": "with-param",
+    "body": [
+      "<xsl:with-param name=\"${1:name}\" select=\"${0:*}\" />"
+    ],
+    "description": "select"
+  }
+}

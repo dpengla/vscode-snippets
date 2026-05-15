@@ -1,0 +1,325 @@
+{
+  "inc": {
+    "prefix": "inc",
+    "body": [
+      "#include <${1:stdio}.h>"
+    ],
+    "description": "vim-snippets/lpc.snippets:4"
+  },
+  "Inc": {
+    "prefix": "Inc",
+    "body": [
+      "#include \"${1:${TM_FILENAME_BASE}}\""
+    ],
+    "description": "vim-snippets/lpc.snippets:7"
+  },
+  "ndef": {
+    "prefix": "ndef",
+    "body": [
+      "#ifndef $1",
+      "#define ${1:SYMBOL} ${2:value}",
+      "#endif /* ifndef $1 */"
+    ],
+    "description": "vim-snippets/lpc.snippets:10"
+  },
+  "def": {
+    "prefix": "def",
+    "body": [
+      "#define"
+    ],
+    "description": "vim-snippets/lpc.snippets:15"
+  },
+  "ifdef": {
+    "prefix": "ifdef",
+    "body": [
+      "#ifdef ${1:FOO}",
+      "\t${2:#define }",
+      "#endif"
+    ],
+    "description": "vim-snippets/lpc.snippets:18"
+  },
+  "#if": {
+    "prefix": "#if",
+    "body": [
+      "#if ${1:FOO}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "#endif"
+    ],
+    "description": "vim-snippets/lpc.snippets:23"
+  },
+  "once": {
+    "prefix": "once",
+    "body": [
+      "#ifndef ${1:${TM_FILENAME_BASE}}",
+      "",
+      "#define $1",
+      "",
+      "${0}",
+      "",
+      "#endif /* end of include guard: $1 */"
+    ],
+    "description": "vim-snippets/lpc.snippets:28"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if(${1:true})",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/lpc.snippets:39"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "if(${1:true})",
+      "{",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "}",
+      "else",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/lpc.snippets:44"
+  },
+  "el": {
+    "prefix": "el",
+    "body": [
+      "else",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/lpc.snippets:54"
+  },
+  "elif": {
+    "prefix": "elif",
+    "body": [
+      "else if(${1:true})",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/lpc.snippets:60"
+  },
+  "ifi": {
+    "prefix": "ifi",
+    "body": [
+      "if(${1:true}) ${0};"
+    ],
+    "description": "vim-snippets/lpc.snippets:66"
+  },
+  "t - Ternary: `condition ? true : false`": {
+    "prefix": "t",
+    "body": [
+      "$1 ? $2 : $0"
+    ],
+    "description": "Ternary: `condition ? true : false`"
+  },
+  "switch": {
+    "prefix": "switch",
+    "body": [
+      "switch(${1:/* variable */})",
+      "{",
+      "\tcase ${2:/* variable case */}:",
+      "\t\t${3}",
+      "\t\t${4:break;}${5}",
+      "\tdefault:",
+      "\t\t${6}",
+      "}"
+    ],
+    "description": "vim-snippets/lpc.snippets:72"
+  },
+  "switchndef": {
+    "prefix": "switchndef",
+    "body": [
+      "switch(${1:/* variable */})",
+      "{",
+      "\tcase ${2:/* variable case */}:",
+      "\t\t${3}",
+      "\t\t${4:break;}${5}",
+      "}"
+    ],
+    "description": "vim-snippets/lpc.snippets:82"
+  },
+  "case": {
+    "prefix": "case",
+    "body": [
+      "case ${1:/* variable case */}:",
+      "\t${2}",
+      "\t${3:break;}"
+    ],
+    "description": "vim-snippets/lpc.snippets:90"
+  },
+  "ret": {
+    "prefix": "ret",
+    "body": [
+      "return ${0};"
+    ],
+    "description": "vim-snippets/lpc.snippets:94"
+  },
+  "fore": {
+    "prefix": "fore",
+    "body": [
+      "foreach(${1:mixed} ${2:ele} in ${3:arr})",
+      "{",
+      "\t${4}",
+      "}"
+    ],
+    "description": "vim-snippets/lpc.snippets:99"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for(int ${2:i} = 0; $2 < ${1:count}; $2${3:++})",
+      "{",
+      "\t${4}",
+      "}"
+    ],
+    "description": "vim-snippets/lpc.snippets:105"
+  },
+  "forr": {
+    "prefix": "forr",
+    "body": [
+      "for(int ${1:i} = ${2:0}; ${3:$1 < 10}; $1${4:++})",
+      "{",
+      "\t${5}",
+      "}"
+    ],
+    "description": "vim-snippets/lpc.snippets:111"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "while($1)",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/lpc.snippets:117"
+  },
+  "do": {
+    "prefix": "do",
+    "body": [
+      "do{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}while ($1);"
+    ],
+    "description": "vim-snippets/lpc.snippets:123"
+  },
+  "fnc": {
+    "prefix": "fnc",
+    "body": [
+      "${1:void} ${2:function_name}(${3})",
+      "{",
+      "\t${4}",
+      "}"
+    ],
+    "description": "vim-snippets/lpc.snippets:130"
+  },
+  "defun0": {
+    "prefix": "defun0",
+    "body": [
+      "${1:void} ${2:function_name}()",
+      "{",
+      "\t${3}",
+      "}"
+    ],
+    "description": "vim-snippets/lpc.snippets:136"
+  },
+  "defun1": {
+    "prefix": "defun1",
+    "body": [
+      "${1:void} ${2:function_name}(${3:Type} ${4:Parameter})",
+      "{",
+      "\t${5}",
+      "}"
+    ],
+    "description": "vim-snippets/lpc.snippets:142"
+  },
+  "defun2": {
+    "prefix": "defun2",
+    "body": [
+      "${1:void} ${2:function_name}(${3:Type} ${4:Parameter}, ${5:Type} ${6:Parameter})",
+      "{",
+      "\t${7}",
+      "}"
+    ],
+    "description": "vim-snippets/lpc.snippets:148"
+  },
+  "defun3": {
+    "prefix": "defun3",
+    "body": [
+      "${1:void} ${2:function_name}(${3:Type} ${4:Parameter}, ${5:Type} ${6:Parameter}, ${7:Type} ${8:Parameter})",
+      "{",
+      "\t${9}",
+      "}"
+    ],
+    "description": "vim-snippets/lpc.snippets:154"
+  },
+  "fund": {
+    "prefix": "fund",
+    "body": [
+      "${1:void} ${2:function_name}(${3});"
+    ],
+    "description": "vim-snippets/lpc.snippets:160"
+  },
+  "pr": {
+    "prefix": "pr",
+    "body": [
+      "printf(\"${1:%s}\\n\"${2});"
+    ],
+    "description": "vim-snippets/lpc.snippets:165"
+  },
+  "fpr": {
+    "prefix": "fpr",
+    "body": [
+      "fprintf(${1:stderr}, \"${2:%s}\\n\"${3});"
+    ],
+    "description": "vim-snippets/lpc.snippets:168"
+  },
+  "prd": {
+    "prefix": "prd",
+    "body": [
+      "printf(\"${1:} = %d\\n\", $1);"
+    ],
+    "description": "vim-snippets/lpc.snippets:170"
+  },
+  "prf": {
+    "prefix": "prf",
+    "body": [
+      "printf(\"${1:} = %f\\n\", $1);"
+    ],
+    "description": "vim-snippets/lpc.snippets:172"
+  },
+  "prx": {
+    "prefix": "prx",
+    "body": [
+      "printf(\"${1:} = %${2}\\n\", $1);"
+    ],
+    "description": "vim-snippets/lpc.snippets:174"
+  },
+  "todo": {
+    "prefix": "todo",
+    "body": [
+      "/*! TODO: ${1:Todo description here} */"
+    ],
+    "description": "vim-snippets/lpc.snippets:178"
+  },
+  ".": {
+    "prefix": ".",
+    "body": [
+      "[${1}]"
+    ],
+    "description": "vim-snippets/lpc.snippets:183"
+  },
+  "head": {
+    "prefix": "head",
+    "body": [
+      "// code for ${1} by \\$USER create at ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE} ${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}"
+    ],
+    "description": "vim-snippets/lpc.snippets:189"
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "tbl": {
+    "prefix": "tbl",
+    "body": [
+      "create table ${1:table} (",
+      "\t${0:columns}",
+      ");"
+    ],
+    "description": "vim-snippets/sql.snippets:1"
+  },
+  "col": {
+    "prefix": "col",
+    "body": [
+      "${1:name}\t${2:type}\t${3:default ''}\t${0:not null}"
+    ],
+    "description": "vim-snippets/sql.snippets:5"
+  },
+  "ccol": {
+    "prefix": "ccol",
+    "body": [
+      "${1:name}\tvarchar2(${2:size})\t${3:default ''}\t${0:not null}"
+    ],
+    "description": "vim-snippets/sql.snippets:7"
+  },
+  "ncol": {
+    "prefix": "ncol",
+    "body": [
+      "${1:name}\tnumber\t${3:default 0}\t${0:not null}"
+    ],
+    "description": "vim-snippets/sql.snippets:9"
+  },
+  "dcol": {
+    "prefix": "dcol",
+    "body": [
+      "${1:name}\tdate\t${3:default sysdate}\t${0:not null}"
+    ],
+    "description": "vim-snippets/sql.snippets:11"
+  },
+  "ind": {
+    "prefix": "ind",
+    "body": [
+      "create index ${0:$1_$2} on ${1:table}(${2:column});"
+    ],
+    "description": "vim-snippets/sql.snippets:13"
+  },
+  "uind": {
+    "prefix": "uind",
+    "body": [
+      "create unique index ${1:name} on ${2:table}(${0:column});"
+    ],
+    "description": "vim-snippets/sql.snippets:15"
+  },
+  "tblcom": {
+    "prefix": "tblcom",
+    "body": [
+      "comment on table ${1:table} is '${0:comment}';"
+    ],
+    "description": "vim-snippets/sql.snippets:17"
+  },
+  "colcom": {
+    "prefix": "colcom",
+    "body": [
+      "comment on column ${1:table}.${2:column} is '${0:comment}';"
+    ],
+    "description": "vim-snippets/sql.snippets:19"
+  },
+  "addcol": {
+    "prefix": "addcol",
+    "body": [
+      "alter table ${1:table} add (${2:column} ${0:type});"
+    ],
+    "description": "vim-snippets/sql.snippets:21"
+  },
+  "seq": {
+    "prefix": "seq",
+    "body": [
+      "create sequence ${1:name} start with ${2:1} increment by ${3:1} minvalue ${0:1};"
+    ],
+    "description": "vim-snippets/sql.snippets:23"
+  },
+  "s*": {
+    "prefix": "s*",
+    "body": [
+      "select * from ${0:table}"
+    ],
+    "description": "vim-snippets/sql.snippets:25"
+  }
+}

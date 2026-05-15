@@ -1,0 +1,150 @@
+{
+  "pry": {
+    "prefix": "pry",
+    "body": [
+      "- binding.pry"
+    ],
+    "description": "vim-snippets/slim.snippets:1"
+  },
+  "renp": {
+    "prefix": "renp",
+    "body": [
+      "= render partial: '${0}'"
+    ],
+    "description": "vim-snippets/slim.snippets:3"
+  },
+  "fieldset": {
+    "prefix": "fieldset",
+    "body": [
+      "fieldset",
+      "\tlegend ${1}"
+    ],
+    "description": "vim-snippets/slim.snippets:7"
+  },
+  "css": {
+    "prefix": "css",
+    "body": [
+      "link rel=\"stylesheet\" href=\"${1:style.css}\" type=\"text/css\" media=\"${2:all}\""
+    ],
+    "description": "vim-snippets/slim.snippets:10"
+  },
+  "script": {
+    "prefix": "script",
+    "body": [
+      "script src=\"${1:script.js}\" type=\"text/javascript\""
+    ],
+    "description": "vim-snippets/slim.snippets:12"
+  },
+  "nbs": {
+    "prefix": "nbs",
+    "body": [
+      "&nbsp;"
+    ],
+    "description": "vim-snippets/slim.snippets:17"
+  },
+  "left": {
+    "prefix": "left",
+    "body": [
+      "&#x2190;"
+    ],
+    "description": "vim-snippets/slim.snippets:20"
+  },
+  "right": {
+    "prefix": "right",
+    "body": [
+      "&#x2192;"
+    ],
+    "description": "vim-snippets/slim.snippets:23"
+  },
+  "up": {
+    "prefix": "up",
+    "body": [
+      "&#x2191;"
+    ],
+    "description": "vim-snippets/slim.snippets:26"
+  },
+  "down": {
+    "prefix": "down",
+    "body": [
+      "&#x2193;"
+    ],
+    "description": "vim-snippets/slim.snippets:29"
+  },
+  "return": {
+    "prefix": "return",
+    "body": [
+      "&#x21A9;"
+    ],
+    "description": "vim-snippets/slim.snippets:32"
+  },
+  "backtab": {
+    "prefix": "backtab",
+    "body": [
+      "&#x21E4;"
+    ],
+    "description": "vim-snippets/slim.snippets:35"
+  },
+  "tab": {
+    "prefix": "tab",
+    "body": [
+      "&#x21E5;"
+    ],
+    "description": "vim-snippets/slim.snippets:38"
+  },
+  "shift": {
+    "prefix": "shift",
+    "body": [
+      "&#x21E7;"
+    ],
+    "description": "vim-snippets/slim.snippets:41"
+  },
+  "ctrl": {
+    "prefix": "ctrl",
+    "body": [
+      "&#x2303;"
+    ],
+    "description": "vim-snippets/slim.snippets:44"
+  },
+  "enter": {
+    "prefix": "enter",
+    "body": [
+      "&#x2305;"
+    ],
+    "description": "vim-snippets/slim.snippets:47"
+  },
+  "cmd": {
+    "prefix": "cmd",
+    "body": [
+      "&#x2318;"
+    ],
+    "description": "vim-snippets/slim.snippets:50"
+  },
+  "option": {
+    "prefix": "option",
+    "body": [
+      "&#x2325;"
+    ],
+    "description": "vim-snippets/slim.snippets:53"
+  },
+  "delete": {
+    "prefix": "delete",
+    "body": [
+      "&#x2326;"
+    ],
+    "description": "vim-snippets/slim.snippets:56"
+  },
+  "backspace": {
+    "prefix": "backspace",
+    "body": [
+      "&#x232B;"
+    ],
+    "description": "vim-snippets/slim.snippets:59"
+  },
+  "esc": {
+    "prefix": "esc",
+    "body": [
+      "&#x238B;"
+    ],
+    "description": "vim-snippets/slim.snippets:62"
+  }
+}

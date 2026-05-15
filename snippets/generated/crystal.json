@@ -1,0 +1,209 @@
+{
+  "req - require": {
+    "prefix": "req",
+    "body": [
+      "require \"${1}\""
+    ],
+    "description": "require"
+  },
+  "case": {
+    "prefix": "case",
+    "body": [
+      "case $1",
+      "when $2",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/crystal.snippets:3"
+  },
+  "when": {
+    "prefix": "when",
+    "body": [
+      "when $1",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/crystal.snippets:8"
+  },
+  "def": {
+    "prefix": "def",
+    "body": [
+      "def ${1:method_name}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/crystal.snippets:11"
+  },
+  "pdef": {
+    "prefix": "pdef",
+    "body": [
+      "private def ${1:method_name}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/crystal.snippets:15"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if $1",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "end"
+    ],
+    "description": "vim-snippets/crystal.snippets:19"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "if $1",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "else",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/crystal.snippets:23"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "while $1",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "end"
+    ],
+    "description": "vim-snippets/crystal.snippets:29"
+  },
+  "cla - class .. end": {
+    "prefix": "cla",
+    "body": [
+      "class ${1:${TM_FILENAME_BASE}}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "class .. end"
+  },
+  "mod - class .. end": {
+    "prefix": "mod",
+    "body": [
+      "module ${1:${TM_FILENAME_BASE}}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "class .. end"
+  },
+  "r": {
+    "prefix": "r",
+    "body": [
+      "getter ${0:name}"
+    ],
+    "description": "vim-snippets/crystal.snippets:41"
+  },
+  "r!": {
+    "prefix": "r!",
+    "body": [
+      "getter! ${0:name}"
+    ],
+    "description": "vim-snippets/crystal.snippets:43"
+  },
+  "r?": {
+    "prefix": "r?",
+    "body": [
+      "getter? ${0:name}"
+    ],
+    "description": "vim-snippets/crystal.snippets:45"
+  },
+  "w": {
+    "prefix": "w",
+    "body": [
+      "setter ${0:name}"
+    ],
+    "description": "vim-snippets/crystal.snippets:47"
+  },
+  "w!": {
+    "prefix": "w!",
+    "body": [
+      "setter! ${0:name}"
+    ],
+    "description": "vim-snippets/crystal.snippets:49"
+  },
+  "w?": {
+    "prefix": "w?",
+    "body": [
+      "setter? ${0:name}"
+    ],
+    "description": "vim-snippets/crystal.snippets:51"
+  },
+  "rw": {
+    "prefix": "rw",
+    "body": [
+      "property ${0:name}"
+    ],
+    "description": "vim-snippets/crystal.snippets:53"
+  },
+  "rw!": {
+    "prefix": "rw!",
+    "body": [
+      "property! ${0:name}"
+    ],
+    "description": "vim-snippets/crystal.snippets:55"
+  },
+  "rw?": {
+    "prefix": "rw?",
+    "body": [
+      "property? ${0:name}"
+    ],
+    "description": "vim-snippets/crystal.snippets:57"
+  },
+  "defs": {
+    "prefix": "defs",
+    "body": [
+      "def self.${1:class_method_name}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/crystal.snippets:59"
+  },
+  "defi": {
+    "prefix": "defi",
+    "body": [
+      "def initialize(${1})",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/crystal.snippets:63"
+  },
+  "do": {
+    "prefix": "do",
+    "body": [
+      "do",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "end"
+    ],
+    "description": "vim-snippets/crystal.snippets:67"
+  },
+  "dov": {
+    "prefix": "dov",
+    "body": [
+      "do |${1:v}|",
+      "\t${2}",
+      "end"
+    ],
+    "description": "vim-snippets/crystal.snippets:71"
+  },
+  "desc": {
+    "prefix": "desc",
+    "body": [
+      "describe ${1:${TM_FILENAME_BASE}} do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/crystal.snippets:75"
+  },
+  "it": {
+    "prefix": "it",
+    "body": [
+      "it \"${1}\" do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/crystal.snippets:79"
+  }
+}

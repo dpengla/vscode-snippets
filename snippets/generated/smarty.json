@@ -1,0 +1,193 @@
+{
+  "if - {if cond} ... {/if}": {
+    "prefix": "if",
+    "body": [
+      "{if ${1}}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{/if}"
+    ],
+    "description": "{if cond} ... {/if}"
+  },
+  "ifn - {if !cond} ... {/if}": {
+    "prefix": "ifn",
+    "body": [
+      "{if ${1}}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{/if}"
+    ],
+    "description": "{if !cond} ... {/if}"
+  },
+  "ife - {if cond} ... {else} ... {/if}": {
+    "prefix": "ife",
+    "body": [
+      "{if ${1}}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{else}",
+      "\t${2}",
+      "{/if}"
+    ],
+    "description": "{if cond} ... {else} ... {/if}"
+  },
+  "eif - {elseif cond} ... {/if}": {
+    "prefix": "eif",
+    "body": [
+      "{elseif ${1}}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{/if}"
+    ],
+    "description": "{elseif cond} ... {/if}"
+  },
+  "el - {else} ... {/if}": {
+    "prefix": "el",
+    "body": [
+      "{else}",
+      "\t${1}",
+      "{/if}"
+    ],
+    "description": "{else} ... {/if}"
+  },
+  "for - The {for} tag is used to create simple loops.": {
+    "prefix": "for",
+    "body": [
+      "{for \\$${1:var}=${2:start} to ${3:end}${4: step ${5}}${6: max=${7}}}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{/for}"
+    ],
+    "description": "The {for} tag is used to create simple loops."
+  },
+  "forelse - The {for}{forelse} tag is used to create simple loops.": {
+    "prefix": "forelse",
+    "body": [
+      "{for \\$${1:var}=${2:start} to ${3:end}${4: step ${5}}${6: max=${7}}}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{forelse}",
+      "\t${8}",
+      "{/for}"
+    ],
+    "description": "The {for}{forelse} tag is used to create simple loops."
+  },
+  "foreach - {foreach} is used for looping over arrays of data.": {
+    "prefix": "foreach",
+    "body": [
+      "{foreach \\$${1:array_variable} as \\$${2:var_or_key}${3: => \\$${4:itemvar}}}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{/foreach}"
+    ],
+    "description": "{foreach} is used for looping over arrays of data."
+  },
+  "foreach2 - [Smarty2] {foreach} is used for looping over arrays of data.": {
+    "prefix": "foreach2",
+    "body": [
+      "{foreach from=\\$${1:collection} item='${2}'${3: key='${4}'}${5: name='${6}'}}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{/foreach}"
+    ],
+    "description": "[Smarty2] {foreach} is used for looping over arrays of data."
+  },
+  "foreachelse - {foreach} is used for looping over arrays of data.": {
+    "prefix": "foreachelse",
+    "body": [
+      "{foreach \\$${1:array_variable} as \\$${2:var_or_key}${3: => \\$${4:itemvar}}}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{foreachelse}",
+      "\t${5}",
+      "{/foreach}"
+    ],
+    "description": "{foreach} is used for looping over arrays of data."
+  },
+  "wh - {while} loops in Smarty have much the same flexibility as PHP while statements, with a few added features for the template engine. Every {while} must be paired with a matching {/while}. All PHP conditionals and functions are recognized, such as ||, or, &&, and, is_array(), etc.": {
+    "prefix": "wh",
+    "body": [
+      "{while ${1}}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{/while}"
+    ],
+    "description": "{while} loops in Smarty have much the same flexibility as PHP while statements, with a few added features for the template engine. Every {while} must be paired with a matching {/while}. All PHP conditionals and functions are recognized, such as ||, or, &&, and, is_array(), etc."
+  },
+  "block - {block} is used to define a named area of template source for template inheritance.": {
+    "prefix": "block",
+    "body": [
+      "{block name='${1}'}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{/block}"
+    ],
+    "description": "{block} is used to define a named area of template source for template inheritance."
+  },
+  "call - {call} is used to call a template function defined by the {function} tag just like a plugin function.": {
+    "prefix": "call",
+    "body": [
+      "{call name=${1}${2: assign=${3}}${4: variables}}"
+    ],
+    "description": "{call} is used to call a template function defined by the {function} tag just like a plugin function."
+  },
+  "capture - {capture} is used to collect the output of the template between the tags into a variable instead of displaying it. Any content between {capture name='foo'} and {/capture} is collected into the variable specified in the name attribute. ": {
+    "prefix": "capture",
+    "body": [
+      "{capture name='${1}'${2: assign='${3}' }${4: append='${5:array_variable}'}}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{/capture}"
+    ],
+    "description": "{capture} is used to collect the output of the template between the tags into a variable instead of displaying it. Any content between {capture name='foo'} and {/capture} is collected into the variable specified in the name attribute. "
+  },
+  "extends - {extends} tags are used in child templates in template inheritance for extending parent templates.": {
+    "prefix": "extends",
+    "body": [
+      "{extends file='${1}'}"
+    ],
+    "description": "{extends} tags are used in child templates in template inheritance for extending parent templates."
+  },
+  "function - {function} is used to create functions within a template and call them just like a plugin function. Instead of writing a plugin that generates presentational content, keeping it in the template is often a more manageable choice. It also simplifies data traversal, such as deeply nested menus.": {
+    "prefix": "function",
+    "body": [
+      "{function name='${1}' ${2:variables}}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{/function}"
+    ],
+    "description": "{function} is used to create functions within a template and call them just like a plugin function. Instead of writing a plugin that generates presentational content, keeping it in the template is often a more manageable choice. It also simplifies data traversal, such as deeply nested menus."
+  },
+  "literal - {literal} tags allow a block of data to be taken literally. This is typically used around Javascript or stylesheet blocks where {curly braces} would interfere with the template delimiter syntax": {
+    "prefix": "literal",
+    "body": [
+      "{literal}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{/literal}"
+    ],
+    "description": "{literal} tags allow a block of data to be taken literally. This is typically used around Javascript or stylesheet blocks where {curly braces} would interfere with the template delimiter syntax"
+  },
+  "nocache - {nocache} is used to disable caching of a template section. Every {nocache} must be paired with a matching {/nocache}.": {
+    "prefix": "nocache",
+    "body": [
+      "{nocache}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{/nocache}"
+    ],
+    "description": "{nocache} is used to disable caching of a template section. Every {nocache} must be paired with a matching {/nocache}."
+  },
+  "section - A {section} is for looping over sequentially indexed arrays of data, unlike {foreach} which is used to loop over a single associative array. Every {section} tag must be paired with a closing {/section} tag.": {
+    "prefix": "section",
+    "body": [
+      "{section name='${1}'${2: loop='${3}'}${4: start=${5}}${6: step=${7}}${8: max=${9}}${10: show=${11}}}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{/section}"
+    ],
+    "description": "A {section} is for looping over sequentially indexed arrays of data, unlike {foreach} which is used to loop over a single associative array. Every {section} tag must be paired with a closing {/section} tag."
+  },
+  "setfilter - The {setfilter}...{/setfilter} block tag allows the definition of template instance's variable filters.": {
+    "prefix": "setfilter",
+    "body": [
+      "{setfilter ${1:filters}}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{/setfilter}"
+    ],
+    "description": "The {setfilter}...{/setfilter} block tag allows the definition of template instance's variable filters."
+  },
+  "strip - Anything within {strip}{/strip} tags are stripped of the extra spaces or carriage returns at the beginnings and ends of the lines before they are displayed. This way you can keep your templates readable, and not worry about extra white space causing problems.": {
+    "prefix": "strip",
+    "body": [
+      "{strip}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{/strip}"
+    ],
+    "description": "Anything within {strip}{/strip} tags are stripped of the extra spaces or carriage returns at the beginnings and ends of the lines before they are displayed. This way you can keep your templates readable, and not worry about extra white space causing problems."
+  }
+}

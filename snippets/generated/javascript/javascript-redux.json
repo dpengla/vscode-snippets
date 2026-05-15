@@ -1,0 +1,69 @@
+{
+  "ist": {
+    "prefix": "ist",
+    "body": [
+      "import { createStore } from 'redux';"
+    ],
+    "description": "vim-snippets/javascript/javascript-redux.snippets:1"
+  },
+  "con": {
+    "prefix": "con",
+    "body": [
+      "connect(${1:mapStateToProps}, ${2:mapDispatchToProps})(<${3:VISUAL}/>);"
+    ],
+    "description": "vim-snippets/javascript/javascript-redux.snippets:3"
+  },
+  "act": {
+    "prefix": "act",
+    "body": [
+      "const ${1:actionName} = (${2:arg}) => {",
+      "\treturn {",
+      "\t\ttype: ${3:VISUAL},",
+      "\t\t$2",
+      "\t};",
+      "};"
+    ],
+    "description": "vim-snippets/javascript/javascript-redux.snippets:5"
+  },
+  "rdc": {
+    "prefix": "rdc",
+    "body": [
+      "const ${1:reducerName} = (state={}, action) => {",
+      "\tswitch(action.type) {",
+      "\t\tcase ${1:action}:",
+      "\t\t\treturn {",
+      "\t\t\t\t...state,",
+      "\t\t\t\t$2",
+      "\t\t\t};",
+      "\t\tdefault:",
+      "\t\t\treturn state;",
+      "\t};",
+      "};"
+    ],
+    "description": "vim-snippets/javascript/javascript-redux.snippets:12"
+  },
+  "mstp": {
+    "prefix": "mstp",
+    "body": [
+      "const mapStateToProps = (state) => {",
+      "\treturn {",
+      "\t\t${1:propName}: state.$1,",
+      "\t};",
+      "};"
+    ],
+    "description": "vim-snippets/javascript/javascript-redux.snippets:24"
+  },
+  "mdtp": {
+    "prefix": "mdtp",
+    "body": [
+      "const mapDispatchToProps = (dispatch) => {",
+      "\treturn {",
+      "\t\t${1:propName}: () => {",
+      "\t\t\tdispatch(${2:actionName}());",
+      "\t\t},",
+      "\t};",
+      "};"
+    ],
+    "description": "vim-snippets/javascript/javascript-redux.snippets:30"
+  }
+}

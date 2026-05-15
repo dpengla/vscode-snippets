@@ -1,0 +1,93 @@
+{
+  "doc": {
+    "prefix": "doc",
+    "body": [
+      "/*",
+      "\t${0}",
+      " */"
+    ],
+    "description": "vim-snippets/reason.snippets:1"
+  },
+  "let": {
+    "prefix": "let",
+    "body": [
+      "let ${1} = ${0};"
+    ],
+    "description": "vim-snippets/reason.snippets:5"
+  },
+  "fn": {
+    "prefix": "fn",
+    "body": [
+      "let ${1} = (${2}) => {",
+      "\t${0}",
+      "};"
+    ],
+    "description": "vim-snippets/reason.snippets:7"
+  },
+  "fun": {
+    "prefix": "fun",
+    "body": [
+      "fun ${1} => ${0}"
+    ],
+    "description": "vim-snippets/reason.snippets:11"
+  },
+  "ty": {
+    "prefix": "ty",
+    "body": [
+      "type ${1} = ${0};"
+    ],
+    "description": "vim-snippets/reason.snippets:13"
+  },
+  "mod": {
+    "prefix": "mod",
+    "body": [
+      "module ${1} = {",
+      "\t${0}",
+      "};"
+    ],
+    "description": "vim-snippets/reason.snippets:15"
+  },
+  "modty": {
+    "prefix": "modty",
+    "body": [
+      "module type ${1} = {",
+      "\t${0}",
+      "};"
+    ],
+    "description": "vim-snippets/reason.snippets:19"
+  },
+  "sw": {
+    "prefix": "sw",
+    "body": [
+      "switch (${1}) {",
+      "| ${2} => ${0}",
+      "}"
+    ],
+    "description": "vim-snippets/reason.snippets:23"
+  },
+  "|": {
+    "prefix": "|",
+    "body": [
+      "| ${1} => ${0}"
+    ],
+    "description": "vim-snippets/reason.snippets:27"
+  },
+  "p": {
+    "prefix": "p",
+    "body": [
+      "|> ${0}"
+    ],
+    "description": "vim-snippets/reason.snippets:29"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if (${1}) {",
+      "\t${2}",
+      "} else {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/reason.snippets:31"
+  }
+}

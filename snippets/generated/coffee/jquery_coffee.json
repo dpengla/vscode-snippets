@@ -1,0 +1,1566 @@
+{
+  "add": {
+    "prefix": "add",
+    "body": [
+      "${1:obj}.add('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:1"
+  },
+  "addClass": {
+    "prefix": "addClass",
+    "body": [
+      "${1:obj}.addClass('${2:class name}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:3"
+  },
+  "after": {
+    "prefix": "after",
+    "body": [
+      "${1:obj}.after('${2:Some text <b>and bold!</b>}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:5"
+  },
+  "ajax": {
+    "prefix": "ajax",
+    "body": [
+      "\\$.ajax",
+      "  url: \"${1:mydomain.com/url}\"",
+      "  type: \"${2:POST}\"",
+      "  dataType: \"${3:xml/html/script/json}\"",
+      "  data: ${4:data}",
+      "  complete: (jqXHR, textStatus) ->",
+      "\t${5:// callback}",
+      "  success: (data, textStatus, jqXHR) ->",
+      "\t${6:// success callback}",
+      "  error: (jqXHR, textStatus, errorThrown) ->",
+      "\t${0:// error callback}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:7"
+  },
+  "ajaxcomplete": {
+    "prefix": "ajaxcomplete",
+    "body": [
+      "${1:obj}.ajaxComplete (${1:e}, xhr, settings) ->",
+      "\t${0:// callback}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:19"
+  },
+  "ajaxerror": {
+    "prefix": "ajaxerror",
+    "body": [
+      "${1:obj}.ajaxError (${1:e}, xhr, settings, thrownError) ->",
+      "\t${2:// error callback}",
+      "${0}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:22"
+  },
+  "ajaxget": {
+    "prefix": "ajaxget",
+    "body": [
+      "\\$.get '${1:mydomain.com/url}',",
+      "\t${2:{ param1: value1 },}",
+      "\t(data, textStatus, jqXHR) ->",
+      "\t\t${0:// success callback}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:26"
+  },
+  "ajaxpost": {
+    "prefix": "ajaxpost",
+    "body": [
+      "\\$.post '${1:mydomain.com/url}',",
+      "\t${2:{ param1: value1 },}",
+      "\t(data, textStatus, jqXHR) ->",
+      "\t\t${0:// success callback}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:31"
+  },
+  "ajaxprefilter": {
+    "prefix": "ajaxprefilter",
+    "body": [
+      "\\$.ajaxPrefilter (${1:options}, ${2:originalOptions}, jqXHR) ->",
+      "\t${0: // Modify options, control originalOptions, store jqXHR, etc}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:36"
+  },
+  "ajaxsend": {
+    "prefix": "ajaxsend",
+    "body": [
+      "${1:obj}.ajaxSend (${1:request, settings}) ->",
+      "\t${2:// error callback}",
+      "${0}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:39"
+  },
+  "ajaxsetup": {
+    "prefix": "ajaxsetup",
+    "body": [
+      "\\$.ajaxSetup({",
+      "\turl: \"${1:mydomain.com/url}\",",
+      "\ttype: \"${2:POST}\",",
+      "\tdataType: \"${3:xml/html/script/json}\",",
+      "\tdata: \\$.param( \\$(\"${4:Element or Expression}\") ),",
+      "\tcomplete: (jqXHR, textStatus) ->",
+      "\t\t${5:// callback}",
+      "\t,",
+      "\tsuccess: (data, textStatus, jqXHR) ->",
+      "\t\t${6:// success callback}",
+      "\t,",
+      "\terror: (jqXHR, textStatus, errorThrown) ->",
+      "\t\t${0:// error callback}",
+      "})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:43"
+  },
+  "ajaxstart": {
+    "prefix": "ajaxstart",
+    "body": [
+      "\\$.ajaxStart ->",
+      "\t${1:// handler for when an AJAX call is started and no other AJAX calls are in progress}",
+      "${0}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:58"
+  },
+  "ajaxstop": {
+    "prefix": "ajaxstop",
+    "body": [
+      "\\$.ajaxStop ->",
+      "\t${1:// handler for when all AJAX calls have been completed}",
+      "${0}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:62"
+  },
+  "ajaxsuccess": {
+    "prefix": "ajaxsuccess",
+    "body": [
+      "\\$.ajaxSuccess (${1:e}, xhr, settings) ->",
+      "\t${2:// handler for when any AJAX call is successfully completed}",
+      "${0}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:66"
+  },
+  "andself": {
+    "prefix": "andself",
+    "body": [
+      "${1:obj}.andSelf()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:70"
+  },
+  "animate": {
+    "prefix": "animate",
+    "body": [
+      "${1:obj}.animate({${2:param1: value1, param2: value2}}, ${3:speed})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:72"
+  },
+  "append": {
+    "prefix": "append",
+    "body": [
+      "${1:obj}.append('${2:Some text <b>and bold!</b>}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:74"
+  },
+  "appendTo": {
+    "prefix": "appendTo",
+    "body": [
+      "${1:obj}.appendTo('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:76"
+  },
+  "attr": {
+    "prefix": "attr",
+    "body": [
+      "${1:obj}.attr('${2:attribute}', '${3:value}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:78"
+  },
+  "attrm": {
+    "prefix": "attrm",
+    "body": [
+      "${1:obj}.attr({'${2:attr1}': '${3:value1}', '${4:attr2}': '${5:value2}'})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:80"
+  },
+  "before": {
+    "prefix": "before",
+    "body": [
+      "${1:obj}.before('${2:Some text <b>and bold!</b>}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:82"
+  },
+  "bind": {
+    "prefix": "bind",
+    "body": [
+      "${1:obj}.bind('${2:event name}', (${3:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:84"
+  },
+  "blur": {
+    "prefix": "blur",
+    "body": [
+      "${1:obj}.blur (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:87"
+  },
+  "C": {
+    "prefix": "C",
+    "body": [
+      "\\$.Callbacks()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:90"
+  },
+  "Cadd": {
+    "prefix": "Cadd",
+    "body": [
+      "${1:callbacks}.add(${2:callbacks})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:92"
+  },
+  "Cdis": {
+    "prefix": "Cdis",
+    "body": [
+      "${1:callbacks}.disable()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:94"
+  },
+  "Cempty": {
+    "prefix": "Cempty",
+    "body": [
+      "${1:callbacks}.empty()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:96"
+  },
+  "Cfire": {
+    "prefix": "Cfire",
+    "body": [
+      "${1:callbacks}.fire(${2:args})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:98"
+  },
+  "Cfired": {
+    "prefix": "Cfired",
+    "body": [
+      "${1:callbacks}.fired()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:100"
+  },
+  "Cfirew": {
+    "prefix": "Cfirew",
+    "body": [
+      "${1:callbacks}.fireWith(${2:this}, ${3:args})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:102"
+  },
+  "Chas": {
+    "prefix": "Chas",
+    "body": [
+      "${1:callbacks}.has(${2:callback})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:104"
+  },
+  "Clock": {
+    "prefix": "Clock",
+    "body": [
+      "${1:callbacks}.lock()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:106"
+  },
+  "Clocked": {
+    "prefix": "Clocked",
+    "body": [
+      "${1:callbacks}.locked()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:108"
+  },
+  "Crem": {
+    "prefix": "Crem",
+    "body": [
+      "${1:callbacks}.remove(${2:callbacks})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:110"
+  },
+  "change": {
+    "prefix": "change",
+    "body": [
+      "${1:obj}.change (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:112"
+  },
+  "children": {
+    "prefix": "children",
+    "body": [
+      "${1:obj}.children('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:115"
+  },
+  "clearq": {
+    "prefix": "clearq",
+    "body": [
+      "${1:obj}.clearQueue(${2:'queue name'})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:117"
+  },
+  "click": {
+    "prefix": "click",
+    "body": [
+      "${1:obj}.click (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:119"
+  },
+  "clone": {
+    "prefix": "clone",
+    "body": [
+      "${1:obj}.clone()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:122"
+  },
+  "contains": {
+    "prefix": "contains",
+    "body": [
+      "\\$.contains(${1:container}, ${0:contents})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:124"
+  },
+  "css": {
+    "prefix": "css",
+    "body": [
+      "${1:obj}.css('${2:attribute}', '${3:value}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:126"
+  },
+  "csshooks": {
+    "prefix": "csshooks",
+    "body": [
+      "\\$.cssHooks['${1:CSS prop}'] = {",
+      "\tget: (elem, computed, extra) ->",
+      "\t\t${2: // handle getting the CSS property}",
+      "\tset: (elem, value) ->",
+      "\t\t${0: // handle setting the CSS value}",
+      "}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:128"
+  },
+  "cssm": {
+    "prefix": "cssm",
+    "body": [
+      "${1:obj}.css({${2:attribute1}: '${3:value1}', ${4:attribute2}: '${5:value2}'})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:135"
+  },
+  "D": {
+    "prefix": "D",
+    "body": [
+      "\\$.Deferred()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:137"
+  },
+  "Dalways": {
+    "prefix": "Dalways",
+    "body": [
+      "${1:deferred}.always(${2:callbacks})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:139"
+  },
+  "Ddone": {
+    "prefix": "Ddone",
+    "body": [
+      "${1:deferred}.done(${2:callbacks})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:141"
+  },
+  "Dfail": {
+    "prefix": "Dfail",
+    "body": [
+      "${1:deferred}.fail(${2:callbacks})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:143"
+  },
+  "Disrej": {
+    "prefix": "Disrej",
+    "body": [
+      "${1:deferred}.isRejected()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:145"
+  },
+  "Disres": {
+    "prefix": "Disres",
+    "body": [
+      "${1:deferred}.isResolved()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:147"
+  },
+  "Dnotify": {
+    "prefix": "Dnotify",
+    "body": [
+      "${1:deferred}.notify(${2:args})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:149"
+  },
+  "Dnotifyw": {
+    "prefix": "Dnotifyw",
+    "body": [
+      "${1:deferred}.notifyWith(${2:this}, ${3:args})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:151"
+  },
+  "Dpipe": {
+    "prefix": "Dpipe",
+    "body": [
+      "${1:deferred}.then(${2:doneFilter}, ${3:failFilter}, ${4:progressFilter})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:153"
+  },
+  "Dprog": {
+    "prefix": "Dprog",
+    "body": [
+      "${1:deferred}.progress(${2:callbacks})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:155"
+  },
+  "Dprom": {
+    "prefix": "Dprom",
+    "body": [
+      "${1:deferred}.promise(${2:target})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:157"
+  },
+  "Drej": {
+    "prefix": "Drej",
+    "body": [
+      "${1:deferred}.reject(${2:args})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:159"
+  },
+  "Drejw": {
+    "prefix": "Drejw",
+    "body": [
+      "${1:deferred}.rejectWith(${2:this}, ${3:args})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:161"
+  },
+  "Dres": {
+    "prefix": "Dres",
+    "body": [
+      "${1:deferred}.resolve(${2:args})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:163"
+  },
+  "Dresw": {
+    "prefix": "Dresw",
+    "body": [
+      "${1:deferred}.resolveWith(${2:this}, ${3:args})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:165"
+  },
+  "Dstate": {
+    "prefix": "Dstate",
+    "body": [
+      "${1:deferred}.state()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:167"
+  },
+  "Dthen": {
+    "prefix": "Dthen",
+    "body": [
+      "${1:deferred}.then(${2:doneCallbacks}, ${3:failCallbacks}, ${4:progressCallbacks})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:169"
+  },
+  "Dwhen": {
+    "prefix": "Dwhen",
+    "body": [
+      "\\$.when(${1:deferreds})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:171"
+  },
+  "data": {
+    "prefix": "data",
+    "body": [
+      "${1:obj}.data(${2:obj})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:173"
+  },
+  "dataa": {
+    "prefix": "dataa",
+    "body": [
+      "\\$.data('${1:selector expression}', '${2:key}'${3:, 'value'})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:175"
+  },
+  "dblclick": {
+    "prefix": "dblclick",
+    "body": [
+      "${1:obj}.dblclick (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:177"
+  },
+  "delay": {
+    "prefix": "delay",
+    "body": [
+      "${1:obj}.delay('${2:slow/400/fast}'${3:, 'queue name'})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:180"
+  },
+  "dele": {
+    "prefix": "dele",
+    "body": [
+      "${1:obj}.delegate '${2:selector expression}', '${3:event name}', (${4:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:182"
+  },
+  "deq": {
+    "prefix": "deq",
+    "body": [
+      "${1:obj}.dequeue(${2:'queue name'})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:185"
+  },
+  "deqq": {
+    "prefix": "deqq",
+    "body": [
+      "\\$.dequeue('${1:selector expression}'${2:, 'queue name'})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:187"
+  },
+  "detach": {
+    "prefix": "detach",
+    "body": [
+      "${1:obj}.detach('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:189"
+  },
+  "die": {
+    "prefix": "die",
+    "body": [
+      "${1:obj}.die(${2:event}, ${3:handler})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:191"
+  },
+  "each": {
+    "prefix": "each",
+    "body": [
+      "${1:obj}.each (index) ->",
+      "\t${0:this.innerHTML = this + \" is the element, \" + index + \" is the position\"}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:193"
+  },
+  "el": {
+    "prefix": "el",
+    "body": [
+      "\\$('<${1}/>'${2:, {}})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:196"
+  },
+  "eltrim": {
+    "prefix": "eltrim",
+    "body": [
+      "\\$.trim('${1:string}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:198"
+  },
+  "empty": {
+    "prefix": "empty",
+    "body": [
+      "${1:obj}.empty()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:200"
+  },
+  "end": {
+    "prefix": "end",
+    "body": [
+      "${1:obj}.end()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:202"
+  },
+  "eq": {
+    "prefix": "eq",
+    "body": [
+      "${1:obj}.eq(${2:element index})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:204"
+  },
+  "error": {
+    "prefix": "error",
+    "body": [
+      "${1:obj}.error (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:206"
+  },
+  "eventsmap": {
+    "prefix": "eventsmap",
+    "body": [
+      "{",
+      "\t:f${0}",
+      "}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:209"
+  },
+  "extend": {
+    "prefix": "extend",
+    "body": [
+      "\\$.extend(${1:true, }${2:target}, ${3:obj})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:213"
+  },
+  "fadein": {
+    "prefix": "fadein",
+    "body": [
+      "${1:obj}.fadeIn('${2:slow/400/fast}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:215"
+  },
+  "fadeinc": {
+    "prefix": "fadeinc",
+    "body": [
+      "${1:obj}.fadeIn 'slow/400/fast', ->",
+      "\t${0:// callback}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:217"
+  },
+  "fadeout": {
+    "prefix": "fadeout",
+    "body": [
+      "${1:obj}.fadeOut('${2:slow/400/fast}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:220"
+  },
+  "fadeoutc": {
+    "prefix": "fadeoutc",
+    "body": [
+      "${1:obj}.fadeOut 'slow/400/fast', ->",
+      "\t${0:// callback}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:222"
+  },
+  "fadeto": {
+    "prefix": "fadeto",
+    "body": [
+      "${1:obj}.fadeTo('${2:slow/400/fast}', ${3:0.5})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:225"
+  },
+  "fadetoc": {
+    "prefix": "fadetoc",
+    "body": [
+      "${1:obj}.fadeTo 'slow/400/fast', ${2:0.5}, ->",
+      "\t${0:// callback}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:227"
+  },
+  "filter": {
+    "prefix": "filter",
+    "body": [
+      "${1:obj}.filter('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:230"
+  },
+  "filtert": {
+    "prefix": "filtert",
+    "body": [
+      "${1:obj}.filter (${2:index}) ->",
+      "\t${3}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:232"
+  },
+  "find": {
+    "prefix": "find",
+    "body": [
+      "${1:obj}.find('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:235"
+  },
+  "focus": {
+    "prefix": "focus",
+    "body": [
+      "${1:obj}.focus (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:237"
+  },
+  "focusin": {
+    "prefix": "focusin",
+    "body": [
+      "${1:obj}.focusIn (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:240"
+  },
+  "focusout": {
+    "prefix": "focusout",
+    "body": [
+      "${1:obj}.focusOut (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:243"
+  },
+  "get": {
+    "prefix": "get",
+    "body": [
+      "${1:obj}.get(${2:element index})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:246"
+  },
+  "getjson": {
+    "prefix": "getjson",
+    "body": [
+      "\\$.getJSON '${1:mydomain.com/url}',",
+      "\t${2:{ param1: value1 },}",
+      "\t(data, textStatus, jqXHR) ->",
+      "\t\t${0:// success callback}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:248"
+  },
+  "getscript": {
+    "prefix": "getscript",
+    "body": [
+      "\\$.getScript '${1:mydomain.com/url}', (script, textStatus, jqXHR) ->",
+      "\t${0:// callback}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:253"
+  },
+  "grep": {
+    "prefix": "grep",
+    "body": [
+      "\\$.grep(${1:array}, (item, index) >",
+      "\t${2}",
+      "${0:, true})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:256"
+  },
+  "hasc": {
+    "prefix": "hasc",
+    "body": [
+      "${1:obj}.hasClass('${2:className}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:260"
+  },
+  "hasd": {
+    "prefix": "hasd",
+    "body": [
+      "\\$.hasData('${0:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:262"
+  },
+  "height": {
+    "prefix": "height",
+    "body": [
+      "${1:obj}.height(${2:integer})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:264"
+  },
+  "hide": {
+    "prefix": "hide",
+    "body": [
+      "${1:obj}.hide('${2:slow/400/fast}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:266"
+  },
+  "hidec": {
+    "prefix": "hidec",
+    "body": [
+      "${1:obj}.hide '${2:slow/400/fast}', ->",
+      "\t${0:// callback}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:268"
+  },
+  "hover": {
+    "prefix": "hover",
+    "body": [
+      "${1:obj}.hover (${2:e}) ->",
+      "\t${3:// event handler}",
+      ", ($2) ->",
+      "\t${4:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:271"
+  },
+  "html": {
+    "prefix": "html",
+    "body": [
+      "${1:obj}.html('${2:Some text <b>and bold!</b>}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:276"
+  },
+  "inarr": {
+    "prefix": "inarr",
+    "body": [
+      "\\$.inArray(${1:value}, ${0:array})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:278"
+  },
+  "insa": {
+    "prefix": "insa",
+    "body": [
+      "${1:obj}.insertAfter('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:280"
+  },
+  "insb": {
+    "prefix": "insb",
+    "body": [
+      "${1:obj}.insertBefore('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:282"
+  },
+  "is": {
+    "prefix": "is",
+    "body": [
+      "${1:obj}.is('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:284"
+  },
+  "isarr": {
+    "prefix": "isarr",
+    "body": [
+      "\\$.isArray(${1:obj})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:286"
+  },
+  "isempty": {
+    "prefix": "isempty",
+    "body": [
+      "\\$.isEmptyObject(${1:obj})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:288"
+  },
+  "isfunc": {
+    "prefix": "isfunc",
+    "body": [
+      "\\$.isFunction(${1:obj})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:290"
+  },
+  "isnum": {
+    "prefix": "isnum",
+    "body": [
+      "\\$.isNumeric(${1:value})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:292"
+  },
+  "isobj": {
+    "prefix": "isobj",
+    "body": [
+      "\\$.isPlainObject(${1:obj})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:294"
+  },
+  "iswin": {
+    "prefix": "iswin",
+    "body": [
+      "\\$.isWindow(${1:obj})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:296"
+  },
+  "isxml": {
+    "prefix": "isxml",
+    "body": [
+      "\\$.isXMLDoc(${1:node})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:298"
+  },
+  "jj": {
+    "prefix": "jj",
+    "body": [
+      "\\$('${1:selector}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:300"
+  },
+  "kdown": {
+    "prefix": "kdown",
+    "body": [
+      "${1:obj}.keydown (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:302"
+  },
+  "kpress": {
+    "prefix": "kpress",
+    "body": [
+      "${1:obj}.keypress (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:305"
+  },
+  "kup": {
+    "prefix": "kup",
+    "body": [
+      "${1:obj}.keyup (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:308"
+  },
+  "last": {
+    "prefix": "last",
+    "body": [
+      "${1:obj}.last('${1:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:311"
+  },
+  "live": {
+    "prefix": "live",
+    "body": [
+      "${1:obj}.live '${2:events}', (${3:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:313"
+  },
+  "load": {
+    "prefix": "load",
+    "body": [
+      "${1:obj}.load (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:316"
+  },
+  "loadf": {
+    "prefix": "loadf",
+    "body": [
+      "${1:obj}.load('${2:mydomain.com/url}',",
+      "\t${2:{ param1: value1 },}",
+      "\t(responseText, textStatus, xhr) ->",
+      "\t\t${0:// success callback}",
+      "})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:319"
+  },
+  "makearray": {
+    "prefix": "makearray",
+    "body": [
+      "\\$.makeArray(${0:obj})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:325"
+  },
+  "map": {
+    "prefix": "map",
+    "body": [
+      "${1:obj}.map (${2:index}, ${3:element}) ->",
+      "\t${0:// callback}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:327"
+  },
+  "mapp": {
+    "prefix": "mapp",
+    "body": [
+      "\\$.map ${1:arrayOrObject}, (${2:value}, ${3:indexOrKey}) ->",
+      "\t${0:// callback}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:330"
+  },
+  "merge": {
+    "prefix": "merge",
+    "body": [
+      "\\$.merge(${1:target}, ${0:original})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:333"
+  },
+  "mdown": {
+    "prefix": "mdown",
+    "body": [
+      "${1:obj}.mousedown (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:335"
+  },
+  "menter": {
+    "prefix": "menter",
+    "body": [
+      "${1:obj}.mouseenter (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:338"
+  },
+  "mleave": {
+    "prefix": "mleave",
+    "body": [
+      "${1:obj}.mouseleave (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:341"
+  },
+  "mmove": {
+    "prefix": "mmove",
+    "body": [
+      "${1:obj}.mousemove (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:344"
+  },
+  "mout": {
+    "prefix": "mout",
+    "body": [
+      "${1:obj}.mouseout (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:347"
+  },
+  "mover": {
+    "prefix": "mover",
+    "body": [
+      "${1:obj}.mouseover (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:350"
+  },
+  "mup": {
+    "prefix": "mup",
+    "body": [
+      "${1:obj}.mouseup (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:353"
+  },
+  "next": {
+    "prefix": "next",
+    "body": [
+      "${1:obj}.next('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:356"
+  },
+  "nexta": {
+    "prefix": "nexta",
+    "body": [
+      "${1:obj}.nextAll('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:358"
+  },
+  "nextu": {
+    "prefix": "nextu",
+    "body": [
+      "${1:obj}.nextUntil('${2:selector expression}'${3:, 'filter expression'})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:360"
+  },
+  "not": {
+    "prefix": "not",
+    "body": [
+      "${1:obj}.not('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:362"
+  },
+  "off": {
+    "prefix": "off",
+    "body": [
+      "${1:obj}.off('${2:events}', '${3:selector expression}'${4:, handler})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:364"
+  },
+  "offset": {
+    "prefix": "offset",
+    "body": [
+      "${1:obj}.offset()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:366"
+  },
+  "offsetp": {
+    "prefix": "offsetp",
+    "body": [
+      "${1:obj}.offsetParent()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:368"
+  },
+  "on": {
+    "prefix": "on",
+    "body": [
+      "${1:obj}.on '${2:events}', '${3:selector expression}', (${4:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:370"
+  },
+  "one": {
+    "prefix": "one",
+    "body": [
+      "${1:obj}.one '${2:event name}', (${3:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:373"
+  },
+  "outerh": {
+    "prefix": "outerh",
+    "body": [
+      "${1:obj}.outerHeight()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:376"
+  },
+  "outerw": {
+    "prefix": "outerw",
+    "body": [
+      "${1:obj}.outerWidth()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:378"
+  },
+  "param": {
+    "prefix": "param",
+    "body": [
+      "\\$.param(${1:obj})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:380"
+  },
+  "parent": {
+    "prefix": "parent",
+    "body": [
+      "${1:obj}.parent('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:382"
+  },
+  "parents": {
+    "prefix": "parents",
+    "body": [
+      "${1:obj}.parents('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:384"
+  },
+  "parentsu": {
+    "prefix": "parentsu",
+    "body": [
+      "${1:obj}.parentsUntil('${2:selector expression}'${3:, 'filter expression'})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:386"
+  },
+  "parsejson": {
+    "prefix": "parsejson",
+    "body": [
+      "\\$.parseJSON(${1:data})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:388"
+  },
+  "parsexml": {
+    "prefix": "parsexml",
+    "body": [
+      "\\$.parseXML(${1:data})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:390"
+  },
+  "pos": {
+    "prefix": "pos",
+    "body": [
+      "${1:obj}.position()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:392"
+  },
+  "prepend": {
+    "prefix": "prepend",
+    "body": [
+      "${1:obj}.prepend('${2:Some text <b>and bold!</b>}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:394"
+  },
+  "prependto": {
+    "prefix": "prependto",
+    "body": [
+      "${1:obj}.prependTo('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:396"
+  },
+  "prev": {
+    "prefix": "prev",
+    "body": [
+      "${1:obj}.prev('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:398"
+  },
+  "preva": {
+    "prefix": "preva",
+    "body": [
+      "${1:obj}.prevAll('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:400"
+  },
+  "prevu": {
+    "prefix": "prevu",
+    "body": [
+      "${1:obj}.prevUntil('${2:selector expression}'${3:, 'filter expression'})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:402"
+  },
+  "promise": {
+    "prefix": "promise",
+    "body": [
+      "${1:obj}.promise(${2:'fx'}, ${3:target})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:404"
+  },
+  "prop": {
+    "prefix": "prop",
+    "body": [
+      "${1:obj}.prop('${2:property name}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:406"
+  },
+  "proxy": {
+    "prefix": "proxy",
+    "body": [
+      "\\$.proxy(${1:function}, ${2:this})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:408"
+  },
+  "pushstack": {
+    "prefix": "pushstack",
+    "body": [
+      "${1:obj}.pushStack(${2:elements})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:410"
+  },
+  "queue": {
+    "prefix": "queue",
+    "body": [
+      "${1:obj}.queue(${2:name}${3:, newQueue})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:412"
+  },
+  "queuee": {
+    "prefix": "queuee",
+    "body": [
+      "\\$.queue(${1:element}${2:, name}${3:, newQueue})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:414"
+  },
+  "ready": {
+    "prefix": "ready",
+    "body": [
+      "\\$(() ->",
+      "\t${0}",
+      ")"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:416"
+  },
+  "rem": {
+    "prefix": "rem",
+    "body": [
+      "${1:obj}.remove()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:420"
+  },
+  "rema": {
+    "prefix": "rema",
+    "body": [
+      "${1:obj}.removeAttr('${2:attribute name}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:422"
+  },
+  "remc": {
+    "prefix": "remc",
+    "body": [
+      "${1:obj}.removeClass('${2:class name}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:424"
+  },
+  "remd": {
+    "prefix": "remd",
+    "body": [
+      "${1:obj}.removeData('${2:key name}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:426"
+  },
+  "remdd": {
+    "prefix": "remdd",
+    "body": [
+      "\\$.removeData(${1:element}${2:, 'key name}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:428"
+  },
+  "remp": {
+    "prefix": "remp",
+    "body": [
+      "${1:obj}.removeProp('${2:property name}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:430"
+  },
+  "repa": {
+    "prefix": "repa",
+    "body": [
+      "${1:obj}.replaceAll(${2:target})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:432"
+  },
+  "repw": {
+    "prefix": "repw",
+    "body": [
+      "${1:obj}.replaceWith(${2:content})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:434"
+  },
+  "reset": {
+    "prefix": "reset",
+    "body": [
+      "${1:obj}.reset (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:436"
+  },
+  "resize": {
+    "prefix": "resize",
+    "body": [
+      "${1:obj}.resize (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:439"
+  },
+  "scroll": {
+    "prefix": "scroll",
+    "body": [
+      "${1:obj}.scroll (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:442"
+  },
+  "scrolll": {
+    "prefix": "scrolll",
+    "body": [
+      "${1:obj}.scrollLeft(${2:value})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:445"
+  },
+  "scrollt": {
+    "prefix": "scrollt",
+    "body": [
+      "${1:obj}.scrollTop(${2:value})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:447"
+  },
+  "sdown": {
+    "prefix": "sdown",
+    "body": [
+      "${1:obj}.slideDown('${2:slow/400/fast}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:449"
+  },
+  "sdownc": {
+    "prefix": "sdownc",
+    "body": [
+      "${1:obj}.slideDown('${2:slow/400/fast}', ->",
+      "\t${0:// callback}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:451"
+  },
+  "select": {
+    "prefix": "select",
+    "body": [
+      "${1:obj}.select (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:454"
+  },
+  "serialize": {
+    "prefix": "serialize",
+    "body": [
+      "${1:obj}.serialize()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:457"
+  },
+  "serializea": {
+    "prefix": "serializea",
+    "body": [
+      "${1:obj}.serializeArray()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:459"
+  },
+  "show": {
+    "prefix": "show",
+    "body": [
+      "${1:obj}.show('${2:slow/400/fast}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:461"
+  },
+  "showc": {
+    "prefix": "showc",
+    "body": [
+      "${1:obj}.show '${2:slow/400/fast}', ->",
+      "\t${0:// callback}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:463"
+  },
+  "sib": {
+    "prefix": "sib",
+    "body": [
+      "${1:obj}.siblings('${2:selector expression}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:466"
+  },
+  "size": {
+    "prefix": "size",
+    "body": [
+      "${1:obj}.size()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:468"
+  },
+  "slice": {
+    "prefix": "slice",
+    "body": [
+      "${1:obj}.slice(${2:start}${3:, end})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:470"
+  },
+  "stoggle": {
+    "prefix": "stoggle",
+    "body": [
+      "${1:obj}.slideToggle('${2:slow/400/fast}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:472"
+  },
+  "stop": {
+    "prefix": "stop",
+    "body": [
+      "${1:obj}.stop('${2:queue}', ${3:false}, ${4:false})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:474"
+  },
+  "submit": {
+    "prefix": "submit",
+    "body": [
+      "${1:obj}.submit (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:476"
+  },
+  "sup": {
+    "prefix": "sup",
+    "body": [
+      "${1:obj}.slideUp('${2:slow/400/fast}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:479"
+  },
+  "supc": {
+    "prefix": "supc",
+    "body": [
+      "${1:obj}.slideUp '${2:slow/400/fast}', ->",
+      "\t${0:// callback}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:481"
+  },
+  "text": {
+    "prefix": "text",
+    "body": [
+      "${1:obj}.text(${2:'some text'})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:484"
+  },
+  "this": {
+    "prefix": "this",
+    "body": [
+      "\\$(this)"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:486"
+  },
+  "toarr": {
+    "prefix": "toarr",
+    "body": [
+      "${0:obj}.toArray()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:488"
+  },
+  "tog": {
+    "prefix": "tog",
+    "body": [
+      "${1:obj}.toggle  (${2:e}) ->",
+      "\t${3:// event handler}",
+      ", ($2) ->",
+      "\t${4:// event handler}",
+      "${0}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:490"
+  },
+  "togclass": {
+    "prefix": "togclass",
+    "body": [
+      "${1:obj}.toggleClass('${2:class name}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:496"
+  },
+  "togsh": {
+    "prefix": "togsh",
+    "body": [
+      "${1:obj}.toggle('${2:slow/400/fast}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:498"
+  },
+  "trig": {
+    "prefix": "trig",
+    "body": [
+      "${1:obj}.trigger('${2:event name}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:500"
+  },
+  "trigh": {
+    "prefix": "trigh",
+    "body": [
+      "${1:obj}.triggerHandler('${2:event name}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:502"
+  },
+  "$trim": {
+    "prefix": "$trim",
+    "body": [
+      "\\$.trim(${1:str})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:504"
+  },
+  "$type": {
+    "prefix": "$type",
+    "body": [
+      "\\$.type(${1:obj})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:506"
+  },
+  "unbind": {
+    "prefix": "unbind",
+    "body": [
+      "${1:obj}.unbind('${2:event name}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:508"
+  },
+  "undele": {
+    "prefix": "undele",
+    "body": [
+      "${1:obj}.undelegate(${2:selector expression}, ${3:event}, ${4:handler})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:510"
+  },
+  "uniq": {
+    "prefix": "uniq",
+    "body": [
+      "\\$.unique(${1:array})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:512"
+  },
+  "unload": {
+    "prefix": "unload",
+    "body": [
+      "${1:obj}.unload (${2:e}) ->",
+      "\t${0:// event handler}"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:514"
+  },
+  "unwrap": {
+    "prefix": "unwrap",
+    "body": [
+      "${1:obj}.unwrap()"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:517"
+  },
+  "val": {
+    "prefix": "val",
+    "body": [
+      "${1:obj}.val('${2:text}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:519"
+  },
+  "width": {
+    "prefix": "width",
+    "body": [
+      "${1:obj}.width(${2:integer})"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:521"
+  },
+  "wrap": {
+    "prefix": "wrap",
+    "body": [
+      "${1:obj}.wrap('${2:&ltdiv class=\"extra-wrapper\"&gt&lt/div&gt}')"
+    ],
+    "description": "vim-snippets/coffee/jquery_coffee.snippets:523"
+  }
+}

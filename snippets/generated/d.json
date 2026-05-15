@@ -1,0 +1,845 @@
+{
+  "imp": {
+    "prefix": "imp",
+    "body": [
+      "import "
+    ],
+    "description": "vim-snippets/d.snippets:2"
+  },
+  "pimp": {
+    "prefix": "pimp",
+    "body": [
+      "public import"
+    ],
+    "description": "vim-snippets/d.snippets:4"
+  },
+  "io": {
+    "prefix": "io",
+    "body": [
+      "std.stdio"
+    ],
+    "description": "vim-snippets/d.snippets:7"
+  },
+  "traits": {
+    "prefix": "traits",
+    "body": [
+      "std.traits"
+    ],
+    "description": "vim-snippets/d.snippets:9"
+  },
+  "conv": {
+    "prefix": "conv",
+    "body": [
+      "std.conv"
+    ],
+    "description": "vim-snippets/d.snippets:11"
+  },
+  "arr": {
+    "prefix": "arr",
+    "body": [
+      "std.array"
+    ],
+    "description": "vim-snippets/d.snippets:13"
+  },
+  "algo": {
+    "prefix": "algo",
+    "body": [
+      "std.algorithm"
+    ],
+    "description": "vim-snippets/d.snippets:15"
+  },
+  "theusual": {
+    "prefix": "theusual",
+    "body": [
+      "import std.stdio, std.string, std.array;",
+      "import std.traits, std.conv, std.algorithm;",
+      "import std.math, std.regex;"
+    ],
+    "description": "vim-snippets/d.snippets:17"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for(int ${1:i} = 0; $1 < ${2:count}; $1++) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:22"
+  },
+  "fe": {
+    "prefix": "fe",
+    "body": [
+      "foreach(${1:elem}; ${2:range}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:26"
+  },
+  "fei": {
+    "prefix": "fei",
+    "body": [
+      "foreach(${1:i}, ${2:elem}; ${3:range}) {",
+      "\t${0}\t",
+      "} "
+    ],
+    "description": "vim-snippets/d.snippets:30"
+  },
+  "fer": {
+    "prefix": "fer",
+    "body": [
+      "foreach_reverse(${1:elem}; ${2:range}) {",
+      "\t${0}\t",
+      "} "
+    ],
+    "description": "vim-snippets/d.snippets:34"
+  },
+  "feri": {
+    "prefix": "feri",
+    "body": [
+      "foreach_reverse(${1:i}, ${2:elem}; ${3:range}) {",
+      "\t${0}  ",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:38"
+  },
+  "sce": {
+    "prefix": "sce",
+    "body": [
+      "scope(exit) ${1:f.close();}"
+    ],
+    "description": "vim-snippets/d.snippets:42"
+  },
+  "scs": {
+    "prefix": "scs",
+    "body": [
+      "scope(success) ${1}"
+    ],
+    "description": "vim-snippets/d.snippets:44"
+  },
+  "scf": {
+    "prefix": "scf",
+    "body": [
+      "scope(failure) ${1}"
+    ],
+    "description": "vim-snippets/d.snippets:46"
+  },
+  "el": {
+    "prefix": "el",
+    "body": [
+      "else {",
+      "\t${1}\t",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:48"
+  },
+  "eif": {
+    "prefix": "eif",
+    "body": [
+      "else if(${1}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:52"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if(${1}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:56"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "if(${1}) {",
+      "\t${2}\t",
+      "} else {",
+      "\t${3}\t",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:60"
+  },
+  "ifee": {
+    "prefix": "ifee",
+    "body": [
+      "if(${1}) {",
+      "\t${2}\t",
+      "} else if(${3}) {",
+      "\t${4}",
+      "} else {",
+      "\t${5}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:66"
+  },
+  "sw": {
+    "prefix": "sw",
+    "body": [
+      "switch(${1}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:74"
+  },
+  "cs": {
+    "prefix": "cs",
+    "body": [
+      "case ${1:0}:",
+      "\t${2}",
+      "\tbreak;"
+    ],
+    "description": "vim-snippets/d.snippets:78"
+  },
+  "def": {
+    "prefix": "def",
+    "body": [
+      "default:",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/d.snippets:82"
+  },
+  "fsw": {
+    "prefix": "fsw",
+    "body": [
+      "final switch(${1}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:85"
+  },
+  "try": {
+    "prefix": "try",
+    "body": [
+      "try {",
+      "\t${1:${TM_SELECTED_TEXT}}",
+      "} catch(${2:Exception} ${3:e}) {",
+      "\t${4}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:89"
+  },
+  "tcf": {
+    "prefix": "tcf",
+    "body": [
+      "try {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "} catch(${1:Exception} ${2:e}) {",
+      "\t${3}",
+      "} finally {",
+      "\t${4}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:95"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "while(${1:cond}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:103"
+  },
+  "dowh": {
+    "prefix": "dowh",
+    "body": [
+      "do {",
+      "\t${1}",
+      "} while(${2});"
+    ],
+    "description": "vim-snippets/d.snippets:107"
+  },
+  "sif": {
+    "prefix": "sif",
+    "body": [
+      "static if(${1:cond}) {",
+      "\t${2}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:111"
+  },
+  "sife": {
+    "prefix": "sife",
+    "body": [
+      "static if(${1}) {",
+      "\t${2}",
+      "} else {",
+      "\t${3}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:115"
+  },
+  "sifee": {
+    "prefix": "sifee",
+    "body": [
+      "static if(${1}) {",
+      "\t${2}",
+      "} else static if(${3}) {",
+      "\t${4}",
+      "} else {",
+      "\t${5}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:121"
+  },
+  "seif": {
+    "prefix": "seif",
+    "body": [
+      "else static if(${1}) {",
+      "\t${2}",
+      "} "
+    ],
+    "description": "vim-snippets/d.snippets:129"
+  },
+  "?": {
+    "prefix": "?",
+    "body": [
+      "(${1: a > b}) ? ${2:a} : ${3:b}; "
+    ],
+    "description": "vim-snippets/d.snippets:133"
+  },
+  "with": {
+    "prefix": "with",
+    "body": [
+      "with(${1:exp}) {",
+      "\t${2}",
+      "} ${0}\t"
+    ],
+    "description": "vim-snippets/d.snippets:135"
+  },
+  "fun": {
+    "prefix": "fun",
+    "body": [
+      "${1:auto} ${2:func}(${3:params}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:140"
+  },
+  "contr": {
+    "prefix": "contr",
+    "body": [
+      "in {",
+      "\t${1}",
+      "} out {",
+      "\t${2}",
+      "} body {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:144"
+  },
+  "l": {
+    "prefix": "l",
+    "body": [
+      "(${1:x}) => ${2:x}${0:;}"
+    ],
+    "description": "vim-snippets/d.snippets:152"
+  },
+  "funl": {
+    "prefix": "funl",
+    "body": [
+      "function (${1:int x}) => ${2}${3:;}"
+    ],
+    "description": "vim-snippets/d.snippets:154"
+  },
+  "del": {
+    "prefix": "del",
+    "body": [
+      "delegate (${1:int x}) => ${2}${3:;} "
+    ],
+    "description": "vim-snippets/d.snippets:156"
+  },
+  "temp": {
+    "prefix": "temp",
+    "body": [
+      "template ${1:${TM_FILENAME_BASE}}(${2:T}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:159"
+  },
+  "tempif": {
+    "prefix": "tempif",
+    "body": [
+      "template ${1:${TM_FILENAME_BASE}}(${2:T}) if(${3:isSomeString!}$2) {",
+      "\t${0}\t",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:163"
+  },
+  "opApply": {
+    "prefix": "opApply",
+    "body": [
+      "int opApply(Dg)(Dg dg) if(ParameterTypeTuble!Dg.length == 2) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:167"
+  },
+  "psn": {
+    "prefix": "psn",
+    "body": [
+      "pure @safe nothrow"
+    ],
+    "description": "vim-snippets/d.snippets:171"
+  },
+  "safe": {
+    "prefix": "safe",
+    "body": [
+      "@safe"
+    ],
+    "description": "vim-snippets/d.snippets:173"
+  },
+  "trusted": {
+    "prefix": "trusted",
+    "body": [
+      "@trusted"
+    ],
+    "description": "vim-snippets/d.snippets:175"
+  },
+  "system": {
+    "prefix": "system",
+    "body": [
+      "@system"
+    ],
+    "description": "vim-snippets/d.snippets:177"
+  },
+  "cl": {
+    "prefix": "cl",
+    "body": [
+      "class${1:(T)} ${2:${TM_FILENAME_BASE}} {",
+      "\t${0}\t",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:180"
+  },
+  "str": {
+    "prefix": "str",
+    "body": [
+      "struct${1:(T)} ${2:${TM_FILENAME_BASE}} {",
+      "\t${0}\t",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:184"
+  },
+  "uni": {
+    "prefix": "uni",
+    "body": [
+      "union${1:(T)} ${2:${TM_FILENAME_BASE}} {",
+      "\t${0}\t",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:188"
+  },
+  "inter": {
+    "prefix": "inter",
+    "body": [
+      "interface I${1:${TM_FILENAME_BASE}} {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:192"
+  },
+  "enum": {
+    "prefix": "enum",
+    "body": [
+      "enum ${1} {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:196"
+  },
+  "pu": {
+    "prefix": "pu",
+    "body": [
+      "public"
+    ],
+    "description": "vim-snippets/d.snippets:200"
+  },
+  "pr": {
+    "prefix": "pr",
+    "body": [
+      "private"
+    ],
+    "description": "vim-snippets/d.snippets:202"
+  },
+  "po": {
+    "prefix": "po",
+    "body": [
+      "protected"
+    ],
+    "description": "vim-snippets/d.snippets:204"
+  },
+  "ctor": {
+    "prefix": "ctor",
+    "body": [
+      "this(${1}) {",
+      "\t${0}",
+      "} "
+    ],
+    "description": "vim-snippets/d.snippets:206"
+  },
+  "dtor": {
+    "prefix": "dtor",
+    "body": [
+      "~this(${1}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:210"
+  },
+  "al": {
+    "prefix": "al",
+    "body": [
+      "alias ${1:b} = ${2:a};",
+      "${0}"
+    ],
+    "description": "vim-snippets/d.snippets:215"
+  },
+  "alth": {
+    "prefix": "alth",
+    "body": [
+      "alias ${1:value} this;",
+      "${0}"
+    ],
+    "description": "vim-snippets/d.snippets:218"
+  },
+  "main": {
+    "prefix": "main",
+    "body": [
+      "void main() {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:222"
+  },
+  "maina": {
+    "prefix": "maina",
+    "body": [
+      "void main(string[] args) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:226"
+  },
+  "mod": {
+    "prefix": "mod",
+    "body": [
+      "module ${1:main};${0}"
+    ],
+    "description": "vim-snippets/d.snippets:230"
+  },
+  "var": {
+    "prefix": "var",
+    "body": [
+      "${1:auto} ${2:var} = ${0:1};"
+    ],
+    "description": "vim-snippets/d.snippets:232"
+  },
+  "new": {
+    "prefix": "new",
+    "body": [
+      "${1:auto} ${2:var} = new ${3:Object}(${4});",
+      "${0}"
+    ],
+    "description": "vim-snippets/d.snippets:234"
+  },
+  "file": {
+    "prefix": "file",
+    "body": [
+      "auto ${1:f} = File(${2:\"useful_info.xml\"}, ${3:\"rw\"});",
+      "${0}"
+    ],
+    "description": "vim-snippets/d.snippets:237"
+  },
+  "map": {
+    "prefix": "map",
+    "body": [
+      "map!(${1:f})(${2:xs});",
+      "${0}"
+    ],
+    "description": "vim-snippets/d.snippets:240"
+  },
+  "filter": {
+    "prefix": "filter",
+    "body": [
+      "filter!(${1:p})(${2:xs});",
+      "${0}"
+    ],
+    "description": "vim-snippets/d.snippets:243"
+  },
+  "reduce": {
+    "prefix": "reduce",
+    "body": [
+      "reduce!(${1:f})(${2:xs});",
+      "${0}"
+    ],
+    "description": "vim-snippets/d.snippets:246"
+  },
+  "find": {
+    "prefix": "find",
+    "body": [
+      "find!(${1:p})($2:xs);",
+      "${0}"
+    ],
+    "description": "vim-snippets/d.snippets:249"
+  },
+  "aa": {
+    "prefix": "aa",
+    "body": [
+      "${1:int}[${2:string}] ${3:dict} = ${0};"
+    ],
+    "description": "vim-snippets/d.snippets:252"
+  },
+  "#!": {
+    "prefix": "#!",
+    "body": [
+      "#!/usr/bin/env rdmd"
+    ],
+    "description": "vim-snippets/d.snippets:255"
+  },
+  "bang": {
+    "prefix": "bang",
+    "body": [
+      "#!/usr/bin/env rdmd"
+    ],
+    "description": "vim-snippets/d.snippets:257"
+  },
+  "rdmd": {
+    "prefix": "rdmd",
+    "body": [
+      "#!/usr/bin/env rdmd"
+    ],
+    "description": "vim-snippets/d.snippets:259"
+  },
+  "isstr": {
+    "prefix": "isstr",
+    "body": [
+      "isSomeString!${1:S}"
+    ],
+    "description": "vim-snippets/d.snippets:261"
+  },
+  "isnum": {
+    "prefix": "isnum",
+    "body": [
+      "isNumeric!${1:N}"
+    ],
+    "description": "vim-snippets/d.snippets:263"
+  },
+  "tos": {
+    "prefix": "tos",
+    "body": [
+      "to!string(${1:x});",
+      "${0}"
+    ],
+    "description": "vim-snippets/d.snippets:265"
+  },
+  "toi": {
+    "prefix": "toi",
+    "body": [
+      "to!int(${1:str});",
+      "${0}"
+    ],
+    "description": "vim-snippets/d.snippets:268"
+  },
+  "tod": {
+    "prefix": "tod",
+    "body": [
+      "to!double(${1:str});",
+      "${0}"
+    ],
+    "description": "vim-snippets/d.snippets:271"
+  },
+  "un": {
+    "prefix": "un",
+    "body": [
+      "unittest {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:274"
+  },
+  "ver": {
+    "prefix": "ver",
+    "body": [
+      "version(${1:Posix}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:278"
+  },
+  "de": {
+    "prefix": "de",
+    "body": [
+      "debug {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:282"
+  },
+  "sst": {
+    "prefix": "sst",
+    "body": [
+      "shared static this(${1}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:286"
+  },
+  "td": {
+    "prefix": "td",
+    "body": [
+      "// Typedef is deprecated. Use alias instead.",
+      "typedef"
+    ],
+    "description": "vim-snippets/d.snippets:290"
+  },
+  "ino": {
+    "prefix": "ino",
+    "body": [
+      "inout"
+    ],
+    "description": "vim-snippets/d.snippets:293"
+  },
+  "imm": {
+    "prefix": "imm",
+    "body": [
+      "immutable"
+    ],
+    "description": "vim-snippets/d.snippets:295"
+  },
+  "fin": {
+    "prefix": "fin",
+    "body": [
+      "final"
+    ],
+    "description": "vim-snippets/d.snippets:297"
+  },
+  "con": {
+    "prefix": "con",
+    "body": [
+      "const"
+    ],
+    "description": "vim-snippets/d.snippets:299"
+  },
+  "psi": {
+    "prefix": "psi",
+    "body": [
+      "private static immutable ${1:int} ${2:Constant} = ${3:1};",
+      "${0}"
+    ],
+    "description": "vim-snippets/d.snippets:301"
+  },
+  "prag": {
+    "prefix": "prag",
+    "body": [
+      "pragma(${1})"
+    ],
+    "description": "vim-snippets/d.snippets:304"
+  },
+  "pms": {
+    "prefix": "pms",
+    "body": [
+      "pragma(msg, ${1:Warning});"
+    ],
+    "description": "vim-snippets/d.snippets:306"
+  },
+  "asm": {
+    "prefix": "asm",
+    "body": [
+      "asm {",
+      "\t${1}",
+      "}"
+    ],
+    "description": "vim-snippets/d.snippets:308"
+  },
+  "mixin": {
+    "prefix": "mixin",
+    "body": [
+      "mixin(${1:writeln(\"Hello, World!\");});"
+    ],
+    "description": "vim-snippets/d.snippets:312"
+  },
+  "over": {
+    "prefix": "over",
+    "body": [
+      "override"
+    ],
+    "description": "vim-snippets/d.snippets:314"
+  },
+  "ret": {
+    "prefix": "ret",
+    "body": [
+      "return ${1};"
+    ],
+    "description": "vim-snippets/d.snippets:316"
+  },
+  "FILE": {
+    "prefix": "FILE",
+    "body": [
+      "__FILE__"
+    ],
+    "description": "vim-snippets/d.snippets:318"
+  },
+  "MOD": {
+    "prefix": "MOD",
+    "body": [
+      "__MODULE__"
+    ],
+    "description": "vim-snippets/d.snippets:320"
+  },
+  "LINE": {
+    "prefix": "LINE",
+    "body": [
+      "__LINE__"
+    ],
+    "description": "vim-snippets/d.snippets:322"
+  },
+  "FUN": {
+    "prefix": "FUN",
+    "body": [
+      "__FUNCTION__"
+    ],
+    "description": "vim-snippets/d.snippets:324"
+  },
+  "PF": {
+    "prefix": "PF",
+    "body": [
+      "__PRETTY_FUNCTION__"
+    ],
+    "description": "vim-snippets/d.snippets:326"
+  },
+  "cast": {
+    "prefix": "cast",
+    "body": [
+      "cast(${1:T})(${2:val});"
+    ],
+    "description": "vim-snippets/d.snippets:328"
+  },
+  "/*": {
+    "prefix": "/*",
+    "body": [
+      "/*",
+      " * ${1}",
+      "*/"
+    ],
+    "description": "vim-snippets/d.snippets:330"
+  },
+  "idk": {
+    "prefix": "idk",
+    "body": [
+      "// I don't know how this works. Don't touch it."
+    ],
+    "description": "vim-snippets/d.snippets:335"
+  },
+  "idfk": {
+    "prefix": "idfk",
+    "body": [
+      "// Don't FUCKING touch this."
+    ],
+    "description": "vim-snippets/d.snippets:337"
+  }
+}

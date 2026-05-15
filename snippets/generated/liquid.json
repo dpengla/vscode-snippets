@@ -1,0 +1,1151 @@
+{
+  "if": {
+    "prefix": "if",
+    "body": [
+      "{% if $1 %}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{% endif %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:4"
+  },
+  "else": {
+    "prefix": "else",
+    "body": [
+      "{% else %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:8"
+  },
+  "elsif": {
+    "prefix": "elsif",
+    "body": [
+      "{% elsif $1 %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:10"
+  },
+  "ifelse": {
+    "prefix": "ifelse",
+    "body": [
+      "{% if $1 %}",
+      "\t${2}",
+      "{% else %}",
+      "\t${0}",
+      "{% endif %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:12"
+  },
+  "unless": {
+    "prefix": "unless",
+    "body": [
+      "{% unless $1 %}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{% endunless %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:18"
+  },
+  "case": {
+    "prefix": "case",
+    "body": [
+      "{% case ${1:variable} %}",
+      "\t{% when $2 %}",
+      "\t\t${3}",
+      "\t{% else %}",
+      "\t\t${0}",
+      "{% endcase %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:22"
+  },
+  "when": {
+    "prefix": "when",
+    "body": [
+      "{% when $1 %}",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/liquid.snippets:29"
+  },
+  "cycle": {
+    "prefix": "cycle",
+    "body": [
+      "{% cycle '${1:odd}', '${2:even}' %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:32"
+  },
+  "cyclegroup": {
+    "prefix": "cyclegroup",
+    "body": [
+      "{% cycle '${1:group name}': '${2:odd}', '${3:even}' %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:34"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "{% for ${1:item} in ${2:collection} %}",
+      "\t${0}",
+      "{% endfor %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:36"
+  },
+  "limit": {
+    "prefix": "limit",
+    "body": [
+      "limit: ${1:5}"
+    ],
+    "description": "vim-snippets/liquid.snippets:40"
+  },
+  "offset": {
+    "prefix": "offset",
+    "body": [
+      "offset: ${1:0}"
+    ],
+    "description": "vim-snippets/liquid.snippets:42"
+  },
+  "reversed": {
+    "prefix": "reversed",
+    "body": [
+      "reversed"
+    ],
+    "description": "vim-snippets/liquid.snippets:44"
+  },
+  "break": {
+    "prefix": "break",
+    "body": [
+      "{% break %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:46"
+  },
+  "continue": {
+    "prefix": "continue",
+    "body": [
+      "{% continue %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:48"
+  },
+  "tablerow": {
+    "prefix": "tablerow",
+    "body": [
+      "{% tablerow ${1:item} in ${2:collection} cols: ${3:2} %}",
+      "\t${0}",
+      "{% endtablerow %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:50"
+  },
+  "assign": {
+    "prefix": "assign",
+    "body": [
+      "{% assign ${1:variable} = ${0:value} %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:54"
+  },
+  "increment": {
+    "prefix": "increment",
+    "body": [
+      "{% increment ${0:variable} %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:56"
+  },
+  "decrement": {
+    "prefix": "decrement",
+    "body": [
+      "{% decrement ${0:variable} %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:58"
+  },
+  "capture": {
+    "prefix": "capture",
+    "body": [
+      "{% capture ${1:variable} %}${0}{% endcapture %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:60"
+  },
+  "include": {
+    "prefix": "include",
+    "body": [
+      "{% include '${0:snippet}' %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:62"
+  },
+  "includewith": {
+    "prefix": "includewith",
+    "body": [
+      "{% include '${1:snippet}', ${2:variable}: ${0:value} %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:64"
+  },
+  "render": {
+    "prefix": "render",
+    "body": [
+      "{% render '${0:snippet}' %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:66"
+  },
+  "renderwith": {
+    "prefix": "renderwith",
+    "body": [
+      "{% render '${1:snippet}', ${2:variable}: ${0:value} %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:68"
+  },
+  "section": {
+    "prefix": "section",
+    "body": [
+      "{% section '${1:snippet}' %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:70"
+  },
+  "raw": {
+    "prefix": "raw",
+    "body": [
+      "{% raw %}${0}{% endraw %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:72"
+  },
+  "layout": {
+    "prefix": "layout",
+    "body": [
+      "{% layout '${1:layout}' %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:74"
+  },
+  "layoutnone": {
+    "prefix": "layoutnone",
+    "body": [
+      "{% layout none %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:76"
+  },
+  "paginate": {
+    "prefix": "paginate",
+    "body": [
+      "{% paginate ${1:collection.products} by ${2:12} %}",
+      "\t{% for ${3:product} in $1 %}",
+      "\t\t${0}",
+      "\t{% endfor %}",
+      "{% endpaginate %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:78"
+  },
+  "schema": {
+    "prefix": "schema",
+    "body": [
+      "{% schema %}",
+      "\t{",
+      "\t\t${0}",
+      "\t}",
+      "{% endschema %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:84"
+  },
+  "stylesheet": {
+    "prefix": "stylesheet",
+    "body": [
+      "{% stylesheet %}",
+      "\t${0}",
+      "{% endstylesheet %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:90"
+  },
+  "stylesheet_scss": {
+    "prefix": "stylesheet_scss",
+    "body": [
+      "{% stylesheet '${1:scss}' %}",
+      "\t${0}",
+      "{% endstylesheet %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:94"
+  },
+  "javascript": {
+    "prefix": "javascript",
+    "body": [
+      "{% javascript %}",
+      "\t${0}",
+      "{% endjavascript %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:98"
+  },
+  "comment-": {
+    "prefix": "comment-",
+    "body": [
+      "{%- comment -%}${0:${TM_SELECTED_TEXT}}{%- endcomment -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:102"
+  },
+  "if-": {
+    "prefix": "if-",
+    "body": [
+      "{%- if $1 -%}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{%- endif -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:104"
+  },
+  "else-": {
+    "prefix": "else-",
+    "body": [
+      "{%- else -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:108"
+  },
+  "elsif-": {
+    "prefix": "elsif-",
+    "body": [
+      "{%- elsif $1 -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:110"
+  },
+  "ifelse-": {
+    "prefix": "ifelse-",
+    "body": [
+      "{%- if $1 -%}",
+      "\t${2}",
+      "{%- else -%}",
+      "\t${0}",
+      "{%- endif -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:112"
+  },
+  "unless-": {
+    "prefix": "unless-",
+    "body": [
+      "{%- unless $1 -%}",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "{%- endunless -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:118"
+  },
+  "case-": {
+    "prefix": "case-",
+    "body": [
+      "{%- case ${1:variable} -%}",
+      "\t{%- when $2 -%}",
+      "\t\t${3}",
+      "\t{%- else -%}",
+      "\t\t${0}",
+      "{%- endcase -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:122"
+  },
+  "when-": {
+    "prefix": "when-",
+    "body": [
+      "{%- when $1 -%}",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/liquid.snippets:129"
+  },
+  "cycle-": {
+    "prefix": "cycle-",
+    "body": [
+      "{%- cycle '${1:odd}', '${2:even}' -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:132"
+  },
+  "cyclegroup-": {
+    "prefix": "cyclegroup-",
+    "body": [
+      "{%- cycle '${1:group name}': '${2:odd}', '${3:even}' -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:134"
+  },
+  "for-": {
+    "prefix": "for-",
+    "body": [
+      "{%- for ${1:item} in ${2:collection} -%}",
+      "\t${0}",
+      "{%- endfor -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:136"
+  },
+  "continue-": {
+    "prefix": "continue-",
+    "body": [
+      "{%- continue -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:140"
+  },
+  "tablerow-": {
+    "prefix": "tablerow-",
+    "body": [
+      "{%- tablerow ${1:item} in ${2:collection} cols: ${3:2} -%}",
+      "\t${0}",
+      "{%- endtablerow -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:142"
+  },
+  "assign-": {
+    "prefix": "assign-",
+    "body": [
+      "{%- assign ${1:variable} = ${0:value} -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:146"
+  },
+  "capture-": {
+    "prefix": "capture-",
+    "body": [
+      "{%- capture ${1:variable} -%}${0}{%- endcapture -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:148"
+  },
+  "include-": {
+    "prefix": "include-",
+    "body": [
+      "{%- include '${0:snippet}' -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:150"
+  },
+  "includewith-": {
+    "prefix": "includewith-",
+    "body": [
+      "{%- include '${1:snippet}', ${2:variable}: ${0:value} -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:152"
+  },
+  "render-": {
+    "prefix": "render-",
+    "body": [
+      "{%- render '${0:snippet}' -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:154"
+  },
+  "renderwith-": {
+    "prefix": "renderwith-",
+    "body": [
+      "{%- render '${1:snippet}', ${2:variable}: ${0:value} -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:156"
+  },
+  "section-": {
+    "prefix": "section-",
+    "body": [
+      "{%- section '${1:snippet}' -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:158"
+  },
+  "layout-": {
+    "prefix": "layout-",
+    "body": [
+      "{%- layout '${1:layout}' -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:160"
+  },
+  "layoutnone-": {
+    "prefix": "layoutnone-",
+    "body": [
+      "{%- layout none -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:162"
+  },
+  "paginate-": {
+    "prefix": "paginate-",
+    "body": [
+      "{%- paginate ${1:collection.products} by ${2:12} -%}",
+      "\t{%- for ${3:product} in $1 -%}",
+      "\t\t${0}",
+      "\t{%- endfor -%}",
+      "{%- endpaginate -%}"
+    ],
+    "description": "vim-snippets/liquid.snippets:164"
+  },
+  "join": {
+    "prefix": "join",
+    "body": [
+      "| join: '${1:, }'"
+    ],
+    "description": "vim-snippets/liquid.snippets:170"
+  },
+  "first": {
+    "prefix": "first",
+    "body": [
+      "| first"
+    ],
+    "description": "vim-snippets/liquid.snippets:172"
+  },
+  "last": {
+    "prefix": "last",
+    "body": [
+      "| last"
+    ],
+    "description": "vim-snippets/liquid.snippets:174"
+  },
+  "concat": {
+    "prefix": "concat",
+    "body": [
+      "| concat: ${1:array}"
+    ],
+    "description": "vim-snippets/liquid.snippets:176"
+  },
+  "map": {
+    "prefix": "map",
+    "body": [
+      "| map: '${1:key}'"
+    ],
+    "description": "vim-snippets/liquid.snippets:178"
+  },
+  "reverse": {
+    "prefix": "reverse",
+    "body": [
+      "| reverse"
+    ],
+    "description": "vim-snippets/liquid.snippets:180"
+  },
+  "size": {
+    "prefix": "size",
+    "body": [
+      "| size"
+    ],
+    "description": "vim-snippets/liquid.snippets:182"
+  },
+  "sort": {
+    "prefix": "sort",
+    "body": [
+      "| sort: '${1:key}'"
+    ],
+    "description": "vim-snippets/liquid.snippets:184"
+  },
+  "uniq": {
+    "prefix": "uniq",
+    "body": [
+      "| uniq"
+    ],
+    "description": "vim-snippets/liquid.snippets:186"
+  },
+  "img_tag": {
+    "prefix": "img_tag",
+    "body": [
+      "| img_tag"
+    ],
+    "description": "vim-snippets/liquid.snippets:188"
+  },
+  "img_tag_param": {
+    "prefix": "img_tag_param",
+    "body": [
+      "| img_tag: '${1:alt}', '${2:class}'"
+    ],
+    "description": "vim-snippets/liquid.snippets:190"
+  },
+  "script_tag": {
+    "prefix": "script_tag",
+    "body": [
+      "| script_tag"
+    ],
+    "description": "vim-snippets/liquid.snippets:192"
+  },
+  "stylesheet_tag": {
+    "prefix": "stylesheet_tag",
+    "body": [
+      "| stylesheet_tag"
+    ],
+    "description": "vim-snippets/liquid.snippets:194"
+  },
+  "abs": {
+    "prefix": "abs",
+    "body": [
+      "| abs"
+    ],
+    "description": "vim-snippets/liquid.snippets:196"
+  },
+  "ceil": {
+    "prefix": "ceil",
+    "body": [
+      "| ceil"
+    ],
+    "description": "vim-snippets/liquid.snippets:198"
+  },
+  "divided_by": {
+    "prefix": "divided_by",
+    "body": [
+      "| divided_by: ${1:2}"
+    ],
+    "description": "vim-snippets/liquid.snippets:200"
+  },
+  "floor": {
+    "prefix": "floor",
+    "body": [
+      "| floor"
+    ],
+    "description": "vim-snippets/liquid.snippets:202"
+  },
+  "minus": {
+    "prefix": "minus",
+    "body": [
+      "| minus: ${1:1}"
+    ],
+    "description": "vim-snippets/liquid.snippets:204"
+  },
+  "plus": {
+    "prefix": "plus",
+    "body": [
+      "| plus: ${1:1}"
+    ],
+    "description": "vim-snippets/liquid.snippets:206"
+  },
+  "round": {
+    "prefix": "round",
+    "body": [
+      "| round: ${1:0}"
+    ],
+    "description": "vim-snippets/liquid.snippets:208"
+  },
+  "times": {
+    "prefix": "times",
+    "body": [
+      "| times: ${1:1}"
+    ],
+    "description": "vim-snippets/liquid.snippets:210"
+  },
+  "modulo": {
+    "prefix": "modulo",
+    "body": [
+      "| modulo: ${1:2}"
+    ],
+    "description": "vim-snippets/liquid.snippets:212"
+  },
+  "money": {
+    "prefix": "money",
+    "body": [
+      "| money"
+    ],
+    "description": "vim-snippets/liquid.snippets:214"
+  },
+  "money_with_currency": {
+    "prefix": "money_with_currency",
+    "body": [
+      "| money_with_currency"
+    ],
+    "description": "vim-snippets/liquid.snippets:216"
+  },
+  "money_without_trailing_zeros": {
+    "prefix": "money_without_trailing_zeros",
+    "body": [
+      "| money_without_trailing_zeros"
+    ],
+    "description": "vim-snippets/liquid.snippets:218"
+  },
+  "money_without_currency": {
+    "prefix": "money_without_currency",
+    "body": [
+      "| money_without_currency"
+    ],
+    "description": "vim-snippets/liquid.snippets:220"
+  },
+  "append": {
+    "prefix": "append",
+    "body": [
+      "| append: '${1:string}'"
+    ],
+    "description": "vim-snippets/liquid.snippets:222"
+  },
+  "camelcase": {
+    "prefix": "camelcase",
+    "body": [
+      "| camelcase"
+    ],
+    "description": "vim-snippets/liquid.snippets:224"
+  },
+  "capitalize": {
+    "prefix": "capitalize",
+    "body": [
+      "| capitalize"
+    ],
+    "description": "vim-snippets/liquid.snippets:226"
+  },
+  "downcase": {
+    "prefix": "downcase",
+    "body": [
+      "| downcase"
+    ],
+    "description": "vim-snippets/liquid.snippets:228"
+  },
+  "escape": {
+    "prefix": "escape",
+    "body": [
+      "| escape"
+    ],
+    "description": "vim-snippets/liquid.snippets:230"
+  },
+  "handleize": {
+    "prefix": "handleize",
+    "body": [
+      "| handleize"
+    ],
+    "description": "vim-snippets/liquid.snippets:232"
+  },
+  "md5": {
+    "prefix": "md5",
+    "body": [
+      "| md5"
+    ],
+    "description": "vim-snippets/liquid.snippets:234"
+  },
+  "newline_to_br": {
+    "prefix": "newline_to_br",
+    "body": [
+      "| newline_to_br"
+    ],
+    "description": "vim-snippets/liquid.snippets:236"
+  },
+  "pluralize": {
+    "prefix": "pluralize",
+    "body": [
+      "| pluralize: '${1:item}', '${2:items}'"
+    ],
+    "description": "vim-snippets/liquid.snippets:238"
+  },
+  "prepend": {
+    "prefix": "prepend",
+    "body": [
+      "| prepend: '${1:string}'"
+    ],
+    "description": "vim-snippets/liquid.snippets:240"
+  },
+  "remove": {
+    "prefix": "remove",
+    "body": [
+      "| remove: '${1:string}'"
+    ],
+    "description": "vim-snippets/liquid.snippets:242"
+  },
+  "remove_first": {
+    "prefix": "remove_first",
+    "body": [
+      "| remove_first: '${1:string}'"
+    ],
+    "description": "vim-snippets/liquid.snippets:244"
+  },
+  "replace": {
+    "prefix": "replace",
+    "body": [
+      "| replace: '${1:target}', '${2:replace}'"
+    ],
+    "description": "vim-snippets/liquid.snippets:246"
+  },
+  "replace_first": {
+    "prefix": "replace_first",
+    "body": [
+      "| replace_first: '${1:target}', '${2:replace}'"
+    ],
+    "description": "vim-snippets/liquid.snippets:248"
+  },
+  "slice": {
+    "prefix": "slice",
+    "body": [
+      "| slice: ${1:0}, ${2:5}"
+    ],
+    "description": "vim-snippets/liquid.snippets:250"
+  },
+  "slice_single": {
+    "prefix": "slice_single",
+    "body": [
+      "| slice: ${1:at}"
+    ],
+    "description": "vim-snippets/liquid.snippets:252"
+  },
+  "split": {
+    "prefix": "split",
+    "body": [
+      "| split: '${1:,}'"
+    ],
+    "description": "vim-snippets/liquid.snippets:254"
+  },
+  "strip": {
+    "prefix": "strip",
+    "body": [
+      "| strip"
+    ],
+    "description": "vim-snippets/liquid.snippets:256"
+  },
+  "lstrip": {
+    "prefix": "lstrip",
+    "body": [
+      "| lstrip"
+    ],
+    "description": "vim-snippets/liquid.snippets:258"
+  },
+  "rstrip": {
+    "prefix": "rstrip",
+    "body": [
+      "| rstrip"
+    ],
+    "description": "vim-snippets/liquid.snippets:260"
+  },
+  "strip_html": {
+    "prefix": "strip_html",
+    "body": [
+      "| strip_html"
+    ],
+    "description": "vim-snippets/liquid.snippets:262"
+  },
+  "strip_newlines": {
+    "prefix": "strip_newlines",
+    "body": [
+      "| strip_newlines"
+    ],
+    "description": "vim-snippets/liquid.snippets:264"
+  },
+  "truncate": {
+    "prefix": "truncate",
+    "body": [
+      "| truncate: ${1:20}, '${2:...}'"
+    ],
+    "description": "vim-snippets/liquid.snippets:266"
+  },
+  "truncatewords": {
+    "prefix": "truncatewords",
+    "body": [
+      "| truncatewords: ${1:5}, '${2:...}'"
+    ],
+    "description": "vim-snippets/liquid.snippets:268"
+  },
+  "upcase": {
+    "prefix": "upcase",
+    "body": [
+      "| upcase"
+    ],
+    "description": "vim-snippets/liquid.snippets:270"
+  },
+  "url_encode": {
+    "prefix": "url_encode",
+    "body": [
+      "| url_encode"
+    ],
+    "description": "vim-snippets/liquid.snippets:272"
+  },
+  "url_escape": {
+    "prefix": "url_escape",
+    "body": [
+      "| url_escape"
+    ],
+    "description": "vim-snippets/liquid.snippets:274"
+  },
+  "url_param_escape": {
+    "prefix": "url_param_escape",
+    "body": [
+      "| url_param_escape"
+    ],
+    "description": "vim-snippets/liquid.snippets:276"
+  },
+  "asset_url": {
+    "prefix": "asset_url",
+    "body": [
+      "| asset_url"
+    ],
+    "description": "vim-snippets/liquid.snippets:278"
+  },
+  "asset_img_url": {
+    "prefix": "asset_img_url",
+    "body": [
+      "| asset_img_url: '${1:medium}'"
+    ],
+    "description": "vim-snippets/liquid.snippets:280"
+  },
+  "img_url": {
+    "prefix": "img_url",
+    "body": [
+      "| img_url: '${1:medium}'"
+    ],
+    "description": "vim-snippets/liquid.snippets:282"
+  },
+  "_schema": {
+    "prefix": "_schema",
+    "body": [
+      "{% schema %}",
+      "\t{",
+      "\t\t\"name\": \"${1}\",",
+      "\t\t\"class\": \"${2}\",",
+      "\t\t\"settings\": [",
+      "\t\t\t${0}",
+      "\t\t]",
+      "\t}",
+      "{% endschema %}"
+    ],
+    "description": "vim-snippets/liquid.snippets:284"
+  },
+  "_blocks": {
+    "prefix": "_blocks",
+    "body": [
+      "\"blocks\": [",
+      "\t{",
+      "\t\t\"type\": \"${1}\",",
+      "\t\t\"name\": \"${2}\",",
+      "\t\t\"settings\": [",
+      "\t\t\t${0}",
+      "\t\t]",
+      "\t}",
+      "]"
+    ],
+    "description": "vim-snippets/liquid.snippets:294"
+  },
+  "_text": {
+    "prefix": "_text",
+    "body": [
+      "{",
+      "\t\"type\": \"text\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"default\": \"${3}\",",
+      "\t\"info\": \"${4}\",",
+      "\t\"placeholder\": \"${0}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:304"
+  },
+  "_textarea": {
+    "prefix": "_textarea",
+    "body": [
+      "{",
+      "\t\"type\": \"textarea\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"default\": \"${3}\",",
+      "\t\"info\": \"${4}\",",
+      "\t\"placeholder\": \"${0}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:313"
+  },
+  "_image_picker": {
+    "prefix": "_image_picker",
+    "body": [
+      "{",
+      "\t\"type\": \"image_picker\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${0}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:322"
+  },
+  "_radio": {
+    "prefix": "_radio",
+    "body": [
+      "{",
+      "\t\"type\": \"radio\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"options\": [",
+      "\t\t{ \"value\": \"${5}\", \"label\": \"${0}\" }",
+      "\t],",
+      "\t\"default\": \"${3}\",",
+      "\t\"info\": \"${4}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:328"
+  },
+  "_select": {
+    "prefix": "_select",
+    "body": [
+      "{",
+      "\t\"type\": \"select\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"options\": [",
+      "\t\t{",
+      "\t\t\t\"group\": \"${5}\",",
+      "\t\t\t\"value\": \"${6}\",",
+      "\t\t\t\"label\": \"${0}\"",
+      "\t\t}",
+      "\t],",
+      "\t\"default\": \"${3}\",",
+      "\t\"info\": \"${4}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:339"
+  },
+  "_checkbox": {
+    "prefix": "_checkbox",
+    "body": [
+      "{",
+      "\t\"type\": \"checkbox\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"default\": ${3:true},",
+      "\t\"info\": \"${0}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:354"
+  },
+  "_range": {
+    "prefix": "_range",
+    "body": [
+      "{",
+      "\t\"type\": \"range\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"min\": ${2},",
+      "\t\"max\": ${3},",
+      "\t\"step\": ${4},",
+      "\t\"unit\": \"${5}\",",
+      "\t\"label\": \"${6}\",",
+      "\t\"default\": ${0}",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:362"
+  },
+  "_color": {
+    "prefix": "_color",
+    "body": [
+      "{",
+      "\t\"type\": \"color\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"default\": \"${3}\",",
+      "\t\"info\": \"${0}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:373"
+  },
+  "_font": {
+    "prefix": "_font",
+    "body": [
+      "{",
+      "\t\"type\": \"font_picker\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"info\": \"${3}\",",
+      "\t\"default\": \"${0:helvetica_n4}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:381"
+  },
+  "_collection": {
+    "prefix": "_collection",
+    "body": [
+      "{",
+      "\t\"type\": \"collection\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"info\": \"${0}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:389"
+  },
+  "_product": {
+    "prefix": "_product",
+    "body": [
+      "{",
+      "\t\"type\": \"product\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"info\": \"${0}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:396"
+  },
+  "_blog": {
+    "prefix": "_blog",
+    "body": [
+      "{",
+      "\t\"type\": \"blog\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"info\": \"${0}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:403"
+  },
+  "_page": {
+    "prefix": "_page",
+    "body": [
+      "{",
+      "\t\"type\": \"page\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"info\": \"${0}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:410"
+  },
+  "_link_list": {
+    "prefix": "_link_list",
+    "body": [
+      "{",
+      "\t\"type\": \"link_list\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"info\": \"${0}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:417"
+  },
+  "_url": {
+    "prefix": "_url",
+    "body": [
+      "{",
+      "\t\"type\": \"url\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"info\": \"${0}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:424"
+  },
+  "_video": {
+    "prefix": "_video",
+    "body": [
+      "{",
+      "\t\"type\": \"video_url\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"accept\": [\"youtube\", \"vimeo\"${0}],",
+      "\t\"default\": \"${3}\",",
+      "\t\"info\": \"${4}\",",
+      "\t\"placeholder\": \"${5}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:431"
+  },
+  "_richtext": {
+    "prefix": "_richtext",
+    "body": [
+      "{",
+      "\t\"type\": \"richtext\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"default\": \"<p>${0}</p>\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:441"
+  },
+  "_html": {
+    "prefix": "_html",
+    "body": [
+      "{",
+      "\t\"type\": \"html\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"default\": \"<div>${0}</div>\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:448"
+  },
+  "_article": {
+    "prefix": "_article",
+    "body": [
+      "{",
+      "\t\"type\": \"article\",",
+      "\t\"id\": \"${1}\",",
+      "\t\"label\": \"${2}\",",
+      "\t\"info\": \"${0}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:455"
+  },
+  "_header": {
+    "prefix": "_header",
+    "body": [
+      "{",
+      "\t\"type\": \"header\",",
+      "\t\"content\": \"${1}\",",
+      "\t\"info\": \"${0}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:462"
+  },
+  "_paragraph": {
+    "prefix": "_paragraph",
+    "body": [
+      "{",
+      "\t\"type\": \"paragraph\",",
+      "\t\"content\": \"${0}\"",
+      "}"
+    ],
+    "description": "vim-snippets/liquid.snippets:468"
+  }
+}

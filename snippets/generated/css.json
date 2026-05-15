@@ -1,0 +1,4390 @@
+{
+  ". - selector { }": {
+    "prefix": ".",
+    "body": [
+      "${1} {",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "}${0}"
+    ],
+    "description": "selector { }"
+  },
+  "! - !important": {
+    "prefix": "!",
+    "body": [
+      " !important"
+    ],
+    "description": "!important"
+  },
+  "bdi:m+": {
+    "prefix": "bdi:m+",
+    "body": [
+      "-moz-border-image: url(${1}) ${2:0} ${3:0} ${4:0} ${5:0} ${6:stretch} ${7:stretch};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:7"
+  },
+  "bdi:m": {
+    "prefix": "bdi:m",
+    "body": [
+      "-moz-border-image: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:9"
+  },
+  "bdrz:m": {
+    "prefix": "bdrz:m",
+    "body": [
+      "-moz-border-radius: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:11"
+  },
+  "bxsh:m+": {
+    "prefix": "bxsh:m+",
+    "body": [
+      "-moz-box-shadow: ${1:0} ${2:0} ${3:0} #${4:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:13"
+  },
+  "bxsh:m": {
+    "prefix": "bxsh:m",
+    "body": [
+      "-moz-box-shadow: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:15"
+  },
+  "bdi:w+": {
+    "prefix": "bdi:w+",
+    "body": [
+      "-webkit-border-image: url(${1}) ${2:0} ${3:0} ${4:0} ${5:0} ${6:stretch} ${7:stretch};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:17"
+  },
+  "bdi:w": {
+    "prefix": "bdi:w",
+    "body": [
+      "-webkit-border-image: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:19"
+  },
+  "bdrz:w": {
+    "prefix": "bdrz:w",
+    "body": [
+      "-webkit-border-radius: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:21"
+  },
+  "bxsh:w+": {
+    "prefix": "bxsh:w+",
+    "body": [
+      "-webkit-box-shadow: ${1:0} ${2:0} ${3:0} #${4:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:23"
+  },
+  "bxsh:w": {
+    "prefix": "bxsh:w",
+    "body": [
+      "-webkit-box-shadow: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:25"
+  },
+  "@f": {
+    "prefix": "@f",
+    "body": [
+      "@font-face {",
+      "\tfont-family: ${1};",
+      "\tsrc: url(${2});",
+      "}${0}"
+    ],
+    "description": "vim-snippets/css.snippets:27"
+  },
+  "@i": {
+    "prefix": "@i",
+    "body": [
+      "@import url(${1});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:32"
+  },
+  "@m - @media mediatype { }": {
+    "prefix": "@m",
+    "body": [
+      "@media ${1:print} {",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "}${0}"
+    ],
+    "description": "@media mediatype { }"
+  },
+  "ac": {
+    "prefix": "ac",
+    "body": [
+      "align-content: ${1:stretch};"
+    ],
+    "description": "vim-snippets/css.snippets:38"
+  },
+  "ac:s": {
+    "prefix": "ac:s",
+    "body": [
+      "align-content: start;"
+    ],
+    "description": "vim-snippets/css.snippets:40"
+  },
+  "ac:e": {
+    "prefix": "ac:e",
+    "body": [
+      "align-content: end;"
+    ],
+    "description": "vim-snippets/css.snippets:42"
+  },
+  "ac:c": {
+    "prefix": "ac:c",
+    "body": [
+      "align-content: center;"
+    ],
+    "description": "vim-snippets/css.snippets:44"
+  },
+  "ac:fs": {
+    "prefix": "ac:fs",
+    "body": [
+      "align-content: flex-start;"
+    ],
+    "description": "vim-snippets/css.snippets:46"
+  },
+  "ac:fe": {
+    "prefix": "ac:fe",
+    "body": [
+      "align-content: flex-end;"
+    ],
+    "description": "vim-snippets/css.snippets:48"
+  },
+  "ac:sb": {
+    "prefix": "ac:sb",
+    "body": [
+      "align-content: space-between;"
+    ],
+    "description": "vim-snippets/css.snippets:50"
+  },
+  "ac:sa": {
+    "prefix": "ac:sa",
+    "body": [
+      "align-content: space-around;"
+    ],
+    "description": "vim-snippets/css.snippets:52"
+  },
+  "ac:se": {
+    "prefix": "ac:se",
+    "body": [
+      "align-content: space-evenly;"
+    ],
+    "description": "vim-snippets/css.snippets:54"
+  },
+  "ac:st": {
+    "prefix": "ac:st",
+    "body": [
+      "align-content: stretch;"
+    ],
+    "description": "vim-snippets/css.snippets:56"
+  },
+  "ac:b": {
+    "prefix": "ac:b",
+    "body": [
+      "align-content: baseline;"
+    ],
+    "description": "vim-snippets/css.snippets:58"
+  },
+  "ac:fb": {
+    "prefix": "ac:fb",
+    "body": [
+      "align-content: first baseline;"
+    ],
+    "description": "vim-snippets/css.snippets:60"
+  },
+  "ac:lb": {
+    "prefix": "ac:lb",
+    "body": [
+      "align-content: last baseline;"
+    ],
+    "description": "vim-snippets/css.snippets:62"
+  },
+  "ai": {
+    "prefix": "ai",
+    "body": [
+      "align-items: ${1:stretch};"
+    ],
+    "description": "vim-snippets/css.snippets:64"
+  },
+  "ai:s": {
+    "prefix": "ai:s",
+    "body": [
+      "align-items: start;"
+    ],
+    "description": "vim-snippets/css.snippets:66"
+  },
+  "ai:e": {
+    "prefix": "ai:e",
+    "body": [
+      "align-items: end;"
+    ],
+    "description": "vim-snippets/css.snippets:68"
+  },
+  "ai:c": {
+    "prefix": "ai:c",
+    "body": [
+      "align-items: center;"
+    ],
+    "description": "vim-snippets/css.snippets:70"
+  },
+  "ai:fs": {
+    "prefix": "ai:fs",
+    "body": [
+      "align-items: flex-start;"
+    ],
+    "description": "vim-snippets/css.snippets:72"
+  },
+  "ai:fe": {
+    "prefix": "ai:fe",
+    "body": [
+      "align-items: flex-end;"
+    ],
+    "description": "vim-snippets/css.snippets:74"
+  },
+  "ai:st": {
+    "prefix": "ai:st",
+    "body": [
+      "align-items: stretch;"
+    ],
+    "description": "vim-snippets/css.snippets:76"
+  },
+  "ai:b": {
+    "prefix": "ai:b",
+    "body": [
+      "align-items: baseline;"
+    ],
+    "description": "vim-snippets/css.snippets:78"
+  },
+  "ai:fb": {
+    "prefix": "ai:fb",
+    "body": [
+      "align-items: first baseline;"
+    ],
+    "description": "vim-snippets/css.snippets:80"
+  },
+  "ai:lb": {
+    "prefix": "ai:lb",
+    "body": [
+      "align-items: last baseline;"
+    ],
+    "description": "vim-snippets/css.snippets:82"
+  },
+  "as": {
+    "prefix": "as",
+    "body": [
+      "align-self: ${1:stretch};"
+    ],
+    "description": "vim-snippets/css.snippets:84"
+  },
+  "as:s": {
+    "prefix": "as:s",
+    "body": [
+      "align-self: start;"
+    ],
+    "description": "vim-snippets/css.snippets:86"
+  },
+  "as:e": {
+    "prefix": "as:e",
+    "body": [
+      "align-self: end;"
+    ],
+    "description": "vim-snippets/css.snippets:88"
+  },
+  "as:c": {
+    "prefix": "as:c",
+    "body": [
+      "align-self: center;"
+    ],
+    "description": "vim-snippets/css.snippets:90"
+  },
+  "as:st": {
+    "prefix": "as:st",
+    "body": [
+      "align-self: stretch;"
+    ],
+    "description": "vim-snippets/css.snippets:92"
+  },
+  "as:fs": {
+    "prefix": "as:fs",
+    "body": [
+      "align-self: flex-start;"
+    ],
+    "description": "vim-snippets/css.snippets:94"
+  },
+  "as:fe": {
+    "prefix": "as:fe",
+    "body": [
+      "align-self: flex-end;"
+    ],
+    "description": "vim-snippets/css.snippets:96"
+  },
+  "as:b": {
+    "prefix": "as:b",
+    "body": [
+      "align-self: baseline;"
+    ],
+    "description": "vim-snippets/css.snippets:98"
+  },
+  "as:fb": {
+    "prefix": "as:fb",
+    "body": [
+      "align-self: first baseline;"
+    ],
+    "description": "vim-snippets/css.snippets:100"
+  },
+  "as:lb": {
+    "prefix": "as:lb",
+    "body": [
+      "align-self: last baseline;"
+    ],
+    "description": "vim-snippets/css.snippets:102"
+  },
+  "bg+": {
+    "prefix": "bg+",
+    "body": [
+      "background: #${1:fff} url(${2}) ${3:0} ${4:0} ${5:no-repeat};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:104"
+  },
+  "bga": {
+    "prefix": "bga",
+    "body": [
+      "background-attachment: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:106"
+  },
+  "bga:f": {
+    "prefix": "bga:f",
+    "body": [
+      "background-attachment: fixed;"
+    ],
+    "description": "vim-snippets/css.snippets:108"
+  },
+  "bga:s": {
+    "prefix": "bga:s",
+    "body": [
+      "background-attachment: scroll;"
+    ],
+    "description": "vim-snippets/css.snippets:110"
+  },
+  "bgbk": {
+    "prefix": "bgbk",
+    "body": [
+      "background-break: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:112"
+  },
+  "bgbk:bb": {
+    "prefix": "bgbk:bb",
+    "body": [
+      "background-break: bounding-box;"
+    ],
+    "description": "vim-snippets/css.snippets:114"
+  },
+  "bgbk:c": {
+    "prefix": "bgbk:c",
+    "body": [
+      "background-break: continuous;"
+    ],
+    "description": "vim-snippets/css.snippets:116"
+  },
+  "bgbk:eb": {
+    "prefix": "bgbk:eb",
+    "body": [
+      "background-break: each-box;"
+    ],
+    "description": "vim-snippets/css.snippets:118"
+  },
+  "bgcp": {
+    "prefix": "bgcp",
+    "body": [
+      "background-clip: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:120"
+  },
+  "bgcp:bb": {
+    "prefix": "bgcp:bb",
+    "body": [
+      "background-clip: border-box;"
+    ],
+    "description": "vim-snippets/css.snippets:122"
+  },
+  "bgcp:cb": {
+    "prefix": "bgcp:cb",
+    "body": [
+      "background-clip: content-box;"
+    ],
+    "description": "vim-snippets/css.snippets:124"
+  },
+  "bgcp:nc": {
+    "prefix": "bgcp:nc",
+    "body": [
+      "background-clip: no-clip;"
+    ],
+    "description": "vim-snippets/css.snippets:126"
+  },
+  "bgcp:pb": {
+    "prefix": "bgcp:pb",
+    "body": [
+      "background-clip: padding-box;"
+    ],
+    "description": "vim-snippets/css.snippets:128"
+  },
+  "bgc": {
+    "prefix": "bgc",
+    "body": [
+      "background-color: #${1:fff};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:130"
+  },
+  "bgc:t": {
+    "prefix": "bgc:t",
+    "body": [
+      "background-color: transparent;"
+    ],
+    "description": "vim-snippets/css.snippets:132"
+  },
+  "bgi": {
+    "prefix": "bgi",
+    "body": [
+      "background-image: url(${1});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:134"
+  },
+  "bgi:n": {
+    "prefix": "bgi:n",
+    "body": [
+      "background-image: none;"
+    ],
+    "description": "vim-snippets/css.snippets:136"
+  },
+  "bgo": {
+    "prefix": "bgo",
+    "body": [
+      "background-origin: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:138"
+  },
+  "bgo:bb": {
+    "prefix": "bgo:bb",
+    "body": [
+      "background-origin: border-box;"
+    ],
+    "description": "vim-snippets/css.snippets:140"
+  },
+  "bgo:cb": {
+    "prefix": "bgo:cb",
+    "body": [
+      "background-origin: content-box;"
+    ],
+    "description": "vim-snippets/css.snippets:142"
+  },
+  "bgo:pb": {
+    "prefix": "bgo:pb",
+    "body": [
+      "background-origin: padding-box;"
+    ],
+    "description": "vim-snippets/css.snippets:144"
+  },
+  "bgpx": {
+    "prefix": "bgpx",
+    "body": [
+      "background-position-x: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:146"
+  },
+  "bgpy": {
+    "prefix": "bgpy",
+    "body": [
+      "background-position-y: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:148"
+  },
+  "bgp": {
+    "prefix": "bgp",
+    "body": [
+      "background-position: ${1:0} ${2:0};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:150"
+  },
+  "bgr": {
+    "prefix": "bgr",
+    "body": [
+      "background-repeat: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:152"
+  },
+  "bgr:n": {
+    "prefix": "bgr:n",
+    "body": [
+      "background-repeat: no-repeat;"
+    ],
+    "description": "vim-snippets/css.snippets:154"
+  },
+  "bgr:x": {
+    "prefix": "bgr:x",
+    "body": [
+      "background-repeat: repeat-x;"
+    ],
+    "description": "vim-snippets/css.snippets:156"
+  },
+  "bgr:y": {
+    "prefix": "bgr:y",
+    "body": [
+      "background-repeat: repeat-y;"
+    ],
+    "description": "vim-snippets/css.snippets:158"
+  },
+  "bgr:r": {
+    "prefix": "bgr:r",
+    "body": [
+      "background-repeat: repeat;"
+    ],
+    "description": "vim-snippets/css.snippets:160"
+  },
+  "bgz": {
+    "prefix": "bgz",
+    "body": [
+      "background-size: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:162"
+  },
+  "bgz:a": {
+    "prefix": "bgz:a",
+    "body": [
+      "background-size: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:164"
+  },
+  "bgz:ct": {
+    "prefix": "bgz:ct",
+    "body": [
+      "background-size: contain;"
+    ],
+    "description": "vim-snippets/css.snippets:166"
+  },
+  "bgz:cv": {
+    "prefix": "bgz:cv",
+    "body": [
+      "background-size: cover;"
+    ],
+    "description": "vim-snippets/css.snippets:168"
+  },
+  "bg": {
+    "prefix": "bg",
+    "body": [
+      "background: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:170"
+  },
+  "bg:ie": {
+    "prefix": "bg:ie",
+    "body": [
+      "filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='${1}',sizingMethod='${0:crop}');"
+    ],
+    "description": "vim-snippets/css.snippets:172"
+  },
+  "bg:n": {
+    "prefix": "bg:n",
+    "body": [
+      "background: none;"
+    ],
+    "description": "vim-snippets/css.snippets:174"
+  },
+  "bd+": {
+    "prefix": "bd+",
+    "body": [
+      "border: ${1:1px} ${2:solid} #${3:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:176"
+  },
+  "bdb+": {
+    "prefix": "bdb+",
+    "body": [
+      "border-bottom: ${1:1px} ${2:solid} #${3:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:178"
+  },
+  "bdbc": {
+    "prefix": "bdbc",
+    "body": [
+      "border-bottom-color: #${1:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:180"
+  },
+  "bdbi": {
+    "prefix": "bdbi",
+    "body": [
+      "border-bottom-image: url(${1});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:182"
+  },
+  "bdbi:n": {
+    "prefix": "bdbi:n",
+    "body": [
+      "border-bottom-image: none;"
+    ],
+    "description": "vim-snippets/css.snippets:184"
+  },
+  "bdbli": {
+    "prefix": "bdbli",
+    "body": [
+      "border-bottom-left-image: url(${1});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:186"
+  },
+  "bdbli:c": {
+    "prefix": "bdbli:c",
+    "body": [
+      "border-bottom-left-image: continue;"
+    ],
+    "description": "vim-snippets/css.snippets:188"
+  },
+  "bdbli:n": {
+    "prefix": "bdbli:n",
+    "body": [
+      "border-bottom-left-image: none;"
+    ],
+    "description": "vim-snippets/css.snippets:190"
+  },
+  "bdblrz": {
+    "prefix": "bdblrz",
+    "body": [
+      "border-bottom-left-radius: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:192"
+  },
+  "bdbri": {
+    "prefix": "bdbri",
+    "body": [
+      "border-bottom-right-image: url(${1});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:194"
+  },
+  "bdbri:c": {
+    "prefix": "bdbri:c",
+    "body": [
+      "border-bottom-right-image: continue;"
+    ],
+    "description": "vim-snippets/css.snippets:196"
+  },
+  "bdbri:n": {
+    "prefix": "bdbri:n",
+    "body": [
+      "border-bottom-right-image: none;"
+    ],
+    "description": "vim-snippets/css.snippets:198"
+  },
+  "bdbrrz": {
+    "prefix": "bdbrrz",
+    "body": [
+      "border-bottom-right-radius: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:200"
+  },
+  "bdbs": {
+    "prefix": "bdbs",
+    "body": [
+      "border-bottom-style: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:202"
+  },
+  "bdbs:n": {
+    "prefix": "bdbs:n",
+    "body": [
+      "border-bottom-style: none;"
+    ],
+    "description": "vim-snippets/css.snippets:204"
+  },
+  "bdbw": {
+    "prefix": "bdbw",
+    "body": [
+      "border-bottom-width: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:206"
+  },
+  "bdb": {
+    "prefix": "bdb",
+    "body": [
+      "border-bottom: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:208"
+  },
+  "bdb:n": {
+    "prefix": "bdb:n",
+    "body": [
+      "border-bottom: none;"
+    ],
+    "description": "vim-snippets/css.snippets:210"
+  },
+  "bdbk": {
+    "prefix": "bdbk",
+    "body": [
+      "border-break: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:212"
+  },
+  "bdbk:c": {
+    "prefix": "bdbk:c",
+    "body": [
+      "border-break: close;"
+    ],
+    "description": "vim-snippets/css.snippets:214"
+  },
+  "bdcl": {
+    "prefix": "bdcl",
+    "body": [
+      "border-collapse: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:216"
+  },
+  "bdcl:c": {
+    "prefix": "bdcl:c",
+    "body": [
+      "border-collapse: collapse;"
+    ],
+    "description": "vim-snippets/css.snippets:218"
+  },
+  "bdcl:s": {
+    "prefix": "bdcl:s",
+    "body": [
+      "border-collapse: separate;"
+    ],
+    "description": "vim-snippets/css.snippets:220"
+  },
+  "bdc": {
+    "prefix": "bdc",
+    "body": [
+      "border-color: #${1:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:222"
+  },
+  "bdci": {
+    "prefix": "bdci",
+    "body": [
+      "border-corner-image: url(${1});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:224"
+  },
+  "bdci:c": {
+    "prefix": "bdci:c",
+    "body": [
+      "border-corner-image: continue;"
+    ],
+    "description": "vim-snippets/css.snippets:226"
+  },
+  "bdci:n": {
+    "prefix": "bdci:n",
+    "body": [
+      "border-corner-image: none;"
+    ],
+    "description": "vim-snippets/css.snippets:228"
+  },
+  "bdf": {
+    "prefix": "bdf",
+    "body": [
+      "border-fit: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:230"
+  },
+  "bdf:c": {
+    "prefix": "bdf:c",
+    "body": [
+      "border-fit: clip;"
+    ],
+    "description": "vim-snippets/css.snippets:232"
+  },
+  "bdf:of": {
+    "prefix": "bdf:of",
+    "body": [
+      "border-fit: overwrite;"
+    ],
+    "description": "vim-snippets/css.snippets:234"
+  },
+  "bdf:ow": {
+    "prefix": "bdf:ow",
+    "body": [
+      "border-fit: overwrite;"
+    ],
+    "description": "vim-snippets/css.snippets:236"
+  },
+  "bdf:r": {
+    "prefix": "bdf:r",
+    "body": [
+      "border-fit: repeat;"
+    ],
+    "description": "vim-snippets/css.snippets:238"
+  },
+  "bdf:sc": {
+    "prefix": "bdf:sc",
+    "body": [
+      "border-fit: scale;"
+    ],
+    "description": "vim-snippets/css.snippets:240"
+  },
+  "bdf:sp": {
+    "prefix": "bdf:sp",
+    "body": [
+      "border-fit: space;"
+    ],
+    "description": "vim-snippets/css.snippets:242"
+  },
+  "bdf:st": {
+    "prefix": "bdf:st",
+    "body": [
+      "border-fit: stretch;"
+    ],
+    "description": "vim-snippets/css.snippets:244"
+  },
+  "bdi": {
+    "prefix": "bdi",
+    "body": [
+      "border-image: url(${1}) ${2:0} ${3:0} ${4:0} ${5:0} ${6:stretch} ${7:stretch};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:246"
+  },
+  "bdi:n": {
+    "prefix": "bdi:n",
+    "body": [
+      "border-image: none;"
+    ],
+    "description": "vim-snippets/css.snippets:248"
+  },
+  "bdl+": {
+    "prefix": "bdl+",
+    "body": [
+      "border-left: ${1:1px} ${2:solid} #${3:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:250"
+  },
+  "bdlc": {
+    "prefix": "bdlc",
+    "body": [
+      "border-left-color: #${1:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:252"
+  },
+  "bdli": {
+    "prefix": "bdli",
+    "body": [
+      "border-left-image: url(${1});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:254"
+  },
+  "bdli:n": {
+    "prefix": "bdli:n",
+    "body": [
+      "border-left-image: none;"
+    ],
+    "description": "vim-snippets/css.snippets:256"
+  },
+  "bdls": {
+    "prefix": "bdls",
+    "body": [
+      "border-left-style: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:258"
+  },
+  "bdls:n": {
+    "prefix": "bdls:n",
+    "body": [
+      "border-left-style: none;"
+    ],
+    "description": "vim-snippets/css.snippets:260"
+  },
+  "bdlw": {
+    "prefix": "bdlw",
+    "body": [
+      "border-left-width: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:262"
+  },
+  "bdl": {
+    "prefix": "bdl",
+    "body": [
+      "border-left: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:264"
+  },
+  "bdl:n": {
+    "prefix": "bdl:n",
+    "body": [
+      "border-left: none;"
+    ],
+    "description": "vim-snippets/css.snippets:266"
+  },
+  "bdlt": {
+    "prefix": "bdlt",
+    "body": [
+      "border-length: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:268"
+  },
+  "bdlt:a": {
+    "prefix": "bdlt:a",
+    "body": [
+      "border-length: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:270"
+  },
+  "bdrz": {
+    "prefix": "bdrz",
+    "body": [
+      "border-radius: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:272"
+  },
+  "bdr+": {
+    "prefix": "bdr+",
+    "body": [
+      "border-right: ${1:1px} ${2:solid} #${3:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:274"
+  },
+  "bdrc": {
+    "prefix": "bdrc",
+    "body": [
+      "border-right-color: #${1:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:276"
+  },
+  "bdri": {
+    "prefix": "bdri",
+    "body": [
+      "border-right-image: url(${1});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:278"
+  },
+  "bdri:n": {
+    "prefix": "bdri:n",
+    "body": [
+      "border-right-image: none;"
+    ],
+    "description": "vim-snippets/css.snippets:280"
+  },
+  "bdrs": {
+    "prefix": "bdrs",
+    "body": [
+      "border-right-style: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:282"
+  },
+  "bdrs:n": {
+    "prefix": "bdrs:n",
+    "body": [
+      "border-right-style: none;"
+    ],
+    "description": "vim-snippets/css.snippets:284"
+  },
+  "bdrw": {
+    "prefix": "bdrw",
+    "body": [
+      "border-right-width: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:286"
+  },
+  "bdr": {
+    "prefix": "bdr",
+    "body": [
+      "border-right: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:288"
+  },
+  "bdr:n": {
+    "prefix": "bdr:n",
+    "body": [
+      "border-right: none;"
+    ],
+    "description": "vim-snippets/css.snippets:290"
+  },
+  "bdsp": {
+    "prefix": "bdsp",
+    "body": [
+      "border-spacing: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:292"
+  },
+  "bds": {
+    "prefix": "bds",
+    "body": [
+      "border-style: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:294"
+  },
+  "bds:ds": {
+    "prefix": "bds:ds",
+    "body": [
+      "border-style: dashed;"
+    ],
+    "description": "vim-snippets/css.snippets:296"
+  },
+  "bds:dtds": {
+    "prefix": "bds:dtds",
+    "body": [
+      "border-style: dot-dash;"
+    ],
+    "description": "vim-snippets/css.snippets:298"
+  },
+  "bds:dtdtds": {
+    "prefix": "bds:dtdtds",
+    "body": [
+      "border-style: dot-dot-dash;"
+    ],
+    "description": "vim-snippets/css.snippets:300"
+  },
+  "bds:dt": {
+    "prefix": "bds:dt",
+    "body": [
+      "border-style: dotted;"
+    ],
+    "description": "vim-snippets/css.snippets:302"
+  },
+  "bds:db": {
+    "prefix": "bds:db",
+    "body": [
+      "border-style: double;"
+    ],
+    "description": "vim-snippets/css.snippets:304"
+  },
+  "bds:g": {
+    "prefix": "bds:g",
+    "body": [
+      "border-style: groove;"
+    ],
+    "description": "vim-snippets/css.snippets:306"
+  },
+  "bds:h": {
+    "prefix": "bds:h",
+    "body": [
+      "border-style: hidden;"
+    ],
+    "description": "vim-snippets/css.snippets:308"
+  },
+  "bds:i": {
+    "prefix": "bds:i",
+    "body": [
+      "border-style: inset;"
+    ],
+    "description": "vim-snippets/css.snippets:310"
+  },
+  "bds:n": {
+    "prefix": "bds:n",
+    "body": [
+      "border-style: none;"
+    ],
+    "description": "vim-snippets/css.snippets:312"
+  },
+  "bds:o": {
+    "prefix": "bds:o",
+    "body": [
+      "border-style: outset;"
+    ],
+    "description": "vim-snippets/css.snippets:314"
+  },
+  "bds:r": {
+    "prefix": "bds:r",
+    "body": [
+      "border-style: ridge;"
+    ],
+    "description": "vim-snippets/css.snippets:316"
+  },
+  "bds:s": {
+    "prefix": "bds:s",
+    "body": [
+      "border-style: solid;"
+    ],
+    "description": "vim-snippets/css.snippets:318"
+  },
+  "bds:w": {
+    "prefix": "bds:w",
+    "body": [
+      "border-style: wave;"
+    ],
+    "description": "vim-snippets/css.snippets:320"
+  },
+  "bdt+": {
+    "prefix": "bdt+",
+    "body": [
+      "border-top: ${1:1px} ${2:solid} #${3:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:322"
+  },
+  "bdtc": {
+    "prefix": "bdtc",
+    "body": [
+      "border-top-color: #${1:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:324"
+  },
+  "bdti": {
+    "prefix": "bdti",
+    "body": [
+      "border-top-image: url(${1});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:326"
+  },
+  "bdti:n": {
+    "prefix": "bdti:n",
+    "body": [
+      "border-top-image: none;"
+    ],
+    "description": "vim-snippets/css.snippets:328"
+  },
+  "bdtli": {
+    "prefix": "bdtli",
+    "body": [
+      "border-top-left-image: url(${1});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:330"
+  },
+  "bdtli:c": {
+    "prefix": "bdtli:c",
+    "body": [
+      "border-corner-image: continue;"
+    ],
+    "description": "vim-snippets/css.snippets:332"
+  },
+  "bdtli:n": {
+    "prefix": "bdtli:n",
+    "body": [
+      "border-corner-image: none;"
+    ],
+    "description": "vim-snippets/css.snippets:334"
+  },
+  "bdtlrz": {
+    "prefix": "bdtlrz",
+    "body": [
+      "border-top-left-radius: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:336"
+  },
+  "bdtri": {
+    "prefix": "bdtri",
+    "body": [
+      "border-top-right-image: url(${1});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:338"
+  },
+  "bdtri:c": {
+    "prefix": "bdtri:c",
+    "body": [
+      "border-top-right-image: continue;"
+    ],
+    "description": "vim-snippets/css.snippets:340"
+  },
+  "bdtri:n": {
+    "prefix": "bdtri:n",
+    "body": [
+      "border-top-right-image: none;"
+    ],
+    "description": "vim-snippets/css.snippets:342"
+  },
+  "bdtrrz": {
+    "prefix": "bdtrrz",
+    "body": [
+      "border-top-right-radius: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:344"
+  },
+  "bdts": {
+    "prefix": "bdts",
+    "body": [
+      "border-top-style: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:346"
+  },
+  "bdts:n": {
+    "prefix": "bdts:n",
+    "body": [
+      "border-top-style: none;"
+    ],
+    "description": "vim-snippets/css.snippets:348"
+  },
+  "bdtw": {
+    "prefix": "bdtw",
+    "body": [
+      "border-top-width: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:350"
+  },
+  "bdt": {
+    "prefix": "bdt",
+    "body": [
+      "border-top: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:352"
+  },
+  "bdt:n": {
+    "prefix": "bdt:n",
+    "body": [
+      "border-top: none;"
+    ],
+    "description": "vim-snippets/css.snippets:354"
+  },
+  "bdw": {
+    "prefix": "bdw",
+    "body": [
+      "border-width: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:356"
+  },
+  "bd": {
+    "prefix": "bd",
+    "body": [
+      "border: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:358"
+  },
+  "bd:n": {
+    "prefix": "bd:n",
+    "body": [
+      "border: none;"
+    ],
+    "description": "vim-snippets/css.snippets:360"
+  },
+  "b": {
+    "prefix": "b",
+    "body": [
+      "bottom: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:362"
+  },
+  "b:a": {
+    "prefix": "b:a",
+    "body": [
+      "bottom: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:364"
+  },
+  "bxsh+": {
+    "prefix": "bxsh+",
+    "body": [
+      "box-shadow: ${1:0} ${2:0} ${3:0} #${4:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:366"
+  },
+  "bxsh": {
+    "prefix": "bxsh",
+    "body": [
+      "box-shadow: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:368"
+  },
+  "bxsh:n": {
+    "prefix": "bxsh:n",
+    "body": [
+      "box-shadow: none;"
+    ],
+    "description": "vim-snippets/css.snippets:370"
+  },
+  "bxz": {
+    "prefix": "bxz",
+    "body": [
+      "box-sizing: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:372"
+  },
+  "bxz:bb": {
+    "prefix": "bxz:bb",
+    "body": [
+      "box-sizing: border-box;"
+    ],
+    "description": "vim-snippets/css.snippets:374"
+  },
+  "bxz:cb": {
+    "prefix": "bxz:cb",
+    "body": [
+      "box-sizing: content-box;"
+    ],
+    "description": "vim-snippets/css.snippets:376"
+  },
+  "cps": {
+    "prefix": "cps",
+    "body": [
+      "caption-side: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:378"
+  },
+  "cps:b": {
+    "prefix": "cps:b",
+    "body": [
+      "caption-side: bottom;"
+    ],
+    "description": "vim-snippets/css.snippets:380"
+  },
+  "cps:t": {
+    "prefix": "cps:t",
+    "body": [
+      "caption-side: top;"
+    ],
+    "description": "vim-snippets/css.snippets:382"
+  },
+  "cl": {
+    "prefix": "cl",
+    "body": [
+      "clear: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:384"
+  },
+  "cl:b": {
+    "prefix": "cl:b",
+    "body": [
+      "clear: both;"
+    ],
+    "description": "vim-snippets/css.snippets:386"
+  },
+  "cl:l": {
+    "prefix": "cl:l",
+    "body": [
+      "clear: left;"
+    ],
+    "description": "vim-snippets/css.snippets:388"
+  },
+  "cl:n": {
+    "prefix": "cl:n",
+    "body": [
+      "clear: none;"
+    ],
+    "description": "vim-snippets/css.snippets:390"
+  },
+  "cl:r": {
+    "prefix": "cl:r",
+    "body": [
+      "clear: right;"
+    ],
+    "description": "vim-snippets/css.snippets:392"
+  },
+  "cp": {
+    "prefix": "cp",
+    "body": [
+      "clip: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:394"
+  },
+  "cp:a": {
+    "prefix": "cp:a",
+    "body": [
+      "clip: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:396"
+  },
+  "cp:r": {
+    "prefix": "cp:r",
+    "body": [
+      "clip: rect(${1:0} ${2:0} ${3:0} ${4:0});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:398"
+  },
+  "c": {
+    "prefix": "c",
+    "body": [
+      "color: #${1:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:400"
+  },
+  "ct": {
+    "prefix": "ct",
+    "body": [
+      "content: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:402"
+  },
+  "ct:a": {
+    "prefix": "ct:a",
+    "body": [
+      "content: attr(${1});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:404"
+  },
+  "ct:cq": {
+    "prefix": "ct:cq",
+    "body": [
+      "content: close-quote;"
+    ],
+    "description": "vim-snippets/css.snippets:406"
+  },
+  "ct:c": {
+    "prefix": "ct:c",
+    "body": [
+      "content: counter(${1});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:408"
+  },
+  "ct:cs": {
+    "prefix": "ct:cs",
+    "body": [
+      "content: counters(${1});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:410"
+  },
+  "ct:ncq": {
+    "prefix": "ct:ncq",
+    "body": [
+      "content: no-close-quote;"
+    ],
+    "description": "vim-snippets/css.snippets:412"
+  },
+  "ct:noq": {
+    "prefix": "ct:noq",
+    "body": [
+      "content: no-open-quote;"
+    ],
+    "description": "vim-snippets/css.snippets:414"
+  },
+  "ct:n": {
+    "prefix": "ct:n",
+    "body": [
+      "content: normal;"
+    ],
+    "description": "vim-snippets/css.snippets:416"
+  },
+  "ct:oq": {
+    "prefix": "ct:oq",
+    "body": [
+      "content: open-quote;"
+    ],
+    "description": "vim-snippets/css.snippets:418"
+  },
+  "coi": {
+    "prefix": "coi",
+    "body": [
+      "counter-increment: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:420"
+  },
+  "cor": {
+    "prefix": "cor",
+    "body": [
+      "counter-reset: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:422"
+  },
+  "cur": {
+    "prefix": "cur",
+    "body": [
+      "cursor: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:424"
+  },
+  "cur:a": {
+    "prefix": "cur:a",
+    "body": [
+      "cursor: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:426"
+  },
+  "cur:c": {
+    "prefix": "cur:c",
+    "body": [
+      "cursor: crosshair;"
+    ],
+    "description": "vim-snippets/css.snippets:428"
+  },
+  "cur:d": {
+    "prefix": "cur:d",
+    "body": [
+      "cursor: default;"
+    ],
+    "description": "vim-snippets/css.snippets:430"
+  },
+  "cur:ha": {
+    "prefix": "cur:ha",
+    "body": [
+      "cursor: hand;"
+    ],
+    "description": "vim-snippets/css.snippets:432"
+  },
+  "cur:he": {
+    "prefix": "cur:he",
+    "body": [
+      "cursor: help;"
+    ],
+    "description": "vim-snippets/css.snippets:434"
+  },
+  "cur:m": {
+    "prefix": "cur:m",
+    "body": [
+      "cursor: move;"
+    ],
+    "description": "vim-snippets/css.snippets:436"
+  },
+  "cur:p": {
+    "prefix": "cur:p",
+    "body": [
+      "cursor: pointer;"
+    ],
+    "description": "vim-snippets/css.snippets:438"
+  },
+  "cur:t": {
+    "prefix": "cur:t",
+    "body": [
+      "cursor: text;"
+    ],
+    "description": "vim-snippets/css.snippets:440"
+  },
+  "d": {
+    "prefix": "d",
+    "body": [
+      "display: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:442"
+  },
+  "d:mib": {
+    "prefix": "d:mib",
+    "body": [
+      "display: -moz-inline-box;"
+    ],
+    "description": "vim-snippets/css.snippets:444"
+  },
+  "d:mis": {
+    "prefix": "d:mis",
+    "body": [
+      "display: -moz-inline-stack;"
+    ],
+    "description": "vim-snippets/css.snippets:446"
+  },
+  "d:b": {
+    "prefix": "d:b",
+    "body": [
+      "display: block;"
+    ],
+    "description": "vim-snippets/css.snippets:448"
+  },
+  "d:cp": {
+    "prefix": "d:cp",
+    "body": [
+      "display: compact;"
+    ],
+    "description": "vim-snippets/css.snippets:450"
+  },
+  "d:g": {
+    "prefix": "d:g",
+    "body": [
+      "display: grid;"
+    ],
+    "description": "vim-snippets/css.snippets:452"
+  },
+  "d:f": {
+    "prefix": "d:f",
+    "body": [
+      "display: flex;"
+    ],
+    "description": "vim-snippets/css.snippets:454"
+  },
+  "d:ib": {
+    "prefix": "d:ib",
+    "body": [
+      "display: inline-block;"
+    ],
+    "description": "vim-snippets/css.snippets:456"
+  },
+  "d:itb": {
+    "prefix": "d:itb",
+    "body": [
+      "display: inline-table;"
+    ],
+    "description": "vim-snippets/css.snippets:458"
+  },
+  "d:i": {
+    "prefix": "d:i",
+    "body": [
+      "display: inline;"
+    ],
+    "description": "vim-snippets/css.snippets:460"
+  },
+  "d:li": {
+    "prefix": "d:li",
+    "body": [
+      "display: list-item;"
+    ],
+    "description": "vim-snippets/css.snippets:462"
+  },
+  "d:n": {
+    "prefix": "d:n",
+    "body": [
+      "display: none;"
+    ],
+    "description": "vim-snippets/css.snippets:464"
+  },
+  "d:ri": {
+    "prefix": "d:ri",
+    "body": [
+      "display: run-in;"
+    ],
+    "description": "vim-snippets/css.snippets:466"
+  },
+  "d:tbcp": {
+    "prefix": "d:tbcp",
+    "body": [
+      "display: table-caption;"
+    ],
+    "description": "vim-snippets/css.snippets:468"
+  },
+  "d:tbc": {
+    "prefix": "d:tbc",
+    "body": [
+      "display: table-cell;"
+    ],
+    "description": "vim-snippets/css.snippets:470"
+  },
+  "d:tbclg": {
+    "prefix": "d:tbclg",
+    "body": [
+      "display: table-column-group;"
+    ],
+    "description": "vim-snippets/css.snippets:472"
+  },
+  "d:tbcl": {
+    "prefix": "d:tbcl",
+    "body": [
+      "display: table-column;"
+    ],
+    "description": "vim-snippets/css.snippets:474"
+  },
+  "d:tbfg": {
+    "prefix": "d:tbfg",
+    "body": [
+      "display: table-footer-group;"
+    ],
+    "description": "vim-snippets/css.snippets:476"
+  },
+  "d:tbhg": {
+    "prefix": "d:tbhg",
+    "body": [
+      "display: table-header-group;"
+    ],
+    "description": "vim-snippets/css.snippets:478"
+  },
+  "d:tbrg": {
+    "prefix": "d:tbrg",
+    "body": [
+      "display: table-row-group;"
+    ],
+    "description": "vim-snippets/css.snippets:480"
+  },
+  "d:tbr": {
+    "prefix": "d:tbr",
+    "body": [
+      "display: table-row;"
+    ],
+    "description": "vim-snippets/css.snippets:482"
+  },
+  "d:tb": {
+    "prefix": "d:tb",
+    "body": [
+      "display: table;"
+    ],
+    "description": "vim-snippets/css.snippets:484"
+  },
+  "ec": {
+    "prefix": "ec",
+    "body": [
+      "empty-cells: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:486"
+  },
+  "ec:h": {
+    "prefix": "ec:h",
+    "body": [
+      "empty-cells: hide;"
+    ],
+    "description": "vim-snippets/css.snippets:488"
+  },
+  "ec:s": {
+    "prefix": "ec:s",
+    "body": [
+      "empty-cells: show;"
+    ],
+    "description": "vim-snippets/css.snippets:490"
+  },
+  "exp": {
+    "prefix": "exp",
+    "body": [
+      "expression()"
+    ],
+    "description": "vim-snippets/css.snippets:492"
+  },
+  "fx": {
+    "prefix": "fx",
+    "body": [
+      "flex: ${1:0} ${2:1} ${0:auto};"
+    ],
+    "description": "vim-snippets/css.snippets:494"
+  },
+  "fxb": {
+    "prefix": "fxb",
+    "body": [
+      "flex-basis: ${0:auto};"
+    ],
+    "description": "vim-snippets/css.snippets:496"
+  },
+  "fxb:a": {
+    "prefix": "fxb:a",
+    "body": [
+      "flex-basis: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:498"
+  },
+  "fxd": {
+    "prefix": "fxd",
+    "body": [
+      "flex-direction: ${0:row};"
+    ],
+    "description": "vim-snippets/css.snippets:500"
+  },
+  "fxd:c": {
+    "prefix": "fxd:c",
+    "body": [
+      "flex-direction: column;"
+    ],
+    "description": "vim-snippets/css.snippets:502"
+  },
+  "fxd:cr": {
+    "prefix": "fxd:cr",
+    "body": [
+      "flex-direction: column-reverse;"
+    ],
+    "description": "vim-snippets/css.snippets:504"
+  },
+  "fxd:r": {
+    "prefix": "fxd:r",
+    "body": [
+      "flex-direction: row;"
+    ],
+    "description": "vim-snippets/css.snippets:506"
+  },
+  "fxd:rr": {
+    "prefix": "fxd:rr",
+    "body": [
+      "flex-direction: row-reverse;"
+    ],
+    "description": "vim-snippets/css.snippets:508"
+  },
+  "fxf": {
+    "prefix": "fxf",
+    "body": [
+      "flex-flow: ${1:row} ${0:nowrap};"
+    ],
+    "description": "vim-snippets/css.snippets:510"
+  },
+  "fxg": {
+    "prefix": "fxg",
+    "body": [
+      "flex-grow: ${0:0};"
+    ],
+    "description": "vim-snippets/css.snippets:512"
+  },
+  "fxs": {
+    "prefix": "fxs",
+    "body": [
+      "flex-shrink: ${0:1};"
+    ],
+    "description": "vim-snippets/css.snippets:514"
+  },
+  "fxw": {
+    "prefix": "fxw",
+    "body": [
+      "flex-wrap: ${0:nowrap};"
+    ],
+    "description": "vim-snippets/css.snippets:516"
+  },
+  "fxw:n": {
+    "prefix": "fxw:n",
+    "body": [
+      "flex-wrap: nowrap;"
+    ],
+    "description": "vim-snippets/css.snippets:518"
+  },
+  "fxw:w": {
+    "prefix": "fxw:w",
+    "body": [
+      "flex-wrap: wrap;"
+    ],
+    "description": "vim-snippets/css.snippets:520"
+  },
+  "fxw:wr": {
+    "prefix": "fxw:wr",
+    "body": [
+      "flex-wrap: wrap-reverse;"
+    ],
+    "description": "vim-snippets/css.snippets:522"
+  },
+  "fl": {
+    "prefix": "fl",
+    "body": [
+      "float: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:524"
+  },
+  "fl:l": {
+    "prefix": "fl:l",
+    "body": [
+      "float: left;"
+    ],
+    "description": "vim-snippets/css.snippets:526"
+  },
+  "fl:n": {
+    "prefix": "fl:n",
+    "body": [
+      "float: none;"
+    ],
+    "description": "vim-snippets/css.snippets:528"
+  },
+  "fl:r": {
+    "prefix": "fl:r",
+    "body": [
+      "float: right;"
+    ],
+    "description": "vim-snippets/css.snippets:530"
+  },
+  "f+": {
+    "prefix": "f+",
+    "body": [
+      "font: ${1:1em} ${2:Arial},${3:sans-serif};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:532"
+  },
+  "fef": {
+    "prefix": "fef",
+    "body": [
+      "font-effect: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:534"
+  },
+  "fef:eb": {
+    "prefix": "fef:eb",
+    "body": [
+      "font-effect: emboss;"
+    ],
+    "description": "vim-snippets/css.snippets:536"
+  },
+  "fef:eg": {
+    "prefix": "fef:eg",
+    "body": [
+      "font-effect: engrave;"
+    ],
+    "description": "vim-snippets/css.snippets:538"
+  },
+  "fef:n": {
+    "prefix": "fef:n",
+    "body": [
+      "font-effect: none;"
+    ],
+    "description": "vim-snippets/css.snippets:540"
+  },
+  "fef:o": {
+    "prefix": "fef:o",
+    "body": [
+      "font-effect: outline;"
+    ],
+    "description": "vim-snippets/css.snippets:542"
+  },
+  "femp": {
+    "prefix": "femp",
+    "body": [
+      "font-emphasize-position: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:544"
+  },
+  "femp:a": {
+    "prefix": "femp:a",
+    "body": [
+      "font-emphasize-position: after;"
+    ],
+    "description": "vim-snippets/css.snippets:546"
+  },
+  "femp:b": {
+    "prefix": "femp:b",
+    "body": [
+      "font-emphasize-position: before;"
+    ],
+    "description": "vim-snippets/css.snippets:548"
+  },
+  "fems": {
+    "prefix": "fems",
+    "body": [
+      "font-emphasize-style: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:550"
+  },
+  "fems:ac": {
+    "prefix": "fems:ac",
+    "body": [
+      "font-emphasize-style: accent;"
+    ],
+    "description": "vim-snippets/css.snippets:552"
+  },
+  "fems:c": {
+    "prefix": "fems:c",
+    "body": [
+      "font-emphasize-style: circle;"
+    ],
+    "description": "vim-snippets/css.snippets:554"
+  },
+  "fems:ds": {
+    "prefix": "fems:ds",
+    "body": [
+      "font-emphasize-style: disc;"
+    ],
+    "description": "vim-snippets/css.snippets:556"
+  },
+  "fems:dt": {
+    "prefix": "fems:dt",
+    "body": [
+      "font-emphasize-style: dot;"
+    ],
+    "description": "vim-snippets/css.snippets:558"
+  },
+  "fems:n": {
+    "prefix": "fems:n",
+    "body": [
+      "font-emphasize-style: none;"
+    ],
+    "description": "vim-snippets/css.snippets:560"
+  },
+  "fem": {
+    "prefix": "fem",
+    "body": [
+      "font-emphasize: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:562"
+  },
+  "ff": {
+    "prefix": "ff",
+    "body": [
+      "font-family: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:564"
+  },
+  "ff:c": {
+    "prefix": "ff:c",
+    "body": [
+      "font-family: ${0:'Monotype Corsiva','Comic Sans MS'},cursive;"
+    ],
+    "description": "vim-snippets/css.snippets:566"
+  },
+  "ff:f": {
+    "prefix": "ff:f",
+    "body": [
+      "font-family: ${0:Capitals,Impact},fantasy;"
+    ],
+    "description": "vim-snippets/css.snippets:568"
+  },
+  "ff:m": {
+    "prefix": "ff:m",
+    "body": [
+      "font-family: ${0:Monaco,'Courier New'},monospace;"
+    ],
+    "description": "vim-snippets/css.snippets:570"
+  },
+  "ff:ss": {
+    "prefix": "ff:ss",
+    "body": [
+      "font-family: ${0:Helvetica,Arial},sans-serif;"
+    ],
+    "description": "vim-snippets/css.snippets:572"
+  },
+  "ff:s": {
+    "prefix": "ff:s",
+    "body": [
+      "font-family: ${0:Georgia,'Times New Roman'},serif;"
+    ],
+    "description": "vim-snippets/css.snippets:574"
+  },
+  "fza": {
+    "prefix": "fza",
+    "body": [
+      "font-size-adjust: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:576"
+  },
+  "fza:n": {
+    "prefix": "fza:n",
+    "body": [
+      "font-size-adjust: none;"
+    ],
+    "description": "vim-snippets/css.snippets:578"
+  },
+  "fz": {
+    "prefix": "fz",
+    "body": [
+      "font-size: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:580"
+  },
+  "fsm": {
+    "prefix": "fsm",
+    "body": [
+      "font-smooth: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:582"
+  },
+  "fsm:aw": {
+    "prefix": "fsm:aw",
+    "body": [
+      "font-smooth: always;"
+    ],
+    "description": "vim-snippets/css.snippets:584"
+  },
+  "fsm:a": {
+    "prefix": "fsm:a",
+    "body": [
+      "font-smooth: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:586"
+  },
+  "fsm:n": {
+    "prefix": "fsm:n",
+    "body": [
+      "font-smooth: never;"
+    ],
+    "description": "vim-snippets/css.snippets:588"
+  },
+  "fst": {
+    "prefix": "fst",
+    "body": [
+      "font-stretch: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:590"
+  },
+  "fst:c": {
+    "prefix": "fst:c",
+    "body": [
+      "font-stretch: condensed;"
+    ],
+    "description": "vim-snippets/css.snippets:592"
+  },
+  "fst:e": {
+    "prefix": "fst:e",
+    "body": [
+      "font-stretch: expanded;"
+    ],
+    "description": "vim-snippets/css.snippets:594"
+  },
+  "fst:ec": {
+    "prefix": "fst:ec",
+    "body": [
+      "font-stretch: extra-condensed;"
+    ],
+    "description": "vim-snippets/css.snippets:596"
+  },
+  "fst:ee": {
+    "prefix": "fst:ee",
+    "body": [
+      "font-stretch: extra-expanded;"
+    ],
+    "description": "vim-snippets/css.snippets:598"
+  },
+  "fst:n": {
+    "prefix": "fst:n",
+    "body": [
+      "font-stretch: normal;"
+    ],
+    "description": "vim-snippets/css.snippets:600"
+  },
+  "fst:sc": {
+    "prefix": "fst:sc",
+    "body": [
+      "font-stretch: semi-condensed;"
+    ],
+    "description": "vim-snippets/css.snippets:602"
+  },
+  "fst:se": {
+    "prefix": "fst:se",
+    "body": [
+      "font-stretch: semi-expanded;"
+    ],
+    "description": "vim-snippets/css.snippets:604"
+  },
+  "fst:uc": {
+    "prefix": "fst:uc",
+    "body": [
+      "font-stretch: ultra-condensed;"
+    ],
+    "description": "vim-snippets/css.snippets:606"
+  },
+  "fst:ue": {
+    "prefix": "fst:ue",
+    "body": [
+      "font-stretch: ultra-expanded;"
+    ],
+    "description": "vim-snippets/css.snippets:608"
+  },
+  "fs": {
+    "prefix": "fs",
+    "body": [
+      "font-style: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:610"
+  },
+  "fs:i": {
+    "prefix": "fs:i",
+    "body": [
+      "font-style: italic;"
+    ],
+    "description": "vim-snippets/css.snippets:612"
+  },
+  "fs:n": {
+    "prefix": "fs:n",
+    "body": [
+      "font-style: normal;"
+    ],
+    "description": "vim-snippets/css.snippets:614"
+  },
+  "fs:o": {
+    "prefix": "fs:o",
+    "body": [
+      "font-style: oblique;"
+    ],
+    "description": "vim-snippets/css.snippets:616"
+  },
+  "fv": {
+    "prefix": "fv",
+    "body": [
+      "font-variant: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:618"
+  },
+  "fv:n": {
+    "prefix": "fv:n",
+    "body": [
+      "font-variant: normal;"
+    ],
+    "description": "vim-snippets/css.snippets:620"
+  },
+  "fv:sc": {
+    "prefix": "fv:sc",
+    "body": [
+      "font-variant: small-caps;"
+    ],
+    "description": "vim-snippets/css.snippets:622"
+  },
+  "fw": {
+    "prefix": "fw",
+    "body": [
+      "font-weight: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:624"
+  },
+  "fw:b": {
+    "prefix": "fw:b",
+    "body": [
+      "font-weight: bold;"
+    ],
+    "description": "vim-snippets/css.snippets:626"
+  },
+  "fw:br": {
+    "prefix": "fw:br",
+    "body": [
+      "font-weight: bolder;"
+    ],
+    "description": "vim-snippets/css.snippets:628"
+  },
+  "fw:lr": {
+    "prefix": "fw:lr",
+    "body": [
+      "font-weight: lighter;"
+    ],
+    "description": "vim-snippets/css.snippets:630"
+  },
+  "fw:n": {
+    "prefix": "fw:n",
+    "body": [
+      "font-weight: normal;"
+    ],
+    "description": "vim-snippets/css.snippets:632"
+  },
+  "f": {
+    "prefix": "f",
+    "body": [
+      "font: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:634"
+  },
+  "g": {
+    "prefix": "g",
+    "body": [
+      "grid: ${1};"
+    ],
+    "description": "vim-snippets/css.snippets:636"
+  },
+  "gaf": {
+    "prefix": "gaf",
+    "body": [
+      "grid-auto-flow: ${1:row};"
+    ],
+    "description": "vim-snippets/css.snippets:638"
+  },
+  "gaf+": {
+    "prefix": "gaf+",
+    "body": [
+      "grid-auto-flow: ${1:row} ${2:dense};"
+    ],
+    "description": "vim-snippets/css.snippets:640"
+  },
+  "gaf:r": {
+    "prefix": "gaf:r",
+    "body": [
+      "grid-auto-flow: row;"
+    ],
+    "description": "vim-snippets/css.snippets:642"
+  },
+  "gaf:c": {
+    "prefix": "gaf:c",
+    "body": [
+      "grid-auto-flow: column;"
+    ],
+    "description": "vim-snippets/css.snippets:644"
+  },
+  "gaf:d": {
+    "prefix": "gaf:d",
+    "body": [
+      "grid-auto-flow: dense;"
+    ],
+    "description": "vim-snippets/css.snippets:646"
+  },
+  "gaf:rd": {
+    "prefix": "gaf:rd",
+    "body": [
+      "grid-auto-flow: row dense;"
+    ],
+    "description": "vim-snippets/css.snippets:648"
+  },
+  "gaf:cd": {
+    "prefix": "gaf:cd",
+    "body": [
+      "grid-auto-flow: column dense;"
+    ],
+    "description": "vim-snippets/css.snippets:650"
+  },
+  "gar": {
+    "prefix": "gar",
+    "body": [
+      "grid-auto-rows: ${1};"
+    ],
+    "description": "vim-snippets/css.snippets:652"
+  },
+  "gar:a": {
+    "prefix": "gar:a",
+    "body": [
+      "grid-auto-rows: auto"
+    ],
+    "description": "vim-snippets/css.snippets:654"
+  },
+  "gar:mac": {
+    "prefix": "gar:mac",
+    "body": [
+      "grid-auto-rows: max-content;"
+    ],
+    "description": "vim-snippets/css.snippets:656"
+  },
+  "gar:mic": {
+    "prefix": "gar:mic",
+    "body": [
+      "grid-auto-rows: min-content;"
+    ],
+    "description": "vim-snippets/css.snippets:658"
+  },
+  "gac": {
+    "prefix": "gac",
+    "body": [
+      "grid-auto-columns: ${1};"
+    ],
+    "description": "vim-snippets/css.snippets:660"
+  },
+  "gac:a": {
+    "prefix": "gac:a",
+    "body": [
+      "grid-auto-columns: auto"
+    ],
+    "description": "vim-snippets/css.snippets:662"
+  },
+  "gac:mac": {
+    "prefix": "gac:mac",
+    "body": [
+      "grid-auto-columns: max-content;"
+    ],
+    "description": "vim-snippets/css.snippets:664"
+  },
+  "gac:mic": {
+    "prefix": "gac:mic",
+    "body": [
+      "grid-auto-columns: min-content;"
+    ],
+    "description": "vim-snippets/css.snippets:666"
+  },
+  "gt": {
+    "prefix": "gt",
+    "body": [
+      "grid-template: ${1};"
+    ],
+    "description": "vim-snippets/css.snippets:668"
+  },
+  "gt+": {
+    "prefix": "gt+",
+    "body": [
+      "grid-template: ${1} / ${2};"
+    ],
+    "description": "vim-snippets/css.snippets:670"
+  },
+  "gtr": {
+    "prefix": "gtr",
+    "body": [
+      "grid-template-rows: ${1};"
+    ],
+    "description": "vim-snippets/css.snippets:672"
+  },
+  "gtc": {
+    "prefix": "gtc",
+    "body": [
+      "grid-template-columns: ${1};"
+    ],
+    "description": "vim-snippets/css.snippets:674"
+  },
+  "gta": {
+    "prefix": "gta",
+    "body": [
+      "grid-template-areas: ${1};"
+    ],
+    "description": "vim-snippets/css.snippets:676"
+  },
+  "gg": {
+    "prefix": "gg",
+    "body": [
+      "grid-gap: ${1};"
+    ],
+    "description": "vim-snippets/css.snippets:678"
+  },
+  "gg+": {
+    "prefix": "gg+",
+    "body": [
+      "grid-gap: ${1} ${2};"
+    ],
+    "description": "vim-snippets/css.snippets:680"
+  },
+  "gg:0": {
+    "prefix": "gg:0",
+    "body": [
+      "grid-gap: 0;"
+    ],
+    "description": "vim-snippets/css.snippets:682"
+  },
+  "grg": {
+    "prefix": "grg",
+    "body": [
+      "grid-row-gap: ${1};"
+    ],
+    "description": "vim-snippets/css.snippets:684"
+  },
+  "grg:0": {
+    "prefix": "grg:0",
+    "body": [
+      "grid-row-gap: 0;"
+    ],
+    "description": "vim-snippets/css.snippets:686"
+  },
+  "gcg": {
+    "prefix": "gcg",
+    "body": [
+      "grid-column-gap: ${1};"
+    ],
+    "description": "vim-snippets/css.snippets:688"
+  },
+  "gcg:0": {
+    "prefix": "gcg:0",
+    "body": [
+      "grid-column-gap: 0;"
+    ],
+    "description": "vim-snippets/css.snippets:690"
+  },
+  "gr": {
+    "prefix": "gr",
+    "body": [
+      "grid-row: ${1} / ${2};"
+    ],
+    "description": "vim-snippets/css.snippets:692"
+  },
+  "grs": {
+    "prefix": "grs",
+    "body": [
+      "grid-row-start: ${1};"
+    ],
+    "description": "vim-snippets/css.snippets:694"
+  },
+  "gre": {
+    "prefix": "gre",
+    "body": [
+      "grid-row-end: ${1};"
+    ],
+    "description": "vim-snippets/css.snippets:696"
+  },
+  "gc": {
+    "prefix": "gc",
+    "body": [
+      "grid-column: ${1} / ${2};"
+    ],
+    "description": "vim-snippets/css.snippets:698"
+  },
+  "gcs": {
+    "prefix": "gcs",
+    "body": [
+      "grid-column-start: ${1};"
+    ],
+    "description": "vim-snippets/css.snippets:700"
+  },
+  "gce": {
+    "prefix": "gce",
+    "body": [
+      "grid-column-end: ${1};"
+    ],
+    "description": "vim-snippets/css.snippets:702"
+  },
+  "h": {
+    "prefix": "h",
+    "body": [
+      "height: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:704"
+  },
+  "h:a": {
+    "prefix": "h:a",
+    "body": [
+      "height: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:706"
+  },
+  "jc": {
+    "prefix": "jc",
+    "body": [
+      "justify-content: ${1};"
+    ],
+    "description": "vim-snippets/css.snippets:708"
+  },
+  "jc:s": {
+    "prefix": "jc:s",
+    "body": [
+      "justify-content: start;"
+    ],
+    "description": "vim-snippets/css.snippets:710"
+  },
+  "jc:e": {
+    "prefix": "jc:e",
+    "body": [
+      "justify-content: end;"
+    ],
+    "description": "vim-snippets/css.snippets:712"
+  },
+  "jc:c": {
+    "prefix": "jc:c",
+    "body": [
+      "justify-content: center;"
+    ],
+    "description": "vim-snippets/css.snippets:714"
+  },
+  "jc:fs": {
+    "prefix": "jc:fs",
+    "body": [
+      "justify-content: flex-start;"
+    ],
+    "description": "vim-snippets/css.snippets:716"
+  },
+  "jc:fe": {
+    "prefix": "jc:fe",
+    "body": [
+      "justify-content: flex-end;"
+    ],
+    "description": "vim-snippets/css.snippets:718"
+  },
+  "jc:sb": {
+    "prefix": "jc:sb",
+    "body": [
+      "justify-content: space-between;"
+    ],
+    "description": "vim-snippets/css.snippets:720"
+  },
+  "jc:sa": {
+    "prefix": "jc:sa",
+    "body": [
+      "justify-content: space-around;"
+    ],
+    "description": "vim-snippets/css.snippets:722"
+  },
+  "jc:se": {
+    "prefix": "jc:se",
+    "body": [
+      "justify-content: space-evenly;"
+    ],
+    "description": "vim-snippets/css.snippets:724"
+  },
+  "jc:st": {
+    "prefix": "jc:st",
+    "body": [
+      "justify-content: stretch;"
+    ],
+    "description": "vim-snippets/css.snippets:726"
+  },
+  "jc:l": {
+    "prefix": "jc:l",
+    "body": [
+      "justify-content: left;"
+    ],
+    "description": "vim-snippets/css.snippets:728"
+  },
+  "jc:r": {
+    "prefix": "jc:r",
+    "body": [
+      "justify-content: right;"
+    ],
+    "description": "vim-snippets/css.snippets:730"
+  },
+  "ji": {
+    "prefix": "ji",
+    "body": [
+      "justify-items: ${1:stretch};"
+    ],
+    "description": "vim-snippets/css.snippets:732"
+  },
+  "ji:s": {
+    "prefix": "ji:s",
+    "body": [
+      "justify-items: start;"
+    ],
+    "description": "vim-snippets/css.snippets:734"
+  },
+  "ji:e": {
+    "prefix": "ji:e",
+    "body": [
+      "justify-items: end;"
+    ],
+    "description": "vim-snippets/css.snippets:736"
+  },
+  "ji:c": {
+    "prefix": "ji:c",
+    "body": [
+      "justify-items: center;"
+    ],
+    "description": "vim-snippets/css.snippets:738"
+  },
+  "ji:st": {
+    "prefix": "ji:st",
+    "body": [
+      "justify-items: stretch;"
+    ],
+    "description": "vim-snippets/css.snippets:740"
+  },
+  "js": {
+    "prefix": "js",
+    "body": [
+      "justify-self: ${1:stretch};"
+    ],
+    "description": "vim-snippets/css.snippets:742"
+  },
+  "js:s": {
+    "prefix": "js:s",
+    "body": [
+      "justify-self: start;"
+    ],
+    "description": "vim-snippets/css.snippets:744"
+  },
+  "js:e": {
+    "prefix": "js:e",
+    "body": [
+      "justify-self: end;"
+    ],
+    "description": "vim-snippets/css.snippets:746"
+  },
+  "js:c": {
+    "prefix": "js:c",
+    "body": [
+      "justify-self: center;"
+    ],
+    "description": "vim-snippets/css.snippets:748"
+  },
+  "js:st": {
+    "prefix": "js:st",
+    "body": [
+      "justify-self: stretch;"
+    ],
+    "description": "vim-snippets/css.snippets:750"
+  },
+  "l": {
+    "prefix": "l",
+    "body": [
+      "left: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:752"
+  },
+  "l:a": {
+    "prefix": "l:a",
+    "body": [
+      "left: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:754"
+  },
+  "lts": {
+    "prefix": "lts",
+    "body": [
+      "letter-spacing: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:756"
+  },
+  "lh": {
+    "prefix": "lh",
+    "body": [
+      "line-height: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:758"
+  },
+  "lisi": {
+    "prefix": "lisi",
+    "body": [
+      "list-style-image: url(${1});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:760"
+  },
+  "lisi:n": {
+    "prefix": "lisi:n",
+    "body": [
+      "list-style-image: none;"
+    ],
+    "description": "vim-snippets/css.snippets:762"
+  },
+  "lisp": {
+    "prefix": "lisp",
+    "body": [
+      "list-style-position: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:764"
+  },
+  "lisp:i": {
+    "prefix": "lisp:i",
+    "body": [
+      "list-style-position: inside;"
+    ],
+    "description": "vim-snippets/css.snippets:766"
+  },
+  "lisp:o": {
+    "prefix": "lisp:o",
+    "body": [
+      "list-style-position: outside;"
+    ],
+    "description": "vim-snippets/css.snippets:768"
+  },
+  "list": {
+    "prefix": "list",
+    "body": [
+      "list-style-type: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:770"
+  },
+  "list:c": {
+    "prefix": "list:c",
+    "body": [
+      "list-style-type: circle;"
+    ],
+    "description": "vim-snippets/css.snippets:772"
+  },
+  "list:dclz": {
+    "prefix": "list:dclz",
+    "body": [
+      "list-style-type: decimal-leading-zero;"
+    ],
+    "description": "vim-snippets/css.snippets:774"
+  },
+  "list:dc": {
+    "prefix": "list:dc",
+    "body": [
+      "list-style-type: decimal;"
+    ],
+    "description": "vim-snippets/css.snippets:776"
+  },
+  "list:d": {
+    "prefix": "list:d",
+    "body": [
+      "list-style-type: disc;"
+    ],
+    "description": "vim-snippets/css.snippets:778"
+  },
+  "list:lr": {
+    "prefix": "list:lr",
+    "body": [
+      "list-style-type: lower-roman;"
+    ],
+    "description": "vim-snippets/css.snippets:780"
+  },
+  "list:n": {
+    "prefix": "list:n",
+    "body": [
+      "list-style-type: none;"
+    ],
+    "description": "vim-snippets/css.snippets:782"
+  },
+  "list:s": {
+    "prefix": "list:s",
+    "body": [
+      "list-style-type: square;"
+    ],
+    "description": "vim-snippets/css.snippets:784"
+  },
+  "list:ur": {
+    "prefix": "list:ur",
+    "body": [
+      "list-style-type: upper-roman;"
+    ],
+    "description": "vim-snippets/css.snippets:786"
+  },
+  "lis": {
+    "prefix": "lis",
+    "body": [
+      "list-style: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:788"
+  },
+  "lis:n": {
+    "prefix": "lis:n",
+    "body": [
+      "list-style: none;"
+    ],
+    "description": "vim-snippets/css.snippets:790"
+  },
+  "mb": {
+    "prefix": "mb",
+    "body": [
+      "margin-bottom: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:792"
+  },
+  "mb:a": {
+    "prefix": "mb:a",
+    "body": [
+      "margin-bottom: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:794"
+  },
+  "ml": {
+    "prefix": "ml",
+    "body": [
+      "margin-left: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:796"
+  },
+  "ml:a": {
+    "prefix": "ml:a",
+    "body": [
+      "margin-left: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:798"
+  },
+  "mr": {
+    "prefix": "mr",
+    "body": [
+      "margin-right: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:800"
+  },
+  "mr:a": {
+    "prefix": "mr:a",
+    "body": [
+      "margin-right: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:802"
+  },
+  "mt": {
+    "prefix": "mt",
+    "body": [
+      "margin-top: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:804"
+  },
+  "mt:a": {
+    "prefix": "mt:a",
+    "body": [
+      "margin-top: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:806"
+  },
+  "m": {
+    "prefix": "m",
+    "body": [
+      "margin: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:808"
+  },
+  "m:4": {
+    "prefix": "m:4",
+    "body": [
+      "margin: ${1:0} ${2:0} ${3:0} ${4:0};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:810"
+  },
+  "m:3": {
+    "prefix": "m:3",
+    "body": [
+      "margin: ${1:0} ${2:0} ${3:0};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:812"
+  },
+  "m:2": {
+    "prefix": "m:2",
+    "body": [
+      "margin: ${1:0} ${2:0};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:814"
+  },
+  "m:0": {
+    "prefix": "m:0",
+    "body": [
+      "margin: 0;"
+    ],
+    "description": "vim-snippets/css.snippets:816"
+  },
+  "m:a": {
+    "prefix": "m:a",
+    "body": [
+      "margin: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:818"
+  },
+  "mah": {
+    "prefix": "mah",
+    "body": [
+      "max-height: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:820"
+  },
+  "mah:n": {
+    "prefix": "mah:n",
+    "body": [
+      "max-height: none;"
+    ],
+    "description": "vim-snippets/css.snippets:822"
+  },
+  "maw": {
+    "prefix": "maw",
+    "body": [
+      "max-width: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:824"
+  },
+  "maw:n": {
+    "prefix": "maw:n",
+    "body": [
+      "max-width: none;"
+    ],
+    "description": "vim-snippets/css.snippets:826"
+  },
+  "mih": {
+    "prefix": "mih",
+    "body": [
+      "min-height: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:828"
+  },
+  "miw": {
+    "prefix": "miw",
+    "body": [
+      "min-width: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:830"
+  },
+  "op": {
+    "prefix": "op",
+    "body": [
+      "opacity: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:832"
+  },
+  "op:ie": {
+    "prefix": "op:ie",
+    "body": [
+      "filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=${1:100});${0}"
+    ],
+    "description": "vim-snippets/css.snippets:834"
+  },
+  "op:ms": {
+    "prefix": "op:ms",
+    "body": [
+      "-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=${0:100})';"
+    ],
+    "description": "vim-snippets/css.snippets:836"
+  },
+  "orp": {
+    "prefix": "orp",
+    "body": [
+      "orphans: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:838"
+  },
+  "or": {
+    "prefix": "or",
+    "body": [
+      "order: ${0:0};"
+    ],
+    "description": "vim-snippets/css.snippets:840"
+  },
+  "o+": {
+    "prefix": "o+",
+    "body": [
+      "outline: ${1:1px} ${2:solid} #${3:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:842"
+  },
+  "oc": {
+    "prefix": "oc",
+    "body": [
+      "outline-color: ${1:#000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:844"
+  },
+  "oc:i": {
+    "prefix": "oc:i",
+    "body": [
+      "outline-color: invert;"
+    ],
+    "description": "vim-snippets/css.snippets:846"
+  },
+  "oo": {
+    "prefix": "oo",
+    "body": [
+      "outline-offset: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:848"
+  },
+  "os": {
+    "prefix": "os",
+    "body": [
+      "outline-style: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:850"
+  },
+  "ow": {
+    "prefix": "ow",
+    "body": [
+      "outline-width: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:852"
+  },
+  "o": {
+    "prefix": "o",
+    "body": [
+      "outline: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:854"
+  },
+  "o:n": {
+    "prefix": "o:n",
+    "body": [
+      "outline: none;"
+    ],
+    "description": "vim-snippets/css.snippets:856"
+  },
+  "ovs": {
+    "prefix": "ovs",
+    "body": [
+      "overflow-style: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:858"
+  },
+  "ovs:a": {
+    "prefix": "ovs:a",
+    "body": [
+      "overflow-style: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:860"
+  },
+  "ovs:mq": {
+    "prefix": "ovs:mq",
+    "body": [
+      "overflow-style: marquee;"
+    ],
+    "description": "vim-snippets/css.snippets:862"
+  },
+  "ovs:mv": {
+    "prefix": "ovs:mv",
+    "body": [
+      "overflow-style: move;"
+    ],
+    "description": "vim-snippets/css.snippets:864"
+  },
+  "ovs:p": {
+    "prefix": "ovs:p",
+    "body": [
+      "overflow-style: panner;"
+    ],
+    "description": "vim-snippets/css.snippets:866"
+  },
+  "ovs:s": {
+    "prefix": "ovs:s",
+    "body": [
+      "overflow-style: scrollbar;"
+    ],
+    "description": "vim-snippets/css.snippets:868"
+  },
+  "ovx": {
+    "prefix": "ovx",
+    "body": [
+      "overflow-x: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:870"
+  },
+  "ovx:a": {
+    "prefix": "ovx:a",
+    "body": [
+      "overflow-x: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:872"
+  },
+  "ovx:h": {
+    "prefix": "ovx:h",
+    "body": [
+      "overflow-x: hidden;"
+    ],
+    "description": "vim-snippets/css.snippets:874"
+  },
+  "ovx:s": {
+    "prefix": "ovx:s",
+    "body": [
+      "overflow-x: scroll;"
+    ],
+    "description": "vim-snippets/css.snippets:876"
+  },
+  "ovx:v": {
+    "prefix": "ovx:v",
+    "body": [
+      "overflow-x: visible;"
+    ],
+    "description": "vim-snippets/css.snippets:878"
+  },
+  "ovy": {
+    "prefix": "ovy",
+    "body": [
+      "overflow-y: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:880"
+  },
+  "ovy:a": {
+    "prefix": "ovy:a",
+    "body": [
+      "overflow-y: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:882"
+  },
+  "ovy:h": {
+    "prefix": "ovy:h",
+    "body": [
+      "overflow-y: hidden;"
+    ],
+    "description": "vim-snippets/css.snippets:884"
+  },
+  "ovy:s": {
+    "prefix": "ovy:s",
+    "body": [
+      "overflow-y: scroll;"
+    ],
+    "description": "vim-snippets/css.snippets:886"
+  },
+  "ovy:v": {
+    "prefix": "ovy:v",
+    "body": [
+      "overflow-y: visible;"
+    ],
+    "description": "vim-snippets/css.snippets:888"
+  },
+  "ov": {
+    "prefix": "ov",
+    "body": [
+      "overflow: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:890"
+  },
+  "ov:a": {
+    "prefix": "ov:a",
+    "body": [
+      "overflow: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:892"
+  },
+  "ov:h": {
+    "prefix": "ov:h",
+    "body": [
+      "overflow: hidden;"
+    ],
+    "description": "vim-snippets/css.snippets:894"
+  },
+  "ov:s": {
+    "prefix": "ov:s",
+    "body": [
+      "overflow: scroll;"
+    ],
+    "description": "vim-snippets/css.snippets:896"
+  },
+  "ov:v": {
+    "prefix": "ov:v",
+    "body": [
+      "overflow: visible;"
+    ],
+    "description": "vim-snippets/css.snippets:898"
+  },
+  "pb": {
+    "prefix": "pb",
+    "body": [
+      "padding-bottom: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:900"
+  },
+  "pl": {
+    "prefix": "pl",
+    "body": [
+      "padding-left: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:902"
+  },
+  "pr": {
+    "prefix": "pr",
+    "body": [
+      "padding-right: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:904"
+  },
+  "pt": {
+    "prefix": "pt",
+    "body": [
+      "padding-top: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:906"
+  },
+  "p": {
+    "prefix": "p",
+    "body": [
+      "padding: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:908"
+  },
+  "p:4": {
+    "prefix": "p:4",
+    "body": [
+      "padding: ${1:0} ${2:0} ${3:0} ${4:0};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:910"
+  },
+  "p:3": {
+    "prefix": "p:3",
+    "body": [
+      "padding: ${1:0} ${2:0} ${3:0};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:912"
+  },
+  "p:2": {
+    "prefix": "p:2",
+    "body": [
+      "padding: ${1:0} ${2:0};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:914"
+  },
+  "p:0": {
+    "prefix": "p:0",
+    "body": [
+      "padding: 0;"
+    ],
+    "description": "vim-snippets/css.snippets:916"
+  },
+  "pc": {
+    "prefix": "pc",
+    "body": [
+      "place-content: ${1};"
+    ],
+    "description": "vim-snippets/css.snippets:918"
+  },
+  "pc+": {
+    "prefix": "pc+",
+    "body": [
+      "place-content: ${1} ${2};"
+    ],
+    "description": "vim-snippets/css.snippets:920"
+  },
+  "pc:s": {
+    "prefix": "pc:s",
+    "body": [
+      "place-content: start;"
+    ],
+    "description": "vim-snippets/css.snippets:922"
+  },
+  "pc:e": {
+    "prefix": "pc:e",
+    "body": [
+      "place-content: end;"
+    ],
+    "description": "vim-snippets/css.snippets:924"
+  },
+  "pc:c": {
+    "prefix": "pc:c",
+    "body": [
+      "place-content: center;"
+    ],
+    "description": "vim-snippets/css.snippets:926"
+  },
+  "pc:fs": {
+    "prefix": "pc:fs",
+    "body": [
+      "place-content: flex-start;"
+    ],
+    "description": "vim-snippets/css.snippets:928"
+  },
+  "pc:fe": {
+    "prefix": "pc:fe",
+    "body": [
+      "place-content: flex-end;"
+    ],
+    "description": "vim-snippets/css.snippets:930"
+  },
+  "pc:sb": {
+    "prefix": "pc:sb",
+    "body": [
+      "place-content: space-between;"
+    ],
+    "description": "vim-snippets/css.snippets:932"
+  },
+  "pc:sa": {
+    "prefix": "pc:sa",
+    "body": [
+      "place-content: space-around;"
+    ],
+    "description": "vim-snippets/css.snippets:934"
+  },
+  "pc:se": {
+    "prefix": "pc:se",
+    "body": [
+      "place-content: space-evenly;"
+    ],
+    "description": "vim-snippets/css.snippets:936"
+  },
+  "pc:st": {
+    "prefix": "pc:st",
+    "body": [
+      "place-content: stretch;"
+    ],
+    "description": "vim-snippets/css.snippets:938"
+  },
+  "pgba": {
+    "prefix": "pgba",
+    "body": [
+      "page-break-after: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:940"
+  },
+  "pgba:aw": {
+    "prefix": "pgba:aw",
+    "body": [
+      "page-break-after: always;"
+    ],
+    "description": "vim-snippets/css.snippets:942"
+  },
+  "pgba:a": {
+    "prefix": "pgba:a",
+    "body": [
+      "page-break-after: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:944"
+  },
+  "pgba:l": {
+    "prefix": "pgba:l",
+    "body": [
+      "page-break-after: left;"
+    ],
+    "description": "vim-snippets/css.snippets:946"
+  },
+  "pgba:r": {
+    "prefix": "pgba:r",
+    "body": [
+      "page-break-after: right;"
+    ],
+    "description": "vim-snippets/css.snippets:948"
+  },
+  "pgbb": {
+    "prefix": "pgbb",
+    "body": [
+      "page-break-before: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:950"
+  },
+  "pgbb:aw": {
+    "prefix": "pgbb:aw",
+    "body": [
+      "page-break-before: always;"
+    ],
+    "description": "vim-snippets/css.snippets:952"
+  },
+  "pgbb:a": {
+    "prefix": "pgbb:a",
+    "body": [
+      "page-break-before: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:954"
+  },
+  "pgbb:l": {
+    "prefix": "pgbb:l",
+    "body": [
+      "page-break-before: left;"
+    ],
+    "description": "vim-snippets/css.snippets:956"
+  },
+  "pgbb:r": {
+    "prefix": "pgbb:r",
+    "body": [
+      "page-break-before: right;"
+    ],
+    "description": "vim-snippets/css.snippets:958"
+  },
+  "pgbi": {
+    "prefix": "pgbi",
+    "body": [
+      "page-break-inside: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:960"
+  },
+  "pgbi:a": {
+    "prefix": "pgbi:a",
+    "body": [
+      "page-break-inside: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:962"
+  },
+  "pgbi:av": {
+    "prefix": "pgbi:av",
+    "body": [
+      "page-break-inside: avoid;"
+    ],
+    "description": "vim-snippets/css.snippets:964"
+  },
+  "pi": {
+    "prefix": "pi",
+    "body": [
+      "place-items: ${1:stretch};"
+    ],
+    "description": "vim-snippets/css.snippets:966"
+  },
+  "pi+": {
+    "prefix": "pi+",
+    "body": [
+      "place-items: ${1:stretch} ${2:stretch};"
+    ],
+    "description": "vim-snippets/css.snippets:968"
+  },
+  "pi:s": {
+    "prefix": "pi:s",
+    "body": [
+      "place-items: start;"
+    ],
+    "description": "vim-snippets/css.snippets:970"
+  },
+  "pi:e": {
+    "prefix": "pi:e",
+    "body": [
+      "place-items: end;"
+    ],
+    "description": "vim-snippets/css.snippets:972"
+  },
+  "pi:c": {
+    "prefix": "pi:c",
+    "body": [
+      "place-items: center;"
+    ],
+    "description": "vim-snippets/css.snippets:974"
+  },
+  "pi:st": {
+    "prefix": "pi:st",
+    "body": [
+      "place-items: stretch;"
+    ],
+    "description": "vim-snippets/css.snippets:976"
+  },
+  "pos": {
+    "prefix": "pos",
+    "body": [
+      "position: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:978"
+  },
+  "pos:a": {
+    "prefix": "pos:a",
+    "body": [
+      "position: absolute;"
+    ],
+    "description": "vim-snippets/css.snippets:980"
+  },
+  "pos:f": {
+    "prefix": "pos:f",
+    "body": [
+      "position: fixed;"
+    ],
+    "description": "vim-snippets/css.snippets:982"
+  },
+  "pos:r": {
+    "prefix": "pos:r",
+    "body": [
+      "position: relative;"
+    ],
+    "description": "vim-snippets/css.snippets:984"
+  },
+  "pos:s": {
+    "prefix": "pos:s",
+    "body": [
+      "position: static;"
+    ],
+    "description": "vim-snippets/css.snippets:986"
+  },
+  "ps": {
+    "prefix": "ps",
+    "body": [
+      "place-self: ${1:stretch};"
+    ],
+    "description": "vim-snippets/css.snippets:988"
+  },
+  "ps+": {
+    "prefix": "ps+",
+    "body": [
+      "place-self: ${1:stretch} ${2:stretch};"
+    ],
+    "description": "vim-snippets/css.snippets:990"
+  },
+  "ps:s": {
+    "prefix": "ps:s",
+    "body": [
+      "place-self: start;"
+    ],
+    "description": "vim-snippets/css.snippets:992"
+  },
+  "ps:e": {
+    "prefix": "ps:e",
+    "body": [
+      "place-self: end;"
+    ],
+    "description": "vim-snippets/css.snippets:994"
+  },
+  "ps:c": {
+    "prefix": "ps:c",
+    "body": [
+      "place-self: center;"
+    ],
+    "description": "vim-snippets/css.snippets:996"
+  },
+  "ps:st": {
+    "prefix": "ps:st",
+    "body": [
+      "place-self: stretch;"
+    ],
+    "description": "vim-snippets/css.snippets:998"
+  },
+  "q": {
+    "prefix": "q",
+    "body": [
+      "quotes: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1000"
+  },
+  "q:en": {
+    "prefix": "q:en",
+    "body": [
+      "quotes: '\\201C' '\\201D' '\\2018' '\\2019';"
+    ],
+    "description": "vim-snippets/css.snippets:1002"
+  },
+  "q:n": {
+    "prefix": "q:n",
+    "body": [
+      "quotes: none;"
+    ],
+    "description": "vim-snippets/css.snippets:1004"
+  },
+  "q:ru": {
+    "prefix": "q:ru",
+    "body": [
+      "quotes: '\\00AB' '\\00BB' '\\201E' '\\201C';"
+    ],
+    "description": "vim-snippets/css.snippets:1006"
+  },
+  "rz": {
+    "prefix": "rz",
+    "body": [
+      "resize: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1008"
+  },
+  "rz:b": {
+    "prefix": "rz:b",
+    "body": [
+      "resize: both;"
+    ],
+    "description": "vim-snippets/css.snippets:1010"
+  },
+  "rz:h": {
+    "prefix": "rz:h",
+    "body": [
+      "resize: horizontal;"
+    ],
+    "description": "vim-snippets/css.snippets:1012"
+  },
+  "rz:n": {
+    "prefix": "rz:n",
+    "body": [
+      "resize: none;"
+    ],
+    "description": "vim-snippets/css.snippets:1014"
+  },
+  "rz:v": {
+    "prefix": "rz:v",
+    "body": [
+      "resize: vertical;"
+    ],
+    "description": "vim-snippets/css.snippets:1016"
+  },
+  "r": {
+    "prefix": "r",
+    "body": [
+      "right: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1018"
+  },
+  "r:a": {
+    "prefix": "r:a",
+    "body": [
+      "right: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:1020"
+  },
+  "tbl": {
+    "prefix": "tbl",
+    "body": [
+      "table-layout: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1022"
+  },
+  "tbl:a": {
+    "prefix": "tbl:a",
+    "body": [
+      "table-layout: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:1024"
+  },
+  "tbl:f": {
+    "prefix": "tbl:f",
+    "body": [
+      "table-layout: fixed;"
+    ],
+    "description": "vim-snippets/css.snippets:1026"
+  },
+  "tal": {
+    "prefix": "tal",
+    "body": [
+      "text-align-last: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1028"
+  },
+  "tal:a": {
+    "prefix": "tal:a",
+    "body": [
+      "text-align-last: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:1030"
+  },
+  "tal:c": {
+    "prefix": "tal:c",
+    "body": [
+      "text-align-last: center;"
+    ],
+    "description": "vim-snippets/css.snippets:1032"
+  },
+  "tal:l": {
+    "prefix": "tal:l",
+    "body": [
+      "text-align-last: left;"
+    ],
+    "description": "vim-snippets/css.snippets:1034"
+  },
+  "tal:r": {
+    "prefix": "tal:r",
+    "body": [
+      "text-align-last: right;"
+    ],
+    "description": "vim-snippets/css.snippets:1036"
+  },
+  "ta": {
+    "prefix": "ta",
+    "body": [
+      "text-align: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1038"
+  },
+  "ta:c": {
+    "prefix": "ta:c",
+    "body": [
+      "text-align: center;"
+    ],
+    "description": "vim-snippets/css.snippets:1040"
+  },
+  "ta:l": {
+    "prefix": "ta:l",
+    "body": [
+      "text-align: left;"
+    ],
+    "description": "vim-snippets/css.snippets:1042"
+  },
+  "ta:r": {
+    "prefix": "ta:r",
+    "body": [
+      "text-align: right;"
+    ],
+    "description": "vim-snippets/css.snippets:1044"
+  },
+  "td": {
+    "prefix": "td",
+    "body": [
+      "text-decoration: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1046"
+  },
+  "td:l": {
+    "prefix": "td:l",
+    "body": [
+      "text-decoration: line-through;"
+    ],
+    "description": "vim-snippets/css.snippets:1048"
+  },
+  "td:n": {
+    "prefix": "td:n",
+    "body": [
+      "text-decoration: none;"
+    ],
+    "description": "vim-snippets/css.snippets:1050"
+  },
+  "td:o": {
+    "prefix": "td:o",
+    "body": [
+      "text-decoration: overline;"
+    ],
+    "description": "vim-snippets/css.snippets:1052"
+  },
+  "td:u": {
+    "prefix": "td:u",
+    "body": [
+      "text-decoration: underline;"
+    ],
+    "description": "vim-snippets/css.snippets:1054"
+  },
+  "te": {
+    "prefix": "te",
+    "body": [
+      "text-emphasis: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1056"
+  },
+  "te:ac": {
+    "prefix": "te:ac",
+    "body": [
+      "text-emphasis: accent;"
+    ],
+    "description": "vim-snippets/css.snippets:1058"
+  },
+  "te:a": {
+    "prefix": "te:a",
+    "body": [
+      "text-emphasis: after;"
+    ],
+    "description": "vim-snippets/css.snippets:1060"
+  },
+  "te:b": {
+    "prefix": "te:b",
+    "body": [
+      "text-emphasis: before;"
+    ],
+    "description": "vim-snippets/css.snippets:1062"
+  },
+  "te:c": {
+    "prefix": "te:c",
+    "body": [
+      "text-emphasis: circle;"
+    ],
+    "description": "vim-snippets/css.snippets:1064"
+  },
+  "te:ds": {
+    "prefix": "te:ds",
+    "body": [
+      "text-emphasis: disc;"
+    ],
+    "description": "vim-snippets/css.snippets:1066"
+  },
+  "te:dt": {
+    "prefix": "te:dt",
+    "body": [
+      "text-emphasis: dot;"
+    ],
+    "description": "vim-snippets/css.snippets:1068"
+  },
+  "te:n": {
+    "prefix": "te:n",
+    "body": [
+      "text-emphasis: none;"
+    ],
+    "description": "vim-snippets/css.snippets:1070"
+  },
+  "th": {
+    "prefix": "th",
+    "body": [
+      "text-height: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1072"
+  },
+  "th:a": {
+    "prefix": "th:a",
+    "body": [
+      "text-height: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:1074"
+  },
+  "th:f": {
+    "prefix": "th:f",
+    "body": [
+      "text-height: font-size;"
+    ],
+    "description": "vim-snippets/css.snippets:1076"
+  },
+  "th:m": {
+    "prefix": "th:m",
+    "body": [
+      "text-height: max-size;"
+    ],
+    "description": "vim-snippets/css.snippets:1078"
+  },
+  "th:t": {
+    "prefix": "th:t",
+    "body": [
+      "text-height: text-size;"
+    ],
+    "description": "vim-snippets/css.snippets:1080"
+  },
+  "ti": {
+    "prefix": "ti",
+    "body": [
+      "text-indent: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1082"
+  },
+  "ti:-": {
+    "prefix": "ti:-",
+    "body": [
+      "text-indent: -9999px;"
+    ],
+    "description": "vim-snippets/css.snippets:1084"
+  },
+  "tj": {
+    "prefix": "tj",
+    "body": [
+      "text-justify: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1086"
+  },
+  "tj:a": {
+    "prefix": "tj:a",
+    "body": [
+      "text-justify: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:1088"
+  },
+  "tj:d": {
+    "prefix": "tj:d",
+    "body": [
+      "text-justify: distribute;"
+    ],
+    "description": "vim-snippets/css.snippets:1090"
+  },
+  "tj:ic": {
+    "prefix": "tj:ic",
+    "body": [
+      "text-justify: inter-cluster;"
+    ],
+    "description": "vim-snippets/css.snippets:1092"
+  },
+  "tj:ii": {
+    "prefix": "tj:ii",
+    "body": [
+      "text-justify: inter-ideograph;"
+    ],
+    "description": "vim-snippets/css.snippets:1094"
+  },
+  "tj:iw": {
+    "prefix": "tj:iw",
+    "body": [
+      "text-justify: inter-word;"
+    ],
+    "description": "vim-snippets/css.snippets:1096"
+  },
+  "tj:k": {
+    "prefix": "tj:k",
+    "body": [
+      "text-justify: kashida;"
+    ],
+    "description": "vim-snippets/css.snippets:1098"
+  },
+  "tj:t": {
+    "prefix": "tj:t",
+    "body": [
+      "text-justify: tibetan;"
+    ],
+    "description": "vim-snippets/css.snippets:1100"
+  },
+  "to+": {
+    "prefix": "to+",
+    "body": [
+      "text-outline: ${1:0} ${2:0} #${3:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1102"
+  },
+  "to": {
+    "prefix": "to",
+    "body": [
+      "text-outline: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1104"
+  },
+  "to:n": {
+    "prefix": "to:n",
+    "body": [
+      "text-outline: none;"
+    ],
+    "description": "vim-snippets/css.snippets:1106"
+  },
+  "tr": {
+    "prefix": "tr",
+    "body": [
+      "text-replace: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1108"
+  },
+  "tr:n": {
+    "prefix": "tr:n",
+    "body": [
+      "text-replace: none;"
+    ],
+    "description": "vim-snippets/css.snippets:1110"
+  },
+  "tsh+": {
+    "prefix": "tsh+",
+    "body": [
+      "text-shadow: ${1:0} ${2:0} ${3:0} #${4:000};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1112"
+  },
+  "tsh": {
+    "prefix": "tsh",
+    "body": [
+      "text-shadow: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1114"
+  },
+  "tsh:n": {
+    "prefix": "tsh:n",
+    "body": [
+      "text-shadow: none;"
+    ],
+    "description": "vim-snippets/css.snippets:1116"
+  },
+  "tt": {
+    "prefix": "tt",
+    "body": [
+      "text-transform: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1118"
+  },
+  "tt:c": {
+    "prefix": "tt:c",
+    "body": [
+      "text-transform: capitalize;"
+    ],
+    "description": "vim-snippets/css.snippets:1120"
+  },
+  "tt:l": {
+    "prefix": "tt:l",
+    "body": [
+      "text-transform: lowercase;"
+    ],
+    "description": "vim-snippets/css.snippets:1122"
+  },
+  "tt:n": {
+    "prefix": "tt:n",
+    "body": [
+      "text-transform: none;"
+    ],
+    "description": "vim-snippets/css.snippets:1124"
+  },
+  "tt:u": {
+    "prefix": "tt:u",
+    "body": [
+      "text-transform: uppercase;"
+    ],
+    "description": "vim-snippets/css.snippets:1126"
+  },
+  "tw": {
+    "prefix": "tw",
+    "body": [
+      "text-wrap: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1128"
+  },
+  "tw:no": {
+    "prefix": "tw:no",
+    "body": [
+      "text-wrap: none;"
+    ],
+    "description": "vim-snippets/css.snippets:1130"
+  },
+  "tw:n": {
+    "prefix": "tw:n",
+    "body": [
+      "text-wrap: normal;"
+    ],
+    "description": "vim-snippets/css.snippets:1132"
+  },
+  "tw:s": {
+    "prefix": "tw:s",
+    "body": [
+      "text-wrap: suppress;"
+    ],
+    "description": "vim-snippets/css.snippets:1134"
+  },
+  "tw:u": {
+    "prefix": "tw:u",
+    "body": [
+      "text-wrap: unrestricted;"
+    ],
+    "description": "vim-snippets/css.snippets:1136"
+  },
+  "t": {
+    "prefix": "t",
+    "body": [
+      "top: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1138"
+  },
+  "t:a": {
+    "prefix": "t:a",
+    "body": [
+      "top: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:1140"
+  },
+  "va": {
+    "prefix": "va",
+    "body": [
+      "vertical-align: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1142"
+  },
+  "va:bl": {
+    "prefix": "va:bl",
+    "body": [
+      "vertical-align: baseline;"
+    ],
+    "description": "vim-snippets/css.snippets:1144"
+  },
+  "va:b": {
+    "prefix": "va:b",
+    "body": [
+      "vertical-align: bottom;"
+    ],
+    "description": "vim-snippets/css.snippets:1146"
+  },
+  "va:m": {
+    "prefix": "va:m",
+    "body": [
+      "vertical-align: middle;"
+    ],
+    "description": "vim-snippets/css.snippets:1148"
+  },
+  "va:sub": {
+    "prefix": "va:sub",
+    "body": [
+      "vertical-align: sub;"
+    ],
+    "description": "vim-snippets/css.snippets:1150"
+  },
+  "va:sup": {
+    "prefix": "va:sup",
+    "body": [
+      "vertical-align: super;"
+    ],
+    "description": "vim-snippets/css.snippets:1152"
+  },
+  "va:tb": {
+    "prefix": "va:tb",
+    "body": [
+      "vertical-align: text-bottom;"
+    ],
+    "description": "vim-snippets/css.snippets:1154"
+  },
+  "va:tt": {
+    "prefix": "va:tt",
+    "body": [
+      "vertical-align: text-top;"
+    ],
+    "description": "vim-snippets/css.snippets:1156"
+  },
+  "va:t": {
+    "prefix": "va:t",
+    "body": [
+      "vertical-align: top;"
+    ],
+    "description": "vim-snippets/css.snippets:1158"
+  },
+  "v": {
+    "prefix": "v",
+    "body": [
+      "visibility: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1160"
+  },
+  "v:c": {
+    "prefix": "v:c",
+    "body": [
+      "visibility: collapse;"
+    ],
+    "description": "vim-snippets/css.snippets:1162"
+  },
+  "v:h": {
+    "prefix": "v:h",
+    "body": [
+      "visibility: hidden;"
+    ],
+    "description": "vim-snippets/css.snippets:1164"
+  },
+  "v:v": {
+    "prefix": "v:v",
+    "body": [
+      "visibility: visible;"
+    ],
+    "description": "vim-snippets/css.snippets:1166"
+  },
+  "whsc": {
+    "prefix": "whsc",
+    "body": [
+      "white-space-collapse: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1168"
+  },
+  "whsc:ba": {
+    "prefix": "whsc:ba",
+    "body": [
+      "white-space-collapse: break-all;"
+    ],
+    "description": "vim-snippets/css.snippets:1170"
+  },
+  "whsc:bs": {
+    "prefix": "whsc:bs",
+    "body": [
+      "white-space-collapse: break-strict;"
+    ],
+    "description": "vim-snippets/css.snippets:1172"
+  },
+  "whsc:k": {
+    "prefix": "whsc:k",
+    "body": [
+      "white-space-collapse: keep-all;"
+    ],
+    "description": "vim-snippets/css.snippets:1174"
+  },
+  "whsc:l": {
+    "prefix": "whsc:l",
+    "body": [
+      "white-space-collapse: loose;"
+    ],
+    "description": "vim-snippets/css.snippets:1176"
+  },
+  "whsc:n": {
+    "prefix": "whsc:n",
+    "body": [
+      "white-space-collapse: normal;"
+    ],
+    "description": "vim-snippets/css.snippets:1178"
+  },
+  "whs": {
+    "prefix": "whs",
+    "body": [
+      "white-space: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1180"
+  },
+  "whs:n": {
+    "prefix": "whs:n",
+    "body": [
+      "white-space: normal;"
+    ],
+    "description": "vim-snippets/css.snippets:1182"
+  },
+  "whs:nw": {
+    "prefix": "whs:nw",
+    "body": [
+      "white-space: nowrap;"
+    ],
+    "description": "vim-snippets/css.snippets:1184"
+  },
+  "whs:pl": {
+    "prefix": "whs:pl",
+    "body": [
+      "white-space: pre-line;"
+    ],
+    "description": "vim-snippets/css.snippets:1186"
+  },
+  "whs:pw": {
+    "prefix": "whs:pw",
+    "body": [
+      "white-space: pre-wrap;"
+    ],
+    "description": "vim-snippets/css.snippets:1188"
+  },
+  "whs:p": {
+    "prefix": "whs:p",
+    "body": [
+      "white-space: pre;"
+    ],
+    "description": "vim-snippets/css.snippets:1190"
+  },
+  "wid": {
+    "prefix": "wid",
+    "body": [
+      "widows: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1192"
+  },
+  "w": {
+    "prefix": "w",
+    "body": [
+      "width: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1194"
+  },
+  "w:a": {
+    "prefix": "w:a",
+    "body": [
+      "width: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:1196"
+  },
+  "wob": {
+    "prefix": "wob",
+    "body": [
+      "word-break: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1198"
+  },
+  "wob:ba": {
+    "prefix": "wob:ba",
+    "body": [
+      "word-break: break-all;"
+    ],
+    "description": "vim-snippets/css.snippets:1200"
+  },
+  "wob:bs": {
+    "prefix": "wob:bs",
+    "body": [
+      "word-break: break-strict;"
+    ],
+    "description": "vim-snippets/css.snippets:1202"
+  },
+  "wob:k": {
+    "prefix": "wob:k",
+    "body": [
+      "word-break: keep-all;"
+    ],
+    "description": "vim-snippets/css.snippets:1204"
+  },
+  "wob:l": {
+    "prefix": "wob:l",
+    "body": [
+      "word-break: loose;"
+    ],
+    "description": "vim-snippets/css.snippets:1206"
+  },
+  "wob:n": {
+    "prefix": "wob:n",
+    "body": [
+      "word-break: normal;"
+    ],
+    "description": "vim-snippets/css.snippets:1208"
+  },
+  "wos": {
+    "prefix": "wos",
+    "body": [
+      "word-spacing: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1210"
+  },
+  "wow": {
+    "prefix": "wow",
+    "body": [
+      "word-wrap: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1212"
+  },
+  "wow:no": {
+    "prefix": "wow:no",
+    "body": [
+      "word-wrap: none;"
+    ],
+    "description": "vim-snippets/css.snippets:1214"
+  },
+  "wow:n": {
+    "prefix": "wow:n",
+    "body": [
+      "word-wrap: normal;"
+    ],
+    "description": "vim-snippets/css.snippets:1216"
+  },
+  "wow:s": {
+    "prefix": "wow:s",
+    "body": [
+      "word-wrap: suppress;"
+    ],
+    "description": "vim-snippets/css.snippets:1218"
+  },
+  "wow:u": {
+    "prefix": "wow:u",
+    "body": [
+      "word-wrap: unrestricted;"
+    ],
+    "description": "vim-snippets/css.snippets:1220"
+  },
+  "z": {
+    "prefix": "z",
+    "body": [
+      "z-index: ${1};${0}"
+    ],
+    "description": "vim-snippets/css.snippets:1222"
+  },
+  "z:a": {
+    "prefix": "z:a",
+    "body": [
+      "z-index: auto;"
+    ],
+    "description": "vim-snippets/css.snippets:1224"
+  },
+  "zoo": {
+    "prefix": "zoo",
+    "body": [
+      "zoom: 1;"
+    ],
+    "description": "vim-snippets/css.snippets:1226"
+  },
+  ":h": {
+    "prefix": ":h",
+    "body": [
+      ":hover"
+    ],
+    "description": "vim-snippets/css.snippets:1228"
+  },
+  ":fc": {
+    "prefix": ":fc",
+    "body": [
+      ":first-child"
+    ],
+    "description": "vim-snippets/css.snippets:1230"
+  },
+  ":lc": {
+    "prefix": ":lc",
+    "body": [
+      ":last-child"
+    ],
+    "description": "vim-snippets/css.snippets:1232"
+  },
+  ":nc": {
+    "prefix": ":nc",
+    "body": [
+      ":nth-child(${0})"
+    ],
+    "description": "vim-snippets/css.snippets:1234"
+  },
+  ":nlc": {
+    "prefix": ":nlc",
+    "body": [
+      ":nth-last-child(${0})"
+    ],
+    "description": "vim-snippets/css.snippets:1236"
+  },
+  ":oc": {
+    "prefix": ":oc",
+    "body": [
+      ":only-child"
+    ],
+    "description": "vim-snippets/css.snippets:1238"
+  },
+  ":a": {
+    "prefix": ":a",
+    "body": [
+      ":after"
+    ],
+    "description": "vim-snippets/css.snippets:1240"
+  },
+  ":b": {
+    "prefix": ":b",
+    "body": [
+      ":before"
+    ],
+    "description": "vim-snippets/css.snippets:1242"
+  },
+  "::a": {
+    "prefix": "::a",
+    "body": [
+      "::after"
+    ],
+    "description": "vim-snippets/css.snippets:1244"
+  },
+  "::b": {
+    "prefix": "::b",
+    "body": [
+      "::before"
+    ],
+    "description": "vim-snippets/css.snippets:1246"
+  },
+  "var": {
+    "prefix": "var",
+    "body": [
+      "var(${0:${TM_SELECTED_TEXT}});"
+    ],
+    "description": "vim-snippets/css.snippets:1248"
+  },
+  "vard": {
+    "prefix": "vard",
+    "body": [
+      "var(${0}, ${1:${TM_SELECTED_TEXT});"
+    ],
+    "description": "vim-snippets/css.snippets:1250"
+  },
+  "host": {
+    "prefix": "host",
+    "body": [
+      ":host {",
+      "\t${1:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/css.snippets:1252"
+  },
+  "host(": {
+    "prefix": "host(",
+    "body": [
+      ":host(${1}) {",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/css.snippets:1256"
+  },
+  "part - {": {
+    "prefix": "part",
+    "body": [
+      "::part(${1})",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "{"
+  }
+}

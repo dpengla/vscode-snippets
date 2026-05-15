@@ -1,0 +1,743 @@
+{
+  "po": {
+    "prefix": "po",
+    "body": [
+      "protected ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:2"
+  },
+  "pu": {
+    "prefix": "pu",
+    "body": [
+      "public ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:4"
+  },
+  "pr": {
+    "prefix": "pr",
+    "body": [
+      "private ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:6"
+  },
+  "before": {
+    "prefix": "before",
+    "body": [
+      "@Before",
+      "static void ${1:intercept}(${2:args}) { ${0} }"
+    ],
+    "description": "vim-snippets/java.snippets:10"
+  },
+  "mm": {
+    "prefix": "mm",
+    "body": [
+      "@ManyToMany",
+      "${0}"
+    ],
+    "description": "vim-snippets/java.snippets:13"
+  },
+  "mo": {
+    "prefix": "mo",
+    "body": [
+      "@ManyToOne",
+      "${0}"
+    ],
+    "description": "vim-snippets/java.snippets:16"
+  },
+  "om": {
+    "prefix": "om",
+    "body": [
+      "@OneToMany${1:(cascade=CascadeType.ALL)}",
+      "${0}"
+    ],
+    "description": "vim-snippets/java.snippets:19"
+  },
+  "oo": {
+    "prefix": "oo",
+    "body": [
+      "@OneToOne",
+      "${1}"
+    ],
+    "description": "vim-snippets/java.snippets:22"
+  },
+  "im": {
+    "prefix": "im",
+    "body": [
+      "import ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:27"
+  },
+  "j.b": {
+    "prefix": "j.b",
+    "body": [
+      "java.beans."
+    ],
+    "description": "vim-snippets/java.snippets:29"
+  },
+  "j.i": {
+    "prefix": "j.i",
+    "body": [
+      "java.io."
+    ],
+    "description": "vim-snippets/java.snippets:31"
+  },
+  "j.m": {
+    "prefix": "j.m",
+    "body": [
+      "java.math."
+    ],
+    "description": "vim-snippets/java.snippets:33"
+  },
+  "j.n": {
+    "prefix": "j.n",
+    "body": [
+      "java.net."
+    ],
+    "description": "vim-snippets/java.snippets:35"
+  },
+  "j.u": {
+    "prefix": "j.u",
+    "body": [
+      "java.util."
+    ],
+    "description": "vim-snippets/java.snippets:37"
+  },
+  "cl": {
+    "prefix": "cl",
+    "body": [
+      "class ${1:${TM_FILENAME_BASE}} ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:41"
+  },
+  "pcl": {
+    "prefix": "pcl",
+    "body": [
+      "public class ${1:${TM_FILENAME_BASE}} ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:43"
+  },
+  "in": {
+    "prefix": "in",
+    "body": [
+      "interface ${1:${TM_FILENAME_BASE}} ${2:extends Parent}"
+    ],
+    "description": "vim-snippets/java.snippets:45"
+  },
+  "tc": {
+    "prefix": "tc",
+    "body": [
+      "public class ${1:${TM_FILENAME_BASE}} extends ${0:TestCase}"
+    ],
+    "description": "vim-snippets/java.snippets:47"
+  },
+  "ext": {
+    "prefix": "ext",
+    "body": [
+      "extends ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:51"
+  },
+  "imp": {
+    "prefix": "imp",
+    "body": [
+      "implements ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:53"
+  },
+  "/*": {
+    "prefix": "/*",
+    "body": [
+      "/*",
+      " * ${0}",
+      " */"
+    ],
+    "description": "vim-snippets/java.snippets:57"
+  },
+  "co": {
+    "prefix": "co",
+    "body": [
+      "static public final ${1:String} ${2:var} = ${3};"
+    ],
+    "description": "vim-snippets/java.snippets:63"
+  },
+  "cos": {
+    "prefix": "cos",
+    "body": [
+      "static public final String ${1:var} = \"${2}\";"
+    ],
+    "description": "vim-snippets/java.snippets:65"
+  },
+  "case": {
+    "prefix": "case",
+    "body": [
+      "case ${1}:",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/java.snippets:69"
+  },
+  "def": {
+    "prefix": "def",
+    "body": [
+      "default:",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/java.snippets:72"
+  },
+  "el": {
+    "prefix": "el",
+    "body": [
+      "else"
+    ],
+    "description": "vim-snippets/java.snippets:75"
+  },
+  "eif": {
+    "prefix": "eif",
+    "body": [
+      "else if (${1}) ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:77"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if (${1}) ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:79"
+  },
+  "sw": {
+    "prefix": "sw",
+    "body": [
+      "switch (${1}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/java.snippets:81"
+  },
+  "m": {
+    "prefix": "m",
+    "body": [
+      "${1:void} ${2:method}(${3}) ${4:throws }"
+    ],
+    "description": "vim-snippets/java.snippets:87"
+  },
+  "v": {
+    "prefix": "v",
+    "body": [
+      "${1:String} ${2:var}${3: = null}${4};"
+    ],
+    "description": "vim-snippets/java.snippets:91"
+  },
+  "d.al": {
+    "prefix": "d.al",
+    "body": [
+      "List<${1:Object}> ${2:list} = new ArrayList<$1>();${0}"
+    ],
+    "description": "vim-snippets/java.snippets:95"
+  },
+  "d.hm": {
+    "prefix": "d.hm",
+    "body": [
+      "Map<${1:Object}, ${2:Object}> ${3:map} = new HashMap<$1, $2>();${0}"
+    ],
+    "description": "vim-snippets/java.snippets:98"
+  },
+  "d.hs": {
+    "prefix": "d.hs",
+    "body": [
+      "Set<${1:Object}> ${2:set} = new HashSet<$1>();${0}"
+    ],
+    "description": "vim-snippets/java.snippets:101"
+  },
+  "d.st": {
+    "prefix": "d.st",
+    "body": [
+      "Stack<${1:Object}> ${2:stack} = new Stack<$1>();${0}"
+    ],
+    "description": "vim-snippets/java.snippets:104"
+  },
+  "singlet": {
+    "prefix": "singlet",
+    "body": [
+      "private static class Holder {",
+      "\tprivate static final ${1:${TM_FILENAME_BASE}} INSTANCE = new $1();",
+      "}",
+      "",
+      "private $1() { }",
+      "",
+      "public static $1 getInstance() {",
+      "\treturn Holder.INSTANCE;",
+      "}"
+    ],
+    "description": "vim-snippets/java.snippets:108"
+  },
+  "ab": {
+    "prefix": "ab",
+    "body": [
+      "abstract ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:120"
+  },
+  "fi": {
+    "prefix": "fi",
+    "body": [
+      "final ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:122"
+  },
+  "st": {
+    "prefix": "st",
+    "body": [
+      "static ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:124"
+  },
+  "sy": {
+    "prefix": "sy",
+    "body": [
+      "synchronized ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:126"
+  },
+  "err": {
+    "prefix": "err",
+    "body": [
+      "System.err.print(\"${0:Message}\");"
+    ],
+    "description": "vim-snippets/java.snippets:130"
+  },
+  "errf": {
+    "prefix": "errf",
+    "body": [
+      "System.err.printf(\"${1:Message}\", ${0:exception});"
+    ],
+    "description": "vim-snippets/java.snippets:132"
+  },
+  "errln": {
+    "prefix": "errln",
+    "body": [
+      "System.err.println(\"${0:Message}\");"
+    ],
+    "description": "vim-snippets/java.snippets:134"
+  },
+  "as": {
+    "prefix": "as",
+    "body": [
+      "assert ${1:test} : \"${2:Failure message}\";"
+    ],
+    "description": "vim-snippets/java.snippets:138"
+  },
+  "ae": {
+    "prefix": "ae",
+    "body": [
+      "assertEquals(\"${1:Failure message}\", ${2:expected}, ${3:actual});"
+    ],
+    "description": "vim-snippets/java.snippets:140"
+  },
+  "aae": {
+    "prefix": "aae",
+    "body": [
+      "assertArrayEquals(\"${1:Failure message}\", ${2:expecteds}, ${3:actuals});"
+    ],
+    "description": "vim-snippets/java.snippets:142"
+  },
+  "af": {
+    "prefix": "af",
+    "body": [
+      "assertFalse(\"${1:Failure message}\", $2);"
+    ],
+    "description": "vim-snippets/java.snippets:144"
+  },
+  "at": {
+    "prefix": "at",
+    "body": [
+      "assertTrue(\"${1:Failure message}\", $2);"
+    ],
+    "description": "vim-snippets/java.snippets:146"
+  },
+  "an": {
+    "prefix": "an",
+    "body": [
+      "assertNull(\"${1:Failure message}\", ${2:object});"
+    ],
+    "description": "vim-snippets/java.snippets:148"
+  },
+  "ann": {
+    "prefix": "ann",
+    "body": [
+      "assertNotNull(\"${1:Failure message}\", ${2:object});"
+    ],
+    "description": "vim-snippets/java.snippets:150"
+  },
+  "ass": {
+    "prefix": "ass",
+    "body": [
+      "assertSame(\"${1:Failure message}\", ${2:expected}, ${3:actual});"
+    ],
+    "description": "vim-snippets/java.snippets:152"
+  },
+  "asns": {
+    "prefix": "asns",
+    "body": [
+      "assertNotSame(\"${1:Failure message}\", ${2:expected}, ${3:actual});"
+    ],
+    "description": "vim-snippets/java.snippets:154"
+  },
+  "fa": {
+    "prefix": "fa",
+    "body": [
+      "fail(\"${1:Failure message}\");"
+    ],
+    "description": "vim-snippets/java.snippets:156"
+  },
+  "ca": {
+    "prefix": "ca",
+    "body": [
+      "catch(${1:Exception} ${2:e}) ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:158"
+  },
+  "thr": {
+    "prefix": "thr",
+    "body": [
+      "throw ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:160"
+  },
+  "ths": {
+    "prefix": "ths",
+    "body": [
+      "throws ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:162"
+  },
+  "try": {
+    "prefix": "try",
+    "body": [
+      "try {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "} catch(${1:Exception} ${2:e}) {",
+      "}"
+    ],
+    "description": "vim-snippets/java.snippets:164"
+  },
+  "tryf": {
+    "prefix": "tryf",
+    "body": [
+      "try {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "} catch(${1:Exception} ${2:e}) {",
+      "} finally {",
+      "}"
+    ],
+    "description": "vim-snippets/java.snippets:169"
+  },
+  "findall": {
+    "prefix": "findall",
+    "body": [
+      "List<${1:listName}> ${2:items} = $1.findAll();"
+    ],
+    "description": "vim-snippets/java.snippets:177"
+  },
+  "findbyid": {
+    "prefix": "findbyid",
+    "body": [
+      "${1:var} ${2:item} = $1.findById(${3});"
+    ],
+    "description": "vim-snippets/java.snippets:179"
+  },
+  "/**": {
+    "prefix": "/**",
+    "body": [
+      "/**",
+      " * ${0}",
+      " */"
+    ],
+    "description": "vim-snippets/java.snippets:183"
+  },
+  "@au": {
+    "prefix": "@au",
+    "body": [
+      "@author author"
+    ],
+    "description": "vim-snippets/java.snippets:187"
+  },
+  "@br": {
+    "prefix": "@br",
+    "body": [
+      "@brief ${0:Description}"
+    ],
+    "description": "vim-snippets/java.snippets:189"
+  },
+  "@fi": {
+    "prefix": "@fi",
+    "body": [
+      "@file ${0:${TM_FILENAME_BASE}}.java"
+    ],
+    "description": "vim-snippets/java.snippets:191"
+  },
+  "@pa": {
+    "prefix": "@pa",
+    "body": [
+      "@param ${0:param}"
+    ],
+    "description": "vim-snippets/java.snippets:193"
+  },
+  "@re": {
+    "prefix": "@re",
+    "body": [
+      "@return ${0:param}"
+    ],
+    "description": "vim-snippets/java.snippets:195"
+  },
+  "debug": {
+    "prefix": "debug",
+    "body": [
+      "Logger.debug(${1:param});"
+    ],
+    "description": "vim-snippets/java.snippets:199"
+  },
+  "error": {
+    "prefix": "error",
+    "body": [
+      "Logger.error(${1:param});"
+    ],
+    "description": "vim-snippets/java.snippets:201"
+  },
+  "info": {
+    "prefix": "info",
+    "body": [
+      "Logger.info(${1:param});"
+    ],
+    "description": "vim-snippets/java.snippets:203"
+  },
+  "warn": {
+    "prefix": "warn",
+    "body": [
+      "Logger.warn(${1:param});"
+    ],
+    "description": "vim-snippets/java.snippets:205"
+  },
+  "enfor": {
+    "prefix": "enfor",
+    "body": [
+      "for (${1} : ${2}) ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:209"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for (${1}; ${2}; ${3}) ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:211"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "while (${1:true}) ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:213"
+  },
+  "wht": {
+    "prefix": "wht",
+    "body": [
+      "while (true) ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:215"
+  },
+  "psvm": {
+    "prefix": "psvm",
+    "body": [
+      "public static void main (String[] args) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/java.snippets:219"
+  },
+  "main": {
+    "prefix": "main",
+    "body": [
+      "public static void main (String[] args) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/java.snippets:223"
+  },
+  "sout": {
+    "prefix": "sout",
+    "body": [
+      "System.out.println(${0});"
+    ],
+    "description": "vim-snippets/java.snippets:229"
+  },
+  "serr": {
+    "prefix": "serr",
+    "body": [
+      "System.err.println(${0});"
+    ],
+    "description": "vim-snippets/java.snippets:231"
+  },
+  "print": {
+    "prefix": "print",
+    "body": [
+      "System.out.print(\"${0:Message}\");"
+    ],
+    "description": "vim-snippets/java.snippets:233"
+  },
+  "printf": {
+    "prefix": "printf",
+    "body": [
+      "System.out.printf(\"${1:Message}\", ${0:args});"
+    ],
+    "description": "vim-snippets/java.snippets:235"
+  },
+  "println": {
+    "prefix": "println",
+    "body": [
+      "System.out.println(${0});"
+    ],
+    "description": "vim-snippets/java.snippets:237"
+  },
+  "printlna": {
+    "prefix": "printlna",
+    "body": [
+      "System.out.println(Arrays.toString(${0}));"
+    ],
+    "description": "vim-snippets/java.snippets:239"
+  },
+  "ren": {
+    "prefix": "ren",
+    "body": [
+      "render(${1:param});"
+    ],
+    "description": "vim-snippets/java.snippets:243"
+  },
+  "rena": {
+    "prefix": "rena",
+    "body": [
+      "renderArgs.put(\"${1}\", ${2});"
+    ],
+    "description": "vim-snippets/java.snippets:245"
+  },
+  "renb": {
+    "prefix": "renb",
+    "body": [
+      "renderBinary(${1:param});"
+    ],
+    "description": "vim-snippets/java.snippets:247"
+  },
+  "renj": {
+    "prefix": "renj",
+    "body": [
+      "renderJSON(${1:param});"
+    ],
+    "description": "vim-snippets/java.snippets:249"
+  },
+  "renx": {
+    "prefix": "renx",
+    "body": [
+      "renderXml(${1:param});"
+    ],
+    "description": "vim-snippets/java.snippets:251"
+  },
+  "set": {
+    "prefix": "set",
+    "body": [
+      "${1:public} void set${3:}(${2:String} ${0:}){",
+      "\tthis.$4 = $4;",
+      "}"
+    ],
+    "description": "vim-snippets/java.snippets:255"
+  },
+  "get": {
+    "prefix": "get",
+    "body": [
+      "${1:public} ${2:String} get${3:}(){",
+      "\treturn this.${0:};",
+      "}"
+    ],
+    "description": "vim-snippets/java.snippets:259"
+  },
+  "re": {
+    "prefix": "re",
+    "body": [
+      "return ${0}"
+    ],
+    "description": "vim-snippets/java.snippets:265"
+  },
+  "br": {
+    "prefix": "br",
+    "body": [
+      "break;"
+    ],
+    "description": "vim-snippets/java.snippets:267"
+  },
+  "t": {
+    "prefix": "t",
+    "body": [
+      "public void test${1:Name}() throws Exception {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/java.snippets:271"
+  },
+  "test": {
+    "prefix": "test",
+    "body": [
+      "@Test",
+      "public void test${1:Name}() throws Exception {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/java.snippets:275"
+  },
+  "Sc": {
+    "prefix": "Sc",
+    "body": [
+      "Scanner"
+    ],
+    "description": "vim-snippets/java.snippets:282"
+  },
+  "action": {
+    "prefix": "action",
+    "body": [
+      "public static void ${1:index}(${2:args}) { ${0} }"
+    ],
+    "description": "vim-snippets/java.snippets:286"
+  },
+  "rnf": {
+    "prefix": "rnf",
+    "body": [
+      "notFound(${1:param});"
+    ],
+    "description": "vim-snippets/java.snippets:288"
+  },
+  "rnfin": {
+    "prefix": "rnfin",
+    "body": [
+      "notFoundIfNull(${1:param});"
+    ],
+    "description": "vim-snippets/java.snippets:290"
+  },
+  "rr": {
+    "prefix": "rr",
+    "body": [
+      "redirect(${1:param});"
+    ],
+    "description": "vim-snippets/java.snippets:292"
+  },
+  "ru": {
+    "prefix": "ru",
+    "body": [
+      "unauthorized(${1:param});"
+    ],
+    "description": "vim-snippets/java.snippets:294"
+  },
+  "unless": {
+    "prefix": "unless",
+    "body": [
+      "(unless=${1:param});"
+    ],
+    "description": "vim-snippets/java.snippets:296"
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "ver - ${.version}": {
+    "prefix": "ver",
+    "body": [
+      "\\${.version}"
+    ],
+    "description": "${.version}"
+  },
+  "int - ${interpolation}": {
+    "prefix": "int",
+    "body": [
+      "\\${${0:interpolation${TM_SELECTED_TEXT}}\\}"
+    ],
+    "description": "${interpolation}"
+  },
+  "intd - ${interpolation!\"default_string\"}": {
+    "prefix": "intd",
+    "body": [
+      "\\${${0:interpolation${TM_SELECTED_TEXT}}!\"${1:default_string}\"\\}"
+    ],
+    "description": "${interpolation!\"default_string\"}"
+  },
+  "com - <#-- comment -->": {
+    "prefix": "com",
+    "body": [
+      "<#-- ${0:comment${TM_SELECTED_TEXT}} -->"
+    ],
+    "description": "<#-- comment -->"
+  },
+  "ass - <#assign variable_name = value />": {
+    "prefix": "ass",
+    "body": [
+      "<#assign ${1:variable_name} = ${0:value${TM_SELECTED_TEXT}} />"
+    ],
+    "description": "<#assign variable_name = value />"
+  },
+  "assm - <#assign <#-- multiple lines --> />": {
+    "prefix": "assm",
+    "body": [
+      "<#assign",
+      "\t${1:variable_name} = ${0:value${TM_SELECTED_TEXT}}",
+      "/>"
+    ],
+    "description": "<#assign <#-- multiple lines --> />"
+  },
+  "loc - <#local variable_name = value />": {
+    "prefix": "loc",
+    "body": [
+      "<#local ${1:variable_name} = ${0:value${TM_SELECTED_TEXT}} />"
+    ],
+    "description": "<#local variable_name = value />"
+  },
+  "locm - <#local <#-- multiple lines --> />": {
+    "prefix": "locm",
+    "body": [
+      "<#local",
+      "\t${1:variable_name} = ${0:value${TM_SELECTED_TEXT}}",
+      "/>"
+    ],
+    "description": "<#local <#-- multiple lines --> />"
+  },
+  "inc - <#include \"file.ftl\" />": {
+    "prefix": "inc",
+    "body": [
+      "<#include \"${0:file.ftl${TM_SELECTED_TEXT}}\" />"
+    ],
+    "description": "<#include \"file.ftl\" />"
+  },
+  "if - <#if condition>...</#if>": {
+    "prefix": "if",
+    "body": [
+      "<#if ${1:true}>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "</#if>"
+    ],
+    "description": "<#if condition>...</#if>"
+  },
+  "ife - <#if condition>...<#else>...</#if>": {
+    "prefix": "ife",
+    "body": [
+      "<#if ${1:true}>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "<#else>",
+      "\t${2}",
+      "</#if>"
+    ],
+    "description": "<#if condition>...<#else>...</#if>"
+  },
+  "lis - <#list sequence as element>...</#list>": {
+    "prefix": "lis",
+    "body": [
+      "<#list ${1:sequence} as ${2:element}>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "</#list>"
+    ],
+    "description": "<#list sequence as element>...</#list>"
+  },
+  "lish - <#list hashmap?keys as element>...</#list>": {
+    "prefix": "lish",
+    "body": [
+      "<#list ${1:hashmap}?keys as ${2:key}>",
+      "\t\\${$2\\}: \\${$1[$2]\\}${0:${TM_SELECTED_TEXT}}",
+      "</#list>"
+    ],
+    "description": "<#list hashmap?keys as element>...</#list>"
+  },
+  "mac - <#macro macro_name param1>...</#macro>": {
+    "prefix": "mac",
+    "body": [
+      "<#macro ${1:macro_name} ${2:param1}>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "</#macro>"
+    ],
+    "description": "<#macro macro_name param1>...</#macro>"
+  },
+  "fun - <#function function_name param1>...</#function>": {
+    "prefix": "fun",
+    "body": [
+      "<#function ${1:function_name} ${2:param1}>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "</#function>"
+    ],
+    "description": "<#function function_name param1>...</#function>"
+  },
+  "att - <#attempt>...<#recover></#attempt>": {
+    "prefix": "att",
+    "body": [
+      "<#attempt>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "<#recover>",
+      "</#attempt>"
+    ],
+    "description": "<#attempt>...<#recover></#attempt>"
+  },
+  "?th - ?then(true, false)": {
+    "prefix": "?th",
+    "body": [
+      "?then(${1:true}, ${0:false${TM_SELECTED_TEXT}})"
+    ],
+    "description": "?then(true, false)"
+  }
+}

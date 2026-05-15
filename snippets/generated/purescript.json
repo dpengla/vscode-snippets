@@ -1,0 +1,163 @@
+{
+  "mod": {
+    "prefix": "mod",
+    "body": [
+      "module ${TM_FILENAME_BASE}",
+      "\t(",
+      "\t) where",
+      "",
+      "import Prelude",
+      "",
+      "${0}"
+    ],
+    "description": "vim-snippets/purescript.snippets:1"
+  },
+  "imp": {
+    "prefix": "imp",
+    "body": [
+      "import ${0:Data.List}"
+    ],
+    "description": "vim-snippets/purescript.snippets:9"
+  },
+  "impq": {
+    "prefix": "impq",
+    "body": [
+      "import ${1:Data.List} as ${0:List}"
+    ],
+    "description": "vim-snippets/purescript.snippets:11"
+  },
+  "fn0": {
+    "prefix": "fn0",
+    "body": [
+      "${1:name} :: ${2:a}",
+      "$1 = ${0:undefined}"
+    ],
+    "description": "vim-snippets/purescript.snippets:13"
+  },
+  "fn": {
+    "prefix": "fn",
+    "body": [
+      "${1:fn} :: ${2:a} -> ${3:a}",
+      "$1 ${4}= ${0}"
+    ],
+    "description": "vim-snippets/purescript.snippets:16"
+  },
+  "fn1": {
+    "prefix": "fn1",
+    "body": [
+      "${1:fn} :: ${2:a} -> ${3:a}",
+      "$1 ${4}= ${0}"
+    ],
+    "description": "vim-snippets/purescript.snippets:19"
+  },
+  "fn2": {
+    "prefix": "fn2",
+    "body": [
+      "${1:fn} :: ${2:a} -> ${3:a} -> ${4:a}",
+      "$1 ${5}= ${0}"
+    ],
+    "description": "vim-snippets/purescript.snippets:22"
+  },
+  "fn3": {
+    "prefix": "fn3",
+    "body": [
+      "${1:fn} :: ${2:a} -> ${3:a} -> ${4:a} -> ${5:a}",
+      "$1 ${6}= ${0}"
+    ],
+    "description": "vim-snippets/purescript.snippets:25"
+  },
+  "case": {
+    "prefix": "case",
+    "body": [
+      "case ${1} of",
+      "\t${2} -> ${0}"
+    ],
+    "description": "vim-snippets/purescript.snippets:28"
+  },
+  "let": {
+    "prefix": "let",
+    "body": [
+      "let",
+      "\t${1} = ${2}",
+      "in",
+      "\t${3}"
+    ],
+    "description": "vim-snippets/purescript.snippets:31"
+  },
+  "where": {
+    "prefix": "where",
+    "body": [
+      "where",
+      "\t${1} = ${0}"
+    ],
+    "description": "vim-snippets/purescript.snippets:36"
+  },
+  "testunit": {
+    "prefix": "testunit",
+    "body": [
+      "module Test.Main where",
+      "",
+      "import Prelude",
+      "import Test.Unit (suite, test)",
+      "import Test.Unit.Main (runTest)",
+      "import Test.Unit.Assert as Assert",
+      "",
+      "main = runTest do",
+      "\tsuite \"${1}\" do",
+      "\t\ttest \"${2:the tests run}\" do",
+      "\t\t\tAssert.equal",
+      "\t\t\t\t\"Hello, world!\"",
+      "\t\t\t\t\"Hello, sailor!\""
+    ],
+    "description": "vim-snippets/purescript.snippets:39"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if ${1} then",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "else",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/purescript.snippets:53"
+  },
+  "doc": {
+    "prefix": "doc",
+    "body": [
+      "{-| ${0}",
+      "-}"
+    ],
+    "description": "vim-snippets/purescript.snippets:58"
+  },
+  "ty": {
+    "prefix": "ty",
+    "body": [
+      "type ${1:Type} =",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/purescript.snippets:61"
+  },
+  "da": {
+    "prefix": "da",
+    "body": [
+      "data ${1:Type} =",
+      "\t${0:$1}"
+    ],
+    "description": "vim-snippets/purescript.snippets:64"
+  },
+  "nty": {
+    "prefix": "nty",
+    "body": [
+      "newtype ${1:Type} =",
+      "\t${2:$1} ${0:Int}"
+    ],
+    "description": "vim-snippets/purescript.snippets:67"
+  },
+  "fi": {
+    "prefix": "fi",
+    "body": [
+      "foreign import ${1} :: ${2}"
+    ],
+    "description": "vim-snippets/purescript.snippets:70"
+  }
+}

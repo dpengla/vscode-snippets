@@ -1,0 +1,93 @@
+{
+  "fun": {
+    "prefix": "fun",
+    "body": [
+      "fun ${1:name}(${2}): ${3:String} {",
+      "\t${4}",
+      "}"
+    ],
+    "description": "vim-snippets/kotlin.snippets:1"
+  },
+  "pfun": {
+    "prefix": "pfun",
+    "body": [
+      "private fun ${1:name}(${2}): ${3:String} {",
+      "\t${4}",
+      "}"
+    ],
+    "description": "vim-snippets/kotlin.snippets:5"
+  },
+  "main": {
+    "prefix": "main",
+    "body": [
+      "@JvmStatic",
+      "fun main(args: Array<String>) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/kotlin.snippets:9"
+  },
+  "ret": {
+    "prefix": "ret",
+    "body": [
+      "return ${0}"
+    ],
+    "description": "vim-snippets/kotlin.snippets:14"
+  },
+  "whe": {
+    "prefix": "whe",
+    "body": [
+      "when (${1:${TM_SELECTED_TEXT}}) {",
+      "\t${2} -> ${3}",
+      "}"
+    ],
+    "description": "vim-snippets/kotlin.snippets:16"
+  },
+  "cla": {
+    "prefix": "cla",
+    "body": [
+      "class ${1} {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/kotlin.snippets:20"
+  },
+  "cobj": {
+    "prefix": "cobj",
+    "body": [
+      "companion object {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/kotlin.snippets:24"
+  },
+  "obj": {
+    "prefix": "obj",
+    "body": [
+      "object ${1} {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/kotlin.snippets:28"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if (${1}) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/kotlin.snippets:32"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "if (${1}) {",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "} else {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/kotlin.snippets:36"
+  }
+}

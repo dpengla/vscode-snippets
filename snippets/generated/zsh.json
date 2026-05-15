@@ -1,0 +1,156 @@
+{
+  "#!": {
+    "prefix": "#!",
+    "body": [
+      "#!/usr/bin/env zsh"
+    ],
+    "description": "vim-snippets/zsh.snippets:4"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if $1; then",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "fi"
+    ],
+    "description": "vim-snippets/zsh.snippets:7"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "if $1; then",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "else",
+      "\t${0:# statements}",
+      "fi"
+    ],
+    "description": "vim-snippets/zsh.snippets:11"
+  },
+  "eif": {
+    "prefix": "eif",
+    "body": [
+      "elif $1; then",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/zsh.snippets:17"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for (( ${2:i} = 0; $2 < ${1:count}; $2++ )); do",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "done"
+    ],
+    "description": "vim-snippets/zsh.snippets:20"
+  },
+  "fori": {
+    "prefix": "fori",
+    "body": [
+      "for ${1:needle} in ${2:haystack}; do",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "done"
+    ],
+    "description": "vim-snippets/zsh.snippets:24"
+  },
+  "fore": {
+    "prefix": "fore",
+    "body": [
+      "for ${1:item} in ${2:list}; do",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "done"
+    ],
+    "description": "vim-snippets/zsh.snippets:28"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "while $1; do",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "done"
+    ],
+    "description": "vim-snippets/zsh.snippets:32"
+  },
+  "until": {
+    "prefix": "until",
+    "body": [
+      "until $1; do",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "done"
+    ],
+    "description": "vim-snippets/zsh.snippets:36"
+  },
+  "repeat": {
+    "prefix": "repeat",
+    "body": [
+      "repeat ${1:integer}; do",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "done"
+    ],
+    "description": "vim-snippets/zsh.snippets:40"
+  },
+  "case": {
+    "prefix": "case",
+    "body": [
+      "case ${1:word} in",
+      "\t${2:pattern})",
+      "\t\t${0};;",
+      "esac"
+    ],
+    "description": "vim-snippets/zsh.snippets:44"
+  },
+  "select": {
+    "prefix": "select",
+    "body": [
+      "select ${1:answer} in ${2:choices}; do",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "done"
+    ],
+    "description": "vim-snippets/zsh.snippets:49"
+  },
+  "(": {
+    "prefix": "(",
+    "body": [
+      "( ${0:#statements} )"
+    ],
+    "description": "vim-snippets/zsh.snippets:53"
+  },
+  "{": {
+    "prefix": "{",
+    "body": [
+      "{ ${0:#statements} }"
+    ],
+    "description": "vim-snippets/zsh.snippets:55"
+  },
+  "[": {
+    "prefix": "[",
+    "body": [
+      "[[ ${0:test} ]]"
+    ],
+    "description": "vim-snippets/zsh.snippets:57"
+  },
+  "always": {
+    "prefix": "always",
+    "body": [
+      "{ ${1:try} } always { ${0:always} }"
+    ],
+    "description": "vim-snippets/zsh.snippets:59"
+  },
+  "fun": {
+    "prefix": "fun",
+    "body": [
+      "${1:function_name}() {",
+      "\t${0:# function_body}",
+      "}"
+    ],
+    "description": "vim-snippets/zsh.snippets:61"
+  },
+  "ffun": {
+    "prefix": "ffun",
+    "body": [
+      "function ${1:function_name}() {",
+      "\t${0:# function_body}",
+      "}"
+    ],
+    "description": "vim-snippets/zsh.snippets:65"
+  }
+}

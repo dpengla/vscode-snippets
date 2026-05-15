@@ -1,0 +1,171 @@
+{
+  "% - <% %>": {
+    "prefix": "%",
+    "body": [
+      "<% ${0} %>"
+    ],
+    "description": "<% %>"
+  },
+  "= - <%= %>": {
+    "prefix": "=",
+    "body": [
+      "<%= ${0} %>"
+    ],
+    "description": "<%= %>"
+  },
+  "# - <%# %>": {
+    "prefix": "#",
+    "body": [
+      "<%# ${0} %>"
+    ],
+    "description": "<%# %>"
+  },
+  "end": {
+    "prefix": "end",
+    "body": [
+      "<% end %>"
+    ],
+    "description": "vim-snippets/eelixir.snippets:9"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "<%= for ${1:item} <- ${2:items} ${3:@conn} do %>",
+      "\t${0}",
+      "<% end %>"
+    ],
+    "description": "vim-snippets/eelixir.snippets:11"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "<%= if ${1} do %>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "<% end %>"
+    ],
+    "description": "vim-snippets/eelixir.snippets:15"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "<%= if ${1} do %>",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "<% else %>",
+      "\t${0}",
+      "<% end %>"
+    ],
+    "description": "vim-snippets/eelixir.snippets:19"
+  },
+  "cond": {
+    "prefix": "cond",
+    "body": [
+      "<%= cond do %>",
+      "\t<% ${1} -> %>",
+      "\t\t${2:${TM_SELECTED_TEXT}}",
+      "",
+      "\t<% true -> %>",
+      "\t\t${0}",
+      "<% end %>"
+    ],
+    "description": "vim-snippets/eelixir.snippets:25"
+  },
+  "unless": {
+    "prefix": "unless",
+    "body": [
+      "<%= unless ${1} do %>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "<% end %>"
+    ],
+    "description": "vim-snippets/eelixir.snippets:33"
+  },
+  "ft - form_tag": {
+    "prefix": "ft",
+    "body": [
+      "<%= form_tag(${1:\"/users\"}, method: ${2::post}) %>",
+      "\t${0}",
+      "</form>"
+    ],
+    "description": "form_tag"
+  },
+  "sl - select": {
+    "prefix": "sl",
+    "body": [
+      "<%= select ${1:f}, :${2:field}, ${3:[{\"key\", \"value\"}]}, prompt: ${4:\"Prompt\"} %>"
+    ],
+    "description": "select"
+  },
+  "sb - submit": {
+    "prefix": "sb",
+    "body": [
+      "<%= submit ${1:\"Submit\"} %>"
+    ],
+    "description": "submit"
+  },
+  "rb - radio_button": {
+    "prefix": "rb",
+    "body": [
+      "<%= radio_button ${1:f}, :${2:field},  ${3:\"value\"} %>"
+    ],
+    "description": "radio_button"
+  },
+  "et - error_tag": {
+    "prefix": "et",
+    "body": [
+      "<%= error_tag ${1:f}, :${2:field} %>"
+    ],
+    "description": "error_tag"
+  },
+  "ti - text_input": {
+    "prefix": "ti",
+    "body": [
+      "<%= text_input ${1:f}, :${2:field} %>"
+    ],
+    "description": "text_input"
+  },
+  "la - label": {
+    "prefix": "la",
+    "body": [
+      "<%= label ${1:f}, :${2:field}, \"${3:Label}\" %>"
+    ],
+    "description": "label"
+  },
+  "pi - password_input": {
+    "prefix": "pi",
+    "body": [
+      "<%= password_input ${1:f}, :${2:password} %>"
+    ],
+    "description": "password_input"
+  },
+  "render": {
+    "prefix": "render",
+    "body": [
+      "<%= render \"${1:index}.html\", ${2:var: @var} %>"
+    ],
+    "description": "vim-snippets/eelixir.snippets:60"
+  },
+  "lin - link": {
+    "prefix": "lin",
+    "body": [
+      "<%= link \"${1:Submit}\", to: ${2:\"/users\"}, method: ${3::delete} %>"
+    ],
+    "description": "link"
+  },
+  "ff - form_for": {
+    "prefix": "ff",
+    "body": [
+      "<%= form_for @changeset, ${1:\"/users\"}, fn f -> %>",
+      "\t\t${0}",
+      "",
+      "\t<%= submit \"Submit\" %>",
+      "<% end %>"
+    ],
+    "description": "form_for"
+  },
+  "pry": {
+    "prefix": "pry",
+    "body": [
+      "<% require IEx; IEx.pry %>"
+    ],
+    "description": "vim-snippets/eelixir.snippets:70"
+  }
+}

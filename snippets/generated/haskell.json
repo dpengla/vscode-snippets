@@ -1,0 +1,382 @@
+{
+  "lang": {
+    "prefix": "lang",
+    "body": [
+      "{-# LANGUAGE ${0:OverloadedStrings} #-}"
+    ],
+    "description": "vim-snippets/haskell.snippets:1"
+  },
+  "haddock": {
+    "prefix": "haddock",
+    "body": [
+      "{-# OPTIONS_HADDOCK ${0:hide} #-}"
+    ],
+    "description": "vim-snippets/haskell.snippets:3"
+  },
+  "ghc": {
+    "prefix": "ghc",
+    "body": [
+      "{-# OPTIONS_GHC ${0:-fno-warn-unused-imports} #-}"
+    ],
+    "description": "vim-snippets/haskell.snippets:5"
+  },
+  "inline": {
+    "prefix": "inline",
+    "body": [
+      "{-# INLINE ${0:name} #-}"
+    ],
+    "description": "vim-snippets/haskell.snippets:7"
+  },
+  "info": {
+    "prefix": "info",
+    "body": [
+      "-- |",
+      "-- Module      :  ${1:${TM_FILENAME_BASE}}",
+      "-- Copyright   :  ${2:Author} ${3:2011-2012}",
+      "-- License     :  ${4:BSD3}",
+      "--",
+      "-- Maintainer  :  ${5:email@something.com}",
+      "-- Stability   :  ${6:experimental}",
+      "-- Portability :  ${7:unknown}",
+      "--",
+      "-- ${0:Description}",
+      "--"
+    ],
+    "description": "vim-snippets/haskell.snippets:9"
+  },
+  "imp": {
+    "prefix": "imp",
+    "body": [
+      "import ${0:Data.Text}"
+    ],
+    "description": "vim-snippets/haskell.snippets:21"
+  },
+  "import": {
+    "prefix": "import",
+    "body": [
+      "import ${0:Data.Text}"
+    ],
+    "description": "vim-snippets/haskell.snippets:23"
+  },
+  "import2": {
+    "prefix": "import2",
+    "body": [
+      "import ${1:Data.Text} (${0:head})"
+    ],
+    "description": "vim-snippets/haskell.snippets:25"
+  },
+  "impq": {
+    "prefix": "impq",
+    "body": [
+      "import qualified ${1:Data.Text} as ${0:T}"
+    ],
+    "description": "vim-snippets/haskell.snippets:27"
+  },
+  "importq": {
+    "prefix": "importq",
+    "body": [
+      "import qualified ${1:Data.Text} as ${0:T}"
+    ],
+    "description": "vim-snippets/haskell.snippets:29"
+  },
+  "inst": {
+    "prefix": "inst",
+    "body": [
+      "instance ${1:Monoid} ${2:Type} where",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/haskell.snippets:31"
+  },
+  "ty": {
+    "prefix": "ty",
+    "body": [
+      "type ${1:Type} = ${0:Type}"
+    ],
+    "description": "vim-snippets/haskell.snippets:34"
+  },
+  "type": {
+    "prefix": "type",
+    "body": [
+      "type ${1:Type} = ${0:Type}"
+    ],
+    "description": "vim-snippets/haskell.snippets:36"
+  },
+  "da": {
+    "prefix": "da",
+    "body": [
+      "data ${1:Type} = ${2:$1} ${0:Int}"
+    ],
+    "description": "vim-snippets/haskell.snippets:38"
+  },
+  "data": {
+    "prefix": "data",
+    "body": [
+      "data ${1:Type} = ${2:$1} ${0:Int}"
+    ],
+    "description": "vim-snippets/haskell.snippets:40"
+  },
+  "newtype": {
+    "prefix": "newtype",
+    "body": [
+      "newtype ${1:Type} = ${2:$1} ${0:Int}"
+    ],
+    "description": "vim-snippets/haskell.snippets:42"
+  },
+  "class": {
+    "prefix": "class",
+    "body": [
+      "class ${1:Class} a where",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/haskell.snippets:44"
+  },
+  "module": {
+    "prefix": "module",
+    "body": [
+      "module ${TM_FILENAME_BASE} (",
+      ") where",
+      "${TM_FILENAME_BASE}"
+    ],
+    "description": "vim-snippets/haskell.snippets:47"
+  },
+  "mod": {
+    "prefix": "mod",
+    "body": [
+      "module ${TM_FILENAME_BASE}",
+      "\t( ${1}",
+      "\t) where",
+      "",
+      "${TM_FILENAME_BASE}"
+    ],
+    "description": "vim-snippets/haskell.snippets:52"
+  },
+  "main": {
+    "prefix": "main",
+    "body": [
+      "main :: IO ()",
+      "main = ${0:undefined}"
+    ],
+    "description": "vim-snippets/haskell.snippets:58"
+  },
+  "const": {
+    "prefix": "const",
+    "body": [
+      "${1:name} :: ${2:a}",
+      "$1 = ${0:undefined}"
+    ],
+    "description": "vim-snippets/haskell.snippets:61"
+  },
+  "fn": {
+    "prefix": "fn",
+    "body": [
+      "${1:fn} :: ${2:a} -> ${3:a}",
+      "$1 ${4} = ${0:undefined}"
+    ],
+    "description": "vim-snippets/haskell.snippets:64"
+  },
+  "fn0": {
+    "prefix": "fn0",
+    "body": [
+      "${1:fn} :: ${2:a}",
+      "$1 = ${0:undefined}"
+    ],
+    "description": "vim-snippets/haskell.snippets:67"
+  },
+  "fn1": {
+    "prefix": "fn1",
+    "body": [
+      "${1:fn} :: ${2:a} -> ${3:a}",
+      "$1 ${4} = ${0:undefined}"
+    ],
+    "description": "vim-snippets/haskell.snippets:70"
+  },
+  "fn2": {
+    "prefix": "fn2",
+    "body": [
+      "${1:fn} :: ${2:a} -> ${3:a} -> ${4:a}",
+      "$1 ${5} = ${0:undefined}"
+    ],
+    "description": "vim-snippets/haskell.snippets:73"
+  },
+  "fn3": {
+    "prefix": "fn3",
+    "body": [
+      "${1:fn} :: ${2:a} -> ${3:a} -> ${4:a} -> ${5:a}",
+      "$1 ${6} = ${0:undefined}"
+    ],
+    "description": "vim-snippets/haskell.snippets:76"
+  },
+  "=> - Type constraint": {
+    "prefix": "=>",
+    "body": [
+      "(${1:Class} ${2:a}) => $2"
+    ],
+    "description": "Type constraint"
+  },
+  "ap": {
+    "prefix": "ap",
+    "body": [
+      "${1:map} ${2:fn} ${0:list}"
+    ],
+    "description": "vim-snippets/haskell.snippets:81"
+  },
+  "\\": {
+    "prefix": "\\",
+    "body": [
+      "\\\\${1:x} -> ${0:expression}"
+    ],
+    "description": "vim-snippets/haskell.snippets:83"
+  },
+  "(\\": {
+    "prefix": "(\\",
+    "body": [
+      "(\\\\${1:x} -> ${0:expression})"
+    ],
+    "description": "vim-snippets/haskell.snippets:85"
+  },
+  "<-": {
+    "prefix": "<-",
+    "body": [
+      "${1:a} <- ${0:m a}"
+    ],
+    "description": "vim-snippets/haskell.snippets:87"
+  },
+  "->": {
+    "prefix": "->",
+    "body": [
+      "${1:m a} -> ${0:a}"
+    ],
+    "description": "vim-snippets/haskell.snippets:89"
+  },
+  "tup": {
+    "prefix": "tup",
+    "body": [
+      "(${1:a}, ${0:b})"
+    ],
+    "description": "vim-snippets/haskell.snippets:91"
+  },
+  "tup2": {
+    "prefix": "tup2",
+    "body": [
+      "(${1:a}, ${2:b}, ${0:c})"
+    ],
+    "description": "vim-snippets/haskell.snippets:93"
+  },
+  "tup3": {
+    "prefix": "tup3",
+    "body": [
+      "(${1:a}, ${2:b}, ${3:c}, ${0:d})"
+    ],
+    "description": "vim-snippets/haskell.snippets:95"
+  },
+  "rec": {
+    "prefix": "rec",
+    "body": [
+      "${1:Record} { ${2:recFieldA} = ${3:undefined}",
+      "\t\t\t, ${4:recFieldB} = ${0:undefined}",
+      "\t\t\t}"
+    ],
+    "description": "vim-snippets/haskell.snippets:97"
+  },
+  "case": {
+    "prefix": "case",
+    "body": [
+      "case ${1:something} of",
+      "\t${2} -> ${0}"
+    ],
+    "description": "vim-snippets/haskell.snippets:101"
+  },
+  "let": {
+    "prefix": "let",
+    "body": [
+      "let ${1} = ${2}",
+      "in ${3}"
+    ],
+    "description": "vim-snippets/haskell.snippets:104"
+  },
+  "where": {
+    "prefix": "where",
+    "body": [
+      "where",
+      "\t${1:fn} = ${0:undefined}"
+    ],
+    "description": "vim-snippets/haskell.snippets:107"
+  },
+  "spec": {
+    "prefix": "spec",
+    "body": [
+      "module ${TM_FILENAME_BASE} (main, spec) where",
+      "",
+      "import Test.Hspec",
+      "import Test.QuickCheck",
+      "",
+      "main :: IO ()",
+      "main = hspec spec",
+      "",
+      "spec :: Spec",
+      "spec =",
+      "\tdescribe \"${1}\" \\$ do",
+      "\t\tit \"${2}\" \\$",
+      "\t\t\t$0"
+    ],
+    "description": "vim-snippets/haskell.snippets:110"
+  },
+  "specf": {
+    "prefix": "specf",
+    "body": [
+      "module ${TM_FILENAME_BASE} (main, spec) where",
+      "",
+      "import Test.Hspec",
+      "import Test.Hspec.Runner (configFastFail, defaultConfig, hspecWith)",
+      "",
+      "main :: IO ()",
+      "main = hspecWith defaultConfig {configFastFail = True} spec",
+      "",
+      "spec :: Spec",
+      "spec =",
+      "\tdescribe \"${1}\" \\$ do",
+      "\t\tit \"${2}\" \\$",
+      "\t\t\t$0"
+    ],
+    "description": "vim-snippets/haskell.snippets:124"
+  },
+  "desc": {
+    "prefix": "desc",
+    "body": [
+      "describe \"${1}\" \\$ do",
+      "\t$0"
+    ],
+    "description": "vim-snippets/haskell.snippets:138"
+  },
+  "it": {
+    "prefix": "it",
+    "body": [
+      "it \"${1}\" \\$",
+      "\t$0"
+    ],
+    "description": "vim-snippets/haskell.snippets:141"
+  },
+  "itp": {
+    "prefix": "itp",
+    "body": [
+      "it \"${1}\" \\$ property \\$",
+      "\t$0"
+    ],
+    "description": "vim-snippets/haskell.snippets:144"
+  },
+  "sb": {
+    "prefix": "sb",
+    "body": [
+      "`shouldBe` $0"
+    ],
+    "description": "vim-snippets/haskell.snippets:147"
+  },
+  "doc": {
+    "prefix": "doc",
+    "body": [
+      "{-| ${0}",
+      "-}"
+    ],
+    "description": "vim-snippets/haskell.snippets:149"
+  }
+}

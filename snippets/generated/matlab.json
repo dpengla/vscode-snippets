@@ -1,0 +1,115 @@
+{
+  "if - if": {
+    "prefix": "if",
+    "body": [
+      "if ${1}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "if"
+  },
+  "ife - if ... else": {
+    "prefix": "ife",
+    "body": [
+      "if ${1}",
+      "\t${2}",
+      "else",
+      "\t${0}",
+      "end"
+    ],
+    "description": "if ... else"
+  },
+  "el - else": {
+    "prefix": "el",
+    "body": [
+      "else",
+      "\t${0}"
+    ],
+    "description": "else"
+  },
+  "eif - elsif": {
+    "prefix": "eif",
+    "body": [
+      "elseif ${1}",
+      "\t${0}"
+    ],
+    "description": "elsif"
+  },
+  "wh - while": {
+    "prefix": "wh",
+    "body": [
+      "while ${1}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "while"
+  },
+  "for - for": {
+    "prefix": "for",
+    "body": [
+      "for ${1:i} = ${2:1:n}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "for"
+  },
+  "parfor - parfor": {
+    "prefix": "parfor",
+    "body": [
+      "parfor ${1:i} = ${2:1:n}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "parfor"
+  },
+  "fun - function": {
+    "prefix": "fun",
+    "body": [
+      "function [${3:out}] = ${1:${TM_FILENAME_BASE}}(${2}) ",
+      "${0}"
+    ],
+    "description": "function"
+  },
+  "try - try ... catch": {
+    "prefix": "try",
+    "body": [
+      "try",
+      "\t${1}",
+      "catch ${2:err}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "try ... catch"
+  },
+  "switch - switch": {
+    "prefix": "switch",
+    "body": [
+      "switch ${1:n}",
+      "\tcase ${2:0}",
+      "\t\t${0}",
+      "end"
+    ],
+    "description": "switch"
+  },
+  "@ - anonymous function": {
+    "prefix": "@",
+    "body": [
+      "@(${1:x}) ${0:x*x}"
+    ],
+    "description": "anonymous function"
+  },
+  "cl - class": {
+    "prefix": "cl",
+    "body": [
+      "classdef ${1:${TM_FILENAME_BASE}}",
+      "   properties",
+      "\t  ${2}",
+      "   end",
+      "   methods",
+      "\t  ${0}",
+      "   end",
+      "end"
+    ],
+    "description": "class"
+  }
+}

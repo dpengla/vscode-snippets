@@ -1,0 +1,86 @@
+{
+  "des - describe('thing', function() { ... })": {
+    "prefix": "des",
+    "body": [
+      "describe('${1:}', function() {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "});"
+    ],
+    "description": "describe('thing', function() { ... })"
+  },
+  "it - it('should do', function() { ... })": {
+    "prefix": "it",
+    "body": [
+      "it('${1:}', function() {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "});"
+    ],
+    "description": "it('should do', function() { ... })"
+  },
+  "xit - xit('should do', function() { ... })": {
+    "prefix": "xit",
+    "body": [
+      "xit('${1:}', function() {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "});"
+    ],
+    "description": "xit('should do', function() { ... })"
+  },
+  "bef - before(function() { ... })": {
+    "prefix": "bef",
+    "body": [
+      "before(function() {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "});"
+    ],
+    "description": "before(function() { ... })"
+  },
+  "befe - beforeEach(function() { ... })": {
+    "prefix": "befe",
+    "body": [
+      "beforeEach(function() {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "});"
+    ],
+    "description": "beforeEach(function() { ... })"
+  },
+  "aft - after(function() { ... })": {
+    "prefix": "aft",
+    "body": [
+      "after(function() {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "});"
+    ],
+    "description": "after(function() { ... })"
+  },
+  "afte - afterEach(function() { ... })": {
+    "prefix": "afte",
+    "body": [
+      "afterEach(function() {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "});"
+    ],
+    "description": "afterEach(function() { ... })"
+  },
+  "exp - expect(...)": {
+    "prefix": "exp",
+    "body": [
+      "expect(${1:})${0};"
+    ],
+    "description": "expect(...)"
+  },
+  "expe - expect(...).to.equal(...)": {
+    "prefix": "expe",
+    "body": [
+      "expect(${1:}).to.equal(${0});"
+    ],
+    "description": "expect(...).to.equal(...)"
+  },
+  "expd - expect(...).to.deep.equal(...)": {
+    "prefix": "expd",
+    "body": [
+      "expect(${1:}).to.deep.equal(${0});"
+    ],
+    "description": "expect(...).to.deep.equal(...)"
+  }
+}

@@ -1,0 +1,505 @@
+{
+  "mainn": {
+    "prefix": "mainn",
+    "body": [
+      "int main()",
+      "{",
+      "\t${0}",
+      "\treturn 0;",
+      "}"
+    ],
+    "description": "vim-snippets/cpp.snippets:5"
+  },
+  "incc": {
+    "prefix": "incc",
+    "body": [
+      "#include <${1:iostream}>"
+    ],
+    "description": "vim-snippets/cpp.snippets:14"
+  },
+  "binc": {
+    "prefix": "binc",
+    "body": [
+      "#include <boost/${1:shared_ptr}.hpp>"
+    ],
+    "description": "vim-snippets/cpp.snippets:16"
+  },
+  "array": {
+    "prefix": "array",
+    "body": [
+      "std::array<${1:T}, ${2:N}> ${3};"
+    ],
+    "description": "vim-snippets/cpp.snippets:21"
+  },
+  "vector": {
+    "prefix": "vector",
+    "body": [
+      "std::vector<${1:T}> ${2};"
+    ],
+    "description": "vim-snippets/cpp.snippets:24"
+  },
+  "deque": {
+    "prefix": "deque",
+    "body": [
+      "std::deque<${1:T}> ${2};"
+    ],
+    "description": "vim-snippets/cpp.snippets:27"
+  },
+  "flist": {
+    "prefix": "flist",
+    "body": [
+      "std::forward_list<${1:T}> ${2};"
+    ],
+    "description": "vim-snippets/cpp.snippets:30"
+  },
+  "list": {
+    "prefix": "list",
+    "body": [
+      "std::list<${1:T}> ${2};"
+    ],
+    "description": "vim-snippets/cpp.snippets:33"
+  },
+  "set": {
+    "prefix": "set",
+    "body": [
+      "std::set<${1:T}> ${2};"
+    ],
+    "description": "vim-snippets/cpp.snippets:36"
+  },
+  "map": {
+    "prefix": "map",
+    "body": [
+      "std::map<${1:Key}, ${2:T}> ${3};"
+    ],
+    "description": "vim-snippets/cpp.snippets:39"
+  },
+  "mset": {
+    "prefix": "mset",
+    "body": [
+      "std::multiset<${1:T}> ${2};"
+    ],
+    "description": "vim-snippets/cpp.snippets:42"
+  },
+  "mmap": {
+    "prefix": "mmap",
+    "body": [
+      "std::multimap<${1:Key}, ${2:T}> ${3};"
+    ],
+    "description": "vim-snippets/cpp.snippets:45"
+  },
+  "uset": {
+    "prefix": "uset",
+    "body": [
+      "std::unordered_set<${1:T}> ${2};"
+    ],
+    "description": "vim-snippets/cpp.snippets:48"
+  },
+  "umap": {
+    "prefix": "umap",
+    "body": [
+      "std::unordered_map<${1:Key}, ${2:T}> ${3};"
+    ],
+    "description": "vim-snippets/cpp.snippets:51"
+  },
+  "umset": {
+    "prefix": "umset",
+    "body": [
+      "std::unordered_multiset<${1:T}> ${2};"
+    ],
+    "description": "vim-snippets/cpp.snippets:54"
+  },
+  "ummap": {
+    "prefix": "ummap",
+    "body": [
+      "std::unordered_multimap<${1:Key}, ${2:T}> ${3};"
+    ],
+    "description": "vim-snippets/cpp.snippets:57"
+  },
+  "stack": {
+    "prefix": "stack",
+    "body": [
+      "std::stack<${1:T}> ${2};"
+    ],
+    "description": "vim-snippets/cpp.snippets:60"
+  },
+  "queue": {
+    "prefix": "queue",
+    "body": [
+      "std::queue<${1:T}> ${2};"
+    ],
+    "description": "vim-snippets/cpp.snippets:63"
+  },
+  "pqueue": {
+    "prefix": "pqueue",
+    "body": [
+      "std::priority_queue<${1:T}> ${2};"
+    ],
+    "description": "vim-snippets/cpp.snippets:66"
+  },
+  "msp": {
+    "prefix": "msp",
+    "body": [
+      "std::shared_ptr<${1:T}> ${2} = std::make_shared<$1>(${3});"
+    ],
+    "description": "vim-snippets/cpp.snippets:71"
+  },
+  "amsp": {
+    "prefix": "amsp",
+    "body": [
+      "auto ${1} = std::make_shared<${2:T}>(${3});"
+    ],
+    "description": "vim-snippets/cpp.snippets:73"
+  },
+  "mup": {
+    "prefix": "mup",
+    "body": [
+      "std::unique_ptr<${1:T}> ${2} = std::make_unique<$1>(${3});"
+    ],
+    "description": "vim-snippets/cpp.snippets:76"
+  },
+  "amup": {
+    "prefix": "amup",
+    "body": [
+      "auto ${1} = std::make_unique<${2:T}>(${3});"
+    ],
+    "description": "vim-snippets/cpp.snippets:78"
+  },
+  "pri": {
+    "prefix": "pri",
+    "body": [
+      "private"
+    ],
+    "description": "vim-snippets/cpp.snippets:83"
+  },
+  "pro": {
+    "prefix": "pro",
+    "body": [
+      "protected"
+    ],
+    "description": "vim-snippets/cpp.snippets:86"
+  },
+  "pub": {
+    "prefix": "pub",
+    "body": [
+      "public"
+    ],
+    "description": "vim-snippets/cpp.snippets:89"
+  },
+  "fr": {
+    "prefix": "fr",
+    "body": [
+      "friend"
+    ],
+    "description": "vim-snippets/cpp.snippets:92"
+  },
+  "mu": {
+    "prefix": "mu",
+    "body": [
+      "mutable"
+    ],
+    "description": "vim-snippets/cpp.snippets:95"
+  },
+  "cl": {
+    "prefix": "cl",
+    "body": [
+      "/*! \\class $1",
+      " *  \\brief ${3:Brief class description}",
+      " *",
+      " *  ${4:Detailed description}",
+      " */",
+      "class ${1:${TM_FILENAME_BASE}}",
+      "{",
+      "public:",
+      "\t$1(${2});",
+      "\tvirtual ~$1();",
+      "",
+      "protected:",
+      "\tm_${5}; /*!< ${6:Member description} */",
+      "};"
+    ],
+    "description": "vim-snippets/cpp.snippets:100"
+  },
+  "mfun": {
+    "prefix": "mfun",
+    "body": [
+      "${4:void} ${1:${TM_FILENAME_BASE}}::${2:memberFunction}(${3}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cpp.snippets:116"
+  },
+  "dmfun0": {
+    "prefix": "dmfun0",
+    "body": [
+      "/*! \\brief ${4:Brief function description here}",
+      " *",
+      " *  ${5:Detailed description}",
+      " *",
+      " * \\return ${6:Return parameter description}",
+      " */",
+      "${3:void} ${1:${TM_FILENAME_BASE}}::${2:memberFunction}() {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cpp.snippets:121"
+  },
+  "dmfun1": {
+    "prefix": "dmfun1",
+    "body": [
+      "/*! \\brief ${6:Brief function description here}",
+      " *",
+      " *  ${7:Detailed description}",
+      " *",
+      " * \\param $4 ${8:Parameter description}",
+      " * \\return ${9:Return parameter description}",
+      " */",
+      "${5:void} ${1:${TM_FILENAME_BASE}}::${2:memberFunction}(${3:Type} ${4:Parameter}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cpp.snippets:132"
+  },
+  "dmfun2": {
+    "prefix": "dmfun2",
+    "body": [
+      "/*! \\brief ${8:Brief function description here}",
+      " *",
+      " *  ${9:Detailed description}",
+      " *",
+      " * \\param $4 ${10:Parameter description}",
+      " * \\param $6 ${11:Parameter description}",
+      " * \\return ${12:Return parameter description}",
+      " */",
+      "${7:void} ${1:${TM_FILENAME_BASE}}::${2:memberFunction}(${3:Type} ${4:Parameter},${5:Type} ${6:Parameter}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cpp.snippets:144"
+  },
+  "ns": {
+    "prefix": "ns",
+    "body": [
+      "namespace ${1:${TM_FILENAME_BASE}} {",
+      "\t${0}",
+      "} /* namespace $1 */"
+    ],
+    "description": "vim-snippets/cpp.snippets:157"
+  },
+  "ans": {
+    "prefix": "ans",
+    "body": [
+      "namespace {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cpp.snippets:161"
+  },
+  "cout": {
+    "prefix": "cout",
+    "body": [
+      "std::cout << ${1} << std::endl;"
+    ],
+    "description": "vim-snippets/cpp.snippets:168"
+  },
+  "cin": {
+    "prefix": "cin",
+    "body": [
+      "std::cin >> ${1};"
+    ],
+    "description": "vim-snippets/cpp.snippets:171"
+  },
+  "sca": {
+    "prefix": "sca",
+    "body": [
+      "static_cast<${1:unsigned}>(${2:expr})${3}"
+    ],
+    "description": "vim-snippets/cpp.snippets:176"
+  },
+  "dca": {
+    "prefix": "dca",
+    "body": [
+      "dynamic_cast<${1:unsigned}>(${2:expr})${3}"
+    ],
+    "description": "vim-snippets/cpp.snippets:179"
+  },
+  "rca": {
+    "prefix": "rca",
+    "body": [
+      "reinterpret_cast<${1:unsigned}>(${2:expr})${3}"
+    ],
+    "description": "vim-snippets/cpp.snippets:182"
+  },
+  "cca": {
+    "prefix": "cca",
+    "body": [
+      "const_cast<${1:unsigned}>(${2:expr})${3}"
+    ],
+    "description": "vim-snippets/cpp.snippets:185"
+  },
+  "fori": {
+    "prefix": "fori",
+    "body": [
+      "for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++}) {",
+      "\t${4}",
+      "}"
+    ],
+    "description": "vim-snippets/cpp.snippets:189"
+  },
+  "fore": {
+    "prefix": "fore",
+    "body": [
+      "for (${1:auto} ${2:i} : ${3:container}) {",
+      "\t${4}",
+      "}"
+    ],
+    "description": "vim-snippets/cpp.snippets:195"
+  },
+  "iter": {
+    "prefix": "iter",
+    "body": [
+      "for (${1:std::vector}<${2:type}>::${3:const_iterator} ${4:i} = ${5:container}.begin(); $4 != $5.end(); ++$4) {",
+      "\t${6}",
+      "}"
+    ],
+    "description": "vim-snippets/cpp.snippets:200"
+  },
+  "itera": {
+    "prefix": "itera",
+    "body": [
+      "for (auto ${1:i} = ${2:container}.begin(); $1 != $2.end(); ++$1) {",
+      "\t${3:std::cout << *$1 << std::endl;}",
+      "}"
+    ],
+    "description": "vim-snippets/cpp.snippets:206"
+  },
+  "ld": {
+    "prefix": "ld",
+    "body": [
+      "[${1}](${2}){${3}};"
+    ],
+    "description": "vim-snippets/cpp.snippets:213"
+  },
+  "lld": {
+    "prefix": "lld",
+    "body": [
+      "[${1}](${2}){",
+      "\t${3}",
+      "};"
+    ],
+    "description": "vim-snippets/cpp.snippets:216"
+  },
+  "try": {
+    "prefix": "try",
+    "body": [
+      "try {",
+      "",
+      "}catch(${1}) {",
+      "",
+      "}"
+    ],
+    "description": "vim-snippets/cpp.snippets:221"
+  },
+  "af - auto function": {
+    "prefix": "af",
+    "body": [
+      "auto ${1:name}(${2}) -> ${3:void}",
+      "{",
+      "\t${0}",
+      "};"
+    ],
+    "description": "auto function"
+  },
+  "transform - ranges::views::transform": {
+    "prefix": "transform",
+    "body": [
+      "${1:${2:std::}${3:ranges::}views::}transform($4)"
+    ],
+    "description": "ranges::views::transform"
+  },
+  "filter - ranges::views::filter": {
+    "prefix": "filter",
+    "body": [
+      "${1:${2:std::}${3:ranges::}views::}filter($4)"
+    ],
+    "description": "ranges::views::filter"
+  },
+  "r - ranges::": {
+    "prefix": "r",
+    "body": [
+      "ranges::"
+    ],
+    "description": "ranges::"
+  },
+  "rv - ranges::views::": {
+    "prefix": "rv",
+    "body": [
+      "ranges::views::"
+    ],
+    "description": "ranges::views::"
+  },
+  "ra - ranges::actions::": {
+    "prefix": "ra",
+    "body": [
+      "ranges::actions::"
+    ],
+    "description": "ranges::actions::"
+  },
+  "sr - std::ranges::": {
+    "prefix": "sr",
+    "body": [
+      "std::ranges::"
+    ],
+    "description": "std::ranges::"
+  },
+  "sv - std::views::": {
+    "prefix": "sv",
+    "body": [
+      "std::views::"
+    ],
+    "description": "std::views::"
+  },
+  "gtemain - GTest:add main": {
+    "prefix": "gtemain",
+    "body": [
+      "int main(int argc, char **argv) {",
+      "\ttesting::InitGoogleTest(&argc, argv);",
+      "\treturn RUN_ALL_TESTS();",
+      "}"
+    ],
+    "description": "GTest:add main"
+  },
+  "gtetest - GTest:add test": {
+    "prefix": "gtetest",
+    "body": [
+      "TEST(${1:SuiteName}, ${2:TestName}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "GTest:add test"
+  },
+  "gtefix - GTest:add fixture": {
+    "prefix": "gtefix",
+    "body": [
+      "TEST_F(${1:SuiteName}, ${2:TestName}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "GTest:add fixture"
+  },
+  "gtepar - GTest:add parameterized test": {
+    "prefix": "gtepar",
+    "body": [
+      "TEST_P(${1:SuiteName}, ${2:TestName}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "GTest:add parameterized test"
+  },
+  "gteparins - GTest:instantiate parameterized test": {
+    "prefix": "gteparins",
+    "body": [
+      "INSTANTIATE_TEST_SUITE_P(${1:InstantiationName}, ${2:SuiteName}, ${0});"
+    ],
+    "description": "GTest:instantiate parameterized test"
+  }
+}

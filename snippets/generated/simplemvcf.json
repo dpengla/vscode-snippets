@@ -1,0 +1,206 @@
+{
+  "sm_controller": {
+    "prefix": "sm_controller",
+    "body": [
+      "<?php",
+      "\tnamespace Controllers;",
+      "\tuse Core\\View;",
+      "\tuse Core\\Controller;",
+      "",
+      "\tclass ${1:class_name} extends Controller",
+      "\t{",
+      "\t\tpublic function __construct()",
+      "\t\t{",
+      "\t\t\tparent::__construct();",
+      "\t\t}",
+      "",
+      "\t\tpublic function index()",
+      "\t\t{",
+      "\t\t\t${2:}",
+      "\t\t}",
+      "\t}"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:1"
+  },
+  "sm_model": {
+    "prefix": "sm_model",
+    "body": [
+      "<?php ",
+      "\tnamespace Models;",
+      "",
+      "\tuse Core\\Model;",
+      "",
+      "\tclass ${1:class_name} extends Model ",
+      "\t{    ",
+      "\t\tfunction __construct()",
+      "\t\t{",
+      "\t\t\tparent::__construct();",
+      "\t\t}  ",
+      "\t}"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:19"
+  },
+  "sm_model_crud": {
+    "prefix": "sm_model_crud",
+    "body": [
+      "<?php ",
+      "\tnamespace Models;",
+      "",
+      "\tuse Core\\Model;",
+      "",
+      "\tclass ${1:class_name} extends Model ",
+      "\t{    ",
+      "\t\tprivate \\$${2:table};",
+      "\t\tfunction __construct()",
+      "\t\t{",
+      "\t\t\tparent::__construct();",
+      "\t\t}  ",
+      "",
+      "\t\tpublic function getRow(\\$where)",
+      "\t\t{",
+      "\t\t\treturn \\$this->db->select('SELECT * FROM '.\\$table.' WHERE ${3:where}', \\$data);",
+      "\t\t}",
+      "",
+      "\t\tpublic function getRows(\\$where)",
+      "\t\t{",
+      "\t\t\treturn \\$this->db->select('SELECT * FROM '.\\$table.');",
+      "\t\t}",
+      "",
+      "\t\tpublic function insert(\\$data)",
+      "\t\t{",
+      "\t\t\t\\$this->db->insert(\\$table, \\$data);",
+      "\t\t}",
+      "",
+      "\t\tpublic function update(\\$data, \\$where)",
+      "\t\t{",
+      "\t\t\t\\$this->db->update(\\$table ,\\$data, \\$where);",
+      "\t\t}",
+      "",
+      "\t\tpublic function delete(\\$where)",
+      "\t\t{",
+      "\t\t\t\\$this->db->delete(\\$table, \\$where);",
+      "\t\t}",
+      "\t}"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:32"
+  },
+  "sm_render": {
+    "prefix": "sm_render",
+    "body": [
+      "View::render('${1:view}', \\$${2:array});"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:71"
+  },
+  "sm_render_template": {
+    "prefix": "sm_render_template",
+    "body": [
+      "View::renderTemplate('${1:part}', \\$${2:array});"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:73"
+  },
+  "sm_db_select": {
+    "prefix": "sm_db_select",
+    "body": [
+      "\\$this->db->select(${1:sql}, ${2:where});"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:77"
+  },
+  "sm_db_insert": {
+    "prefix": "sm_db_insert",
+    "body": [
+      "\\$this->db->insert(${1:table}, ${2:data});"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:80"
+  },
+  "sm_db_update": {
+    "prefix": "sm_db_update",
+    "body": [
+      "\\$this->db->update(${1:table}, ${2:data}, ${3:where});"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:83"
+  },
+  "sm_db_delete": {
+    "prefix": "sm_db_delete",
+    "body": [
+      "\\$this->db->delete(${1:table}, ${2:where});"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:86"
+  },
+  "sm_db_truncate": {
+    "prefix": "sm_db_truncate",
+    "body": [
+      "\\$this->db->delete(${1:table});"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:89"
+  },
+  "sm_session_set": {
+    "prefix": "sm_session_set",
+    "body": [
+      "Session::set(${1:key}, ${2:value});"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:93"
+  },
+  "sm_session_get": {
+    "prefix": "sm_session_get",
+    "body": [
+      "Session::get(${1:key});"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:96"
+  },
+  "sm_session_pull": {
+    "prefix": "sm_session_pull",
+    "body": [
+      "Session::pull(${1:key});"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:99"
+  },
+  "sm_session_id": {
+    "prefix": "sm_session_id",
+    "body": [
+      "Session::id();"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:102"
+  },
+  "sm_session_destroy": {
+    "prefix": "sm_session_destroy",
+    "body": [
+      "Session::set(${1:key});"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:105"
+  },
+  "sm_session_display": {
+    "prefix": "sm_session_display",
+    "body": [
+      "Session::display();"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:108"
+  },
+  "sm_url_redirect": {
+    "prefix": "sm_url_redirect",
+    "body": [
+      "Url:redirect('${1:path}');"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:112"
+  },
+  "sm_url_previous": {
+    "prefix": "sm_url_previous",
+    "body": [
+      "Url:previous();"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:115"
+  },
+  "sm_url_templatepath": {
+    "prefix": "sm_url_templatepath",
+    "body": [
+      "Url:templatePath();"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:118"
+  },
+  "sm_url_autolink": {
+    "prefix": "sm_url_autolink",
+    "body": [
+      "Url:autolink('${1:string}');"
+    ],
+    "description": "vim-snippets/simplemvcf.snippets:121"
+  }
+}

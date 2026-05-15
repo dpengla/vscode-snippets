@@ -1,0 +1,40 @@
+{
+  "defmo": {
+    "prefix": "defmo",
+    "body": [
+      "(defmodule ${1:${TM_FILENAME_BASE}}",
+      "\t(export ${2:all}))",
+      "$0"
+    ],
+    "description": "vim-snippets/lfe.snippets:1"
+  },
+  "def": {
+    "prefix": "def",
+    "body": [
+      "(defun $1 ($2)",
+      "\t$0)"
+    ],
+    "description": "vim-snippets/lfe.snippets:5"
+  },
+  "ltest": {
+    "prefix": "ltest",
+    "body": [
+      "(defmodule ${1:${TM_FILENAME_BASE}}",
+      "\t(behaviour ltest-unit)",
+      "\t(export all))",
+      "",
+      "(include-lib \"ltest/include/ltest-macros.lfe\")",
+      "",
+      "$0"
+    ],
+    "description": "vim-snippets/lfe.snippets:8"
+  },
+  "test": {
+    "prefix": "test",
+    "body": [
+      "(deftest $1",
+      "\t$0)"
+    ],
+    "description": "vim-snippets/lfe.snippets:16"
+  }
+}

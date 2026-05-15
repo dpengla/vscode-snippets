@@ -1,0 +1,31 @@
+{
+  "if - # {{#if value}} ... {{/if}}": {
+    "prefix": "if",
+    "body": [
+      "{{#if ${1:value}}}",
+      "${0:${TM_SELECTED_TEXT}}",
+      "{{/if}}"
+    ],
+    "description": "# {{#if value}} ... {{/if}}"
+  },
+  "ifn - # {{#unless value}} ... {{/unless}}": {
+    "prefix": "ifn",
+    "body": [
+      "{{#unless ${1:value}}}",
+      "${0:${TM_SELECTED_TEXT}}",
+      "{{/unless}}"
+    ],
+    "description": "# {{#unless value}} ... {{/unless}}"
+  },
+  "ife - # {{#if value}} ... {{else}} .. {{/if}}": {
+    "prefix": "ife",
+    "body": [
+      "{{#if ${1:value}}}",
+      "${2:${TM_SELECTED_TEXT}}",
+      "{{else}}",
+      "${3}",
+      "{{/if}}"
+    ],
+    "description": "# {{#if value}} ... {{else}} .. {{/if}}"
+  }
+}

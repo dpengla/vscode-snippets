@@ -1,0 +1,389 @@
+{
+  "%": {
+    "prefix": "%",
+    "body": [
+      "{% ${1} %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:5"
+  },
+  "%%": {
+    "prefix": "%%",
+    "body": [
+      "{% ${1:tag_name} %}",
+      "${0}",
+      "{% end$1 %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:7"
+  },
+  "{": {
+    "prefix": "{",
+    "body": [
+      "{{ ${1} }}"
+    ],
+    "description": "vim-snippets/jinja.snippets:11"
+  },
+  "autoescape": {
+    "prefix": "autoescape",
+    "body": [
+      "{% autoescape ${1:off} %}",
+      "\t${0}",
+      "{% endautoescape %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:15"
+  },
+  "block": {
+    "prefix": "block",
+    "body": [
+      "{% block ${1} %}",
+      "\t${0}",
+      "{% endblock %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:19"
+  },
+  "#": {
+    "prefix": "#",
+    "body": [
+      "{# ${0:comment} #}"
+    ],
+    "description": "vim-snippets/jinja.snippets:23"
+  },
+  "comment": {
+    "prefix": "comment",
+    "body": [
+      "{% comment %}",
+      "\t${0}",
+      "{% endcomment %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:25"
+  },
+  "cycle": {
+    "prefix": "cycle",
+    "body": [
+      "{% cycle ${1:val1} ${2:val2} ${3:as ${4}} %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:29"
+  },
+  "debug": {
+    "prefix": "debug",
+    "body": [
+      "{% debug %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:31"
+  },
+  "extends": {
+    "prefix": "extends",
+    "body": [
+      "{% extends \"${0:base.html}\" %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:33"
+  },
+  "filter": {
+    "prefix": "filter",
+    "body": [
+      "{% filter ${1} %}",
+      "\t${0}",
+      "{% endfilter %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:35"
+  },
+  "firstof": {
+    "prefix": "firstof",
+    "body": [
+      "{% firstof ${1} %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:39"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "{% for ${1} in ${2} %}",
+      "\t${0}",
+      "{% endfor %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:41"
+  },
+  "empty": {
+    "prefix": "empty",
+    "body": [
+      "{% empty %}",
+      "${0}"
+    ],
+    "description": "vim-snippets/jinja.snippets:45"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "{% if ${1} %}",
+      "\t${0}",
+      "{% endif %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:48"
+  },
+  "el": {
+    "prefix": "el",
+    "body": [
+      "{% else %}",
+      "\t${1}"
+    ],
+    "description": "vim-snippets/jinja.snippets:52"
+  },
+  "eif": {
+    "prefix": "eif",
+    "body": [
+      "{% elif ${1} %}",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/jinja.snippets:55"
+  },
+  "ifchanged": {
+    "prefix": "ifchanged",
+    "body": [
+      "{% ifchanged %}${1}{% endifchanged %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:58"
+  },
+  "ifequal": {
+    "prefix": "ifequal",
+    "body": [
+      "{% ifequal ${1} ${2} %}",
+      "\t${0}",
+      "{% endifequal %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:60"
+  },
+  "ifnotequal": {
+    "prefix": "ifnotequal",
+    "body": [
+      "{% ifnotequal ${1} ${2} %}",
+      "\t${0}",
+      "{% endifnotequal %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:64"
+  },
+  "include": {
+    "prefix": "include",
+    "body": [
+      "{% include \"${0}\" %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:68"
+  },
+  "load": {
+    "prefix": "load",
+    "body": [
+      "{% load ${0} %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:70"
+  },
+  "now": {
+    "prefix": "now",
+    "body": [
+      "{% now \"${0:jS F Y H:i}\" %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:72"
+  },
+  "regroup": {
+    "prefix": "regroup",
+    "body": [
+      "{% regroup ${1} by ${2} as ${0} %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:74"
+  },
+  "spaceless": {
+    "prefix": "spaceless",
+    "body": [
+      "{% spaceless %}${0}{% endspaceless %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:76"
+  },
+  "ssi": {
+    "prefix": "ssi",
+    "body": [
+      "{% ssi ${0} %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:78"
+  },
+  "trans": {
+    "prefix": "trans",
+    "body": [
+      "{% trans %}${0}{% endtrans %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:80"
+  },
+  "url": {
+    "prefix": "url",
+    "body": [
+      "{% url ${1} as ${0} %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:82"
+  },
+  "widthratio": {
+    "prefix": "widthratio",
+    "body": [
+      "{% widthratio ${1:this_value} ${2:max_value} ${0:100} %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:84"
+  },
+  "with": {
+    "prefix": "with",
+    "body": [
+      "{% with ${1} as ${2} %}",
+      "\t${0}",
+      "{% endwith %}"
+    ],
+    "description": "vim-snippets/jinja.snippets:86"
+  },
+  "add": {
+    "prefix": "add",
+    "body": [
+      "add:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:99"
+  },
+  "center": {
+    "prefix": "center",
+    "body": [
+      "center:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:101"
+  },
+  "cut": {
+    "prefix": "cut",
+    "body": [
+      "cut:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:103"
+  },
+  "date": {
+    "prefix": "date",
+    "body": [
+      "date:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:105"
+  },
+  "default": {
+    "prefix": "default",
+    "body": [
+      "default:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:107"
+  },
+  "defaultifnone": {
+    "prefix": "defaultifnone",
+    "body": [
+      "default_if_none:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:109"
+  },
+  "dictsort": {
+    "prefix": "dictsort",
+    "body": [
+      "dictsort:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:111"
+  },
+  "dictsortrev": {
+    "prefix": "dictsortrev",
+    "body": [
+      "dictsortreversed:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:113"
+  },
+  "divisibleby": {
+    "prefix": "divisibleby",
+    "body": [
+      "divisibleby:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:115"
+  },
+  "floatformat": {
+    "prefix": "floatformat",
+    "body": [
+      "floatformat:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:117"
+  },
+  "getdigit": {
+    "prefix": "getdigit",
+    "body": [
+      "get_digit:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:119"
+  },
+  "join": {
+    "prefix": "join",
+    "body": [
+      "join:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:121"
+  },
+  "lengthis": {
+    "prefix": "lengthis",
+    "body": [
+      "length_is:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:123"
+  },
+  "pluralize": {
+    "prefix": "pluralize",
+    "body": [
+      "pluralize:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:125"
+  },
+  "removetags": {
+    "prefix": "removetags",
+    "body": [
+      "removetags:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:127"
+  },
+  "slice": {
+    "prefix": "slice",
+    "body": [
+      "slice:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:129"
+  },
+  "stringformat": {
+    "prefix": "stringformat",
+    "body": [
+      "stringformat:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:131"
+  },
+  "time": {
+    "prefix": "time",
+    "body": [
+      "time:\"${0}\""
+    ],
+    "description": "vim-snippets/jinja.snippets:133"
+  },
+  "truncatewords": {
+    "prefix": "truncatewords",
+    "body": [
+      "truncatewords:${0}"
+    ],
+    "description": "vim-snippets/jinja.snippets:135"
+  },
+  "truncatewordshtml": {
+    "prefix": "truncatewordshtml",
+    "body": [
+      "truncatewords_html:${0}"
+    ],
+    "description": "vim-snippets/jinja.snippets:137"
+  },
+  "urlizetrunc": {
+    "prefix": "urlizetrunc",
+    "body": [
+      "urlizetrunc:${0}"
+    ],
+    "description": "vim-snippets/jinja.snippets:139"
+  },
+  "wordwrap": {
+    "prefix": "wordwrap",
+    "body": [
+      "wordwrap:${0}"
+    ],
+    "description": "vim-snippets/jinja.snippets:141"
+  }
+}

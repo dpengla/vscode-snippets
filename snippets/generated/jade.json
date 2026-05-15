@@ -1,0 +1,44 @@
+{
+  "rep": {
+    "prefix": "rep",
+    "body": [
+      "div(ng-repeat='${1} in ${2}')"
+    ],
+    "description": "vim-snippets/jade.snippets:2"
+  },
+  "repf": {
+    "prefix": "repf",
+    "body": [
+      "div(ng-repeat='${1} in ${2}' | ${3})"
+    ],
+    "description": "vim-snippets/jade.snippets:5"
+  },
+  "repi": {
+    "prefix": "repi",
+    "body": [
+      "div(ng-repeat='${1} in ${2}' track by \\$index)"
+    ],
+    "description": "vim-snippets/jade.snippets:8"
+  },
+  "hide": {
+    "prefix": "hide",
+    "body": [
+      "div(ng-hide='${1}')"
+    ],
+    "description": "vim-snippets/jade.snippets:11"
+  },
+  "show": {
+    "prefix": "show",
+    "body": [
+      "div(ng-show='${1}')"
+    ],
+    "description": "vim-snippets/jade.snippets:14"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "div(ng-if='${1}')"
+    ],
+    "description": "vim-snippets/jade.snippets:17"
+  }
+}

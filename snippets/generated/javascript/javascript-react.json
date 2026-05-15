@@ -1,0 +1,342 @@
+{
+  "ir - import React": {
+    "prefix": "ir",
+    "body": [
+      "import React from 'react';"
+    ],
+    "description": "import React"
+  },
+  "irc - import React and Component": {
+    "prefix": "irc",
+    "body": [
+      "import React, { Component } from 'react';"
+    ],
+    "description": "import React and Component"
+  },
+  "irh - import React hooks": {
+    "prefix": "irh",
+    "body": [
+      "import { use$1 } from 'react';"
+    ],
+    "description": "import React hooks"
+  },
+  "ird - import ReactDOM": {
+    "prefix": "ird",
+    "body": [
+      "import ReactDOM from 'react-dom';"
+    ],
+    "description": "import ReactDOM"
+  },
+  "irp - import PropTypes": {
+    "prefix": "irp",
+    "body": [
+      "import PropTypes from 'prop-types';"
+    ],
+    "description": "import PropTypes"
+  },
+  "cdm - componentDidMount": {
+    "prefix": "cdm",
+    "body": [
+      "componentDidMount() {",
+      "\t${1}",
+      "};"
+    ],
+    "description": "componentDidMount"
+  },
+  "cdup - componentDidUpdate": {
+    "prefix": "cdup",
+    "body": [
+      "componentDidUpdate(prevProps, prevState) {",
+      "\t${1}",
+      "};"
+    ],
+    "description": "componentDidUpdate"
+  },
+  "cwm - componentWillMount": {
+    "prefix": "cwm",
+    "body": [
+      "componentWillMount() {",
+      "\t${1}",
+      "};"
+    ],
+    "description": "componentWillMount"
+  },
+  "cwr - componentWillReceiveProps": {
+    "prefix": "cwr",
+    "body": [
+      "componentWillReceiveProps(nextProps) {",
+      "\t${1}",
+      "};"
+    ],
+    "description": "componentWillReceiveProps"
+  },
+  "cwun - componentWillUnmount": {
+    "prefix": "cwun",
+    "body": [
+      "componentWillUnmount() {",
+      "\t${1}",
+      "};"
+    ],
+    "description": "componentWillUnmount"
+  },
+  "cwu - componentWillUpdate": {
+    "prefix": "cwu",
+    "body": [
+      "componentWillUpdate(nextProps, nextState) {",
+      "\t${1}",
+      "};"
+    ],
+    "description": "componentWillUpdate"
+  },
+  "scu - shouldComponentUpdate": {
+    "prefix": "scu",
+    "body": [
+      "shouldComponentUpdate(nextProps, nextState) {",
+      "\t${1}",
+      "}"
+    ],
+    "description": "shouldComponentUpdate"
+  },
+  "spt - static propTypes": {
+    "prefix": "spt",
+    "body": [
+      "static propTypes = {",
+      "\t${1}: PropTypes.${2}",
+      "};"
+    ],
+    "description": "static propTypes"
+  },
+  "pt - propTypes": {
+    "prefix": "pt",
+    "body": [
+      "${1}.propTypes = {",
+      "\t${2}: PropTypes.${2}",
+      "};"
+    ],
+    "description": "propTypes"
+  },
+  "sdp - static defaultProps": {
+    "prefix": "sdp",
+    "body": [
+      "static defaultProps = {",
+      "\t${1}: ${2}\t",
+      "};"
+    ],
+    "description": "static defaultProps"
+  },
+  "dp - defaultProps": {
+    "prefix": "dp",
+    "body": [
+      "${1}.defaultProps = {",
+      "\t${2}: ${3}",
+      "};"
+    ],
+    "description": "defaultProps"
+  },
+  "pp - props": {
+    "prefix": "pp",
+    "body": [
+      "props.${1};"
+    ],
+    "description": "props"
+  },
+  "tp - this props": {
+    "prefix": "tp",
+    "body": [
+      "this.props.${1};"
+    ],
+    "description": "this props"
+  },
+  "st": {
+    "prefix": "st",
+    "body": [
+      "state = {",
+      "\t${1}: ${2},",
+      "};"
+    ],
+    "description": "vim-snippets/javascript/javascript-react.snippets:81"
+  },
+  "sst": {
+    "prefix": "sst",
+    "body": [
+      "this.setState({",
+      "\t${1}: ${2}",
+      "});"
+    ],
+    "description": "vim-snippets/javascript/javascript-react.snippets:86"
+  },
+  "tst": {
+    "prefix": "tst",
+    "body": [
+      "this.state.${1};"
+    ],
+    "description": "vim-snippets/javascript/javascript-react.snippets:91"
+  },
+  "raf": {
+    "prefix": "raf",
+    "body": [
+      "const ${1:ComponentName} = (${2:props}) => {",
+      "\t${3:state}",
+      "",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t${4}",
+      "\t\t</>",
+      "\t);",
+      "};"
+    ],
+    "description": "vim-snippets/javascript/javascript-react.snippets:95"
+  },
+  "rcla": {
+    "prefix": "rcla",
+    "body": [
+      "class ${1:ClassName} extends Component {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<>",
+      "\t\t\t\t${2}",
+      "\t\t\t</>",
+      "\t\t);",
+      "\t}",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript-react.snippets:106"
+  },
+  "ercla": {
+    "prefix": "ercla",
+    "body": [
+      "export default class ${1:ClassName} extends Component {",
+      "\trender() {",
+      "\t\treturn (",
+      "\t\t\t<>",
+      "\t\t\t\t${2}",
+      "\t\t\t</>",
+      "\t\t);",
+      "\t};",
+      "};"
+    ],
+    "description": "vim-snippets/javascript/javascript-react.snippets:117"
+  },
+  "ctor": {
+    "prefix": "ctor",
+    "body": [
+      "constructor() {",
+      "\tsuper();",
+      "",
+      "\t${1:state}",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript-react.snippets:128"
+  },
+  "ren": {
+    "prefix": "ren",
+    "body": [
+      "render() {",
+      "\treturn (",
+      "\t\t<>",
+      "\t\t\t${2}",
+      "\t\t</>",
+      "\t);",
+      "}"
+    ],
+    "description": "vim-snippets/javascript/javascript-react.snippets:135"
+  },
+  "fup": {
+    "prefix": "fup",
+    "body": [
+      "forceUpdate(${1:callback});"
+    ],
+    "description": "vim-snippets/javascript/javascript-react.snippets:144"
+  },
+  "uses - useState": {
+    "prefix": "uses",
+    "body": [
+      "const [${1:state}, set${2}] = useState(${3:initialState});"
+    ],
+    "description": "useState"
+  },
+  "usee - useEffect": {
+    "prefix": "usee",
+    "body": [
+      "useEffect(() => {",
+      "\t${1}",
+      "});"
+    ],
+    "description": "useEffect"
+  },
+  "userd - useReducer": {
+    "prefix": "userd",
+    "body": [
+      "const [${1:state}, ${2:dispatch}] = useReducer(${3:reducer});"
+    ],
+    "description": "useReducer"
+  },
+  "userf - useRef": {
+    "prefix": "userf",
+    "body": [
+      "const ${1:refContainer} = useRef(${2:initialValue});"
+    ],
+    "description": "useRef"
+  },
+  "usect - useContext": {
+    "prefix": "usect",
+    "body": [
+      "const ${1:value} = useContext(${2:MyContext});"
+    ],
+    "description": "useContext"
+  },
+  "usecb - useCallback": {
+    "prefix": "usecb",
+    "body": [
+      "const ${1:memoizedCallback} = useCallback(",
+      "() => {",
+      "\t${2}(${3})",
+      "},",
+      "[$3]",
+      ");"
+    ],
+    "description": "useCallback"
+  },
+  "usem - useMemo": {
+    "prefix": "usem",
+    "body": [
+      "const ${1:memoizedCallback} = useMemo(() => ${2}(${3}), [$3]);"
+    ],
+    "description": "useMemo"
+  },
+  "usei - useImperativeHandle": {
+    "prefix": "usei",
+    "body": [
+      "useImperativeHandle(${1:ref}, ${2:createHandle});"
+    ],
+    "description": "useImperativeHandle"
+  },
+  "used - useDebugValue": {
+    "prefix": "used",
+    "body": [
+      "useDebugValue(${1:value});"
+    ],
+    "description": "useDebugValue"
+  },
+  "rdr - ReactDOM.render": {
+    "prefix": "rdr",
+    "body": [
+      "ReactDOM.render(${1}, ${2});"
+    ],
+    "description": "ReactDOM.render"
+  },
+  "rdh - ReactDOM.hydrate": {
+    "prefix": "rdh",
+    "body": [
+      "ReactDOM.hydrate(${1:element}, ${2:container}[, ${3:callback}]);"
+    ],
+    "description": "ReactDOM.hydrate"
+  },
+  "rdcp - ReactDOM.createPortal": {
+    "prefix": "rdcp",
+    "body": [
+      "ReactDOM.createPortal(${1:child}, ${2:container});"
+    ],
+    "description": "ReactDOM.createPortal"
+  }
+}

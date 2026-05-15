@@ -1,0 +1,554 @@
+{
+  "#!": {
+    "prefix": "#!",
+    "body": [
+      "#!/usr/bin/env perl"
+    ],
+    "description": "vim-snippets/perl.snippets:2"
+  },
+  ".": {
+    "prefix": ".",
+    "body": [
+      " =>"
+    ],
+    "description": "vim-snippets/perl.snippets:6"
+  },
+  "sub": {
+    "prefix": "sub",
+    "body": [
+      "sub ${1:function_name} {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:9"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if (${1}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:14"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "if (${1}) {",
+      "\t${2}",
+      "}",
+      "else {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:19"
+  },
+  "ifee": {
+    "prefix": "ifee",
+    "body": [
+      "if (${1}) {",
+      "\t${2}",
+      "}",
+      "elsif (${3}) {",
+      "\t${4:# elsif...}",
+      "}",
+      "else {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:27"
+  },
+  "eif": {
+    "prefix": "eif",
+    "body": [
+      "elsif (${1}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:37"
+  },
+  "xif": {
+    "prefix": "xif",
+    "body": [
+      "$1 if $0;"
+    ],
+    "description": "vim-snippets/perl.snippets:42"
+  },
+  "unless": {
+    "prefix": "unless",
+    "body": [
+      "unless (${1}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:45"
+  },
+  "xunless": {
+    "prefix": "xunless",
+    "body": [
+      "$1 unless $0;"
+    ],
+    "description": "vim-snippets/perl.snippets:50"
+  },
+  "eval": {
+    "prefix": "eval",
+    "body": [
+      "local \\$@;",
+      "eval {",
+      "\t${1:# do something risky...}",
+      "};",
+      "if (my \\$e = \\$@) {",
+      "\t${0:# handle failure...}",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:53"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "while (${1}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:62"
+  },
+  "xwh": {
+    "prefix": "xwh",
+    "body": [
+      "$1 while $0;"
+    ],
+    "description": "vim-snippets/perl.snippets:67"
+  },
+  "cfor": {
+    "prefix": "cfor",
+    "body": [
+      "for (my \\$${2:var} = 0; \\$$2 < ${1:count}; \\$$2${3:++}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:70"
+  },
+  "xfor": {
+    "prefix": "xfor",
+    "body": [
+      "$1 for @$0;"
+    ],
+    "description": "vim-snippets/perl.snippets:75"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "foreach my \\$${1:x} (@${2:array}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:78"
+  },
+  "fore": {
+    "prefix": "fore",
+    "body": [
+      "$1 foreach @$0;"
+    ],
+    "description": "vim-snippets/perl.snippets:83"
+  },
+  "package": {
+    "prefix": "package",
+    "body": [
+      "package ${1:${TM_FILENAME_BASE}};",
+      "use strict;",
+      "use warnings;",
+      "",
+      "${0}",
+      "",
+      "1;",
+      "",
+      "__END__"
+    ],
+    "description": "vim-snippets/perl.snippets:86"
+  },
+  "packagev514": {
+    "prefix": "packagev514",
+    "body": [
+      "package ${1:${TM_FILENAME_BASE}} ${2:0.99};",
+      "use v5.14;",
+      "use warnings;",
+      "",
+      "${0}",
+      "",
+      "1;",
+      "",
+      "__END__"
+    ],
+    "description": "vim-snippets/perl.snippets:97"
+  },
+  "moose": {
+    "prefix": "moose",
+    "body": [
+      "use Moose;",
+      "use namespace::autoclean;",
+      "${1:#}BEGIN {extends '${2:ParentClass}'};",
+      "",
+      "${0}"
+    ],
+    "description": "vim-snippets/perl.snippets:108"
+  },
+  "parent": {
+    "prefix": "parent",
+    "body": [
+      "use parent qw(${0:Parent Class});"
+    ],
+    "description": "vim-snippets/perl.snippets:115"
+  },
+  "slurp": {
+    "prefix": "slurp",
+    "body": [
+      "my \\$${1:var} = do { local \\$/; open my \\$file, '<', \"${2:file}\"; <\\$file> };",
+      "${0}"
+    ],
+    "description": "vim-snippets/perl.snippets:118"
+  },
+  "strwar": {
+    "prefix": "strwar",
+    "body": [
+      "use strict;",
+      "use warnings;"
+    ],
+    "description": "vim-snippets/perl.snippets:122"
+  },
+  "vers": {
+    "prefix": "vers",
+    "body": [
+      "## no critic",
+      "our \\$VERSION = '${0:version}';",
+      "eval \\$VERSION;",
+      "## use critic"
+    ],
+    "description": "vim-snippets/perl.snippets:126"
+  },
+  "switch": {
+    "prefix": "switch",
+    "body": [
+      "use feature 'switch';"
+    ],
+    "description": "vim-snippets/perl.snippets:132"
+  },
+  "asub": {
+    "prefix": "asub",
+    "body": [
+      "sub {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:136"
+  },
+  "begin": {
+    "prefix": "begin",
+    "body": [
+      "BEGIN {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:144"
+  },
+  "pkgmv": {
+    "prefix": "pkgmv",
+    "body": [
+      "__PACKAGE__->${1:package_method}(${0:var})"
+    ],
+    "description": "vim-snippets/perl.snippets:150"
+  },
+  "pkgm": {
+    "prefix": "pkgm",
+    "body": [
+      "__PACKAGE__->${0:package_method}()"
+    ],
+    "description": "vim-snippets/perl.snippets:154"
+  },
+  "pkget": {
+    "prefix": "pkget",
+    "body": [
+      "__PACKAGE__->get_${0:package_method}()"
+    ],
+    "description": "vim-snippets/perl.snippets:158"
+  },
+  "pkgetv": {
+    "prefix": "pkgetv",
+    "body": [
+      "__PACKAGE__->get_${1:package_method}(${0:var})"
+    ],
+    "description": "vim-snippets/perl.snippets:162"
+  },
+  "qrx": {
+    "prefix": "qrx",
+    "body": [
+      "qr/",
+      "     ${0:regex}",
+      "/xms"
+    ],
+    "description": "vim-snippets/perl.snippets:166"
+  },
+  "qr/": {
+    "prefix": "qr/",
+    "body": [
+      "qr/${0:regex}/x"
+    ],
+    "description": "vim-snippets/perl.snippets:172"
+  },
+  "given": {
+    "prefix": "given",
+    "body": [
+      "given (\\$${1:var}) {",
+      "\t${2:# cases}",
+      "\t${0:# default}",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:176"
+  },
+  "when": {
+    "prefix": "when",
+    "body": [
+      "when (${1:case}) {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:183"
+  },
+  "hslice": {
+    "prefix": "hslice",
+    "body": [
+      "@{ ${1:hash}  }{ ${0:array} }"
+    ],
+    "description": "vim-snippets/perl.snippets:189"
+  },
+  "map": {
+    "prefix": "map",
+    "body": [
+      "map {  ${0: body }    }  ${1: @array } ;"
+    ],
+    "description": "vim-snippets/perl.snippets:194"
+  },
+  "ppod": {
+    "prefix": "ppod",
+    "body": [
+      "=head1 NAME",
+      "",
+      "${1:ClassName} - ${2:ShortDesc}",
+      "",
+      "=head1 SYNOPSIS",
+      "",
+      "  use $1;",
+      "",
+      "  ${3:# synopsis...}",
+      "",
+      "=head1 DESCRIPTION",
+      "",
+      "${0:# longer description...}",
+      "",
+      "",
+      "=head1 INTERFACE",
+      "",
+      "",
+      "=head1 DEPENDENCIES",
+      "",
+      "",
+      "=head1 SEE ALSO"
+    ],
+    "description": "vim-snippets/perl.snippets:200"
+  },
+  "psub": {
+    "prefix": "psub",
+    "body": [
+      "=head2 ${1:MethodName}",
+      "",
+      "${0:Summary....}"
+    ],
+    "description": "vim-snippets/perl.snippets:226"
+  },
+  "psubi": {
+    "prefix": "psubi",
+    "body": [
+      "=head2 ${1:MethodName}",
+      "",
+      "${0:Summary...}",
+      "",
+      "",
+      "=cut"
+    ],
+    "description": "vim-snippets/perl.snippets:232"
+  },
+  "subpod": {
+    "prefix": "subpod",
+    "body": [
+      "=head2 $1",
+      "",
+      "Summary of $1",
+      "",
+      "=cut",
+      "",
+      "sub ${1:subroutine_name} {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:240"
+  },
+  "parg": {
+    "prefix": "parg",
+    "body": [
+      "=over 2",
+      "",
+      "=item",
+      "Arguments",
+      "",
+      "",
+      "=over 3",
+      "",
+      "=item",
+      "C<${1:DataStructure}>",
+      "",
+      "  ${2:Sample}",
+      "",
+      "",
+      "=back",
+      "",
+      "",
+      "=item",
+      "Return",
+      "",
+      "=over 3",
+      "",
+      "",
+      "=item",
+      "C<${0:...return data}>",
+      "",
+      "",
+      "=back",
+      "",
+      "",
+      "=back"
+    ],
+    "description": "vim-snippets/perl.snippets:251"
+  },
+  "has": {
+    "prefix": "has",
+    "body": [
+      "has ${1:attribute} => (",
+      "\tis\t    => '${2:ro|rw}',",
+      "\tisa \t=> '${3:Str|Int|HashRef|ArrayRef|etc}',",
+      "\tdefault => sub {",
+      "\t\t${4:defaultvalue}",
+      "\t},",
+      "\t${0:# other attributes}",
+      ");"
+    ],
+    "description": "vim-snippets/perl.snippets:287"
+  },
+  "override": {
+    "prefix": "override",
+    "body": [
+      "override ${1:attribute} => sub {",
+      "\t${2:# my \\$self = shift;};",
+      "\t${0:# my (\\$self, \\$args) = @_;};",
+      "};"
+    ],
+    "description": "vim-snippets/perl.snippets:299"
+  },
+  "tuse": {
+    "prefix": "tuse",
+    "body": [
+      "use Test::More;",
+      "use Test::Deep; # (); # uncomment to stop prototype errors",
+      "use Test::Exception;"
+    ],
+    "description": "vim-snippets/perl.snippets:307"
+  },
+  "tlib": {
+    "prefix": "tlib",
+    "body": [
+      "use lib qw{ ./t/lib };"
+    ],
+    "description": "vim-snippets/perl.snippets:313"
+  },
+  "tmeths": {
+    "prefix": "tmeths",
+    "body": [
+      "\\$ENV{TEST_METHOD} = '${0:regex}';"
+    ],
+    "description": "vim-snippets/perl.snippets:317"
+  },
+  "trunner": {
+    "prefix": "trunner",
+    "body": [
+      "use ${0:test_class};",
+      "$1->runtests();"
+    ],
+    "description": "vim-snippets/perl.snippets:321"
+  },
+  "tsub": {
+    "prefix": "tsub",
+    "body": [
+      "sub t${1:number}_${2:test_case} :Test(${3:num_of_tests}) {",
+      "\tmy \\$self = shift;",
+      "\t${0}",
+      "",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:326"
+  },
+  "trsub": {
+    "prefix": "trsub",
+    "body": [
+      "test ${1:test_name} => { description => '${2:Description of test.}'} => sub {",
+      "\tmy (\\$self) = @_;",
+      "\t${0}",
+      "};"
+    ],
+    "description": "vim-snippets/perl.snippets:334"
+  },
+  "tprep": {
+    "prefix": "tprep",
+    "body": [
+      "sub prep${1:number}_${2:test_case} :Test(startup) {",
+      "\tmy \\$self = shift;",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/perl.snippets:341"
+  },
+  "debug_trace": {
+    "prefix": "debug_trace",
+    "body": [
+      "use Carp; # 'verbose';",
+      "# cloak \"die\"",
+      "# warn \"warning\"",
+      "\\$SIG{'__DIE__'} = sub {",
+      "\trequire Carp; Carp::confess",
+      "};"
+    ],
+    "description": "vim-snippets/perl.snippets:348"
+  },
+  "dump": {
+    "prefix": "dump",
+    "body": [
+      "use Data::Dump qw(dump);",
+      "warn dump ${1:variable}"
+    ],
+    "description": "vim-snippets/perl.snippets:356"
+  },
+  "ddp": {
+    "prefix": "ddp",
+    "body": [
+      "use DDP;",
+      "p ${1:variable}"
+    ],
+    "description": "vim-snippets/perl.snippets:360"
+  },
+  "subtest": {
+    "prefix": "subtest",
+    "body": [
+      "subtest '${1: test_name}' => sub {",
+      "\t${2}",
+      "};"
+    ],
+    "description": "vim-snippets/perl.snippets:364"
+  }
+}

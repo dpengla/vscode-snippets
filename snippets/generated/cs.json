@@ -1,0 +1,1019 @@
+{
+  "sim": {
+    "prefix": "sim",
+    "body": [
+      "${1:public} static int Main(string[] args)",
+      "{",
+      "\t${0}",
+      "\treturn 0;",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:60"
+  },
+  "simc": {
+    "prefix": "simc",
+    "body": [
+      "public class Application",
+      "{",
+      "\t${1:public} static int Main(string[] args)",
+      "\t{",
+      "\t\t${0}",
+      "\t\treturn 0;",
+      "\t}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:66"
+  },
+  "svm": {
+    "prefix": "svm",
+    "body": [
+      "${1:public} static void Main(string[] args)",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:75"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if (${1:true})",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:81"
+  },
+  "el": {
+    "prefix": "el",
+    "body": [
+      "else",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:86"
+  },
+  "ifs": {
+    "prefix": "ifs",
+    "body": [
+      "if (${1})",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/cs.snippets:91"
+  },
+  "t": {
+    "prefix": "t",
+    "body": [
+      "${1} ? ${2} : ${0}"
+    ],
+    "description": "vim-snippets/cs.snippets:95"
+  },
+  "?": {
+    "prefix": "?",
+    "body": [
+      "${1} ? ${2} : ${0}"
+    ],
+    "description": "vim-snippets/cs.snippets:97"
+  },
+  "do": {
+    "prefix": "do",
+    "body": [
+      "do",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "} while (${1:true});"
+    ],
+    "description": "vim-snippets/cs.snippets:100"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "while (${1:true})",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:106"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for (int ${1:i} = 0; $1 < ${2:count}; $1${3:++})",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:112"
+  },
+  "forr": {
+    "prefix": "forr",
+    "body": [
+      "for (int ${1:i} = ${2:length}; $1 >= 0; $1--)",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:117"
+  },
+  "fore": {
+    "prefix": "fore",
+    "body": [
+      "foreach (${1:var} ${2:entry} in ${3})",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:123"
+  },
+  "foreach": {
+    "prefix": "foreach",
+    "body": [
+      "foreach (${1:var} ${2:entry} in ${3})",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:128"
+  },
+  "each": {
+    "prefix": "each",
+    "body": [
+      "foreach (${1:var} ${2:entry} in ${3})",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:133"
+  },
+  "interface": {
+    "prefix": "interface",
+    "body": [
+      "public interface ${1:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:139"
+  },
+  "if+": {
+    "prefix": "if+",
+    "body": [
+      "public interface ${1:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:144"
+  },
+  "class": {
+    "prefix": "class",
+    "body": [
+      "public class ${1:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:150"
+  },
+  "cls": {
+    "prefix": "cls",
+    "body": [
+      "${2:public} class ${1:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:155"
+  },
+  "cls+": {
+    "prefix": "cls+",
+    "body": [
+      "public class ${1:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:160"
+  },
+  "cls+^": {
+    "prefix": "cls+^",
+    "body": [
+      "public static class ${1:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:165"
+  },
+  "cls&": {
+    "prefix": "cls&",
+    "body": [
+      "internal class ${1:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:170"
+  },
+  "cls&^": {
+    "prefix": "cls&^",
+    "body": [
+      "internal static class ${1:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:175"
+  },
+  "cls|": {
+    "prefix": "cls|",
+    "body": [
+      "protected class ${1:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:180"
+  },
+  "cls|%": {
+    "prefix": "cls|%",
+    "body": [
+      "protected abstract class ${1:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:185"
+  },
+  "ctor": {
+    "prefix": "ctor",
+    "body": [
+      "public ${1:${TM_FILENAME_BASE}}()",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:191"
+  },
+  "prop": {
+    "prefix": "prop",
+    "body": [
+      "${1:public} ${2:int} ${3} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:198"
+  },
+  "p": {
+    "prefix": "p",
+    "body": [
+      "${1:public} ${2:int} ${3} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:200"
+  },
+  "p+": {
+    "prefix": "p+",
+    "body": [
+      "public ${1:int} ${2} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:202"
+  },
+  "p+&": {
+    "prefix": "p+&",
+    "body": [
+      "public ${1:int} ${2} { get; internal set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:204"
+  },
+  "p+|": {
+    "prefix": "p+|",
+    "body": [
+      "public ${1:int} ${2} { get; protected set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:206"
+  },
+  "p+-": {
+    "prefix": "p+-",
+    "body": [
+      "public ${1:int} ${2} { get; private set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:208"
+  },
+  "p&": {
+    "prefix": "p&",
+    "body": [
+      "internal ${1:int} ${2} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:210"
+  },
+  "p&|": {
+    "prefix": "p&|",
+    "body": [
+      "internal ${1:int} ${2} { get; protected set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:212"
+  },
+  "p&-": {
+    "prefix": "p&-",
+    "body": [
+      "internal ${1:int} ${2} { get; private set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:214"
+  },
+  "p|": {
+    "prefix": "p|",
+    "body": [
+      "protected ${1:int} ${2} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:216"
+  },
+  "p|-": {
+    "prefix": "p|-",
+    "body": [
+      "protected ${1:int} ${2} { get; private set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:218"
+  },
+  "p-": {
+    "prefix": "p-",
+    "body": [
+      "private ${1:int} ${2} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:220"
+  },
+  "pi": {
+    "prefix": "pi",
+    "body": [
+      "${1:public} int ${2} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:223"
+  },
+  "pi+": {
+    "prefix": "pi+",
+    "body": [
+      "public int ${1} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:225"
+  },
+  "pi+&": {
+    "prefix": "pi+&",
+    "body": [
+      "public int ${1} { get; internal set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:227"
+  },
+  "pi+|": {
+    "prefix": "pi+|",
+    "body": [
+      "public int ${1} { get; protected set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:229"
+  },
+  "pi+-": {
+    "prefix": "pi+-",
+    "body": [
+      "public int ${1} { get; private set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:231"
+  },
+  "pi&": {
+    "prefix": "pi&",
+    "body": [
+      "internal int ${1} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:233"
+  },
+  "pi&|": {
+    "prefix": "pi&|",
+    "body": [
+      "internal int ${1} { get; protected set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:235"
+  },
+  "pi&-": {
+    "prefix": "pi&-",
+    "body": [
+      "internal int ${1} { get; private set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:237"
+  },
+  "pi|": {
+    "prefix": "pi|",
+    "body": [
+      "protected int ${1} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:239"
+  },
+  "pi|-": {
+    "prefix": "pi|-",
+    "body": [
+      "protected int ${1} { get; private set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:241"
+  },
+  "pi-": {
+    "prefix": "pi-",
+    "body": [
+      "private int ${1} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:243"
+  },
+  "pb": {
+    "prefix": "pb",
+    "body": [
+      "${1:public} bool ${2} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:246"
+  },
+  "pb+": {
+    "prefix": "pb+",
+    "body": [
+      "public bool ${1} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:248"
+  },
+  "pb+&": {
+    "prefix": "pb+&",
+    "body": [
+      "public bool ${1} { get; internal set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:250"
+  },
+  "pb+|": {
+    "prefix": "pb+|",
+    "body": [
+      "public bool ${1} { get; protected set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:252"
+  },
+  "pb+-": {
+    "prefix": "pb+-",
+    "body": [
+      "public bool ${1} { get; private set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:254"
+  },
+  "pb&": {
+    "prefix": "pb&",
+    "body": [
+      "internal bool ${1} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:256"
+  },
+  "pb&|": {
+    "prefix": "pb&|",
+    "body": [
+      "internal bool ${1} { get; protected set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:258"
+  },
+  "pb&-": {
+    "prefix": "pb&-",
+    "body": [
+      "internal bool ${1} { get; private set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:260"
+  },
+  "pb|": {
+    "prefix": "pb|",
+    "body": [
+      "protected bool ${1} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:262"
+  },
+  "pb|-": {
+    "prefix": "pb|-",
+    "body": [
+      "protected bool ${1} { get; private set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:264"
+  },
+  "pb-": {
+    "prefix": "pb-",
+    "body": [
+      "private bool ${1} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:266"
+  },
+  "ps": {
+    "prefix": "ps",
+    "body": [
+      "${1:public} string ${2} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:269"
+  },
+  "ps+": {
+    "prefix": "ps+",
+    "body": [
+      "public string ${1} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:271"
+  },
+  "ps+&": {
+    "prefix": "ps+&",
+    "body": [
+      "public string ${1} { get; internal set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:273"
+  },
+  "ps+|": {
+    "prefix": "ps+|",
+    "body": [
+      "public string ${1} { get; protected set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:275"
+  },
+  "ps+-": {
+    "prefix": "ps+-",
+    "body": [
+      "public string ${1} { get; private set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:277"
+  },
+  "ps&": {
+    "prefix": "ps&",
+    "body": [
+      "internal string ${1} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:279"
+  },
+  "ps&|": {
+    "prefix": "ps&|",
+    "body": [
+      "internal string ${1} { get; protected set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:281"
+  },
+  "ps&-": {
+    "prefix": "ps&-",
+    "body": [
+      "internal string ${1} { get; private set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:283"
+  },
+  "ps|": {
+    "prefix": "ps|",
+    "body": [
+      "protected string ${1} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:285"
+  },
+  "ps|-": {
+    "prefix": "ps|-",
+    "body": [
+      "protected string ${1} { get; private set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:287"
+  },
+  "ps-": {
+    "prefix": "ps-",
+    "body": [
+      "private string ${1} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:289"
+  },
+  "m": {
+    "prefix": "m",
+    "body": [
+      "${1:public} ${2:void} ${3}(${4})",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:292"
+  },
+  "m+": {
+    "prefix": "m+",
+    "body": [
+      "public ${1:void} ${2}(${3})",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:297"
+  },
+  "m&": {
+    "prefix": "m&",
+    "body": [
+      "internal ${1:void} ${2}(${3})",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:302"
+  },
+  "m|": {
+    "prefix": "m|",
+    "body": [
+      "protected ${1:void} ${2}(${3})",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:307"
+  },
+  "m-": {
+    "prefix": "m-",
+    "body": [
+      "private ${1:void} ${2}(${3})",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:312"
+  },
+  "mi": {
+    "prefix": "mi",
+    "body": [
+      "${1:public} int ${2}(${3})",
+      "{",
+      "\t${0:return 0;}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:318"
+  },
+  "mi+": {
+    "prefix": "mi+",
+    "body": [
+      "public int ${1}(${2})",
+      "{",
+      "\t${0:return 0;}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:323"
+  },
+  "mi&": {
+    "prefix": "mi&",
+    "body": [
+      "internal int ${1}(${2})",
+      "{",
+      "\t${0:return 0;}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:328"
+  },
+  "mi|": {
+    "prefix": "mi|",
+    "body": [
+      "protected int ${1}(${2})",
+      "{",
+      "\t${0:return 0;}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:333"
+  },
+  "mi-": {
+    "prefix": "mi-",
+    "body": [
+      "private int ${1}(${2})",
+      "{",
+      "\t${0:return 0;}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:338"
+  },
+  "mb": {
+    "prefix": "mb",
+    "body": [
+      "${1:public} bool ${2}(${3})",
+      "{",
+      "\t${0:return false;}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:344"
+  },
+  "mb+": {
+    "prefix": "mb+",
+    "body": [
+      "public bool ${1}(${2})",
+      "{",
+      "\t${0:return false;}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:349"
+  },
+  "mb&": {
+    "prefix": "mb&",
+    "body": [
+      "internal bool ${1}(${2})",
+      "{",
+      "\t${0:return false;}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:354"
+  },
+  "mb|": {
+    "prefix": "mb|",
+    "body": [
+      "protected bool ${1}(${2})",
+      "{",
+      "\t${0:return false;}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:359"
+  },
+  "mb-": {
+    "prefix": "mb-",
+    "body": [
+      "private bool ${1}(${2})",
+      "{",
+      "\t${0:return false;}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:364"
+  },
+  "ms": {
+    "prefix": "ms",
+    "body": [
+      "${1:public} string ${2}(${3})",
+      "{",
+      "\t${0:return \"\";}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:370"
+  },
+  "ms+": {
+    "prefix": "ms+",
+    "body": [
+      "public string ${1}(${2})",
+      "{",
+      "\t${0:return \"\";}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:375"
+  },
+  "ms&": {
+    "prefix": "ms&",
+    "body": [
+      "internal string ${1}(${2})",
+      "{",
+      "\t${0:return \"\";}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:380"
+  },
+  "ms|": {
+    "prefix": "ms|",
+    "body": [
+      "protected string ${1:}(${2:})",
+      "{",
+      "\t${0:return \"\";}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:385"
+  },
+  "ms-": {
+    "prefix": "ms-",
+    "body": [
+      "private string ${1}(${2})",
+      "{",
+      "\t${0:return \"\";}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:390"
+  },
+  "struct": {
+    "prefix": "struct",
+    "body": [
+      "public struct ${1:${TM_FILENAME_BASE}}",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:396"
+  },
+  "enum": {
+    "prefix": "enum",
+    "body": [
+      "enum ${1}",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:402"
+  },
+  "enum+": {
+    "prefix": "enum+",
+    "body": [
+      "public enum ${1}",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:408"
+  },
+  "#if": {
+    "prefix": "#if",
+    "body": [
+      "#if",
+      "\t${0}",
+      "#endif"
+    ],
+    "description": "vim-snippets/cs.snippets:414"
+  },
+  "///": {
+    "prefix": "///",
+    "body": [
+      "/// <summary>",
+      "/// ${0}",
+      "/// </summary>"
+    ],
+    "description": "vim-snippets/cs.snippets:419"
+  },
+  "<p": {
+    "prefix": "<p",
+    "body": [
+      "<param name=\"${1}\">${2:$1}</param>"
+    ],
+    "description": "vim-snippets/cs.snippets:423"
+  },
+  "<ex": {
+    "prefix": "<ex",
+    "body": [
+      "<exception cref=\"${1:System.Exception}\">${2}</exception>"
+    ],
+    "description": "vim-snippets/cs.snippets:425"
+  },
+  "<r": {
+    "prefix": "<r",
+    "body": [
+      "<returns>${1}</returns>"
+    ],
+    "description": "vim-snippets/cs.snippets:427"
+  },
+  "<s": {
+    "prefix": "<s",
+    "body": [
+      "<see cref=\"${1}\"/>"
+    ],
+    "description": "vim-snippets/cs.snippets:429"
+  },
+  "<rem": {
+    "prefix": "<rem",
+    "body": [
+      "<remarks>${1}</remarks>"
+    ],
+    "description": "vim-snippets/cs.snippets:431"
+  },
+  "<c": {
+    "prefix": "<c",
+    "body": [
+      "<code>${1}</code>"
+    ],
+    "description": "vim-snippets/cs.snippets:433"
+  },
+  "cw": {
+    "prefix": "cw",
+    "body": [
+      "Console.WriteLine(${1});"
+    ],
+    "description": "vim-snippets/cs.snippets:436"
+  },
+  "eq": {
+    "prefix": "eq",
+    "body": [
+      "public override bool Equals(object obj)",
+      "{",
+      "\tif (obj == null || GetType() != obj.GetType())",
+      "\t{",
+      "\t\treturn false;",
+      "\t}",
+      "\t${0:throw new NotImplementedException();}",
+      "\treturn base.Equals(obj);",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:440"
+  },
+  "exc": {
+    "prefix": "exc",
+    "body": [
+      "public class ${1:MyException} : ${2:Exception}",
+      "{",
+      "\tpublic $1() { }",
+      "\tpublic $1(string message) : base(message) { }",
+      "\tpublic $1(string message, Exception inner) : base(message, inner) { }",
+      "\tprotected $1(",
+      "\t\tSystem.Runtime.Serialization.SerializationInfo info,",
+      "\t\tSystem.Runtime.Serialization.StreamingContext context)",
+      "\t\t\t: base(info, context) { }",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:451"
+  },
+  "index": {
+    "prefix": "index",
+    "body": [
+      "public ${1:object} this[${2:int} index]",
+      "{",
+      "\tget { ${0} }",
+      "\tset { ${0} }",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:463"
+  },
+  "inv": {
+    "prefix": "inv",
+    "body": [
+      "EventHandler temp = ${1:MyEvent};",
+      "if (${2:temp} != null)",
+      "{",
+      "\t$2();",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:470"
+  },
+  "lock": {
+    "prefix": "lock",
+    "body": [
+      "lock (${1:this})",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:477"
+  },
+  "namespace": {
+    "prefix": "namespace",
+    "body": [
+      "namespace ${1:MyNamespace}",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:483"
+  },
+  "propr": {
+    "prefix": "propr",
+    "body": [
+      "public ${1:int} ${2:MyProperty} { get; set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:489"
+  },
+  "propf": {
+    "prefix": "propf",
+    "body": [
+      "private ${1:int} ${2:myVar};",
+      "public $1 ${3:MyProperty}",
+      "{",
+      "\tget { return $2; }",
+      "\tset { $2 = value; }",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:491"
+  },
+  "propg": {
+    "prefix": "propg",
+    "body": [
+      "public ${1:int} ${2:MyProperty} { get; private set; }"
+    ],
+    "description": "vim-snippets/cs.snippets:498"
+  },
+  "switch": {
+    "prefix": "switch",
+    "body": [
+      "switch (${1:switch_on})",
+      "{",
+      "\t${0}",
+      "\tdefault:",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:501"
+  },
+  "try": {
+    "prefix": "try",
+    "body": [
+      "try",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}",
+      "catch (${1:System.Exception})",
+      "{",
+      "\tthrow;",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:508"
+  },
+  "tryf": {
+    "prefix": "tryf",
+    "body": [
+      "try",
+      "{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}",
+      "finally",
+      "{",
+      "\t${1}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:517"
+  },
+  "usi": {
+    "prefix": "usi",
+    "body": [
+      "using (${1:resource})",
+      "{",
+      "\t${0}",
+      "}"
+    ],
+    "description": "vim-snippets/cs.snippets:527"
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "comm": {
+    "prefix": "comm",
+    "body": [
+      "(comment",
+      "\t${0})"
+    ],
+    "description": "vim-snippets/clojure.snippets:1"
+  },
+  "condp": {
+    "prefix": "condp",
+    "body": [
+      "(condp ${1:pred} ${2:expr}",
+      "\t${0})"
+    ],
+    "description": "vim-snippets/clojure.snippets:4"
+  },
+  "def": {
+    "prefix": "def",
+    "body": [
+      "(def ${0})"
+    ],
+    "description": "vim-snippets/clojure.snippets:7"
+  },
+  "defm": {
+    "prefix": "defm",
+    "body": [
+      "(defmethod ${1:multifn} \"${2:doc-string}\" ${3:dispatch-val} [${4:args}]",
+      "\t${0:code})"
+    ],
+    "description": "vim-snippets/clojure.snippets:9"
+  },
+  "defmm": {
+    "prefix": "defmm",
+    "body": [
+      "(defmulti ${1:name} \"${2:doc-string}\" ${0:dispatch-fn})"
+    ],
+    "description": "vim-snippets/clojure.snippets:12"
+  },
+  "defma": {
+    "prefix": "defma",
+    "body": [
+      "(defmacro ${1:name} \"${2:doc-string}\" ${0:dispatch-fn})"
+    ],
+    "description": "vim-snippets/clojure.snippets:14"
+  },
+  "defn": {
+    "prefix": "defn",
+    "body": [
+      "(defn ${1:name} \"${2:doc-string}\" [${3:arg-list}]",
+      "\t${0:code})"
+    ],
+    "description": "vim-snippets/clojure.snippets:16"
+  },
+  "defp": {
+    "prefix": "defp",
+    "body": [
+      "(defprotocol ${1:name}",
+      "\t${0:code})"
+    ],
+    "description": "vim-snippets/clojure.snippets:19"
+  },
+  "defr": {
+    "prefix": "defr",
+    "body": [
+      "(defrecord ${1:name} [${2:fields}]",
+      "\t${3:protocol}",
+      "\t${0:code})"
+    ],
+    "description": "vim-snippets/clojure.snippets:22"
+  },
+  "deft": {
+    "prefix": "deft",
+    "body": [
+      "(deftest ${1:name}",
+      "\t(is (= ${0:assertion})))"
+    ],
+    "description": "vim-snippets/clojure.snippets:26"
+  },
+  "is": {
+    "prefix": "is",
+    "body": [
+      "(is (= ${1} ${0}))"
+    ],
+    "description": "vim-snippets/clojure.snippets:29"
+  },
+  "defty": {
+    "prefix": "defty",
+    "body": [
+      "(deftype ${1:Name} [${2:fields}]",
+      "\t${3:Protocol}",
+      "\t${0:code})"
+    ],
+    "description": "vim-snippets/clojure.snippets:31"
+  },
+  "doseq": {
+    "prefix": "doseq",
+    "body": [
+      "(doseq [${1:elem} ${2:coll}]",
+      "\t${0:code})"
+    ],
+    "description": "vim-snippets/clojure.snippets:35"
+  },
+  "fn": {
+    "prefix": "fn",
+    "body": [
+      "(fn [${1:arg-list}] ${0:code})"
+    ],
+    "description": "vim-snippets/clojure.snippets:38"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "(if ${1:test-expr}",
+      "\t${2:then-expr}",
+      "\t${0:else-expr})"
+    ],
+    "description": "vim-snippets/clojure.snippets:40"
+  },
+  "if-let": {
+    "prefix": "if-let",
+    "body": [
+      "(if-let [${1:result} ${2:test-expr}]",
+      "\t(${3:then-expr} $1)",
+      "\t(${0:else-expr}))"
+    ],
+    "description": "vim-snippets/clojure.snippets:44"
+  },
+  "imp": {
+    "prefix": "imp",
+    "body": [
+      "(:import [${1:package}])",
+      "\t& {:keys [${1:keys}] :or {${0:defaults}}}"
+    ],
+    "description": "vim-snippets/clojure.snippets:48"
+  },
+  "let": {
+    "prefix": "let",
+    "body": [
+      "(let [${1:name} ${2:expr}]",
+      "\t${0:code})"
+    ],
+    "description": "vim-snippets/clojure.snippets:51"
+  },
+  "letfn": {
+    "prefix": "letfn",
+    "body": [
+      "(letfn [(${1:name}) [${2:args}]",
+      "\t${0:code})])"
+    ],
+    "description": "vim-snippets/clojure.snippets:54"
+  },
+  "map": {
+    "prefix": "map",
+    "body": [
+      "(map ${1:func} ${0:coll})"
+    ],
+    "description": "vim-snippets/clojure.snippets:57"
+  },
+  "mapl": {
+    "prefix": "mapl",
+    "body": [
+      "(map #(${1:lambda}) ${0:coll})"
+    ],
+    "description": "vim-snippets/clojure.snippets:59"
+  },
+  "met": {
+    "prefix": "met",
+    "body": [
+      "(${1:name} [${2:this} ${3:args}]",
+      "\t${0:code})"
+    ],
+    "description": "vim-snippets/clojure.snippets:61"
+  },
+  "ns": {
+    "prefix": "ns",
+    "body": [
+      "(ns ${0:name})"
+    ],
+    "description": "vim-snippets/clojure.snippets:64"
+  },
+  "dotimes": {
+    "prefix": "dotimes",
+    "body": [
+      "(dotimes [_ 10]",
+      "\t(time",
+      "\t\t(dotimes [_ ${1:times}]",
+      "\t\t\t${0:code})))"
+    ],
+    "description": "vim-snippets/clojure.snippets:66"
+  },
+  "pmethod": {
+    "prefix": "pmethod",
+    "body": [
+      "(${1:name} [${2:this} ${0:args}])"
+    ],
+    "description": "vim-snippets/clojure.snippets:71"
+  },
+  "refer": {
+    "prefix": "refer",
+    "body": [
+      "(:refer-clojure :exclude [${0}])"
+    ],
+    "description": "vim-snippets/clojure.snippets:73"
+  },
+  "require": {
+    "prefix": "require",
+    "body": [
+      "(:require [${1:namespace} :as [${0}]])"
+    ],
+    "description": "vim-snippets/clojure.snippets:75"
+  },
+  "use": {
+    "prefix": "use",
+    "body": [
+      "(:use [${1:namespace} :only [${0}]])"
+    ],
+    "description": "vim-snippets/clojure.snippets:77"
+  },
+  "print": {
+    "prefix": "print",
+    "body": [
+      "(println ${0})"
+    ],
+    "description": "vim-snippets/clojure.snippets:79"
+  },
+  "reduce": {
+    "prefix": "reduce",
+    "body": [
+      "(reduce ${1:(fn [p n] ${3})} ${2})"
+    ],
+    "description": "vim-snippets/clojure.snippets:81"
+  },
+  "when": {
+    "prefix": "when",
+    "body": [
+      "(when ${1:test} $0)"
+    ],
+    "description": "vim-snippets/clojure.snippets:83"
+  },
+  "when-let": {
+    "prefix": "when-let",
+    "body": [
+      "(when-let [${1:result} ${2:test}]",
+      "\t$0)"
+    ],
+    "description": "vim-snippets/clojure.snippets:85"
+  }
+}

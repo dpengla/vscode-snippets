@@ -1,0 +1,714 @@
+{
+  "do": {
+    "prefix": "do",
+    "body": [
+      "do",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:1"
+  },
+  "put - IO.puts": {
+    "prefix": "put",
+    "body": [
+      "IO.puts(\"${0}\")"
+    ],
+    "description": "IO.puts"
+  },
+  "ins - IO.inspect": {
+    "prefix": "ins",
+    "body": [
+      "IO.inspect(${0})"
+    ],
+    "description": "IO.inspect"
+  },
+  "insl - IO.inspect with label": {
+    "prefix": "insl",
+    "body": [
+      "IO.inspect(${0}label: \"${1:label}\")"
+    ],
+    "description": "IO.inspect with label"
+  },
+  "if - if .. do .. end": {
+    "prefix": "if",
+    "body": [
+      "if ${1} do",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "end"
+    ],
+    "description": "if .. do .. end"
+  },
+  "if: - if .. do: ..": {
+    "prefix": "if:",
+    "body": [
+      "if $1, do: ${0}"
+    ],
+    "description": "if .. do: .."
+  },
+  "ife - if .. do .. else .. end": {
+    "prefix": "ife",
+    "body": [
+      "if $1 do",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "else",
+      "\t${0}",
+      "end"
+    ],
+    "description": "if .. do .. else .. end"
+  },
+  "ife: - if .. do: .. else:": {
+    "prefix": "ife:",
+    "body": [
+      "if $1, do: ${2}, else: ${0}"
+    ],
+    "description": "if .. do: .. else:"
+  },
+  "unless - unless .. do .. end": {
+    "prefix": "unless",
+    "body": [
+      "unless ${1} do",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "end"
+    ],
+    "description": "unless .. do .. end"
+  },
+  "unless: - unless .. do: ..": {
+    "prefix": "unless:",
+    "body": [
+      "unless $1, do: ${0}"
+    ],
+    "description": "unless .. do: .."
+  },
+  "unlesse - unless .. do .. else .. end": {
+    "prefix": "unlesse",
+    "body": [
+      "unless $1 do",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "else",
+      "\t${0}",
+      "end"
+    ],
+    "description": "unless .. do .. else .. end"
+  },
+  "unlesse: - unless .. do: .. else:": {
+    "prefix": "unlesse:",
+    "body": [
+      "unless $1, do: ${2}, else: ${0}"
+    ],
+    "description": "unless .. do: .. else:"
+  },
+  "cond": {
+    "prefix": "cond",
+    "body": [
+      "cond do",
+      "\t${1} ->",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:39"
+  },
+  "case": {
+    "prefix": "case",
+    "body": [
+      "case ${1} do",
+      "\t${2} ->",
+      "\t\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:44"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for ${1:item} <- ${2:items} do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:49"
+  },
+  "for:": {
+    "prefix": "for:",
+    "body": [
+      "for ${1:item} <- ${2:items}, do: ${0}"
+    ],
+    "description": "vim-snippets/elixir.snippets:53"
+  },
+  "fori": {
+    "prefix": "fori",
+    "body": [
+      "for ${1:item} <- ${2:items}, into: ${3} do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:55"
+  },
+  "wi": {
+    "prefix": "wi",
+    "body": [
+      "with ${1:item} <- ${2:items} do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:59"
+  },
+  "wie": {
+    "prefix": "wie",
+    "body": [
+      "with(",
+      "\t${1:item} <- ${2:items}",
+      ") do",
+      "\t${3}",
+      "else",
+      "\t${4} ->",
+      "\t\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:63"
+  },
+  "sp": {
+    "prefix": "sp",
+    "body": [
+      "@spec ${1:name}(${2:args}) :: ${3:returns}"
+    ],
+    "description": "vim-snippets/elixir.snippets:72"
+  },
+  "op": {
+    "prefix": "op",
+    "body": [
+      "@opaque ${1:type_name} :: ${2:type}"
+    ],
+    "description": "vim-snippets/elixir.snippets:74"
+  },
+  "ty": {
+    "prefix": "ty",
+    "body": [
+      "@type ${1:type_name} :: ${2:type}"
+    ],
+    "description": "vim-snippets/elixir.snippets:76"
+  },
+  "typ": {
+    "prefix": "typ",
+    "body": [
+      "@typep ${1:type_name} :: ${2:type}"
+    ],
+    "description": "vim-snippets/elixir.snippets:78"
+  },
+  "cb": {
+    "prefix": "cb",
+    "body": [
+      "@callback ${1:name}(${2:args}) :: ${3:returns}"
+    ],
+    "description": "vim-snippets/elixir.snippets:80"
+  },
+  "df": {
+    "prefix": "df",
+    "body": [
+      "def ${1:name}, do: ${2}"
+    ],
+    "description": "vim-snippets/elixir.snippets:82"
+  },
+  "dfw": {
+    "prefix": "dfw",
+    "body": [
+      "def ${1:name}(${2:args}) when ${3:guard}, do:"
+    ],
+    "description": "vim-snippets/elixir.snippets:84"
+  },
+  "def": {
+    "prefix": "def",
+    "body": [
+      "def ${1:name} do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:86"
+  },
+  "defd": {
+    "prefix": "defd",
+    "body": [
+      "@doc \"\"\"",
+      "${1:doc string}",
+      "\"\"\"",
+      "def ${2:name} do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:90"
+  },
+  "defs": {
+    "prefix": "defs",
+    "body": [
+      "@spec ${1:name}(${2:arg types}) :: ${3:no_return}",
+      "def $1(${4:args}) do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:97"
+  },
+  "defsd": {
+    "prefix": "defsd",
+    "body": [
+      "@doc \"\"\"",
+      "${1:doc string}",
+      "\"\"\"",
+      "@spec ${2:name}(${3:arg types}) :: ${4:no_return}",
+      "def $2(${5:args}) do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:102"
+  },
+  "defw": {
+    "prefix": "defw",
+    "body": [
+      "def ${1:name}(${2:args}) when ${3:guard} do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:110"
+  },
+  "defim": {
+    "prefix": "defim",
+    "body": [
+      "defimpl ${1:protocol_name}, for: ${2:data_type} do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:114"
+  },
+  "defma": {
+    "prefix": "defma",
+    "body": [
+      "defmacro ${1:name} do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:118"
+  },
+  "defmo": {
+    "prefix": "defmo",
+    "body": [
+      "defmodule ${1:${TM_FILENAME_BASE}} do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:122"
+  },
+  "%M": {
+    "prefix": "%M",
+    "body": [
+      "%__MODULE__{",
+      "\t${1:key_name}: ${2:value}",
+      "}"
+    ],
+    "description": "vim-snippets/elixir.snippets:126"
+  },
+  "enfk": {
+    "prefix": "enfk",
+    "body": [
+      "@enforce_keys [:${1:key_name}]"
+    ],
+    "description": "vim-snippets/elixir.snippets:130"
+  },
+  "dfp": {
+    "prefix": "dfp",
+    "body": [
+      "defp ${1:name}, do: ${2}"
+    ],
+    "description": "vim-snippets/elixir.snippets:132"
+  },
+  "dfpw": {
+    "prefix": "dfpw",
+    "body": [
+      "defp ${1:name}(${2:args}) when ${3:guard}, do: ${4}"
+    ],
+    "description": "vim-snippets/elixir.snippets:134"
+  },
+  "defp": {
+    "prefix": "defp",
+    "body": [
+      "defp ${1:name} do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:136"
+  },
+  "defpw": {
+    "prefix": "defpw",
+    "body": [
+      "defp ${1:name}(${2:args}) when ${3:guard} do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:140"
+  },
+  "defpr": {
+    "prefix": "defpr",
+    "body": [
+      "defprotocol ${1:name}, [${0:function}]"
+    ],
+    "description": "vim-snippets/elixir.snippets:144"
+  },
+  "defr": {
+    "prefix": "defr",
+    "body": [
+      "defrecord ${1:record_name}, ${0:fields}"
+    ],
+    "description": "vim-snippets/elixir.snippets:146"
+  },
+  "doc": {
+    "prefix": "doc",
+    "body": [
+      "@doc \"\"\"",
+      "${0}",
+      "\"\"\""
+    ],
+    "description": "vim-snippets/elixir.snippets:148"
+  },
+  "docs": {
+    "prefix": "docs",
+    "body": [
+      "@doc ~S\"\"\"",
+      "${0}",
+      "\"\"\""
+    ],
+    "description": "vim-snippets/elixir.snippets:152"
+  },
+  "docf": {
+    "prefix": "docf",
+    "body": [
+      "@doc false"
+    ],
+    "description": "vim-snippets/elixir.snippets:156"
+  },
+  "im": {
+    "prefix": "im",
+    "body": [
+      "@impl true"
+    ],
+    "description": "vim-snippets/elixir.snippets:158"
+  },
+  "fn": {
+    "prefix": "fn",
+    "body": [
+      "fn ${1:args} -> ${0} end"
+    ],
+    "description": "vim-snippets/elixir.snippets:160"
+  },
+  "mdoc": {
+    "prefix": "mdoc",
+    "body": [
+      "@moduledoc \"\"\"",
+      "${0}",
+      "\"\"\""
+    ],
+    "description": "vim-snippets/elixir.snippets:162"
+  },
+  "mdocs": {
+    "prefix": "mdocs",
+    "body": [
+      "@moduledoc ~S\"\"\"",
+      "${0}",
+      "\"\"\""
+    ],
+    "description": "vim-snippets/elixir.snippets:166"
+  },
+  "mdocf": {
+    "prefix": "mdocf",
+    "body": [
+      "@moduledoc false"
+    ],
+    "description": "vim-snippets/elixir.snippets:170"
+  },
+  "rec": {
+    "prefix": "rec",
+    "body": [
+      "receive do",
+      "\t${1} ->",
+      "\t\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:172"
+  },
+  "req": {
+    "prefix": "req",
+    "body": [
+      "require ${0:Logger}"
+    ],
+    "description": "vim-snippets/elixir.snippets:177"
+  },
+  "imp": {
+    "prefix": "imp",
+    "body": [
+      "import ${0:module_name}"
+    ],
+    "description": "vim-snippets/elixir.snippets:179"
+  },
+  "ali": {
+    "prefix": "ali",
+    "body": [
+      "alias ${0:module_name}"
+    ],
+    "description": "vim-snippets/elixir.snippets:181"
+  },
+  "test": {
+    "prefix": "test",
+    "body": [
+      "test \"${1:test name}\" do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:183"
+  },
+  "testc": {
+    "prefix": "testc",
+    "body": [
+      "test \"${1:test_name}\", ctx do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:187"
+  },
+  "testa": {
+    "prefix": "testa",
+    "body": [
+      "test \"${1:test_name}\", %{${2:arg: arg}} do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:191"
+  },
+  "des": {
+    "prefix": "des",
+    "body": [
+      "describe \"${1:test group subject}\" do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:195"
+  },
+  "destag": {
+    "prefix": "destag",
+    "body": [
+      "@describetag :${1:describe tag}"
+    ],
+    "description": "vim-snippets/elixir.snippets:199"
+  },
+  "mtag": {
+    "prefix": "mtag",
+    "body": [
+      "@moduletag :${1:module tag}"
+    ],
+    "description": "vim-snippets/elixir.snippets:201"
+  },
+  "dt": {
+    "prefix": "dt",
+    "body": [
+      "doctest ${1:filename}"
+    ],
+    "description": "vim-snippets/elixir.snippets:203"
+  },
+  "tp": {
+    "prefix": "tp",
+    "body": [
+      "@tag :pending"
+    ],
+    "description": "vim-snippets/elixir.snippets:205"
+  },
+  "exunit": {
+    "prefix": "exunit",
+    "body": [
+      "defmodule ${1:${TM_FILENAME_BASE}} do",
+      "\tuse ExUnit.Case, async: true",
+      "",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:207"
+  },
+  "setup": {
+    "prefix": "setup",
+    "body": [
+      "setup do",
+      "\t${1}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:213"
+  },
+  "setupa": {
+    "prefix": "setupa",
+    "body": [
+      "setup_all do",
+      "\t${1}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:217"
+  },
+  "try - try .. rescue .. end": {
+    "prefix": "try",
+    "body": [
+      "try do",
+      "\t${1:${TM_SELECTED_TEXT}}",
+      "rescue",
+      "\t${2} -> ${0}",
+      "end"
+    ],
+    "description": "try .. rescue .. end"
+  },
+  "pry": {
+    "prefix": "pry",
+    "body": [
+      "require IEx; IEx.pry",
+      "${0}"
+    ],
+    "description": "vim-snippets/elixir.snippets:227"
+  },
+  "ppry": {
+    "prefix": "ppry",
+    "body": [
+      "|> (fn x -> require IEx; IEx.pry; x end).()${0}"
+    ],
+    "description": "vim-snippets/elixir.snippets:230"
+  },
+  "qu": {
+    "prefix": "qu",
+    "body": [
+      "quote do",
+      "\t${1}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:232"
+  },
+  "beh": {
+    "prefix": "beh",
+    "body": [
+      "@behaviour ${1:Mix.Task}",
+      "${0}"
+    ],
+    "description": "vim-snippets/elixir.snippets:236"
+  },
+  "p": {
+    "prefix": "p",
+    "body": [
+      "|> ${0}"
+    ],
+    "description": "vim-snippets/elixir.snippets:239"
+  },
+  ">e - pipe to each": {
+    "prefix": ">e",
+    "body": [
+      "|> Enum.each(fn ${1} -> ${0} end)"
+    ],
+    "description": "pipe to each"
+  },
+  ">m - pipe to map": {
+    "prefix": ">m",
+    "body": [
+      "|> Enum.map(fn ${1} -> ${0} end)"
+    ],
+    "description": "pipe to map"
+  },
+  ">f - pipe to filter": {
+    "prefix": ">f",
+    "body": [
+      "|> Enum.filter(fn ${1} -> ${0} end)"
+    ],
+    "description": "pipe to filter"
+  },
+  ">r - pipe to reduce": {
+    "prefix": ">r",
+    "body": [
+      "|> Enum.reduce(${1:acc}, fn ${2}, ${3:acc} -> ${0} end)"
+    ],
+    "description": "pipe to reduce"
+  },
+  ">i - pipe to inspect": {
+    "prefix": ">i",
+    "body": [
+      "|> IO.inspect()"
+    ],
+    "description": "pipe to inspect"
+  },
+  ">il - pipe to inspect with label": {
+    "prefix": ">il",
+    "body": [
+      "|> IO.inspect(label: \"${1:label}\")"
+    ],
+    "description": "pipe to inspect with label"
+  },
+  "cs": {
+    "prefix": "cs",
+    "body": [
+      "@doc false",
+      "def child_spec(${1:_opts}) do",
+      "\t%{",
+      "\t\tid: __MODULE__,",
+      "\t\tstart: {__MODULE__, :start_link, ${2:[]}},",
+      "\t\trestart: ${3::permanent},",
+      "\t\tshutdown: ${4:5000},",
+      "\t\ttype: ${5::worker}",
+      "\t}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:253"
+  },
+  "genserver - basic genserver structure": {
+    "prefix": "genserver",
+    "body": [
+      "use GenServer",
+      "",
+      "@doc false",
+      "def start_link(init_args) do",
+      "\tGenServer.start_link(__MODULE__, init_args, name: __MODULE__)",
+      "end",
+      "",
+      "@impl true",
+      "def init(state) do",
+      "\t{:ok, state}",
+      "end"
+    ],
+    "description": "basic genserver structure"
+  },
+  "super - basic supervisor structure": {
+    "prefix": "super",
+    "body": [
+      "use Supervisor",
+      "",
+      "@doc false",
+      "def start_link(init_args) do",
+      "\tSupervisor.start_link(__MODULE__, init_args, name: __MODULE__)",
+      "end",
+      "",
+      "@impl true",
+      "def init(_init_args) do",
+      "\tchildren = [${1}]",
+      "\tSupervisor.init(children, strategy: :one_for_one)",
+      "end"
+    ],
+    "description": "basic supervisor structure"
+  },
+  "impl": {
+    "prefix": "impl",
+    "body": [
+      "@impl true",
+      "def ${1:name} do",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/elixir.snippets:289"
+  },
+  "wl - word list": {
+    "prefix": "wl",
+    "body": [
+      "~w(${0})"
+    ],
+    "description": "word list"
+  },
+  "al - atom list": {
+    "prefix": "al",
+    "body": [
+      "~w(${0})a"
+    ],
+    "description": "atom list"
+  }
+}

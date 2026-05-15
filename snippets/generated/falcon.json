@@ -1,0 +1,111 @@
+{
+  "#!": {
+    "prefix": "#!",
+    "body": [
+      "#!/usr/bin/env falcon"
+    ],
+    "description": "vim-snippets/falcon.snippets:1"
+  },
+  "imp": {
+    "prefix": "imp",
+    "body": [
+      "import ${0:module}"
+    ],
+    "description": "vim-snippets/falcon.snippets:5"
+  },
+  "fun": {
+    "prefix": "fun",
+    "body": [
+      "function ${2:function_name}(${3})",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/falcon.snippets:9"
+  },
+  "class": {
+    "prefix": "class",
+    "body": [
+      "class ${1:class_name}(${2:class_params})",
+      "\t${0:/* members/methods */}",
+      "end"
+    ],
+    "description": "vim-snippets/falcon.snippets:15"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if $1",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/falcon.snippets:21"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "if $1",
+      "\t${0}",
+      "else",
+      "    ${1}",
+      "end"
+    ],
+    "description": "vim-snippets/falcon.snippets:27"
+  },
+  "eif": {
+    "prefix": "eif",
+    "body": [
+      "elif $1",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/falcon.snippets:35"
+  },
+  "switch": {
+    "prefix": "switch",
+    "body": [
+      "switch ${1:expression}",
+      "\tcase ${2:item}",
+      "\tcase ${0:item}",
+      "\tdefault",
+      "end"
+    ],
+    "description": "vim-snippets/falcon.snippets:40"
+  },
+  "select": {
+    "prefix": "select",
+    "body": [
+      "select ${1:variable}",
+      "\tcase ${2:TypeSpec}",
+      "\tcase ${0:TypeSpec}",
+      "\tdefault",
+      "end"
+    ],
+    "description": "vim-snippets/falcon.snippets:48"
+  },
+  "forin": {
+    "prefix": "forin",
+    "body": [
+      "for ${1:element} in ${2:container}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/falcon.snippets:56"
+  },
+  "forto": {
+    "prefix": "forto",
+    "body": [
+      "for ${1:lowerbound} to ${2:upperbound}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/falcon.snippets:62"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "while ${1:conidition}",
+      "\t${0}",
+      "end"
+    ],
+    "description": "vim-snippets/falcon.snippets:68"
+  }
+}

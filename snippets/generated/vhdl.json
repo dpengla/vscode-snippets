@@ -1,0 +1,228 @@
+{
+  "lib": {
+    "prefix": "lib",
+    "body": [
+      "library ${1}",
+      "use $1.${2}"
+    ],
+    "description": "vim-snippets/vhdl.snippets:4"
+  },
+  "libs": {
+    "prefix": "libs",
+    "body": [
+      "library IEEE;",
+      "use IEEE.std_logic_1164.ALL;",
+      "use IEEE.numeric_std.ALL;"
+    ],
+    "description": "vim-snippets/vhdl.snippets:9"
+  },
+  "libx": {
+    "prefix": "libx",
+    "body": [
+      "library UNISIM;",
+      "use UNISIM.VCOMPONENTS.ALL;"
+    ],
+    "description": "vim-snippets/vhdl.snippets:15"
+  },
+  "ent": {
+    "prefix": "ent",
+    "body": [
+      "entity ${1:${TM_FILENAME_BASE}} is",
+      "\tgeneric (",
+      "\t\t${2}",
+      "\t);",
+      "\tport (",
+      "\t\t${3}",
+      "\t);",
+      "end entity $1;"
+    ],
+    "description": "vim-snippets/vhdl.snippets:20"
+  },
+  "arc": {
+    "prefix": "arc",
+    "body": [
+      "architecture ${1:behav} of ${2:${TM_FILENAME_BASE}} is",
+      "",
+      "\t${3}",
+      "",
+      "begin",
+      "",
+      "",
+      "end $1;"
+    ],
+    "description": "vim-snippets/vhdl.snippets:31"
+  },
+  "st": {
+    "prefix": "st",
+    "body": [
+      "signal ${1} : std_logic;"
+    ],
+    "description": "vim-snippets/vhdl.snippets:43"
+  },
+  "sv": {
+    "prefix": "sv",
+    "body": [
+      "signal ${1} : std_logic_vector (${2} downto 0);"
+    ],
+    "description": "vim-snippets/vhdl.snippets:46"
+  },
+  "ist": {
+    "prefix": "ist",
+    "body": [
+      "${1} : in std_logic;"
+    ],
+    "description": "vim-snippets/vhdl.snippets:49"
+  },
+  "isv": {
+    "prefix": "isv",
+    "body": [
+      "${1} : in std_logic_vector (${2} downto 0);"
+    ],
+    "description": "vim-snippets/vhdl.snippets:52"
+  },
+  "ost": {
+    "prefix": "ost",
+    "body": [
+      "${1} : out std_logic;"
+    ],
+    "description": "vim-snippets/vhdl.snippets:55"
+  },
+  "osv": {
+    "prefix": "osv",
+    "body": [
+      "${1} : out std_logic_vector (${2} downto 0);"
+    ],
+    "description": "vim-snippets/vhdl.snippets:58"
+  },
+  "un": {
+    "prefix": "un",
+    "body": [
+      "signal ${1} : unsigned (${2} downto 0);"
+    ],
+    "description": "vim-snippets/vhdl.snippets:61"
+  },
+  "pr": {
+    "prefix": "pr",
+    "body": [
+      "process (${1})",
+      "begin",
+      "\t${2}",
+      "end process;"
+    ],
+    "description": "vim-snippets/vhdl.snippets:65"
+  },
+  "prc": {
+    "prefix": "prc",
+    "body": [
+      "process (${1:clk})",
+      "begin",
+      "\tif rising_edge ($1) then",
+      "\t\t${2}",
+      "\tend if;",
+      "end process;"
+    ],
+    "description": "vim-snippets/vhdl.snippets:71"
+  },
+  "prcr": {
+    "prefix": "prcr",
+    "body": [
+      "process (${1:clk}, ${2:nrst})",
+      "begin",
+      "\tif ($2 = '${3:0}') then",
+      "\t\t${4}",
+      "\telsif rising_edge($1) then",
+      "\t\t${5}",
+      "\tend if;",
+      "end process;"
+    ],
+    "description": "vim-snippets/vhdl.snippets:79"
+  },
+  "pra": {
+    "prefix": "pra",
+    "body": [
+      "process (${1:all})",
+      "begin",
+      "\t${2}",
+      "end process;"
+    ],
+    "description": "vim-snippets/vhdl.snippets:89"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if ${1} then",
+      "\t${2}",
+      "end if;"
+    ],
+    "description": "vim-snippets/vhdl.snippets:96"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "if ${1} then",
+      "\t${2}",
+      "else",
+      "\t${3}",
+      "end if;"
+    ],
+    "description": "vim-snippets/vhdl.snippets:101"
+  },
+  "el": {
+    "prefix": "el",
+    "body": [
+      "else",
+      "\t${1}"
+    ],
+    "description": "vim-snippets/vhdl.snippets:108"
+  },
+  "eif": {
+    "prefix": "eif",
+    "body": [
+      "elsif ${1} then",
+      "\t${2}"
+    ],
+    "description": "vim-snippets/vhdl.snippets:112"
+  },
+  "ca": {
+    "prefix": "ca",
+    "body": [
+      "case ${1} is",
+      "\t${2}",
+      "end case;"
+    ],
+    "description": "vim-snippets/vhdl.snippets:116"
+  },
+  "wh": {
+    "prefix": "wh",
+    "body": [
+      "when ${1} =>",
+      "\t${2}"
+    ],
+    "description": "vim-snippets/vhdl.snippets:121"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for ${1:i} in ${2} ${3:to} ${4} loop",
+      "\t${5}",
+      "end loop;"
+    ],
+    "description": "vim-snippets/vhdl.snippets:125"
+  },
+  "wh (130)": {
+    "prefix": "wh",
+    "body": [
+      "while ${1} loop",
+      "\t${2}",
+      "end loop;"
+    ],
+    "description": "vim-snippets/vhdl.snippets:130"
+  },
+  "oth": {
+    "prefix": "oth",
+    "body": [
+      "(others => '${1:0}');"
+    ],
+    "description": "vim-snippets/vhdl.snippets:136"
+  }
+}

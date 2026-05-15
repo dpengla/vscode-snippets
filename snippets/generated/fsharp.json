@@ -1,0 +1,227 @@
+{
+  "doc": {
+    "prefix": "doc",
+    "body": [
+      "/// ${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:1"
+  },
+  "comment": {
+    "prefix": "comment",
+    "body": [
+      "// ${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:3"
+  },
+  "let": {
+    "prefix": "let",
+    "body": [
+      "let ${1} = ${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:5"
+  },
+  "lit": {
+    "prefix": "lit",
+    "body": [
+      "[<Literal>]",
+      "let ${1} = ${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:7"
+  },
+  "rec": {
+    "prefix": "rec",
+    "body": [
+      "type ${1} = { ${0} }"
+    ],
+    "description": "vim-snippets/fsharp.snippets:10"
+  },
+  "arec": {
+    "prefix": "arec",
+    "body": [
+      "{| ${0} |}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:12"
+  },
+  "fn": {
+    "prefix": "fn",
+    "body": [
+      "let ${1} =",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:14"
+  },
+  "fnr": {
+    "prefix": "fnr",
+    "body": [
+      "let rec ${1} =",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:17"
+  },
+  "lam": {
+    "prefix": "lam",
+    "body": [
+      "(fun ${1} -> ${0})"
+    ],
+    "description": "vim-snippets/fsharp.snippets:20"
+  },
+  "mod": {
+    "prefix": "mod",
+    "body": [
+      "module ${1} =",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:22"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "for ${1} in ${2} do",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:25"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if ${1} then",
+      "\t${2}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:28"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "if ${1} then",
+      "\t${2}",
+      "else",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:31"
+  },
+  "ifee": {
+    "prefix": "ifee",
+    "body": [
+      "if ${1} then",
+      "\t${2}",
+      "elif ${3} then",
+      "\t${4}",
+      "else",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:36"
+  },
+  "eif": {
+    "prefix": "eif",
+    "body": [
+      "elif ${1} then",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:43"
+  },
+  "el": {
+    "prefix": "el",
+    "body": [
+      "else",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:46"
+  },
+  "try": {
+    "prefix": "try",
+    "body": [
+      "try",
+      "\t${1}",
+      "with ${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:49"
+  },
+  "match": {
+    "prefix": "match",
+    "body": [
+      "match ${1} with",
+      "| ${2} -> ${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:53"
+  },
+  "|": {
+    "prefix": "|",
+    "body": [
+      "| ${1} -> ${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:56"
+  },
+  "p": {
+    "prefix": "p",
+    "body": [
+      "|> ${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:58"
+  },
+  "pr": {
+    "prefix": "pr",
+    "body": [
+      "printfn \"${1}\" ${0}"
+    ],
+    "description": "vim-snippets/fsharp.snippets:60"
+  },
+  "pri": {
+    "prefix": "pri",
+    "body": [
+      "printfn \\$\"${0}\""
+    ],
+    "description": "vim-snippets/fsharp.snippets:62"
+  },
+  "amap": {
+    "prefix": "amap",
+    "body": [
+      "|> Array.map (fun ${1} -> ${0})"
+    ],
+    "description": "vim-snippets/fsharp.snippets:64"
+  },
+  "lmap": {
+    "prefix": "lmap",
+    "body": [
+      "|> List.map (fun ${1} -> ${0})"
+    ],
+    "description": "vim-snippets/fsharp.snippets:66"
+  },
+  "smap": {
+    "prefix": "smap",
+    "body": [
+      "|> Seq.map (fun ${1} -> ${0})"
+    ],
+    "description": "vim-snippets/fsharp.snippets:68"
+  },
+  "atap": {
+    "prefix": "atap",
+    "body": [
+      "|> Array.map (fun x -> printfn \"%A\" x; x) // tap"
+    ],
+    "description": "vim-snippets/fsharp.snippets:70"
+  },
+  "ltap": {
+    "prefix": "ltap",
+    "body": [
+      "|> List.map (fun x -> printfn \"%A\" x; x) // tap"
+    ],
+    "description": "vim-snippets/fsharp.snippets:72"
+  },
+  "stap": {
+    "prefix": "stap",
+    "body": [
+      "|> Seq.map (fun x -> printfn \"%A\" x; x) // tap"
+    ],
+    "description": "vim-snippets/fsharp.snippets:74"
+  },
+  "main": {
+    "prefix": "main",
+    "body": [
+      "[<EntryPoint>]",
+      "let main argv =",
+      "\t${0}",
+      "\t0"
+    ],
+    "description": "vim-snippets/fsharp.snippets:76"
+  }
+}

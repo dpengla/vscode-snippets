@@ -1,0 +1,523 @@
+{
+  "v - shorthand variable declaration": {
+    "prefix": "v",
+    "body": [
+      "${1} := ${2}"
+    ],
+    "description": "shorthand variable declaration"
+  },
+  "vr - variable initialization": {
+    "prefix": "vr",
+    "body": [
+      "var ${1:t} ${0:string}"
+    ],
+    "description": "variable initialization"
+  },
+  "var - variable declaration": {
+    "prefix": "var",
+    "body": [
+      "var ${1} ${2} = ${3}"
+    ],
+    "description": "variable declaration"
+  },
+  "vars - variables declaration": {
+    "prefix": "vars",
+    "body": [
+      "var (",
+      "\t${1} ${2} = ${3}",
+      ")"
+    ],
+    "description": "variables declaration"
+  },
+  "ap - append": {
+    "prefix": "ap",
+    "body": [
+      "append(${1:slice}, ${0:value})"
+    ],
+    "description": "append"
+  },
+  "bl - bool": {
+    "prefix": "bl",
+    "body": [
+      "bool"
+    ],
+    "description": "bool"
+  },
+  "bt - byte": {
+    "prefix": "bt",
+    "body": [
+      "byte"
+    ],
+    "description": "byte"
+  },
+  "br - break": {
+    "prefix": "br",
+    "body": [
+      "break"
+    ],
+    "description": "break"
+  },
+  "ch - channel": {
+    "prefix": "ch",
+    "body": [
+      "chan ${0:int}"
+    ],
+    "description": "channel"
+  },
+  "cs - case": {
+    "prefix": "cs",
+    "body": [
+      "case ${1:value}:",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "case"
+  },
+  "co - constants with iota": {
+    "prefix": "co",
+    "body": [
+      "const (",
+      "\t${1:NAME1} = iota",
+      "\t${0:NAME2}",
+      ")"
+    ],
+    "description": "constants with iota"
+  },
+  "cn - continue": {
+    "prefix": "cn",
+    "body": [
+      "continue"
+    ],
+    "description": "continue"
+  },
+  "df - defer": {
+    "prefix": "df",
+    "body": [
+      "defer ${0:func}()"
+    ],
+    "description": "defer"
+  },
+  "dfr - defer recover": {
+    "prefix": "dfr",
+    "body": [
+      "defer func() {",
+      "\tif err := recover(); err != nil {",
+      "\t\t${0:${TM_SELECTED_TEXT}}",
+      "\t}",
+      "}()"
+    ],
+    "description": "defer recover"
+  },
+  "im - import": {
+    "prefix": "im",
+    "body": [
+      "import (",
+      "\t\"${1:package}\"",
+      ")"
+    ],
+    "description": "import"
+  },
+  "in - interface": {
+    "prefix": "in",
+    "body": [
+      "interface{}"
+    ],
+    "description": "interface"
+  },
+  "inf - full interface ": {
+    "prefix": "inf",
+    "body": [
+      "type ${1:name} interface {",
+      "\t${2:/* methods */}",
+      "}"
+    ],
+    "description": "full interface "
+  },
+  "if - if condition": {
+    "prefix": "if",
+    "body": [
+      "if $1 {",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "if condition"
+  },
+  "ife - if else condition": {
+    "prefix": "ife",
+    "body": [
+      "if $1 {",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "} else {",
+      "\t${0}",
+      "}"
+    ],
+    "description": "if else condition"
+  },
+  "el - else": {
+    "prefix": "el",
+    "body": [
+      "else {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "else"
+  },
+  "ir - if error not nil, return err": {
+    "prefix": "ir",
+    "body": [
+      "if err != nil {",
+      "\treturn err",
+      "}",
+      "${0}"
+    ],
+    "description": "if error not nil, return err"
+  },
+  "f - false": {
+    "prefix": "f",
+    "body": [
+      "false"
+    ],
+    "description": "false"
+  },
+  "ft - fallthrough": {
+    "prefix": "ft",
+    "body": [
+      "fallthrough"
+    ],
+    "description": "fallthrough"
+  },
+  "fl - float": {
+    "prefix": "fl",
+    "body": [
+      "float32"
+    ],
+    "description": "float"
+  },
+  "f3 - float32": {
+    "prefix": "f3",
+    "body": [
+      "float32"
+    ],
+    "description": "float32"
+  },
+  "f6 - float64": {
+    "prefix": "f6",
+    "body": [
+      "float64"
+    ],
+    "description": "float64"
+  },
+  "for - for loop": {
+    "prefix": "for",
+    "body": [
+      "for ${1}{",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "for loop"
+  },
+  "fori - for int loop": {
+    "prefix": "fori",
+    "body": [
+      "for ${2:i} := 0; $2 < ${1:count}; $2${3:++} {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "for int loop"
+  },
+  "forr - for range loop": {
+    "prefix": "forr",
+    "body": [
+      "for ${1:e} := range ${2:collection} {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "for range loop"
+  },
+  "fun - function": {
+    "prefix": "fun",
+    "body": [
+      "func ${1:funcName}(${2}) ${3:error} {",
+      "\t${4}",
+      "}",
+      "${0}"
+    ],
+    "description": "function"
+  },
+  "fum - method": {
+    "prefix": "fum",
+    "body": [
+      "func (${1:receiver} ${2:type}) ${3:funcName}(${4}) ${5:error} {",
+      "\t${6}",
+      "}",
+      "${0}"
+    ],
+    "description": "method"
+  },
+  "fumh - http handler function on receiver": {
+    "prefix": "fumh",
+    "body": [
+      "func (${1:receiver} ${2:type}) ${3:funcName}(${4:w} http.ResponseWriter, ${5:r} *http.Request) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "http handler function on receiver"
+  },
+  "lf - log printf": {
+    "prefix": "lf",
+    "body": [
+      "log.Printf(\"%${1:s}\", ${2:var})"
+    ],
+    "description": "log printf"
+  },
+  "lp - log println": {
+    "prefix": "lp",
+    "body": [
+      "log.Println(\"${1}\")"
+    ],
+    "description": "log println"
+  },
+  "mk - make": {
+    "prefix": "mk",
+    "body": [
+      "make(${1:[]string}, ${0:0})"
+    ],
+    "description": "make"
+  },
+  "mp - map": {
+    "prefix": "mp",
+    "body": [
+      "map[${1:string}]${0:int}"
+    ],
+    "description": "map"
+  },
+  "main - func main()": {
+    "prefix": "main",
+    "body": [
+      "func main() {",
+      "\t${1}",
+      "}",
+      "${0}"
+    ],
+    "description": "func main()"
+  },
+  "nw - new": {
+    "prefix": "nw",
+    "body": [
+      "new(${0:type})"
+    ],
+    "description": "new"
+  },
+  "pa - package": {
+    "prefix": "pa",
+    "body": [
+      "package ${1:main}"
+    ],
+    "description": "package"
+  },
+  "pn - panic": {
+    "prefix": "pn",
+    "body": [
+      "panic(\"${0:msg}\")"
+    ],
+    "description": "panic"
+  },
+  "pf - fmt.Printf()": {
+    "prefix": "pf",
+    "body": [
+      "fmt.Printf(\"%${1:s}\\n\", ${2:var})"
+    ],
+    "description": "fmt.Printf()"
+  },
+  "pl - fmt.Println()": {
+    "prefix": "pl",
+    "body": [
+      "fmt.Println(\"${1:s}\")"
+    ],
+    "description": "fmt.Println()"
+  },
+  "rn - range": {
+    "prefix": "rn",
+    "body": [
+      "range ${0}"
+    ],
+    "description": "range"
+  },
+  "rt - return": {
+    "prefix": "rt",
+    "body": [
+      "return ${0}"
+    ],
+    "description": "return"
+  },
+  "rs - result": {
+    "prefix": "rs",
+    "body": [
+      "result"
+    ],
+    "description": "result"
+  },
+  "sl - select": {
+    "prefix": "sl",
+    "body": [
+      "select {",
+      "case ${1:v1} := <-${2:chan1}",
+      "\t${3}",
+      "default:",
+      "\t${0}",
+      "}"
+    ],
+    "description": "select"
+  },
+  "sr - string": {
+    "prefix": "sr",
+    "body": [
+      "string"
+    ],
+    "description": "string"
+  },
+  "st - struct": {
+    "prefix": "st",
+    "body": [
+      "type ${1:name} struct {",
+      "\t${2:/* data */}",
+      "}",
+      "${0}"
+    ],
+    "description": "struct"
+  },
+  "sw - switch": {
+    "prefix": "sw",
+    "body": [
+      "switch ${1:var} {",
+      "case ${2:value1}:",
+      "\t${3}",
+      "case ${4:value2}:",
+      "\t${5}",
+      "default:",
+      "\t${0}",
+      "}"
+    ],
+    "description": "switch"
+  },
+  "ps - fmt.Sprintf": {
+    "prefix": "ps",
+    "body": [
+      "fmt.Sprintf(\"%${1:s}\", ${2:var})"
+    ],
+    "description": "fmt.Sprintf"
+  },
+  "t - true": {
+    "prefix": "t",
+    "body": [
+      "true"
+    ],
+    "description": "true"
+  },
+  "g - goroutine named function": {
+    "prefix": "g",
+    "body": [
+      "go ${1:funcName}(${0})"
+    ],
+    "description": "goroutine named function"
+  },
+  "ga - goroutine anonymous function": {
+    "prefix": "ga",
+    "body": [
+      "go func(${1} ${2:type}) {",
+      "\t${3:/* code */}",
+      "}(${0})"
+    ],
+    "description": "goroutine anonymous function"
+  },
+  "test - test function": {
+    "prefix": "test",
+    "body": [
+      "func Test${1:name}(t *testing.T) {",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "}"
+    ],
+    "description": "test function"
+  },
+  "testt - table test function": {
+    "prefix": "testt",
+    "body": [
+      "func Test${1:name}(t *testing.T) {",
+      "\ttests := []struct {",
+      "\t\tname string",
+      "\t}{",
+      "\t\t{",
+      "\t\t\tname: \"${2:test name}\",",
+      "\t\t},",
+      "\t}",
+      "",
+      "\tfor _, test := range tests {",
+      "\t\tt.Run(test.name, func(t *testing.T) {",
+      "\t\t\t${0:${TM_SELECTED_TEXT}}",
+      "\t\t})",
+      "\t}",
+      "}"
+    ],
+    "description": "table test function"
+  },
+  "bench - benchmark function": {
+    "prefix": "bench",
+    "body": [
+      "func Benchmark${1:name}(b *testing.B) {",
+      "\tfor i := 0; i < b.N; i++ {",
+      "\t\t${2}",
+      "\t}",
+      "}",
+      "${0}"
+    ],
+    "description": "benchmark function"
+  },
+  "cl - composite literals": {
+    "prefix": "cl",
+    "body": [
+      "type ${1:name} struct {",
+      "\t${2:attrName} ${3:attrType}",
+      "}"
+    ],
+    "description": "composite literals"
+  },
+  "om - if key in a map": {
+    "prefix": "om",
+    "body": [
+      "if ${1:value}, ok := ${2:map}[${3:key}]; ok == true {",
+      "\t${4:/* code */}",
+      "}"
+    ],
+    "description": "if key in a map"
+  },
+  "gg - Grouped globals with anonymous struct": {
+    "prefix": "gg",
+    "body": [
+      "var ${1:var} = struct{",
+      "\t${2:name} ${3:type}",
+      "}{",
+      "\t$2: ${4:value},",
+      "}"
+    ],
+    "description": "Grouped globals with anonymous struct"
+  },
+  "ja - Marshalable json alias": {
+    "prefix": "ja",
+    "body": [
+      "type ${1:parentType}Alias $1",
+      "",
+      "func (p *$1) MarshalJSON() ([]byte, error) {",
+      "\treturn json.Marshal(&struct{ *$1Alias }{(*$1Alias)(p)})",
+      "}"
+    ],
+    "description": "Marshalable json alias"
+  },
+  "errwr - Error handling with fmt.Errorf": {
+    "prefix": "errwr",
+    "body": [
+      "if ${1}err != nil {",
+      "\treturn fmt.Errorf(\"${2} %w\", err)",
+      "}"
+    ],
+    "description": "Error handling with fmt.Errorf"
+  }
+}

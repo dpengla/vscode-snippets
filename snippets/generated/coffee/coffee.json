@@ -1,0 +1,207 @@
+{
+  "forindo": {
+    "prefix": "forindo",
+    "body": [
+      "for ${1:name} in ${2:array}",
+      "\tdo ($1) ->",
+      "\t\t$0"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:2"
+  },
+  "fora": {
+    "prefix": "fora",
+    "body": [
+      "for ${1:name} in ${2:array}",
+      "\t$0"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:7"
+  },
+  "foro": {
+    "prefix": "foro",
+    "body": [
+      "for ${1:key}, ${2:value} of ${3:object}",
+      "\t$0"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:11"
+  },
+  "forr": {
+    "prefix": "forr",
+    "body": [
+      "for ${1:name} in [${2:start}..${3:finish}]",
+      "\t$0"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:15"
+  },
+  "forrb": {
+    "prefix": "forrb",
+    "body": [
+      "for ${1:name} in [${2:start}..${3:finish}] by ${4:step}",
+      "\t$0"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:18"
+  },
+  "forrex": {
+    "prefix": "forrex",
+    "body": [
+      "for ${1:name} in [${2:start}...${3:finish}]",
+      "\t$0"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:22"
+  },
+  "forrexb": {
+    "prefix": "forrexb",
+    "body": [
+      "for ${1:name} in [${2:start}...${3:finish}] by ${4:step}",
+      "\t$0"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:25"
+  },
+  "fun": {
+    "prefix": "fun",
+    "body": [
+      "(${1:args}) ->",
+      "\t$0"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:29"
+  },
+  "bfun": {
+    "prefix": "bfun",
+    "body": [
+      "(${1:args}) =>",
+      "\t$0"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:33"
+  },
+  "cla - class ..": {
+    "prefix": "cla",
+    "body": [
+      "class ${1:${TM_FILENAME_BASE}}",
+      "\t${0}"
+    ],
+    "description": "class .."
+  },
+  "cla - class .. constructor: ..": {
+    "prefix": "cla",
+    "body": [
+      "class ${1:${TM_FILENAME_BASE}}",
+      "\tconstructor: (${2:args}) ->",
+      "\t\t${3}",
+      "",
+      "\t${0}"
+    ],
+    "description": "class .. constructor: .."
+  },
+  "cla - class .. extends ..": {
+    "prefix": "cla",
+    "body": [
+      "class ${1:${TM_FILENAME_BASE}} extends ${2:ParentClass}",
+      "\t${0}"
+    ],
+    "description": "class .. extends .."
+  },
+  "cla - class .. extends .. constructor: ..": {
+    "prefix": "cla",
+    "body": [
+      "class ${1:${TM_FILENAME_BASE}} extends ${2:ParentClass}",
+      "\tconstructor: (${3:args}) ->",
+      "\t\t${4}",
+      "",
+      "\t${0}"
+    ],
+    "description": "class .. extends .. constructor: .."
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if $1",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:56"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "if $1",
+      "\t${2:${TM_SELECTED_TEXT}}",
+      "else",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:60"
+  },
+  "eif": {
+    "prefix": "eif",
+    "body": [
+      "else if $1",
+      "\t${0:${TM_SELECTED_TEXT}}"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:66"
+  },
+  "ifte - Ternary": {
+    "prefix": "ifte",
+    "body": [
+      "if $1 then $2 else $0"
+    ],
+    "description": "Ternary"
+  },
+  "unl - Unless": {
+    "prefix": "unl",
+    "body": [
+      "$1 unless $0"
+    ],
+    "description": "Unless"
+  },
+  "swi": {
+    "prefix": "swi",
+    "body": [
+      "switch ${1:object}",
+      "\twhen ${2:value}",
+      "\t\t$0"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:76"
+  },
+  "log": {
+    "prefix": "log",
+    "body": [
+      "console.log ${0}"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:82"
+  },
+  "try": {
+    "prefix": "try",
+    "body": [
+      "try",
+      "\t${1:${TM_SELECTED_TEXT}}",
+      "catch ${2:error}",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:85"
+  },
+  "req": {
+    "prefix": "req",
+    "body": [
+      "${2:$1} = require '${1:sys}'"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:91"
+  },
+  "exp": {
+    "prefix": "exp",
+    "body": [
+      "${0:root} = exports ? this"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:94"
+  },
+  "jsonp": {
+    "prefix": "jsonp",
+    "body": [
+      "JSON.parse ${0:jstr}"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:97"
+  },
+  "jsons": {
+    "prefix": "jsons",
+    "body": [
+      "JSON.stringify ${0:object}"
+    ],
+    "description": "vim-snippets/coffee/coffee.snippets:100"
+  }
+}

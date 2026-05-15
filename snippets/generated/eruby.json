@@ -1,0 +1,408 @@
+{
+  "rc": {
+    "prefix": "rc",
+    "body": [
+      "<% ${0} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:7"
+  },
+  "rce": {
+    "prefix": "rce",
+    "body": [
+      "<%= ${1} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:9"
+  },
+  "%": {
+    "prefix": "%",
+    "body": [
+      "<% ${0} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:11"
+  },
+  "=": {
+    "prefix": "=",
+    "body": [
+      "<%= ${1} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:13"
+  },
+  "end": {
+    "prefix": "end",
+    "body": [
+      "<% end %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:15"
+  },
+  "ead": {
+    "prefix": "ead",
+    "body": [
+      "<% ${1}.each do |${2}| %>",
+      "\t${0}",
+      "<% end %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:17"
+  },
+  "for": {
+    "prefix": "for",
+    "body": [
+      "<% for ${2:item} in ${1} %>",
+      "\t${0}",
+      "<% end %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:21"
+  },
+  "rp": {
+    "prefix": "rp",
+    "body": [
+      "<%= render partial: '${0:item}' %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:25"
+  },
+  "rpl": {
+    "prefix": "rpl",
+    "body": [
+      "<%= render partial: '${1:item}', locals: { :${2:name} => '${3:value}'${0} } %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:27"
+  },
+  "rps": {
+    "prefix": "rps",
+    "body": [
+      "<%= render partial: '${1:item}', status: ${0:500} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:29"
+  },
+  "rpc": {
+    "prefix": "rpc",
+    "body": [
+      "<%= render partial: '${1:item}', collection: ${0:items} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:31"
+  },
+  "lia": {
+    "prefix": "lia",
+    "body": [
+      "<%= link_to '${1:link text...}', action: '${0:index}' %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:33"
+  },
+  "liai": {
+    "prefix": "liai",
+    "body": [
+      "<%= link_to '${1:link text...}', action: '${2:edit}', id: ${0:@item} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:35"
+  },
+  "lic": {
+    "prefix": "lic",
+    "body": [
+      "<%= link_to '${1:link text...}', controller: '${0:items}' %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:37"
+  },
+  "lica": {
+    "prefix": "lica",
+    "body": [
+      "<%= link_to '${1:link text...}', controller: '${2:items}', action: '${0:index}' %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:39"
+  },
+  "licai": {
+    "prefix": "licai",
+    "body": [
+      "<%= link_to '${1:link text...}', controller: '${2:items}', action: '${3:edit}', id: ${0:@item} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:41"
+  },
+  "lib": {
+    "prefix": "lib",
+    "body": [
+      "<%= link_to '${1:link text...}' do %>",
+      "<% end %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:43"
+  },
+  "yield": {
+    "prefix": "yield",
+    "body": [
+      "<%= yield ${1::content_symbol} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:46"
+  },
+  "conf": {
+    "prefix": "conf",
+    "body": [
+      "<% content_for :${1:head} do %>",
+      "\t${0}",
+      "<% end %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:48"
+  },
+  "cs": {
+    "prefix": "cs",
+    "body": [
+      "<%= collection_select(:${1:object}, :${2:method}, ${3:collection}, :${4:value_method}, :${5:text_method}, options = {${0:prompt: true}}) %>        "
+    ],
+    "description": "vim-snippets/eruby.snippets:53"
+  },
+  "ct": {
+    "prefix": "ct",
+    "body": [
+      "<%= content_tag '${1:DIV}', ${2:content}${0:,options} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:55"
+  },
+  "ff": {
+    "prefix": "ff",
+    "body": [
+      "<%= form_for @${1:model} do |f| %>",
+      "\t${0}",
+      "<% end %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:57"
+  },
+  "ffi": {
+    "prefix": "ffi",
+    "body": [
+      "<%= ${1:f}.input :${0:attribute} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:61"
+  },
+  "ffcb": {
+    "prefix": "ffcb",
+    "body": [
+      "<%= ${1:f}.check_box :${0:attribute} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:63"
+  },
+  "ffe": {
+    "prefix": "ffe",
+    "body": [
+      "<% error_messages_for :${1:model} %>",
+      "",
+      "<%= form_for @${2:model} do |f| %>",
+      "\t${0}",
+      "<% end %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:65"
+  },
+  "ffff": {
+    "prefix": "ffff",
+    "body": [
+      "<%= ${1:f}.file_field :${0:attribute} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:71"
+  },
+  "ffhf": {
+    "prefix": "ffhf",
+    "body": [
+      "<%= ${1:f}.hidden_field :${0:attribute} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:73"
+  },
+  "ffl": {
+    "prefix": "ffl",
+    "body": [
+      "<%= ${1:f}.label :${2:attribute}, '${0:$2}' %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:75"
+  },
+  "ffpf": {
+    "prefix": "ffpf",
+    "body": [
+      "<%= ${1:f}.password_field :${0:attribute} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:77"
+  },
+  "ffrb": {
+    "prefix": "ffrb",
+    "body": [
+      "<%= ${1:f}.radio_button :${2:attribute}, :${0:tag_value} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:79"
+  },
+  "ffs": {
+    "prefix": "ffs",
+    "body": [
+      "<%= ${1:f}.submit \"${0:submit}\" %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:81"
+  },
+  "ffta": {
+    "prefix": "ffta",
+    "body": [
+      "<%= ${1:f}.text_area :${0:attribute} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:83"
+  },
+  "fftf": {
+    "prefix": "fftf",
+    "body": [
+      "<%= ${1:f}.text_field :${0:attribute} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:85"
+  },
+  "fcs": {
+    "prefix": "fcs",
+    "body": [
+      "<%= ${1:f}.collection_select(:${2:method}, ${3:collection}, :${4:value_method}, :${5:text_method}, options = {${0:prompt: true}}) %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:87"
+  },
+  "fields": {
+    "prefix": "fields",
+    "body": [
+      "<%= fields_for :${1:model}, @$1 do |${2:f}| %>",
+      "\t${0}",
+      "<% end %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:89"
+  },
+  "i18": {
+    "prefix": "i18",
+    "body": [
+      "I18n.t('${1:type.key}')"
+    ],
+    "description": "vim-snippets/eruby.snippets:93"
+  },
+  "it": {
+    "prefix": "it",
+    "body": [
+      "<%= image_tag \"${1}\"${0} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:95"
+  },
+  "jit": {
+    "prefix": "jit",
+    "body": [
+      "<%= javascript_include_tag ${0::all} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:97"
+  },
+  "jsit": {
+    "prefix": "jsit",
+    "body": [
+      "<%= javascript_include_tag \"${0}\" %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:99"
+  },
+  "lim": {
+    "prefix": "lim",
+    "body": [
+      "<%= link_to ${1:model}.${2:name}, ${3:$1}_path(${0:$1}) %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:101"
+  },
+  "linp": {
+    "prefix": "linp",
+    "body": [
+      "<%= link_to \"${1:Link text...}\", ${2:parent}_${3:child}_path(${4:@$2}, ${0:@$3}) %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:103"
+  },
+  "linpp": {
+    "prefix": "linpp",
+    "body": [
+      "<%= link_to \"${1:Link text...}\", ${2:parent}_${3:child}_path(${0:@$2}) %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:105"
+  },
+  "lip": {
+    "prefix": "lip",
+    "body": [
+      "<%= link_to \"${1:Link text...}\", ${2:model}_path(${0:@$2}) %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:107"
+  },
+  "lipp": {
+    "prefix": "lipp",
+    "body": [
+      "<%= link_to \"${1:Link text...}\", ${0:model}s_path %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:109"
+  },
+  "lt": {
+    "prefix": "lt",
+    "body": [
+      "<%= link_to \"${1:name}\", ${0:dest} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:111"
+  },
+  "ntc": {
+    "prefix": "ntc",
+    "body": [
+      "<%= number_to_currency(${1}) %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:113"
+  },
+  "ofcfs": {
+    "prefix": "ofcfs",
+    "body": [
+      "<%= options_from_collection_for_select ${1:collection}, ${2:value_method}, ${3:text_method}, ${0:selected_value} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:115"
+  },
+  "ofs": {
+    "prefix": "ofs",
+    "body": [
+      "<%= options_for_select ${1:collection}, ${2:value_method} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:117"
+  },
+  "rf": {
+    "prefix": "rf",
+    "body": [
+      "<%= render file: \"${1:file}\"${0} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:119"
+  },
+  "rt": {
+    "prefix": "rt",
+    "body": [
+      "<%= render template: \"${1:file}\"${0} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:121"
+  },
+  "slt": {
+    "prefix": "slt",
+    "body": [
+      "<%= stylesheet_link_tag ${1::all}, cache: ${0:true} %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:123"
+  },
+  "sslt": {
+    "prefix": "sslt",
+    "body": [
+      "<%= stylesheet_link_tag \"${0}\" %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:125"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "<% if ${1} %>",
+      "\t${0:${TM_SELECTED_TEXT}}",
+      "<% end %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:127"
+  },
+  "ife": {
+    "prefix": "ife",
+    "body": [
+      "<% if ${1} %>",
+      "\t${2}",
+      "<% else %>",
+      "\t${0}",
+      "<% end %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:131"
+  },
+  "pry": {
+    "prefix": "pry",
+    "body": [
+      "<% require 'pry'; binding.pry %>"
+    ],
+    "description": "vim-snippets/eruby.snippets:137"
+  }
+}

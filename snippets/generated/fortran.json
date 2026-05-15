@@ -1,0 +1,248 @@
+{
+  "impl": {
+    "prefix": "impl",
+    "body": [
+      "implicit none",
+      "\t${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:1"
+  },
+  "prog": {
+    "prefix": "prog",
+    "body": [
+      "program ${1:main}",
+      "\t${0}",
+      "end program $1"
+    ],
+    "description": "vim-snippets/fortran.snippets:4"
+  },
+  "mod": {
+    "prefix": "mod",
+    "body": [
+      "module ${1:modulename}",
+      "\t${0}",
+      "end module $1"
+    ],
+    "description": "vim-snippets/fortran.snippets:8"
+  },
+  "proc": {
+    "prefix": "proc",
+    "body": [
+      "procedure ${1:name}",
+      "\t${0}",
+      "end procedure $1"
+    ],
+    "description": "vim-snippets/fortran.snippets:12"
+  },
+  "iface": {
+    "prefix": "iface",
+    "body": [
+      "interface ${1:name}",
+      "\t${0}",
+      "end interface $1"
+    ],
+    "description": "vim-snippets/fortran.snippets:16"
+  },
+  "doc": {
+    "prefix": "doc",
+    "body": [
+      "! \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"",
+      "! File: ${2:${TM_FILENAME_BASE}}",
+      "! Author: author",
+      "! Email: email",
+      "! Github: github",
+      "! Description: $1",
+      "! \"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"\"",
+      "${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:20"
+  },
+  "dox": {
+    "prefix": "dox",
+    "body": [
+      "!> @brief ${1}",
+      "!!",
+      "!> ${2}",
+      "!> @author author",
+      "${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:29"
+  },
+  "doxp": {
+    "prefix": "doxp",
+    "body": [
+      "!> @param[${1}]${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:35"
+  },
+  "bool": {
+    "prefix": "bool",
+    "body": [
+      "logical :: ${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:39"
+  },
+  "int": {
+    "prefix": "int",
+    "body": [
+      "integer :: ${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:42"
+  },
+  "real": {
+    "prefix": "real",
+    "body": [
+      "real :: ${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:44"
+  },
+  "double": {
+    "prefix": "double",
+    "body": [
+      "double precision :: ${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:47"
+  },
+  "str": {
+    "prefix": "str",
+    "body": [
+      "character(len=${1:*}) :: ${0:}"
+    ],
+    "description": "vim-snippets/fortran.snippets:50"
+  },
+  "type": {
+    "prefix": "type",
+    "body": [
+      "type(${1:name})",
+      "\t${0}",
+      "end type"
+    ],
+    "description": "vim-snippets/fortran.snippets:53"
+  },
+  "const": {
+    "prefix": "const",
+    "body": [
+      "${1:type}, parameter :: $2 = ${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:57"
+  },
+  "arr": {
+    "prefix": "arr",
+    "body": [
+      "${1:type}, ${2:allocatable, }dimension(${3::}) :: ${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:59"
+  },
+  "intent": {
+    "prefix": "intent",
+    "body": [
+      "${1:type}, intent(inout) :: ${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:61"
+  },
+  "/": {
+    "prefix": "/",
+    "body": [
+      "(/ $1 /) ${2:,&} ${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:64"
+  },
+  "if": {
+    "prefix": "if",
+    "body": [
+      "if ($1) then",
+      "\t${0}",
+      "end if"
+    ],
+    "description": "vim-snippets/fortran.snippets:66"
+  },
+  "case": {
+    "prefix": "case",
+    "body": [
+      "select case (${1:expr})",
+      "\tcase ($2)",
+      "\tcase default",
+      "\t\t$3",
+      "end select ${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:70"
+  },
+  "do": {
+    "prefix": "do",
+    "body": [
+      "do ${1:i} = ${2:start}, ${3:end}, ${4:incr}",
+      "\t${0}",
+      "end do"
+    ],
+    "description": "vim-snippets/fortran.snippets:76"
+  },
+  "dow": {
+    "prefix": "dow",
+    "body": [
+      "do while ($1)",
+      "\t$2",
+      "end do"
+    ],
+    "description": "vim-snippets/fortran.snippets:80"
+  },
+  "sub": {
+    "prefix": "sub",
+    "body": [
+      "subroutine ${1:name}($2)",
+      "\t${0}",
+      "end subroutine $1"
+    ],
+    "description": "vim-snippets/fortran.snippets:84"
+  },
+  "func": {
+    "prefix": "func",
+    "body": [
+      "function ${1:name}($2) result($3)",
+      "\t${0}",
+      "end function $1"
+    ],
+    "description": "vim-snippets/fortran.snippets:88"
+  },
+  "pr": {
+    "prefix": "pr",
+    "body": [
+      "write(*,*) ${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:92"
+  },
+  "dpr": {
+    "prefix": "dpr",
+    "body": [
+      "write(*,*) '$1 = ', $1"
+    ],
+    "description": "vim-snippets/fortran.snippets:94"
+  },
+  "read": {
+    "prefix": "read",
+    "body": [
+      "read(unit = ${1:fp}, file = ${2:filename}, iostat = ${3:ierr}) ${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:96"
+  },
+  "write": {
+    "prefix": "write",
+    "body": [
+      "write(unit = ${1:fp}, file = ${2:filename}, iostat = ${3:ierr}) ${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:98"
+  },
+  "open": {
+    "prefix": "open",
+    "body": [
+      "open(unit = ${1:fp}, file = ${2:filename}, status = ${3:unknown}, iostat = ${4:ierr}) ${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:100"
+  },
+  "close": {
+    "prefix": "close",
+    "body": [
+      "close(unit = ${1:fp}) ${0}"
+    ],
+    "description": "vim-snippets/fortran.snippets:102"
+  }
+}
