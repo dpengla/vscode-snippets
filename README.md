@@ -26,6 +26,12 @@ npm run package
 
 Install the generated `.vsix` from VS Code with `Extensions: Install from VSIX`.
 
+## Remote SSH
+
+Snippet extensions are UI extensions in VS Code. When you use Remote SSH, install
+this VSIX on the local VS Code client, not on the SSH target. The snippets will
+then be available while editing files in the remote window.
+
 ## Conversion Notes
 
 - snipMate `${VISUAL}` placeholders are converted to VS Code `${TM_SELECTED_TEXT}`.
