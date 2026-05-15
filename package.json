@@ -3,7 +3,7 @@
   "displayName": "Vim Snippets for VS Code",
   "description": "VS Code snippet extension generated from local vim-snippets snipMate snippets.",
   "version": "0.0.1",
-  "publisher": "local",
+  "publisher": "depeng",
   "license": "(Apache-2.0 AND MIT)",
   "engines": {
     "vscode": "^1.80.0"
