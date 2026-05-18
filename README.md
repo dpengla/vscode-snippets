@@ -28,9 +28,9 @@ Install the generated `.vsix` from VS Code with `Extensions: Install from VSIX`.
 
 ## Remote SSH
 
-Snippet extensions are UI extensions in VS Code. When you use Remote SSH, install
-this VSIX on the local VS Code client, not on the SSH target. The snippets will
-then be available while editing files in the remote window.
+This extension declares both workspace and UI extension hosts, with workspace
+preferred. In a local VS Code window, install the VSIX locally. In a Remote SSH
+window, use `Extensions: Install from VSIX` to install it on the SSH target.
 
 ## Conversion Notes
 

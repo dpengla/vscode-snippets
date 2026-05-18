@@ -3,12 +3,16 @@
   "displayName": "Vim Snippets for VS Code",
   "description": "VS Code snippet extension generated from local vim-snippets snipMate snippets.",
   "repository": "https://github.com/dpengla/vscode-snippets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "depeng",
   "license": "(Apache-2.0 AND MIT)",
   "engines": {
     "vscode": "^1.80.0"
   },
+  "extensionKind": [
+    "workspace",
+    "ui"
+  ],
   "categories": [
     "Snippets"
   ],
