@@ -126,7 +126,7 @@
       "\tvisible :$5,",
       "\tvalueState :$6,",
       "\tname : $7,",
-      "\tplaceholder : $8,",
+      "\tplaceholder : ${8:placeholder},",
       "\teditable : $9,",
       "\ttype : $10,",
       "\tmaxLength :$11,",

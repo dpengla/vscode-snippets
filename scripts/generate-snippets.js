@@ -258,7 +258,22 @@ function unindentSnippetBodyLine(line) {
 }
 
 function convertBodyLine(line) {
-  return escapeLiteralDollars(convertVimExpressions(line.replace(/\$\{VISUAL\}/g, "${TM_SELECTED_TEXT}")));
+  const converted = convertVimExpressions(line.replace(/\$\{VISUAL\}/g, "${TM_SELECTED_TEXT}"));
+  return escapeLiteralDollars(convertPlaceholderFieldDefaults(converted));
+}
+
+function convertPlaceholderFieldDefaults(line) {
+  const jsonField = /^(\s*"placeholder"\s*:\s*")\$\{([0-9]+)\}(".*)$/.exec(line);
+  if (jsonField) {
+    return `${jsonField[1]}\${${jsonField[2]}:placeholder}${jsonField[3]}`;
+  }
+
+  const jsProperty = /^(\s*placeholder\s*:\s*)\$([0-9]+)(,?\s*)$/.exec(line);
+  if (jsProperty) {
+    return `${jsProperty[1]}\${${jsProperty[2]}:placeholder}${jsProperty[3]}`;
+  }
+
+  return line;
 }
 
 function convertVimExpressions(line) {

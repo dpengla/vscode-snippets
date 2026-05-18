@@ -883,7 +883,7 @@
       "\t\"label\": \"${2}\",",
       "\t\"default\": \"${3}\",",
       "\t\"info\": \"${4}\",",
-      "\t\"placeholder\": \"${0}\"",
+      "\t\"placeholder\": \"${0:placeholder}\"",
       "}"
     ],
     "description": "vim-snippets/liquid.snippets:304"
@@ -897,7 +897,7 @@
       "\t\"label\": \"${2}\",",
       "\t\"default\": \"${3}\",",
       "\t\"info\": \"${4}\",",
-      "\t\"placeholder\": \"${0}\"",
+      "\t\"placeholder\": \"${0:placeholder}\"",
       "}"
     ],
     "description": "vim-snippets/liquid.snippets:313"
@@ -1086,7 +1086,7 @@
       "\t\"accept\": [\"youtube\", \"vimeo\"${0}],",
       "\t\"default\": \"${3}\",",
       "\t\"info\": \"${4}\",",
-      "\t\"placeholder\": \"${5}\"",
+      "\t\"placeholder\": \"${5:placeholder}\"",
       "}"
     ],
     "description": "vim-snippets/liquid.snippets:431"
